@@ -1,0 +1,199 @@
+{
+  "flex-layout.col#contenedor-vista-nuestras-tiendas-mobile": {
+    "children": [
+      "flex-layout.row#contenedor-miga-pan-vista-nuestras-tiendas",
+      "flex-layout.row#titulo-vista-nuestras-tiendas",
+      "tab-layout#tab-nuestras-tiendas-mobile"
+    ],
+    "props": {
+      "blockClass": ["col-contenedor-vista-nuestras-tiendas"]
+    }
+  },
+
+  //CONTENEDOR TAB NUESTRAS TIENDAS MOBILE
+  "tab-layout#tab-nuestras-tiendas-mobile": {
+    "children": [
+      "tab-list#tab-nuestras-tiendas-mobile",
+      "tab-content#tab-nuestras-tiendas-mobile"
+    ],
+    "props": {
+      "blockClass": "tab-nuestras-tiendas-mobile",
+      "defaultActiveTabId": "tab-apartado"
+    }
+  },
+
+  // Listado de pestañas
+  "tab-list#tab-nuestras-tiendas-mobile": {
+    "children": [
+      "tab-list.item#tab-medellin",
+      "tab-list.item#tab-bello",
+      "tab-list.item#tab-envigado",
+      "tab-list.item#tab-itagui",
+      "tab-list.item#tab-sabaneta",
+      "tab-list.item#tab-girardota",
+      "tab-list.item#tab-apartado",
+      "tab-list.item#tab-bogota"
+    ],
+    "props": {
+      "blockClass": "list-tab-nuestras-tiendas-mobile"
+    }
+  },
+  "tab-list.item#tab-apartado": {
+    "props": {
+      "tabId": "tab-apartado",
+      "blockClass": "item-nuestras-tiendas-mobile",
+      "label": "Apartadó",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#tab-bogota": {
+    "props": {
+      "tabId": "tab-bogota",
+      "blockClass": "item-nuestras-tiendas-mobile",
+      "label": "Bogotá"
+    }
+  },
+  "tab-list.item#tab-medellin": {
+    "props": {
+      "tabId": "tab-medellin",
+      "blockClass": "item-nuestras-tiendas-mobile",
+      "label": "Medellín"
+    }
+  },
+  "tab-list.item#tab-bello": {
+    "props": {
+      "tabId": "tab-bello",
+      "blockClass": "item-nuestras-tiendas-mobile",
+      "label": "Bello"
+    }
+  },
+  "tab-list.item#tab-envigado": {
+    "props": {
+      "tabId": "tab-envigado",
+      "blockClass": "item-nuestras-tiendas-mobile",
+      "label": "Envigado"
+    }
+  },
+  "tab-list.item#tab-itagui": {
+    "props": {
+      "tabId": "tab-itagui",
+      "blockClass": "item-nuestras-tiendas-mobile",
+      "label": "Itagüí"
+    }
+  },
+  "tab-list.item#tab-sabaneta": {
+    "props": {
+      "tabId": "tab-sabaneta",
+      "blockClass": "item-nuestras-tiendas-mobile",
+      "label": "Sabaneta"
+    }
+  },
+  "tab-list.item#tab-girardota": {
+    "props": {
+      "tabId": "tab-girardota",
+      "blockClass": "item-nuestras-tiendas-mobile",
+      "label": "Girardota"
+    }
+  },
+
+
+  //Listado de los contenidos de las pestañas
+  "tab-content#tab-nuestras-tiendas-mobile": {
+    "children": [
+      "tab-content.item#tab-apartado",
+      "tab-content.item#tab-bogota",
+      "tab-content.item#tab-medellin",
+      "tab-content.item#tab-bello",
+      "tab-content.item#tab-envigado",
+      "tab-content.item#tab-itagui",
+      "tab-content.item#tab-sabaneta",
+      "tab-content.item#tab-girardota"
+    ],
+    "props": {
+      "blockClass": "content-tab-nuestras-tiendas-mobile"
+    }
+  },
+
+  // Detalle de cada contenido de las pestañas
+  "tab-content.item#tab-apartado": {
+    "children": [
+      "rich-text#tienda-apartado-interno",
+      "list-context.info-card-list#contenedor-tiendas-apartado"
+    ],
+    "props": {
+      "tabId": "tab-apartado",
+      "blockClass": "contenido-tab-nuestras-tiendas-mobile"
+    }
+  },
+  "tab-content.item#tab-bogota": {
+    "children": [
+      "rich-text#tienda-bogota-interno",
+      "list-context.info-card-list#contenedor-tiendas-bogota"
+    ],
+    "props": {
+      "tabId": "tab-bogota",
+      "blockClass": "contenido-tab-nuestras-tiendas-mobile"
+    }
+  },
+  "tab-content.item#tab-medellin": {
+    "children": [
+      "rich-text#tienda-medellin-interno",
+      "list-context.info-card-list#contenedor-tiendas-medellin"
+    ],
+    "props": {
+      "tabId": "tab-medellin",
+      "blockClass": "contenido-tab-nuestras-tiendas-mobile"
+    }
+  },
+  "tab-content.item#tab-bello": {
+    "children": [
+      "rich-text#tienda-bello-interno",
+      "list-context.info-card-list#contenedor-tiendas-bello"
+    ],
+    "props": {
+      "tabId": "tab-bello",
+      "blockClass": "contenido-tab-nuestras-tiendas-mobile"
+    }
+  },
+  "tab-content.item#tab-envigado": {
+    "children": [
+      "rich-text#tienda-envigado-interno",
+      "list-context.info-card-list#contenedor-tiendas-envigado"
+    ],
+    "props": {
+      "tabId": "tab-envigado",
+      "blockClass": "contenido-tab-nuestras-tiendas-mobile"
+    }
+  },
+  "tab-content.item#tab-itagui": {
+    "children": [
+      "rich-text#tienda-itagui-interno",
+      "list-context.info-card-list#contenedor-tiendas-itagui"
+    ],
+    "props": {
+      "tabId": "tab-itagui",
+      "blockClass": "contenido-tab-nuestras-tiendas-mobile"
+    }
+  },
+  "tab-content.item#tab-sabaneta": {
+    "children": [
+      "rich-text#tienda-sabaneta-interno",
+      "list-context.info-card-list#contenedor-tiendas-sabaneta"
+    ],
+    "props": {
+      "tabId": "tab-sabaneta",
+      "blockClass": "contenido-tab-nuestras-tiendas-mobile"
+    }
+  },
+  "tab-content.item#tab-girardota": {
+    "children": [
+      "rich-text#tienda-girardota-interno",
+      "list-context.info-card-list#contenedor-tiendas-girardota"
+    ],
+    "props": {
+      "tabId": "tab-girardota",
+      "blockClass": "contenido-tab-nuestras-tiendas-mobile"
+    }
+  }
+
+}

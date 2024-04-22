@@ -1,0 +1,737 @@
+{
+  "store.custom#preguntas-frecuentes": {
+    "children": ["flex-layout.row#contenedor-vista-preguntas-frecuentes"]
+  },
+  //CONTENEDOR VISTA PREGUNTAS FRECUENTES
+  "flex-layout.row#contenedor-vista-preguntas-frecuentes": {
+    "children": [
+      "flex-layout.col#contenedor-responsive-vista-preguntas-frecuentes"
+    ],
+    "props": {
+      "blockClass": ["contenedor-vista-preguntas-frecuentes"]
+    }
+  },
+  "flex-layout.col#contenedor-responsive-vista-preguntas-frecuentes": {
+    "children": [
+      "responsive-layout.desktop#contenedor-vista-preguntas-frecuentes",
+      "responsive-layout.tablet#contenedor-vista-preguntas-frecuentes",
+      "responsive-layout.phone#contenedor-vista-preguntas-frecuentes"
+    ],
+    "props": {
+      "blockClass": ["contenedor-responsive-vista-preguntas-frecuentes"]
+    }
+  },
+  "responsive-layout.desktop#contenedor-vista-preguntas-frecuentes": {
+    "children": ["flex-layout.col#contenedor-vista-preguntas-frecuentes"]
+  },
+  "responsive-layout.tablet#contenedor-vista-preguntas-frecuentes": {
+    "children": ["flex-layout.col#contenedor-vista-preguntas-frecuentes-mobile"]
+  },
+  "responsive-layout.phone#contenedor-vista-preguntas-frecuentes": {
+    "children": ["flex-layout.col#contenedor-vista-preguntas-frecuentes-mobile"]
+  },
+  "flex-layout.col#contenedor-vista-preguntas-frecuentes": {
+    "children": [
+      "flex-layout.row#contenedor-miga-pan-vista-preguntas-frecuentes",
+      "flex-layout.row#titulo-vista-preguntas-frecuentes",
+      "tab-layout#tab-seccion-preguntas-frecuentes"
+    ],
+    "props": {
+      "blockClass": ["col-contenedor-vista-preguntas-frecuentes"]
+    }
+  },
+
+  // MIGA DE PAN VISTA TERMINOS LEGALES
+  "flex-layout.row#contenedor-miga-pan-vista-preguntas-frecuentes": {
+    "children": [
+      "rich-text#miga-pan-1-vista-preguntas-frecuentes",
+      "image#flecha-miga-pan",
+      "rich-text#miga-pan-2-vista-preguntas-frecuentes"
+    ],
+    "props": {
+      "blockClass": ["contenedor-miga-pan-formulario-contacto"]
+    }
+  },
+  "rich-text#miga-pan-1-vista-preguntas-frecuentes": {
+    "props": {
+      "blockClass": ["miga-pan-1"],
+      "text": "Miga de pan desktop"
+    }
+  },
+  "rich-text#miga-pan-2-vista-preguntas-frecuentes": {
+    "props": {
+      "blockClass": ["miga-pan-2"],
+      "text": "Miga de pan desktop"
+    }
+  },
+
+  //TITULO VISTA NUESTRAS TIENDAS
+  "flex-layout.row#titulo-vista-preguntas-frecuentes": {
+    "children": [
+      "rich-text#titulo-vista-preguntas-frecuentes",
+      "rich-text#subtitulo-vista-preguntas-frecuentes"
+    ],
+    "props": {
+      "blockClass": ["titulo-vista-preguntas-frecuentes"]
+    }
+  },
+  "rich-text#titulo-vista-preguntas-frecuentes": {
+    "props": {
+      "blockClass": ["titulo-vista-preguntas-frecuentes"],
+      "text": "Preguntas frecuentes"
+    }
+  },
+  "rich-text#subtitulo-vista-preguntas-frecuentes": {
+    "props": {
+      "blockClass": ["subtitulo-vista-preguntas-frecuentes"],
+      "text": "La manera más rápida de encontrar respuestas. ¡Estamos para ayudarte!\nEncuentra las respuestas a tus preguntas relacionadas a nuestros servicios. Despacho, armado, planificación y mucho más."
+    }
+  },
+
+  //SECCION TAB TERMINOS LEGALES
+  "tab-layout#tab-seccion-preguntas-frecuentes": {
+    "children": [
+      "tab-list#tab-seccion-preguntas-frecuentes",
+      "tab-content#tab-seccion-preguntas-frecuentes"
+    ],
+    "props": {
+      "blockClass": "tab-seccion-preguntas-frecuentes",
+      "defaultActiveTabId": "tab-puntos-de-venta"
+    }
+  },
+
+  // Listado de pestañas
+  "tab-list#tab-seccion-preguntas-frecuentes": {
+    "children": [
+      "tab-list.item#tab-puntos-de-venta",
+      "tab-list.item#tab-productos",
+      "tab-list.item#tab-pagos",
+      "tab-list.item#tab-entregas",
+      "tab-list.item#tab-garantias",
+      "tab-list.item#tab-devoluciones"
+    ],
+    "props": {
+      "blockClass": "list-tab-preguntas-frecuentes"
+    }
+  },
+  "tab-list.item#tab-puntos-de-venta": {
+    "props": {
+      "tabId": "tab-puntos-de-venta",
+      "blockClass": "item-puntos-de-venta",
+      "label": "Puntos de venta",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#tab-productos": {
+    "props": {
+      "tabId": "tab-productos",
+      "blockClass": "item-productos",
+      "label": "Productos"
+    }
+  },
+  "tab-list.item#tab-pagos": {
+    "props": {
+      "tabId": "tab-pagos",
+      "blockClass": "item-pagos",
+      "label": "Pagos"
+    }
+  },
+  "tab-list.item#tab-entregas": {
+    "props": {
+      "tabId": "tab-entregas",
+      "blockClass": "item-entregas",
+      "label": "Entregas"
+    }
+  },
+  "tab-list.item#tab-garantias": {
+    "props": {
+      "tabId": "tab-garantias",
+      "blockClass": "item-garantias",
+      "label": "Garantias"
+    }
+  },
+  "tab-list.item#tab-devoluciones": {
+    "props": {
+      "tabId": "tab-devoluciones",
+      "blockClass": "item-devoluciones",
+      "label": "Devoluciones"
+    }
+  },
+
+  //Listado de los contenidos de las pestañas
+  "tab-content#tab-seccion-preguntas-frecuentes": {
+    "children": [
+      "tab-content.item#tab-puntos-de-venta",
+      "tab-content.item#tab-productos",
+      "tab-content.item#tab-pagos",
+      "tab-content.item#tab-entregas",
+      "tab-content.item#tab-garantias",
+      "tab-content.item#tab-devoluciones"
+    ],
+    "props": {
+      "blockClass": "content-tab-preguntas-frecuentes"
+    }
+  },
+
+  // Detalle de cada contenido de las pestañas
+  "tab-content.item#tab-puntos-de-venta": {
+    "children": ["flex-layout.col#contenido-puntos-de-venta"],
+    "props": {
+      "tabId": "tab-puntos-de-venta",
+      "blockClass": "content-puntos-de-venta"
+    }
+  },
+  "tab-content.item#tab-productos": {
+    "children": ["flex-layout.col#contenido-productos"],
+    "props": {
+      "tabId": "tab-productos",
+      "blockClass": "content-productos"
+    }
+  },
+  "tab-content.item#tab-pagos": {
+    "children": ["flex-layout.col#contenido-pagos"],
+    "props": {
+      "tabId": "tab-pagos",
+      "blockClass": "content-pagos"
+    }
+  },
+  "tab-content.item#tab-entregas": {
+    "children": ["flex-layout.col#contenido-entregas"],
+    "props": {
+      "tabId": "tab-entregas",
+      "blockClass": "content-entregas"
+    }
+  },
+  "tab-content.item#tab-garantias": {
+    "children": ["flex-layout.col#contenido-garantias"],
+    "props": {
+      "tabId": "tab-garantias",
+      "blockClass": "content-garantias"
+    }
+  },
+  "tab-content.item#tab-devoluciones": {
+    "children": ["flex-layout.col#contenido-devoluciones"],
+    "props": {
+      "tabId": "tab-devoluciones",
+      "blockClass": "content-devoluciones"
+    }
+  },
+
+  // CONTENDIO PUNTOS DE VENTA
+  "flex-layout.col#contenido-puntos-de-venta": {
+    "children": [
+      "image#img-contenido-puntos-de-venta",
+      "rich-text#titulo-contenido-puntos-de-venta",
+      "rich-text#texto-contenido-puntos-de-venta",
+      "flex-layout.row#botones-puntos-de-venta"
+    ],
+    "props": {
+      "blockClass": ["contenedor-textos-terminos-legales"]
+    }
+  },
+  "image#img-contenido-puntos-de-venta": {
+    "props": {
+      "blockClass": ["img-contenido-terminos-legales"],
+      "src": "/arquivos/img-terminos-legales-1.png"
+    }
+  },
+  "rich-text#titulo-contenido-puntos-de-venta": {
+    "props": {
+      "blockClass": ["titulo-content-terminos-legales"],
+      "text": "Puntos de venta"
+    }
+  },
+  "rich-text#texto-contenido-puntos-de-venta": {
+    "props": {
+      "blockClass": ["texto-content-preguntas-frecuentes"],
+      "text": "**1.¿Dónde tiene puntos de venta?**\n\nTenemos puntos de venta en Medellín, Apartadó, Soledad y Bogotá, en el siguiente link encontraras dirección y horarios de cada punto de venta.\n\nhttps://www.colchonesfantasia.com/punto-de-venta/\n\n**2. ¿Puedo comprar una promoción de un almacén de cadena o marketplaces (Éxito, Mercado Libre, Linio, Falabella…) en un punto de venta, página web o chat virtual?**Nuestros productos comercializados en almacenes de cadenas o Marketplace son diseñados y fabricados exclusivamente para venta o distribución en estos, en nuestras tiendas propias (offline y online) manejamos una línea diferente."
+    }
+  },
+  "flex-layout.row#botones-puntos-de-venta": {
+    "children": [
+      "rich-text#boton-ver-mas-puntos-de-venta",
+      "image#boton-atencion-inmediata-puntos-de-venta"
+    ],
+    "props": {
+      "blockClass": ["botones-contenedor-preguntas-frecuentes"]
+    }
+  },
+  "rich-text#boton-ver-mas-puntos-de-venta": {
+    "props": {
+      "blockClass": ["boton-ver-mas-preguntas-frecuentes"],
+      "text": "[Ver más](/)"
+    }
+  },
+  "image#boton-atencion-inmediata-puntos-de-venta": {
+    "props": {
+      "blockClass": ["boton-atencion-inmediata"],
+      "src": "/arquivos/img-boton-atencion-inmediata.svg",
+      "link": {
+        "url": "https://wa.me/#",
+        "openNewTab": true,
+        "title": "Escríbenos vía WhatsApp"
+      }
+    }
+  },
+
+  // CONTENDIO PRODUCTOS
+  "flex-layout.col#contenido-productos": {
+    "children": [
+      "image#img-contenido-productos",
+      "rich-text#titulo-contenido-productos",
+      "rich-text#texto-contenido-productos",
+      "flex-layout.row#botones-productos"
+    ],
+    "props": {
+      "blockClass": ["contenedor-textos-terminos-legales"]
+    }
+  },
+  "image#img-contenido-productos": {
+    "props": {
+      "blockClass": ["img-contenido-terminos-legales"],
+      "src": "/arquivos/img-terminos-legales-2.png"
+    }
+  },
+  "rich-text#titulo-contenido-productos": {
+    "props": {
+      "blockClass": ["titulo-content-terminos-legales"],
+      "text": "Productos"
+    }
+  },
+  "rich-text#texto-contenido-productos": {
+    "props": {
+      "blockClass": ["texto-content-preguntas-frecuentes"],
+      "text": "**1. ¿Qué peso soporta el colchón?**\n\nEl peso que soporta un colchón depende de las características internas, en cada una de nuestras referencias al final de las características encontrarás el peso que soporta.\n\n**¿Si no me siento seguro de como elegir mi colchón que debo hacer?**\n\nNo te preocupes, si aún no sabes que colchón elegir puedes visitar uno de nuestros puntos de venta y realizar una prueba de descanso. En esta prueba de descanso podrás sentir, tocar, probar, ver y acostarte en nuestros colchones, lo cual te ayudara a tomar la mejor decisión.\n\n**¿Qué es un colchón ortopédico?**\n\nLos colchones ortopédicos son los que poseen la capacidad de moldearse al contorno del cuerpo permitiendo adoptar una postura correcta mientras duermes, promoviendo una circulación sanguínea más saludable durante toda la noche.\n\n**¿Cada cuanto debo girar mi colchón?**\n\n * Rotar el colchón mínimo cada 2 meses.\n * Colchones con un solo pillow o uso de un solo lado, se giran 180°.\n * Colchones con dos pillow o sin pillow con uso por las dos caras, se puede girar y voltear:\n\n¡Así de simple! Dándole vueltas a su colchón regularmente, usted le agrega más años útiles y mayor comodidad.\n\n**¿Actividades que no se recomiendan hacer en mi colchón?**\n\n * No descargar sobre el colchón objetos demasiado pesados.\n * No permitir que éste sea usado para saltar.\n * No fumar, ni planchar, esto puede causar combustión involuntaria o deterioro del forro completo.\n * No consumir alimentos sobre el colchón.\n * No usar cartones debajo del colchón porque puede ocasionar deformidad en la unidad resortada o proliferación de hongos y ácaros en la tela.\n * No derramar sobre el colchón líquidos, solventes o cualquier tipo de limpiadores.\n * No doblar el colchón, ni alterar la forma del colchón.\n\n**¿Qué es un pillow?**\n\nEs una capa de confort extra que se pone en la parte superior del colchón, su función principal es hacer la superficie más suave y cómoda para brindar un sueño reparador.\n\n¿Cuál es la diferencia de un colchón de espuma a un colchón de resortes?\n\nEn caso de estas dos referencias su diferencia principal está en el centro del colchón, nuestros colchones de resortes tienen un centro de resortes 6 vueltas indeformables pero nuestros colchones de espuma tienen un núcleo de espumas. Sin importar su núcleo puedes encontrar colchones con diferentes firmezas.\nConoce en nuestro blog más acerca de colchones de espumas y resortados."
+    }
+  },
+  "flex-layout.row#botones-productos": {
+    "children": [
+      "rich-text#boton-ver-mas-productos",
+      "image#boton-atencion-inmediata-productos"
+    ],
+    "props": {
+      "blockClass": ["botones-contenedor-preguntas-frecuentes"]
+    }
+  },
+  "rich-text#boton-ver-mas-productos": {
+    "props": {
+      "blockClass": ["boton-ver-mas-preguntas-frecuentes"],
+      "text": "[Ver más](/)"
+    }
+  },
+  "image#boton-atencion-inmediata-productos": {
+    "props": {
+      "blockClass": ["boton-atencion-inmediata"],
+      "src": "/arquivos/img-boton-atencion-inmediata.svg",
+      "link": {
+        "url": "https://wa.me/#",
+        "openNewTab": true,
+        "title": "Escríbenos vía WhatsApp"
+      }
+    }
+  },
+
+  // CONTENDIO PAGOS
+  "flex-layout.col#contenido-pagos": {
+    "children": [
+      "image#img-contenido-pagos",
+      "rich-text#titulo-contenido-pagos",
+      "rich-text#texto-contenido-pagos",
+      "flex-layout.row#botones-pagos"
+    ],
+    "props": {
+      "blockClass": ["contenedor-textos-terminos-legales"]
+    }
+  },
+  "image#img-contenido-pagos": {
+    "props": {
+      "blockClass": ["img-contenido-terminos-legales"],
+      "src": "/arquivos/img-terminos-legales-3.png"
+    }
+  },
+  "rich-text#titulo-contenido-pagos": {
+    "props": {
+      "blockClass": ["titulo-content-terminos-legales"],
+      "text": "Pagos"
+    }
+  },
+  "rich-text#texto-contenido-pagos": {
+    "props": {
+      "blockClass": ["texto-content-preguntas-frecuentes"],
+      "text": "**1. ¿Cómo puedo realizar un pago?**\n\nContamos con una pasarela de pago en nuestra página web, en la cual puede encontrar diferentes los siguientes son las formas de Epayco:\n\n * Tarjetas de Credito: Mastercard, Visa, American Expresss, Codensa, Somos Epm.\n\n * Tarjetas debito: PSE.\n\n * Efectivo: Gana, Baloto, Efecty, PuntoRed, SuRed, Servi, Via, la Perla, Gana Gana, Jer y SuChance.\n\n * Crédito digital.\n\n * Crédito presencial.\n\n * Plan Separe.\n\n * Transferencia bancaria.\n\n * Código QR.\n\n * Consignación bancaria.\n\n * Contra entrega (Aplican términos y condiciones).\n\n * Efectivo y datafono.\n\nSi necesitas a asesoría personalizada dar click en https://cutt.ly/0nZYh9E\n\n**2. ¿Tienen sistema de crédito?**\n\nSí, tenemos crédito digital y presencial en alianza con Credimarcas, acceder a este es muy fácil y los requisitos     para los dos créditos son los mismos.\n\nRequisitos: \n\n * Cédula.\n\n * No estar reportado en ninguna central de riesgo.\n\n * No tener cuotas en mora en otros créditos.\n\n * Disponer de 40 minutos con el celular en mano.\n\n * Ser mayor de edad.n\n**3. ¿Cómo puedo realizar el pago de la cuota de mi crédito?**\n\nTenemos diferentes formas de pago para tu facilidad, encuentra las diferentes opciones en el siguiente link: https://www.colchonesfantasia.com/creditos/ \n\n**4. ¿Tienen plan separe?**\n\nSí, para acceder a nuestro Plan Separe puedes separar cualquiera de nuestras referencias pagando el 20% y el otro 80%, tienes hasta 3 meses para realizar el pago. Los abonos para este pago restante son voluntarios y no requieren fecha de pago.\n\nNingún abono debe ser inferior a $50.000.\n\n¡Visita nuestras tiendas! "
+    }
+  },
+  "flex-layout.row#botones-pagos": {
+    "children": [
+      "rich-text#boton-ver-mas-pagos",
+      "image#boton-atencion-inmediata-pagos"
+    ],
+    "props": {
+      "blockClass": ["botones-contenedor-preguntas-frecuentes"]
+    }
+  },
+  "rich-text#boton-ver-mas-pagos": {
+    "props": {
+      "blockClass": ["boton-ver-mas-preguntas-frecuentes"],
+      "text": "[Ver más](/)"
+    }
+  },
+  "image#boton-atencion-inmediata-pagos": {
+    "props": {
+      "blockClass": ["boton-atencion-inmediata"],
+      "src": "/arquivos/img-boton-atencion-inmediata.svg",
+      "link": {
+        "url": "https://wa.me/#",
+        "openNewTab": true,
+        "title": "Escríbenos vía WhatsApp"
+      }
+    }
+  },
+
+  // CONTENDIO ENTREGAS
+  "flex-layout.col#contenido-entregas": {
+    "children": [
+      "image#img-contenido-entregas",
+      "rich-text#titulo-contenido-entregas",
+      "rich-text#texto-contenido-entregas",
+      "flex-layout.row#botones-entregas"
+    ],
+    "props": {
+      "blockClass": ["contenedor-textos-terminos-legales"]
+    }
+  },
+  "image#img-contenido-entregas": {
+    "props": {
+      "blockClass": ["img-contenido-terminos-legales"],
+      "src": "/arquivos/img-terminos-legales-1.png"
+    }
+  },
+  "rich-text#titulo-contenido-entregas": {
+    "props": {
+      "blockClass": ["titulo-content-terminos-legales"],
+      "text": "Entregas"
+    }
+  },
+  "rich-text#texto-contenido-entregas": {
+    "props": {
+      "blockClass": ["texto-content-preguntas-frecuentes"],
+      "text": "**1. ¿Cuándo llega mi pedido?**\n\nEl tiempo de entrega de nuestros productos está sujeto a la referencia y ciudad de entrega, puedes conocerlos en las especificaciones técnicas de cada uno.\n\n * Colchones, bases y espaldares: Medellín: de 5 a 8 días hábiles. / Otras ciudades: de 10 a 12 días hábiles (lunes a viernes).\n\n * Muebles y cama tarima: Medellín: de 10 a 12 días hábiles. / Otras ciudades: de 12 a 15 días hábiles (lunes a viernes).\n\n * Almohadas: de 5 a 8 días hábiles / Otras ciudades: de 10 a 12 días hábiles (lunes a viernes).\n\nAntes de ser despacho el pedido el área se servicio al cliente se comunica para confirmar los datos de entrega. Paso importarte: sin esta confirmación el pedido no será despachado.\n\nSi no recibo mi producto, ¿A dónde debo llamar?\n\nNo te preocupes, nosotros somos una empresa 100% segura con más de 25 años en el mercado colombiano, el pedido debe tener un pequeño retraso por una novedad inesperada, para conocer el proceso actual de este debes comunicarte a la línea de servicio al cliente:Línea de atención gratuita: 01-8000-423507Línea de atención Medellín (574) 4444482 opc 3 \n\n**2. ¿Me gustaría conocer el proceso de mi pedido?**\n\nPara conocer el proceso de tu pedido debes comunicarte a la línea de servicio al cliente:Línea de atención gratuita: 01-8000-423507Línea de atención Medellín (574) 4444482 opc 3\n\n**3. ¿Quiero corregir la dirección de entrega de mi pedido?**\n\nDebes comunicarte a la línea de servicio al cliente o enviarnos un correo:Línea de atención gratuita: 01-8000-423507Línea de atención Medellín (574) 4444482servicioalcliente@colchonesfantasia.com\n\n**4. Si no encuentro mi ciudad de residencia en la página web, ¿qué puedo hacer?**\n\nTenemos envíos a más de 300 ciudades en Colombia de las cuales algunas son gratis y otras tienen costo de envío. Si tu ciudad de residencia no aparece en nuestro listado de entregas gratis por favor escríbenos al Wpp 301 2750485.\n\n**5. Mi lugar de entrega es en un edificio, ¿lo suben hasta la puerta?**\n\nEn la ciudad de Medellín y Área Metropolitana nuestros operadores logísticos entregan el producto hasta la puerta de la casa siempre y cuando, este pueda ser subido por medio de escaleras o ascensor.En la ciudad de Bogotá nuestros operadores logísticos solo entregaran los productos hasta el sexto piso por medio de escaleras.En otras ciudades de entrega los productos serán entregados en primeros pisos puesto que estos son entregados por transportadoras externas con diferentes políticas de entrega.El personal de Industrias Fantasía S.A.S y sus operadores logísticos no están autorizados para ingresar productos por balcones, terrazas y/o ventanales donde el producto deba ser forzado o se requiera modificar la zona de acceso, ni aun por solicitud de los clientes.\n\n**6. ¿Cuál son los costos de envío?**\n\nTenemos envíos a más 300 ciudades y municipios en Colombia, los destinos que puedes encontrar en página web son gratis para los productos: colchones, base camas, muebles, puff, cabeceros… solo para nuestros productos de almohadas y ropa de cama aplican un costo de envió de $12.000 para todos los destinos.Si tu destino de entrega no lo encuentras en las opciones de página web es posible que sea un destino que tiene costo de envío en este caso puedes escribirnos por nuestras líneas de wpp +57 301 2750485."
+    }
+  },
+  "flex-layout.row#botones-entregas": {
+    "children": [
+      "rich-text#boton-ver-mas-entregas",
+      "image#boton-atencion-inmediata-entregas"
+    ],
+    "props": {
+      "blockClass": ["botones-contenedor-preguntas-frecuentes"]
+    }
+  },
+  "rich-text#boton-ver-mas-entregas": {
+    "props": {
+      "blockClass": ["boton-ver-mas-preguntas-frecuentes"],
+      "text": "[Ver más](/)"
+    }
+  },
+  "image#boton-atencion-inmediata-entregas": {
+    "props": {
+      "blockClass": ["boton-atencion-inmediata"],
+      "src": "/arquivos/img-boton-atencion-inmediata.svg",
+      "link": {
+        "url": "https://wa.me/#",
+        "openNewTab": true,
+        "title": "Escríbenos vía WhatsApp"
+      }
+    }
+  },
+
+  // CONTENDIO GARANTIAS
+  "flex-layout.col#contenido-garantias": {
+    "children": [
+      "image#img-contenido-garantias",
+      "rich-text#titulo-contenido-garantias",
+      "rich-text#texto-contenido-garantias",
+      "flex-layout.row#botones-garantias"
+    ],
+    "props": {
+      "blockClass": ["contenedor-textos-terminos-legales"]
+    }
+  },
+  "image#img-contenido-garantias": {
+    "props": {
+      "blockClass": ["img-contenido-terminos-legales"],
+      "src": "/arquivos/img-terminos-legales-2.png"
+    }
+  },
+  "rich-text#titulo-contenido-garantias": {
+    "props": {
+      "blockClass": ["titulo-content-terminos-legales"],
+      "text": "Garantias"
+    }
+  },
+  "rich-text#texto-contenido-garantias": {
+    "props": {
+      "blockClass": ["texto-content-preguntas-frecuentes"],
+      "text": "**1. ¿Cómo hago efectiva mi garantía?**\n\nSi estas ubicado en la ciudad de Medellín o Área Metropolitana, como primera instancia se agendara visita técnica para la revisión del producto. Puedes solicitar esta visita en:\n\nPuntos de venta.\n * Correo electrónico servicioalcliente@colchonesfantasia.com\n * Vía telefónica: 4444482 opc 3.\n\nSi estas ubicado en otra ciudad, puedes solicitar la revisión técnica vía telefónica 018000423507 o por medio de correo electrónico servicioalcliente@colchonesfantasia.com.\n\n**2. ¿Cuándo se presenta una garantía, me cambian el colchón?**\n\nComo primera instancia y guiándonos bajo los parámetros de la ley del consumidor (Ley 1480 del 2011), cuando se presenta falla técnica de un producto, se procede con la recolección y reparación del mismo, dejando por sentado el tratamiento dado al producto.\n\n**3. ¿Cuánto tiempo después de la revisión me recogen el producto?**\n\nUna vez se efectúa la revisión técnica del producto (presencial o virtual) el tiempo para la recolección del producto depende directamente de la ubicación del mismo. Es decir, Medellín y Área Metropolitana de 8 a 10 días hábiles (lunes a viernes), resto del país, se coordina directamente con el consumidor y la transportadora, aproximadamente 10 a 15 días hábiles (lunes a viernes).\n\n**4. ¿Si me recogen el producto para tratamiento de garantía, cuanto tiempo demora la reparación?**\n\nUna vez se procede con la recolección del mismo y el producto ingresa a nuestras instalaciones, Industrias Fantasía cuenta con un tiempo estimado de 4 a 5 días hábiles (lunes a viernes) para la reparación del mismo. Una vez solucionada la falla técnica se procede con el despacho (el tiempo de entrega depende de la ubicación del cliente, local y/o nacional).\n\nEstos son tiempos establecidos, pero siempre estamos buscando entregar lo más pronto lo más posible.\n\n**5. ¿Tiempo de garantía de cada producto?**\n\nCada una de nuestras líneas cuentan con un tiempo de garantía diferente las cuales puedes encontrar en los banners inferiores cada pregunto.\n\n * Línea de Colchones Spoom: 3 años de garantía.\n * Línea de Colchones Stylution: 3 años de garantía.\n * Línea de Colchones Leganzza, Generation, Plassenci, Trizone, Mercury, Mercury Pillow y Damani: 7 años de garantía.\n * Línea Colchón Clásico Jacquard: 5 años de garantía.\n * Base Cama: 1 año de garantía.\n * Cama Tarima y Cama Tarima acolchada: 1 año de garantía.\n *  Cabecero: 1 año de garantía.\n * Sofás, Sofá camas, Sofás en L y Puffs: 1 año de garantía.\n * Almohadas, cojines y ropa de cama: 3 meses de garantía por defectos de fábrica.\n * Pillow Bed: 6 meses de garantía.\n * Vital top: 3 meses de garantía.\n * Colchoneta Deportiva: 3 meses de garantía."
+    }
+  },
+  "flex-layout.row#botones-garantias": {
+    "children": [
+      "rich-text#boton-ver-mas-garantias",
+      "image#boton-atencion-inmediata-garantias"
+    ],
+    "props": {
+      "blockClass": ["botones-contenedor-preguntas-frecuentes"]
+    }
+  },
+  "rich-text#boton-ver-mas-garantias": {
+    "props": {
+      "blockClass": ["boton-ver-mas-preguntas-frecuentes"],
+      "text": "[Ver más](/)"
+    }
+  },
+  "image#boton-atencion-inmediata-garantias": {
+    "props": {
+      "blockClass": ["boton-atencion-inmediata"],
+      "src": "/arquivos/img-boton-atencion-inmediata.svg",
+      "link": {
+        "url": "https://wa.me/#",
+        "openNewTab": true,
+        "title": "Escríbenos vía WhatsApp"
+      }
+    }
+  },
+
+  // CONTENDIO DEVOLUCIONES
+  "flex-layout.col#contenido-devoluciones": {
+    "children": [
+      "image#img-contenido-devoluciones",
+      "rich-text#titulo-contenido-devoluciones",
+      "rich-text#texto-contenido-devoluciones",
+      "flex-layout.row#botones-devoluciones"
+    ],
+    "props": {
+      "blockClass": ["contenedor-textos-terminos-legales"]
+    }
+  },
+  "image#img-contenido-devoluciones": {
+    "props": {
+      "blockClass": ["img-contenido-terminos-legales"],
+      "src": "/arquivos/img-terminos-legales-3.png"
+    }
+  },
+  "rich-text#titulo-contenido-devoluciones": {
+    "props": {
+      "blockClass": ["titulo-content-terminos-legales"],
+      "text": "Devoluciones"
+    }
+  },
+  "rich-text#texto-contenido-devoluciones": {
+    "props": {
+      "blockClass": ["texto-content-preguntas-frecuentes"],
+      "text": "¿En qué casos se puede solicitar un cambio?\n\nLas solicitudes de cambios o devoluciones las puede realizar por medio del correo: \n\n * servicioalcliente@colchonesfantasia.com\n\nMediante el correo nos debes contar el motivo por el cual deseas realizar la solicitud. Además, nos debes enviar todos tus datos completos: Nombre, cédula, teléfono, fecha de entrega del producto, dirección, ciudad, barrio y adjuntar evidencia fotográfica del producto con el fin de poder validar el estado del mismo.\n\n * Tu solicitud quedará bajo verificación por el área encargada la cual te estará dando respuesta por el mismo medio.\n * Las compras por medio de página web tienen 5 días calendario para retracto. Aplican términos y condiciones de ley de retracto.\n * Todos nuestros productos son considerados de uso personal. Por esta razón, y teniendo en cuenta los cuidados de bioseguridad, los colchones usados no tienen cambios ni devoluciones.\n * Las almohadas y ropa de cama o lencería no tienen cambio."
+    }
+  },
+  "flex-layout.row#botones-devoluciones": {
+    "children": [
+      "rich-text#boton-ver-mas-devoluciones",
+      "image#boton-atencion-inmediata-devoluciones"
+    ],
+    "props": {
+      "blockClass": ["botones-contenedor-preguntas-frecuentes"]
+    }
+  },
+  "rich-text#boton-ver-mas-devoluciones": {
+    "props": {
+      "blockClass": ["boton-ver-mas-preguntas-frecuentes"],
+      "text": "[Ver más](/)"
+    }
+  },
+  "image#boton-atencion-inmediata-devoluciones": {
+    "props": {
+      "blockClass": ["boton-atencion-inmediata"],
+      "src": "/arquivos/img-boton-atencion-inmediata.svg",
+      "link": {
+        "url": "https://wa.me/#",
+        "openNewTab": true,
+        "title": "Escríbenos vía WhatsApp"
+      }
+    }
+  },
+
+  "flex-layout.col#contenedor-vista-preguntas-frecuentes-mobile": {
+    "children": [
+      "flex-layout.row#contenedor-miga-pan-vista-preguntas-frecuentes",
+      "flex-layout.row#titulo-vista-preguntas-frecuentes",
+      "flex-layout.col#contenedor-disclosure-vista-preguntas-frecuentes-mobile"
+    ],
+    "props": {
+      "blockClass": ["col-contenedor-vista-preguntas-frecuentes"]
+    }
+  },
+  //CONTENEDOR DISCLOSURE PREGUNTAS FTRECUENTES MOBILE
+  "flex-layout.col#contenedor-disclosure-vista-preguntas-frecuentes-mobile": {
+    "children": ["disclosure-layout-group#preguntas-frecuentes"],
+    "props": {
+      "blockClass": ["contenedor-disclosure-vista-terminos-legales-mobile"]
+    }
+  },
+  //PRUEBA CON DISCLOUSURE PREGUNTAS FRECUENTES
+  "disclosure-layout-group#preguntas-frecuentes": {
+    "children": [
+      "disclosure-layout#puntos-de-venta",
+      "disclosure-layout#productos",
+      "disclosure-layout#pagos",
+      "disclosure-layout#entregas",
+      "disclosure-layout#garantia",
+      "disclosure-layout#devoluciones"
+    ],
+    "props": {
+      "blockClass": "disclosure-preguntas-frecuentes-mobile"
+    }
+  },
+
+  //PUNTOS DE VENTA
+  "disclosure-layout#puntos-de-venta": {
+    "children": [
+      "disclosure-trigger#puntos-de-venta",
+      "disclosure-content#puntos-de-venta"
+    ]
+  },
+  "disclosure-trigger#puntos-de-venta": {
+    "children": ["rich-text#disclosure-trigger-puntos-de-venta"],
+    "props": {
+      "blockClass": "disclosure-trigger-puntos-de-venta"
+    }
+  },
+  "disclosure-content#puntos-de-venta": {
+    "children": [
+      "rich-text#texto-contenido-puntos-de-venta",
+      "image#boton-atencion-inmediata-puntos-de-venta"
+    ],
+    "props": {
+      "blockClass": "disclosure-content-terminos-legales-mobile"
+    }
+  },
+  "rich-text#disclosure-trigger-puntos-de-venta": {
+    "props": {
+      "blockClass": "disclosure-trigger-terminos-legales-mobile",
+      "text": "Puntos de venta"
+    }
+  },
+
+  //DISCLOSURE PRODUCTOS
+  "disclosure-layout#productos": {
+    "children": ["disclosure-trigger#productos", "disclosure-content#productos"]
+  },
+  "disclosure-trigger#productos": {
+    "children": ["rich-text#disclosure-trigger-productos"],
+    "props": {
+      "blockClass": "disclosure-trigger-productos"
+    }
+  },
+  "disclosure-content#productos": {
+    "children": ["rich-text#texto-contenido-productos","image#boton-atencion-inmediata-productos"],
+    "props": {
+      "blockClass": "disclosure-content-terminos-legales-mobile"
+    }
+  },
+  "rich-text#disclosure-trigger-productos": {
+    "props": {
+      "blockClass": "disclosure-trigger-terminos-legales-mobile",
+      "text": "Productos"
+    }
+  },
+
+  //DISCLOSURE PAGOS
+  "disclosure-layout#pagos": {
+    "children": ["disclosure-trigger#pagos", "disclosure-content#pagos"]
+  },
+  "disclosure-trigger#pagos": {
+    "children": ["rich-text#disclosure-trigger-pagos"],
+    "props": {
+      "blockClass": "disclosure-trigger-pagos"
+    }
+  },
+  "disclosure-content#pagos": {
+    "children": ["rich-text#texto-contenido-pagos","image#boton-atencion-inmediata-pagos"],
+    "props": {
+      "blockClass": "disclosure-content-terminos-legales-mobile"
+    }
+  },
+  "rich-text#disclosure-trigger-pagos": {
+    "props": {
+      "blockClass": "disclosure-trigger-terminos-legales-mobile",
+      "text": "Pagos"
+    }
+  },
+
+  //DISCLOSURE ENTREGAS
+  "disclosure-layout#entregas": {
+    "children": ["disclosure-trigger#entregas", "disclosure-content#entregas"]
+  },
+  "disclosure-trigger#entregas": {
+    "children": ["rich-text#disclosure-trigger-entregas"],
+    "props": {
+      "blockClass": "disclosure-trigger-entregas"
+    }
+  },
+  "disclosure-content#entregas": {
+    "children": ["rich-text#texto-contenido-entregas","image#boton-atencion-inmediata-entregas"],
+    "props": {
+      "blockClass": "disclosure-content-terminos-legales-mobile"
+    }
+  },
+  "rich-text#disclosure-trigger-entregas": {
+    "props": {
+      "blockClass": "disclosure-trigger-terminos-legales-mobile",
+      "text": "Entregas"
+    }
+  },
+
+  //DISCLOSURE GARANTIA
+  "disclosure-layout#garantia": {
+    "children": ["disclosure-trigger#garantia", "disclosure-content#garantia"]
+  },
+  "disclosure-trigger#garantia": {
+    "children": ["rich-text#disclosure-trigger-garantia"],
+    "props": {
+      "blockClass": "disclosure-trigger-garantia"
+    }
+  },
+  "disclosure-content#garantia": {
+    "children": ["rich-text#texto-contenido-garantias","image#boton-atencion-inmediata-garantias"],
+    "props": {
+      "blockClass": "disclosure-content-terminos-legales-mobile"
+    }
+  },
+  "rich-text#disclosure-trigger-garantia": {
+    "props": {
+      "blockClass": "disclosure-trigger-terminos-legales-mobile",
+      "text": "Garantias"
+    }
+  },
+
+  //DISCLOSURE DEVOLUCIONES
+  "disclosure-layout#devoluciones": {
+    "children": ["disclosure-trigger#devoluciones", "disclosure-content#devoluciones"]
+  },
+  "disclosure-trigger#devoluciones": {
+    "children": ["rich-text#disclosure-trigger-devoluciones"],
+    "props": {
+      "blockClass": "disclosure-trigger-devoluciones"
+    }
+  },
+  "disclosure-content#devoluciones": {
+    "children": ["rich-text#texto-contenido-devoluciones","image#boton-atencion-inmediata-devoluciones"],
+    "props": {
+      "blockClass": "disclosure-content-terminos-legales-mobile"
+    }
+  },
+  "rich-text#disclosure-trigger-devoluciones": {
+    "props": {
+      "blockClass": "disclosure-trigger-terminos-legales-mobile",
+      "text": "Devoluciones"
+    }
+  }
+}

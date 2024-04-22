@@ -1,0 +1,581 @@
+{
+  "store.custom#landing-ecologizate": {
+    "blocks": ["flex-layout.row#contenedor-vista-landing-ecologizate"]
+  },
+
+  //CONTENEDOR VISTA ECOLOGIZATE
+  "flex-layout.row#contenedor-vista-landing-ecologizate": {
+    "children": ["flex-layout.col#contenedor-vista-landing-ecologizate"],
+    "props": {
+      "blockClass": ["contenedor-vista-landing-ecologizate"]
+    }
+  },
+  "flex-layout.col#contenedor-vista-landing-ecologizate": {
+    "children": [
+      "video#banner-video-landing-ecologizate",
+      "flex-layout.col#seccion-1-landing-ecologizate",
+      "flex-layout.row#seccion-2-landing-ecologizate",
+      "flex-layout.col#seccion-3-landing-ecologizate",
+      "flex-layout.col#seccion-4-landing-ecologizate"
+    ],
+    "props": {
+      "blockClass": ["col-contenedor-vista-landing-ecologizate"]
+    }
+  },
+
+  //BANNER - VIDEO LANDING ECOLOGIZATE
+  "video#banner-video-landing-ecologizate": {
+    "props": {
+      "width": "100%",
+      "height": "500px",
+      "loop": false,
+      "autoPlay": false,
+      "muted": false,
+      "controlsType": "none",
+      "src": "https://www.youtube.com/watch?v=BMXUHjDnFq8",
+      "blockClass": "banner-video-landing-ecologizate"
+    }
+  },
+
+  //SECCION 1 LANDING ECOLOGIZATE
+  "flex-layout.col#seccion-1-landing-ecologizate": {
+    "children": [
+      "image#logo-ecologizate",
+      "rich-text#texto-1-seccion-1-landing-ecologizate",
+      "rich-text#texto-2-seccion-1-landing-ecologizate"
+    ],
+    "props": {
+      "blockClass": ["seccion-1-landing-ecologizate"]
+    }
+  },
+  "image#logo-ecologizate": {
+    "props": {
+      "blockClass": ["logo-ecologizate"],
+      "src": "/arquivos/logo-ecologizate.png"
+    }
+  },
+  "rich-text#texto-1-seccion-1-landing-ecologizate": {
+    "props": {
+      "blockClass": ["texto-1-seccion-1-landing-ecologizate"],
+      "text": "Es el programa ambiental de **Industrias Fantasía S.A.S** que busca prevenir, mitigar, controlar\ny educar sobre el impacto ambiental que generamos como empresa y como personas…",
+      "textAlignment": "CENTER",
+      "textColor": "c-on-base",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#texto-2-seccion-1-landing-ecologizate": {
+    "props": {
+      "blockClass": ["texto-2-seccion-1-landing-ecologizate"],
+      "text": "¡Es misión de todos dejarles a las generaciones futuras un lugar donde se pueda soñar!",
+      "textAlignment": "CENTER",
+      "textColor": "#91C362",
+      "textPosition": "CENTER"
+    }
+  },
+
+  //SECCION 2 LANDING ECOLOGIZATE
+  "flex-layout.row#seccion-2-landing-ecologizate": {
+    "children": ["flex-layout.col#seccion-2-landing-ecologizate"],
+    "props": {
+      "blockClass": ["seccion-2-landing-ecologizate"]
+    }
+  },
+  "flex-layout.col#seccion-2-landing-ecologizate": {
+    "children": [
+      "rich-text#titulo-seccion-2-landing-ecologizate",
+      "flex-layout.row#tarjetas-informativas-seccion-2-landing-ecologizate"
+    ],
+    "props": {
+      "blockClass": ["seccion-2-landing-ecologizate"]
+    }
+  },
+  "rich-text#titulo-seccion-2-landing-ecologizate": {
+    "props": {
+      "blockClass": ["titulo-seccion-2-landing-ecologizate"],
+      "text": "¿Te has preguntando qué hacer con tu colchón usado?\nY ¿Cómo este puede darle un descanso a nuestro planeta?",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#tarjetas-informativas-seccion-2-landing-ecologizate": {
+    "children": [
+      "flex-layout.col#tarjeta-informativa-1",
+      "flex-layout.col#tarjeta-informativa-2",
+      "flex-layout.col#tarjeta-informativa-3",
+      "flex-layout.col#tarjeta-informativa-4",
+      "flex-layout.row#contenedor-tarjeta-informativa-5"
+    ],
+    "props": {
+      "blockClass": ["tarjetas-informativas-seccion-2-landing-ecologizate"]
+    }
+  },
+
+  //TARJETA INFORMATIVA 1
+  "flex-layout.col#tarjeta-informativa-1": {
+    "children": [
+      "image#numeral-tajeta-informativa-1",
+      "rich-text#texto-1-tarjeta-informativa-1",
+      "rich-text#texto-2-tarjeta-informativa-1",
+      "image#icono-tarjeta-informativa-1"
+    ],
+    "props": {
+      "blockClass": ["tarjeta-informativa-1"]
+    }
+  },
+  "image#numeral-tajeta-informativa-1": {
+    "props": {
+      "blockClass": ["numeral-tajeta-informativa"],
+      "src": "/arquivos/numeral-tarjeta-informativa-1.png"
+    }
+  },
+  "rich-text#texto-1-tarjeta-informativa-1": {
+    "props": {
+      "blockClass": ["texto-1-tarjeta-informativa"],
+      "text": "Cuando hayas finalizado tu compra, pregunta al asesor por nuestro servicio “Ecologízate.” En Puntos de venta, línea de servicio al cliente o asesor virtual.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#texto-2-tarjeta-informativa-1": {
+    "props": {
+      "blockClass": ["texto-2-tarjeta-informativa"],
+      "text": "*Servicio disponible únicamente en Valle de Aburrá. *Solo aplica para compra de colchones.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "image#icono-tarjeta-informativa-1": {
+    "props": {
+      "blockClass": ["icono-tarjeta-informativa"],
+      "src": "/arquivos/icono-tarjeta-informativa-1.png"
+    }
+  },
+
+  //TARJETA INFORMATIVA 2
+  "flex-layout.col#tarjeta-informativa-2": {
+    "children": [
+      "image#numeral-tajeta-informativa-2",
+      "rich-text#texto-1-tarjeta-informativa-2",
+      "rich-text#texto-2-tarjeta-informativa-2",
+      "image#icono-tarjeta-informativa-2"
+    ],
+    "props": {
+      "blockClass": ["tarjeta-informativa-2"]
+    }
+  },
+  "image#numeral-tajeta-informativa-2": {
+    "props": {
+      "blockClass": ["numeral-tajeta-informativa"],
+      "src": "/arquivos/numeral-tarjeta-informativa-2.png"
+    }
+  },
+  "rich-text#texto-1-tarjeta-informativa-2": {
+    "props": {
+      "blockClass": ["texto-1-tarjeta-informativa"],
+      "text": "Posteriormente te explicaremos las condiciones en las que debes entregar tu colchón.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#texto-2-tarjeta-informativa-2": {
+    "props": {
+      "blockClass": ["texto-2-tarjeta-informativa"],
+      "text": "• Envíanos los datos donde debemos recoger.\n• Envuelve tu colchón usado en plástico.\n• Elige como pagar el servicio.\n• Brinda un correo electrónico para posteriormente\n• Enviarte un certificado de disposición final. *(Opcional).",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "image#icono-tarjeta-informativa-2": {
+    "props": {
+      "blockClass": ["icono-tarjeta-informativa"],
+      "src": "/arquivos/icono-tarjeta-informativa-2.png"
+    }
+  },
+
+  //TARJETA INFORMATIVA 3
+  "flex-layout.col#tarjeta-informativa-3": {
+    "children": [
+      "image#numeral-tajeta-informativa-3",
+      "rich-text#texto-1-tarjeta-informativa-3",
+      "rich-text#texto-2-tarjeta-informativa-3",
+      "image#icono-tarjeta-informativa-3"
+    ],
+    "props": {
+      "blockClass": ["tarjeta-informativa-2"]
+    }
+  },
+  "image#numeral-tajeta-informativa-3": {
+    "props": {
+      "blockClass": ["numeral-tajeta-informativa"],
+      "src": "/arquivos/numeral-tarjeta-informativa-3.png"
+    }
+  },
+  "rich-text#texto-1-tarjeta-informativa-3": {
+    "props": {
+      "blockClass": ["texto-1-tarjeta-informativa"],
+      "text": "Recogeremos tu colchón usado (no importa la marca o material) en la puerta de tu casa.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#texto-2-tarjeta-informativa-3": {
+    "props": {
+      "blockClass": ["texto-2-tarjeta-informativa"],
+      "text": "Recuerda empacar el colchón con plástico por temas higienicosanitarias y de bioseguridad.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "image#icono-tarjeta-informativa-3": {
+    "props": {
+      "blockClass": ["icono-tarjeta-informativa"],
+      "src": "/arquivos/icono-tarjeta-informativa-3.png"
+    }
+  },
+
+  //TARJETA INFORMATIVA 4
+  "flex-layout.col#tarjeta-informativa-4": {
+    "children": [
+      "image#numeral-tajeta-informativa-4",
+      "rich-text#texto-1-tarjeta-informativa-4",
+      "rich-text#texto-2-tarjeta-informativa-4",
+      "image#icono-tarjeta-informativa-4"
+    ],
+    "props": {
+      "blockClass": ["tarjeta-informativa-1"]
+    }
+  },
+  "image#numeral-tajeta-informativa-4": {
+    "props": {
+      "blockClass": ["numeral-tajeta-informativa"],
+      "src": "/arquivos/numeral-tarjeta-informativa-4.png"
+    }
+  },
+  "rich-text#texto-1-tarjeta-informativa-4": {
+    "props": {
+      "blockClass": ["texto-1-tarjeta-informativa"],
+      "text": "Luego hacemos llegar el colchón a nuestra empresa aliada ambiental Ecologística.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#texto-2-tarjeta-informativa-4": {
+    "props": {
+      "blockClass": ["texto-2-tarjeta-informativa-4"],
+      "text": "www.ecologistica.com.co",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "image#icono-tarjeta-informativa-4": {
+    "props": {
+      "blockClass": ["icono-tarjeta-informativa"],
+      "src": "/arquivos/icono-tarjeta-informativa-4.png"
+    }
+  },
+
+  //TARJETA INFORMATIVA 5
+  "flex-layout.row#contenedor-tarjeta-informativa-5": {
+    "children": ["flex-layout.col#tarjeta-informativa-5"],
+    "props": {
+      "blockClass": ["contenedor-tarjeta-informativa-5"]
+    }
+  },
+  "flex-layout.col#tarjeta-informativa-5": {
+    "children": [
+      "image#numeral-tajeta-informativa-5",
+      "rich-text#texto-1-tarjeta-informativa-5",
+      "image#icono-tarjeta-informativa-5"
+    ],
+    "props": {
+      "blockClass": ["tarjeta-informativa-5"]
+    }
+  },
+  "image#numeral-tajeta-informativa-5": {
+    "props": {
+      "blockClass": ["numeral-tajeta-informativa"],
+      "src": "/arquivos/numeral-tarjeta-informativa-5.png"
+    }
+  },
+  "rich-text#texto-1-tarjeta-informativa-5": {
+    "props": {
+      "blockClass": ["texto-1-tarjeta-informativa"],
+      "text": "Finalmente, si lo deseas te enviaremos un certificado de disposición final, el cual es un documento legal que emite nuestra empresa aliada Ecologística sobre la disposición correcta del artículo.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "image#icono-tarjeta-informativa-5": {
+    "props": {
+      "blockClass": ["icono-tarjeta-informativa"],
+      "src": "/arquivos/icono-tarjeta-informativa-5.png"
+    }
+  },
+
+  //SECCION 3 LANDING ECOLOGIZATE
+  "flex-layout.col#seccion-3-landing-ecologizate": {
+    "children": [
+      "rich-text#texto-seccion-3-landing-ecologizate",
+      "rich-text#titulo-seccion-3-landing-ecologizate",
+      "flex-layout.row#tarjeta-destino-ecologico-1",
+      "flex-layout.row#tarjeta-destino-ecologico-2",
+      "flex-layout.row#tarjeta-destino-ecologico-3",
+      "flex-layout.row#tarjeta-destino-ecologico-4",
+      "flex-layout.row#tarjeta-destino-ecologico-5",
+      "flex-layout.row#tarjeta-destino-ecologico-6"
+    ],
+    "props": {
+      "blockClass": ["seccion-3-landing-ecologizate"]
+    }
+  },
+  "rich-text#texto-seccion-3-landing-ecologizate": {
+    "props": {
+      "blockClass": ["texto-seccion-3-landing-ecologizate"],
+      "text": "En este paso empieza todo el compromiso ambiental.\nAhora te preguntarás…",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#titulo-seccion-3-landing-ecologizate": {
+    "props": {
+      "blockClass": ["titulo-seccion-3-landing-ecologizate"],
+      "text": "¿Qué hace la empresa con esto?",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  //TARJETA DESTINO ECOLOGICO 1
+  "flex-layout.row#tarjeta-destino-ecologico-1": {
+    "children": [
+      "rich-text#numeral-tarjeta-destino-ecologico-1",
+      "image#icono-tarjeta-destino-ecologico-1",
+      "rich-text#texto-tarjeta-destino-ecologico-1"
+    ],
+    "props": {
+      "blockClass": ["tarjeta-destino-ecologico-1"]
+    }
+  },
+  "rich-text#numeral-tarjeta-destino-ecologico-1": {
+    "props": {
+      "blockClass": ["numeral-tarjeta-destino-ecologico"],
+      "text": "1",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "image#icono-tarjeta-destino-ecologico-1": {
+    "props": {
+      "blockClass": ["icono-tarjeta-destino-ecologico"],
+      "src": "/arquivos/icono-tarjeta-destino-ecologico-1.png"
+    }
+  },
+  "rich-text#texto-tarjeta-destino-ecologico-1": {
+    "props": {
+      "blockClass": ["texto-tarjeta-destino-ecologico"],
+      "text": "**Se transforma en un carbón ecológico**, el cual tiene un 40%\nmenos de emisiones atmosféricas que el carbón común.",
+      "width": "70%"
+    }
+  },
+
+  //TARJETA DESTINO ECOLOGICO 2
+  "flex-layout.row#tarjeta-destino-ecologico-2": {
+    "children": [
+      "rich-text#numeral-tarjeta-destino-ecologico-2",
+      "image#icono-tarjeta-destino-ecologico-2",
+      "rich-text#texto-tarjeta-destino-ecologico-2"
+    ],
+    "props": {
+      "blockClass": ["tarjeta-destino-ecologico-2"]
+    }
+  },
+  "rich-text#numeral-tarjeta-destino-ecologico-2": {
+    "props": {
+      "blockClass": ["numeral-tarjeta-destino-ecologico"],
+      "text": "2",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "image#icono-tarjeta-destino-ecologico-2": {
+    "props": {
+      "blockClass": ["icono-tarjeta-destino-ecologico"],
+      "src": "/arquivos/icono-tarjeta-destino-ecologico-2.png"
+    }
+  },
+  "rich-text#texto-tarjeta-destino-ecologico-2": {
+    "props": {
+      "blockClass": ["texto-tarjeta-destino-ecologico"],
+      "text": "**Se Implementan alternativas de aprovechamiento** y valorización\nde residuos especiales (Colchones al cumplir su ciclo de vida).",
+      "width": "70%"
+    }
+  },
+
+  //TARJETA DESTINO ECOLOGICO 3
+  "flex-layout.row#tarjeta-destino-ecologico-3": {
+    "children": [
+      "rich-text#numeral-tarjeta-destino-ecologico-3",
+      "image#icono-tarjeta-destino-ecologico-3",
+      "rich-text#texto-tarjeta-destino-ecologico-3"
+    ],
+    "props": {
+      "blockClass": ["tarjeta-destino-ecologico-1"]
+    }
+  },
+  "rich-text#numeral-tarjeta-destino-ecologico-3": {
+    "props": {
+      "blockClass": ["numeral-tarjeta-destino-ecologico"],
+      "text": "3",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "image#icono-tarjeta-destino-ecologico-3": {
+    "props": {
+      "blockClass": ["icono-tarjeta-destino-ecologico"],
+      "src": "/arquivos/icono-tarjeta-destino-ecologico-3.png"
+    }
+  },
+  "rich-text#texto-tarjeta-destino-ecologico-3": {
+    "props": {
+      "blockClass": ["texto-tarjeta-destino-ecologico"],
+      "text": "**Evita que lleguen estos residuos a los rellenos sanitarios**,\nmaximizando la vida útil de estos.",
+      "width": "70%"
+    }
+  },
+
+  //TARJETA DESTINO ECOLOGICO 4
+  "flex-layout.row#tarjeta-destino-ecologico-4": {
+    "children": [
+      "rich-text#numeral-tarjeta-destino-ecologico-4",
+      "image#icono-tarjeta-destino-ecologico-4",
+      "rich-text#texto-tarjeta-destino-ecologico-4"
+    ],
+    "props": {
+      "blockClass": ["tarjeta-destino-ecologico-2"]
+    }
+  },
+  "rich-text#numeral-tarjeta-destino-ecologico-4": {
+    "props": {
+      "blockClass": ["numeral-tarjeta-destino-ecologico"],
+      "text": "4",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "image#icono-tarjeta-destino-ecologico-4": {
+    "props": {
+      "blockClass": ["icono-tarjeta-destino-ecologico"],
+      "src": "/arquivos/icono-tarjeta-destino-ecologico-4.png"
+    }
+  },
+  "rich-text#texto-tarjeta-destino-ecologico-4": {
+    "props": {
+      "blockClass": ["texto-tarjeta-destino-ecologico"],
+      "text": "**Fortalece la economía circular.**",
+      "width": "70%"
+    }
+  },
+
+  //TARJETA DESTINO ECOLOGICO 5
+  "flex-layout.row#tarjeta-destino-ecologico-5": {
+    "children": [
+      "rich-text#numeral-tarjeta-destino-ecologico-5",
+      "image#icono-tarjeta-destino-ecologico-5",
+      "rich-text#texto-tarjeta-destino-ecologico-5"
+    ],
+    "props": {
+      "blockClass": ["tarjeta-destino-ecologico-1"]
+    }
+  },
+  "rich-text#numeral-tarjeta-destino-ecologico-5": {
+    "props": {
+      "blockClass": ["numeral-tarjeta-destino-ecologico"],
+      "text": "5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "image#icono-tarjeta-destino-ecologico-5": {
+    "props": {
+      "blockClass": ["icono-tarjeta-destino-ecologico"],
+      "src": "/arquivos/icono-tarjeta-destino-ecologico-5.png"
+    }
+  },
+  "rich-text#texto-tarjeta-destino-ecologico-5": {
+    "props": {
+      "blockClass": ["texto-tarjeta-destino-ecologico"],
+      "text": "**Evitamos las malas prácticas en el mercado informal**\nde reutilización de los componentes internos de dichos artículos.",
+      "width": "70%"
+    }
+  },
+
+  //TARJETA DESTINO ECOLOGICO 6
+  "flex-layout.row#tarjeta-destino-ecologico-6": {
+    "children": [
+      "rich-text#numeral-tarjeta-destino-ecologico-6",
+      "image#icono-tarjeta-destino-ecologico-6",
+      "rich-text#texto-tarjeta-destino-ecologico-6"
+    ],
+    "props": {
+      "blockClass": ["tarjeta-destino-ecologico-2"]
+    }
+  },
+  "rich-text#numeral-tarjeta-destino-ecologico-6": {
+    "props": {
+      "blockClass": ["numeral-tarjeta-destino-ecologico"],
+      "text": "6",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "image#icono-tarjeta-destino-ecologico-6": {
+    "props": {
+      "blockClass": ["icono-tarjeta-destino-ecologico"],
+      "src": "/arquivos/icono-tarjeta-destino-ecologico-6.png"
+    }
+  },
+  "rich-text#texto-tarjeta-destino-ecologico-6": {
+    "props": {
+      "blockClass": ["texto-tarjeta-destino-ecologico"],
+      "text": "**Evitamos las malas prácticas en el mercado informal**\nde reutilización de los componentes internos de dichos artículos.",
+      "width": "70%"
+    }
+  },
+
+  //SECCION 4 INFOCARD
+  "flex-layout.col#seccion-4-landing-ecologizate": {
+    "children": [
+      "info-card#infocard-1-seccion-4-landing-ecologizate",
+      "info-card#infocard-2-seccion-4-landing-ecologizate"
+    ],
+    "props": {
+      "blockClass": ["seccion-4-landing-ecologizate"]
+    }
+  },
+  "info-card#infocard-1-seccion-4-landing-ecologizate": {
+    "props": {
+      "blockClass": "infocard-1-seccion-4-landing-ecologizate",
+      "headline": "**Después de todo lo anterior\nSOLO NOS QUEDA FELICITARTE**",
+      "isFullModeStyle": true,
+      "id": "",
+      "imageUrl": "/arquivos/background-infocard-seccion-4.png",
+      "subhead": "*porque hiciste un aporte fundamental en la conservación del planeta.*",
+      "textAlignment": "center",
+      "textPosition": "center",
+      "textMode": "rich-text"
+    }
+  },
+  "info-card#infocard-2-seccion-4-landing-ecologizate": {
+    "props": {
+      "blockClass": "infocard-2-seccion-4-landing-ecologizate",
+      "callToActionText": "SOLICITAR SERVICIO",
+      "headline": "¡ÚNETE AL CAMBIO CON NOSOTROS!",
+      "id": "",
+      "imageUrl": "",
+      "subhead": "Una decisión inteligente tomada a tiempo\nmarcará la diferencia en el futuro que pueda\ntener nuestra casa común.",
+      "textAlignment": "center",
+      "textPosition": "center"
+    }
+  }
+}

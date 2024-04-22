@@ -1,0 +1,844 @@
+{
+  "store.custom#nuestras-tiendas": {
+    "children": ["flex-layout.row#contenedor-vista-nuestras-tiendas"]
+  },
+  //CONTENEDOR VISTA NUESTRAS TIENDAS
+  "flex-layout.row#contenedor-vista-nuestras-tiendas": {
+    "children": ["flex-layout.col#contenedor-responsive-vista-nuestras-tiendas"],
+    "props": {
+      "blockClass": ["contenedor-vista-nuestras-tiendas"]
+    }
+  },
+  "flex-layout.col#contenedor-responsive-vista-nuestras-tiendas": {
+    "children": [
+      "responsive-layout.desktop#contenedor-vista-nuestras-tiendas",
+      "responsive-layout.tablet#contenedor-vista-nuestras-tiendas",
+      "responsive-layout.phone#contenedor-vista-nuestras-tiendas"
+    ],
+    "props": {
+      "blockClass": ["contenedor-responsive-vista-nuestras-tiendas"]
+    }
+  },
+  "responsive-layout.desktop#contenedor-vista-nuestras-tiendas": {
+    "children": ["flex-layout.col#contenedor-vista-nuestras-tiendas"]
+  },
+  "responsive-layout.tablet#contenedor-vista-nuestras-tiendas": {
+    "children": ["flex-layout.col#contenedor-vista-nuestras-tiendas-mobile"]
+  },
+  "responsive-layout.phone#contenedor-vista-nuestras-tiendas": {
+    "children": ["flex-layout.col#contenedor-vista-nuestras-tiendas-mobile"]
+  },
+  "flex-layout.col#contenedor-vista-nuestras-tiendas": {
+    "children": [
+      "flex-layout.row#contenedor-miga-pan-vista-nuestras-tiendas",
+      "flex-layout.row#titulo-vista-nuestras-tiendas",
+      "flex-layout.row#contenedor-listado-tiendas",
+      "flex-layout.row#contenedor-tienda-infocard-medellin",
+      "flex-layout.row#contenedor-tienda-infocard-bello",
+      "flex-layout.row#contenedor-tienda-infocard-envigado",
+      "flex-layout.row#contenedor-tienda-infocard-itagui",
+      "flex-layout.row#contenedor-tienda-infocard-sabaneta",
+      "flex-layout.row#contenedor-tienda-infocard-girardota",
+      "flex-layout.row#contenedor-tienda-infocard-apartado",
+      "flex-layout.row#contenedor-tienda-infocard-bogota"
+    ],
+    "props": {
+      "blockClass": ["col-contenedor-vista-nuestras-tiendas"]
+    }
+  },
+
+  // MIGA DE PAN VISTA COMO COMPRAR
+  "flex-layout.row#contenedor-miga-pan-vista-nuestras-tiendas": {
+    "children": [
+      "rich-text#miga-pan-1-vista-nuestras-tiendas",
+      "image#flecha-miga-pan",
+      "rich-text#miga-pan-2-vista-nuestras-tiendas"
+    ],
+    "props": {
+      "blockClass": ["contenedor-miga-pan-formulario-contacto"]
+    }
+  },
+  "rich-text#miga-pan-1-vista-nuestras-tiendas": {
+    "props": {
+      "blockClass": ["miga-pan-1"],
+      "text": "Miga de pan desktop"
+    }
+  },
+  "rich-text#miga-pan-2-vista-nuestras-tiendas": {
+    "props": {
+      "blockClass": ["miga-pan-2"],
+      "text": "Miga de pan desktop"
+    }
+  },
+
+  //TITULO VISTA NUESTRAS TIENDAS
+  "flex-layout.row#titulo-vista-nuestras-tiendas": {
+    "children": [
+      "rich-text#titulo-vista-nuestras-tiendas",
+      "rich-text#subtitulo-vista-nuestras-tiendas"
+    ],
+    "props": {
+      "blockClass": ["titulo-vista-nuestras-tiendas"]
+    }
+  },
+  "rich-text#titulo-vista-nuestras-tiendas": {
+    "props": {
+      "blockClass": ["titulo-vista-nuestras-tiendas"],
+      "text": "Nuestras tiendas"
+    }
+  },
+  "rich-text#subtitulo-vista-nuestras-tiendas": {
+    "props": {
+      "blockClass": ["subtitulo-vista-nuestras-tiendas"],
+      "text": "Encuentra una tienda cerca de ti"
+    }
+  },
+
+  //CONTENEDOR TINDAS
+  "flex-layout.row#contenedor-listado-tiendas": {
+    "children": [
+      "rich-text#tienda-medellin",
+      "rich-text#tienda-bello",
+      "rich-text#tienda-envigado",
+      "rich-text#tienda-itagui",
+      "rich-text#tienda-sabaneta",
+      "rich-text#tienda-girardota",
+      "rich-text#tienda-apartado",
+      "rich-text#tienda-bogota"
+    ],
+    "props": {
+      "blockClass": ["contenedor-listado-tiendas"]
+    }
+  },
+  "rich-text#tienda-apartado": {
+    "props": {
+      "blockClass": ["nombre-tienda"],
+      "text": "[Apartadó](#anclaApartado2)"
+    }
+  },
+  "rich-text#tienda-bogota": {
+    "props": {
+      "blockClass": ["nombre-tienda"],
+      "text": "[Bogotá](#anclaBogota2)"
+    }
+  },
+  "rich-text#tienda-medellin": {
+    "props": {
+      "blockClass": ["nombre-tienda"],
+      "text": "[Medellín](#anclaMedellin2)"
+    }
+  },
+  "rich-text#tienda-bello": {
+    "props": {
+      "blockClass": ["nombre-tienda"],
+      "text": "[Bello](#anclaBello2)"
+    }
+  },
+  "rich-text#tienda-envigado": {
+    "props": {
+      "blockClass": ["nombre-tienda"],
+      "text": "[Envigado](#anclaEnvigado2)"
+    }
+  },
+  "rich-text#tienda-itagui": {
+    "props": {
+      "blockClass": ["nombre-tienda"],
+      "text": "[Itagüí](#anclaItagui2)"
+    }
+  },
+  "rich-text#tienda-sabaneta": {
+    "props": {
+      "blockClass": ["nombre-tienda"],
+      "text": "[Sabaneta](#anclaSabaneta2)"
+    }
+  },
+  "rich-text#tienda-girardota": {
+    "props": {
+      "blockClass": ["nombre-tienda"],
+      "text": "[Girardota](#anclaGirardota2)"
+    }
+  },
+
+  //CONTENEDOR INFOCARD APARTADO
+
+  "flex-layout.row#contenedor-tienda-infocard-apartado": {
+    "children": [
+      "flex-layout.col#ciudad-ancla-tienda-apartado",
+      "rich-text#ancla-apartado-2",
+      "list-context.info-card-list#contenedor-tiendas-apartado"
+    ],
+    "props": {
+      "blockClass": ["contenedor-tienda-infocard"]
+    }
+  },
+  "flex-layout.col#ciudad-ancla-tienda-apartado": {
+    "children": [
+      "rich-text#tienda-apartado-interno"
+    ],
+    "props": {
+      "blockClass": ["ciudad-ancla-tienda"]
+    }
+  },
+  "rich-text#tienda-apartado-interno": {
+    "props": {
+      "blockClass": ["nombre-tienda"],
+      "text": "Apartadó"
+    }
+  },
+  "rich-text#ancla-apartado": {
+    "props": {
+      "blockClass": ["ancla"],
+      "text": "",
+      "htmlId": "anclaApartado"
+    }
+  },
+  "rich-text#ancla-apartado-2": {
+    "props": {
+      "blockClass": ["ancla-2"],
+      "text": "",
+      "htmlId": "anclaApartado2",
+      "width":"2%"
+    }
+  },
+
+  //CONTENEDOR INFOCARDS TIENDAS
+  "list-context.info-card-list#contenedor-tiendas-apartado": {
+    "children": ["slider-layout#slider-tiendas"],
+    "props": {
+      "infoCards": [
+        {
+          "id": "info-card-tiendas-apartado-1",
+          "title": "info-card-tiendas-apartado-1",
+          "isFullModeStyle": false,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/tienda-1-apartado.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Contáctanos",
+          "callToActionUrl": "#",
+          "headline": "#### Centro comercial Nuestro Urabá",
+          "subhead": "Carrera 99 # 84 – 18 KM 1 Vía Carepa\n*+57 321 888 55 22*\n**Lunes a viernes 8:00 am a 9:00 pm**",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-categorias-vista-departamento"]
+        },
+        {
+          "id": "info-card-tiendas-apartado-1",
+          "title": "info-card-tiendas-apartado-1",
+          "isFullModeStyle": false,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/tienda-1-apartado.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Contáctanos",
+          "callToActionUrl": "#",
+          "headline": "#### Centro comercial Nuestro Urabá",
+          "subhead": "Carrera 99 # 84 – 18 KM 1 Vía Carepa\n*+57 321 888 55 22*\n**Lunes a viernes 8:00 am a 9:00 pm**",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-categorias-vista-departamento"]
+        },
+        {
+          "id": "info-card-tiendas-apartado-1",
+          "title": "info-card-tiendas-apartado-1",
+          "isFullModeStyle": false,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/tienda-1-apartado.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Contáctanos",
+          "callToActionUrl": "#",
+          "headline": "#### Centro comercial Nuestro Urabá",
+          "subhead": "Carrera 99 # 84 – 18 KM 1 Vía Carepa\n*+57 321 888 55 22*\n**Lunes a viernes 8:00 am a 9:00 pm**",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-categorias-vista-departamento"]
+        },
+        {
+          "id": "info-card-tiendas-apartado-1",
+          "title": "info-card-tiendas-apartado-1",
+          "isFullModeStyle": false,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/tienda-1-apartado.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Contáctanos",
+          "callToActionUrl": "#",
+          "headline": "#### Centro comercial Nuestro Urabá",
+          "subhead": "Carrera 99 # 84 – 18 KM 1 Vía Carepa\n*+57 321 888 55 22*\n**Lunes a viernes 8:00 am a 9:00 pm**",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-categorias-vista-departamento"]
+        },
+        {
+          "id": "info-card-tiendas-apartado-1",
+          "title": "info-card-tiendas-apartado-1",
+          "isFullModeStyle": false,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/tienda-1-apartado.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Contáctanos",
+          "callToActionUrl": "#",
+          "headline": "#### Centro comercial Nuestro Urabá",
+          "subhead": "Carrera 99 # 84 – 18 KM 1 Vía Carepa\n*+57 321 888 55 22*\n**Lunes a viernes 8:00 am a 9:00 pm**",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-categorias-vista-departamento"]
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-tiendas": {
+    "title": "slider-tiendas",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "blockClass": "slider-tiendas"
+    }
+  },
+
+  //CONTENEDOR INFOCARD BOGOTA
+
+  "flex-layout.row#contenedor-tienda-infocard-bogota": {
+    "children": [
+      "flex-layout.col#ciudad-ancla-tienda-bogota",
+      "rich-text#ancla-bogota-2",
+      "list-context.info-card-list#contenedor-tiendas-bogota"
+    ],
+    "props": {
+      "blockClass": ["contenedor-tienda-infocard"]
+    }
+  },
+  "flex-layout.col#ciudad-ancla-tienda-bogota": {
+    "children": ["rich-text#tienda-bogota-interno"],
+    "props": {
+      "blockClass": ["ciudad-ancla-tienda"]
+    }
+  },
+  "rich-text#tienda-bogota-interno": {
+    "props": {
+      "blockClass": ["nombre-tienda"],
+      "text": "Bogotá"
+    }
+  },
+  "rich-text#ancla-bogota": {
+    "props": {
+      "blockClass": ["ancla"],
+      "text": "",
+      "htmlId": "anclaBogota"
+    }
+  },
+  "rich-text#ancla-bogota-2": {
+    "props": {
+      "blockClass": ["ancla-2"],
+      "text": "",
+      "htmlId": "anclaBogota2",
+      "width":"2%"
+    }
+  },
+
+  //CONTENEDOR INFOCARDS TIENDAS
+  "list-context.info-card-list#contenedor-tiendas-bogota": {
+    "children": ["slider-layout#slider-tiendas"],
+    "props": {
+      "infoCards": [
+        {
+          "id": "info-card-tiendas-apartado-1",
+          "title": "info-card-tiendas-apartado-1",
+          "isFullModeStyle": false,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/tienda-1-apartado.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Contáctanos",
+          "callToActionUrl": "#",
+          "headline": "#### Centro comercial Nuestro Urabá",
+          "subhead": "Carrera 99 # 84 – 18 KM 1 Vía Carepa\n*+57 321 888 55 22*\n**Lunes a viernes 8:00 am a 9:00 pm**",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-categorias-vista-departamento"]
+        },
+        {
+          "id": "info-card-tiendas-apartado-1",
+          "title": "info-card-tiendas-apartado-1",
+          "isFullModeStyle": false,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/tienda-1-apartado.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Contáctanos",
+          "callToActionUrl": "#",
+          "headline": "#### Centro comercial Nuestro Urabá",
+          "subhead": "Carrera 99 # 84 – 18 KM 1 Vía Carepa\n*+57 321 888 55 22*\n**Lunes a viernes 8:00 am a 9:00 pm**",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-categorias-vista-departamento"]
+        }
+      ]
+    }
+  },
+
+  //CONTENEDOR INFOCARD MEDELLIN
+
+  "flex-layout.row#contenedor-tienda-infocard-medellin": {
+    "children": [
+      "flex-layout.col#ciudad-ancla-tienda-medellin",
+      "rich-text#ancla-medellin-2",
+      "list-context.info-card-list#contenedor-tiendas-medellin"
+    ],
+    "props": {
+      "blockClass": ["contenedor-tienda-infocard"]
+    }
+  },
+  "flex-layout.col#ciudad-ancla-tienda-medellin": {
+    "children": [
+      "rich-text#tienda-medellin-interno"
+    ],
+    "props": {
+      "blockClass": ["ciudad-ancla-tienda"]
+    }
+  },
+  "rich-text#tienda-medellin-interno": {
+    "props": {
+      "blockClass": ["nombre-tienda"],
+      "text": "Medellin"
+    }
+  },
+  "rich-text#ancla-medellin": {
+    "props": {
+      "blockClass": ["ancla"],
+      "text": "",
+      "htmlId": "anclaMedellin"
+    }
+  },
+  "rich-text#ancla-medellin-2": {
+    "props": {
+      "blockClass": ["ancla-2"],
+      "text": "",
+      "htmlId": "anclaMedellin2",
+      "width":"2%"
+    }
+  },
+
+  //CONTENEDOR INFOCARDS TIENDAS
+  "list-context.info-card-list#contenedor-tiendas-medellin": {
+    "children": ["slider-layout#slider-tiendas"],
+    "props": {
+      "infoCards": [
+        {
+          "id": "info-card-tiendas-apartado-1",
+          "title": "info-card-tiendas-apartado-1",
+          "isFullModeStyle": false,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/tienda-1-apartado.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Contáctanos",
+          "callToActionUrl": "#",
+          "headline": "#### Centro comercial Nuestro Urabá",
+          "subhead": "Carrera 99 # 84 – 18 KM 1 Vía Carepa\n*+57 321 888 55 22*\n**Lunes a viernes 8:00 am a 9:00 pm**",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-categorias-vista-departamento"]
+        },
+        {
+          "id": "info-card-tiendas-apartado-1",
+          "title": "info-card-tiendas-apartado-1",
+          "isFullModeStyle": false,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/tienda-1-apartado.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Contáctanos",
+          "callToActionUrl": "#",
+          "headline": "#### Centro comercial Nuestro Urabá",
+          "subhead": "Carrera 99 # 84 – 18 KM 1 Vía Carepa\n*+57 321 888 55 22*\n**Lunes a viernes 8:00 am a 9:00 pm**",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-categorias-vista-departamento"]
+        }
+      ]
+    }
+  },
+
+  //CONTENEDOR INFOCARD BWLLO
+
+  "flex-layout.row#contenedor-tienda-infocard-bello": {
+    "children": [
+      "flex-layout.col#ciudad-ancla-tienda-bello",
+      "rich-text#ancla-bello-2",
+      "list-context.info-card-list#contenedor-tiendas-bello"
+    ],
+    "props": {
+      "blockClass": ["contenedor-tienda-infocard"]
+    }
+  },
+  "flex-layout.col#ciudad-ancla-tienda-bello": {
+    "children": ["rich-text#tienda-bello-interno"],
+    "props": {
+      "blockClass": ["ciudad-ancla-tienda"]
+    }
+  },
+  "rich-text#tienda-bello-interno": {
+    "props": {
+      "blockClass": ["nombre-tienda"],
+      "text": "Bello"
+    }
+  },
+  "rich-text#ancla-bello": {
+    "props": {
+      "blockClass": ["ancla"],
+      "text": "",
+      "htmlId": "anclaBello"
+    }
+  },
+  "rich-text#ancla-bello-2": {
+    "props": {
+      "blockClass": ["ancla-2"],
+      "text": "",
+      "htmlId": "anclaBello2",
+      "width":"2%"
+    }
+  },
+
+  //CONTENEDOR INFOCARDS TIENDAS
+  "list-context.info-card-list#contenedor-tiendas-bello": {
+    "children": ["slider-layout#slider-tiendas"],
+    "props": {
+      "infoCards": [
+        {
+          "id": "info-card-tiendas-apartado-1",
+          "title": "info-card-tiendas-apartado-1",
+          "isFullModeStyle": false,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/tienda-1-apartado.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Contáctanos",
+          "callToActionUrl": "#",
+          "headline": "#### Centro comercial Nuestro Urabá",
+          "subhead": "Carrera 99 # 84 – 18 KM 1 Vía Carepa\n*+57 321 888 55 22*\n**Lunes a viernes 8:00 am a 9:00 pm**",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-categorias-vista-departamento"]
+        },
+        {
+          "id": "info-card-tiendas-apartado-1",
+          "title": "info-card-tiendas-apartado-1",
+          "isFullModeStyle": false,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/tienda-1-apartado.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Contáctanos",
+          "callToActionUrl": "#",
+          "headline": "#### Centro comercial Nuestro Urabá",
+          "subhead": "Carrera 99 # 84 – 18 KM 1 Vía Carepa\n*+57 321 888 55 22*\n**Lunes a viernes 8:00 am a 9:00 pm**",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-categorias-vista-departamento"]
+        }
+      ]
+    }
+  },
+
+  //CONTENEDOR INFOCARD ENVIGADO
+
+  "flex-layout.row#contenedor-tienda-infocard-envigado": {
+    "children": [
+      "flex-layout.col#ciudad-ancla-tienda-envigado",
+      "rich-text#ancla-envigado-2",
+      "list-context.info-card-list#contenedor-tiendas-envigado"
+    ],
+    "props": {
+      "blockClass": ["contenedor-tienda-infocard"]
+    }
+  },
+  "flex-layout.col#ciudad-ancla-tienda-envigado": {
+    "children": [
+      "rich-text#tienda-envigado-interno"
+    ],
+    "props": {
+      "blockClass": ["ciudad-ancla-tienda"]
+    }
+  },
+  "rich-text#tienda-envigado-interno": {
+    "props": {
+      "blockClass": ["nombre-tienda"],
+      "text": "Envigado"
+    }
+  },
+  "rich-text#ancla-envigado": {
+    "props": {
+      "blockClass": ["ancla"],
+      "text": "",
+      "htmlId": "anclaEnvigado"
+    }
+  },
+  "rich-text#ancla-envigado-2": {
+    "props": {
+      "blockClass": ["ancla-2"],
+      "text": "",
+      "htmlId": "anclaEnvigado2",
+      "width":"2%"
+    }
+  },
+
+  //CONTENEDOR INFOCARDS TIENDAS
+  "list-context.info-card-list#contenedor-tiendas-envigado": {
+    "children": ["slider-layout#slider-tiendas"],
+    "props": {
+      "infoCards": [
+        {
+          "id": "info-card-tiendas-apartado-1",
+          "title": "info-card-tiendas-apartado-1",
+          "isFullModeStyle": false,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/tienda-1-apartado.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Contáctanos",
+          "callToActionUrl": "#",
+          "headline": "#### Centro comercial Nuestro Urabá",
+          "subhead": "Carrera 99 # 84 – 18 KM 1 Vía Carepa\n*+57 321 888 55 22*\n**Lunes a viernes 8:00 am a 9:00 pm**",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-categorias-vista-departamento"]
+        },
+        {
+          "id": "info-card-tiendas-apartado-1",
+          "title": "info-card-tiendas-apartado-1",
+          "isFullModeStyle": false,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/tienda-1-apartado.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Contáctanos",
+          "callToActionUrl": "#",
+          "headline": "#### Centro comercial Nuestro Urabá",
+          "subhead": "Carrera 99 # 84 – 18 KM 1 Vía Carepa\n*+57 321 888 55 22*\n**Lunes a viernes 8:00 am a 9:00 pm**",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-categorias-vista-departamento"]
+        }
+      ]
+    }
+  },
+
+  //CONTENEDOR INFOCARD itagui
+
+  "flex-layout.row#contenedor-tienda-infocard-itagui": {
+    "children": [
+      "flex-layout.col#ciudad-ancla-tienda-itagui",
+      "rich-text#ancla-itagui-2",
+      "list-context.info-card-list#contenedor-tiendas-itagui"
+    ],
+    "props": {
+      "blockClass": ["contenedor-tienda-infocard"]
+    }
+  },
+  "flex-layout.col#ciudad-ancla-tienda-itagui": {
+    "children": ["rich-text#tienda-itagui-interno"],
+    "props": {
+      "blockClass": ["ciudad-ancla-tienda"]
+    }
+  },
+  "rich-text#tienda-itagui-interno": {
+    "props": {
+      "blockClass": ["nombre-tienda"],
+      "text": "Itagüí"
+    }
+  },
+  "rich-text#ancla-itagui": {
+    "props": {
+      "blockClass": ["ancla"],
+      "text": "",
+      "htmlId": "anclaItagui"
+    }
+  },
+  "rich-text#ancla-itagui-2": {
+    "props": {
+      "blockClass": ["ancla-2"],
+      "text": "",
+      "htmlId": "anclaItagui2",
+      "width":"2%"
+    }
+  },
+
+  //CONTENEDOR INFOCARDS TIENDAS
+  "list-context.info-card-list#contenedor-tiendas-itagui": {
+    "children": ["slider-layout#slider-tiendas"],
+    "props": {
+      "infoCards": [
+        {
+          "id": "info-card-tiendas-apartado-1",
+          "title": "info-card-tiendas-apartado-1",
+          "isFullModeStyle": false,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/tienda-1-apartado.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Contáctanos",
+          "callToActionUrl": "#",
+          "headline": "#### Centro comercial Nuestro Urabá",
+          "subhead": "Carrera 99 # 84 – 18 KM 1 Vía Carepa\n*+57 321 888 55 22*\n**Lunes a viernes 8:00 am a 9:00 pm**",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-categorias-vista-departamento"]
+        },
+        {
+          "id": "info-card-tiendas-apartado-1",
+          "title": "info-card-tiendas-apartado-1",
+          "isFullModeStyle": false,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/tienda-1-apartado.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Contáctanos",
+          "callToActionUrl": "#",
+          "headline": "#### Centro comercial Nuestro Urabá",
+          "subhead": "Carrera 99 # 84 – 18 KM 1 Vía Carepa\n*+57 321 888 55 22*\n**Lunes a viernes 8:00 am a 9:00 pm**",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-categorias-vista-departamento"]
+        }
+      ]
+    }
+  },
+
+  //CONTENEDOR INFOCARD SABANETA
+
+  "flex-layout.row#contenedor-tienda-infocard-sabaneta": {
+    "children": [
+      "flex-layout.col#ciudad-ancla-tienda-sabaneta",
+      "rich-text#ancla-sabaneta-2",
+      "list-context.info-card-list#contenedor-tiendas-sabaneta"
+    ],
+    "props": {
+      "blockClass": ["contenedor-tienda-infocard"]
+    }
+  },
+  "flex-layout.col#ciudad-ancla-tienda-sabaneta": {
+    "children": [
+      "rich-text#tienda-sabaneta-interno"
+    ],
+    "props": {
+      "blockClass": ["ciudad-ancla-tienda"]
+    }
+  },
+  "rich-text#tienda-sabaneta-interno": {
+    "props": {
+      "blockClass": ["nombre-tienda"],
+      "text": "Sabaneta"
+    }
+  },
+  "rich-text#ancla-sabaneta": {
+    "props": {
+      "blockClass": ["ancla"],
+      "text": "",
+      "htmlId": "anclaSabaneta"
+    }
+  },
+  "rich-text#ancla-sabaneta-2": {
+    "props": {
+      "blockClass": ["ancla-2"],
+      "text": "",
+      "htmlId": "anclaSabaneta2",
+      "width":"2%"
+    }
+  },
+
+  //CONTENEDOR INFOCARDS TIENDAS
+  "list-context.info-card-list#contenedor-tiendas-sabaneta": {
+    "children": ["slider-layout#slider-tiendas"],
+    "props": {
+      "infoCards": [
+        {
+          "id": "info-card-tiendas-apartado-1",
+          "title": "info-card-tiendas-apartado-1",
+          "isFullModeStyle": false,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/tienda-1-apartado.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Contáctanos",
+          "callToActionUrl": "#",
+          "headline": "#### Centro comercial Nuestro Urabá",
+          "subhead": "Carrera 99 # 84 – 18 KM 1 Vía Carepa\n*+57 321 888 55 22*\n**Lunes a viernes 8:00 am a 9:00 pm**",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-categorias-vista-departamento"]
+        },
+        {
+          "id": "info-card-tiendas-apartado-1",
+          "title": "info-card-tiendas-apartado-1",
+          "isFullModeStyle": false,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/tienda-1-apartado.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Contáctanos",
+          "callToActionUrl": "#",
+          "headline": "#### Centro comercial Nuestro Urabá",
+          "subhead": "Carrera 99 # 84 – 18 KM 1 Vía Carepa\n*+57 321 888 55 22*\n**Lunes a viernes 8:00 am a 9:00 pm**",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-categorias-vista-departamento"]
+        }
+      ]
+    }
+  },
+
+  //CONTENEDOR INFOCARD GIRARDOTA
+
+  "flex-layout.row#contenedor-tienda-infocard-girardota": {
+    "children": [
+      "flex-layout.col#ciudad-ancla-tienda-girardota",
+      "rich-text#ancla-girardota-2",
+      "list-context.info-card-list#contenedor-tiendas-girardota"
+    ],
+    "props": {
+      "blockClass": ["contenedor-tienda-infocard"]
+    }
+  },
+  "flex-layout.col#ciudad-ancla-tienda-girardota": {
+    "children": [
+      "rich-text#tienda-girardota-interno"
+    ],
+    "props": {
+      "blockClass": ["ciudad-ancla-tienda"]
+    }
+  },
+  "rich-text#tienda-girardota-interno": {
+    "props": {
+      "blockClass": ["nombre-tienda"],
+      "text": "Girardota"
+    }
+  },
+  "rich-text#ancla-girardota": {
+    "props": {
+      "blockClass": ["ancla"],
+      "text": "",
+      "htmlId": "anclaGirardota"
+    }
+  },
+  "rich-text#ancla-girardota-2": {
+    "props": {
+      "blockClass": ["ancla-2"],
+      "text": "",
+      "htmlId": "anclaGirardota2",
+      "width":"2%"
+    }
+  },
+
+  //CONTENEDOR INFOCARDS TIENDAS
+  "list-context.info-card-list#contenedor-tiendas-girardota": {
+    "children": ["slider-layout#slider-tiendas"],
+    "props": {
+      "infoCards": [
+        {
+          "id": "info-card-tiendas-apartado-1",
+          "title": "info-card-tiendas-apartado-1",
+          "isFullModeStyle": false,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/tienda-1-apartado.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Contáctanos",
+          "callToActionUrl": "#",
+          "headline": "#### Centro comercial Nuestro Urabá",
+          "subhead": "Carrera 99 # 84 – 18 KM 1 Vía Carepa\n*+57 321 888 55 22*\n**Lunes a viernes 8:00 am a 9:00 pm**",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-categorias-vista-departamento"]
+        },
+        {
+          "id": "info-card-tiendas-apartado-1",
+          "title": "info-card-tiendas-apartado-1",
+          "isFullModeStyle": false,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/tienda-1-apartado.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Contáctanos",
+          "callToActionUrl": "#",
+          "headline": "#### Centro comercial Nuestro Urabá",
+          "subhead": "Carrera 99 # 84 – 18 KM 1 Vía Carepa\n*+57 321 888 55 22*\n**Lunes a viernes 8:00 am a 9:00 pm**",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-categorias-vista-departamento"]
+        }
+      ]
+    }
+  }
+}

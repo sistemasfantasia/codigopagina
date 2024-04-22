@@ -1,0 +1,120 @@
+{
+  //BANNER ORDER PLACED
+  "flex-layout.row#banner-confirmacion-order-placed": {
+    "children": ["list-context.image-list#banners-order-placed","flex-layout.col#contenedor-confirmacion-order-placed"],
+    "props": {
+      "blockClass": ["banner-confirmacion-order-placed"]
+    }
+  },
+  "list-context.image-list#banners-order-placed": {
+    "children": ["slider-layout#banners-resultado-busqueda"],
+    "props": {
+      "width": "100%",
+      "height": "auto",
+      "blockClass": "banners-order-placed",
+      "images": [
+        {
+          "image": "/arquivos/banner-order-placed.png",
+          "mobileImage": "/arquivos/banner-resultado-busqueda-mobile.png"
+        }
+      ]
+    }
+  },
+  "flex-layout.col#contenedor-confirmacion-order-placed": {
+    "children": [
+      "rich-text#titulo-confirmacion-order-placed",
+      "rich-text#texto-1-confirmacion-order-placed",
+      "rich-text#texto-2-confirmacion-order-placed",
+      "rich-text#boton-seguir-comprando-order-placed"
+    ],
+    "props": {
+      "blockClass": ["contenedor-confirmacion-order-placed"]
+    }
+  },
+  "rich-text#titulo-confirmacion-order-placed": {
+    "props": {
+      "blockClass": ["titulo-confirmacion-order-placed"],
+      "text": "¡Muchas gracias!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#texto-1-confirmacion-order-placed": {
+    "props": {
+      "blockClass": ["texto-1-confirmacion-order-placed"],
+      "text": "Tu pedido está siendo procesado.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#texto-2-confirmacion-order-placed": {
+    "props": {
+      "blockClass": ["texto-2-confirmacion-order-placed"],
+      "text": "Recibirás un correo electrónico con el detalle de tu pedido en los próximos minutos.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#boton-seguir-comprando-order-placed": {
+    "props": {
+      "blockClass": ["boton-seguir-comprando-order-placed"],
+      "text": "[Seguir comprando](/)",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  //VITRINA ORDER PLACDED
+  "flex-layout.row#contenedor-vitrina-order-placed": {
+    "children": ["flex-layout.col#col-contenedor-vitrina-order-placed"],
+    "props": {
+      "blockClass": ["contenedor-vitrina-order-placed"]
+    }
+  },
+  "flex-layout.col#col-contenedor-vitrina-order-placed": {
+    "children": [
+      "rich-text#titulo-vitrina-order-placed",
+      "list-context.product-list#vitrina-1-vista-departamento"
+    ],
+    "props": {
+      "blockClass": ["col-contenedor-vitrina-no-encontrado"]
+    }
+  },
+  "rich-text#titulo-vitrina-order-placed": {
+    "props": {
+      "blockClass": ["titulo-vitrina-1-vista-departamento"],
+      "text": "Productos destacados"
+    }
+  },
+
+  // MIGA DE PAN FORMULARIO CONTACTO
+
+  "flex-layout.row#contenedor-miga-pan-order-placed": {
+    "children": [
+      "rich-text#miga-pan-1-order-placed",
+      "image#flecha-miga-pan",
+      "rich-text#miga-pan-2-order-placed"
+    ],
+    "props": {
+      "blockClass": ["contenedor-miga-pan-formulario-contacto"]
+    }
+  },
+  "rich-text#miga-pan-1-order-placed": {
+    "props": {
+      "blockClass": ["miga-pan-1"],
+      "text": "Miga de pan desktop"
+    }
+  },
+  "rich-text#miga-pan-2-order-placed": {
+    "props": {
+      "blockClass": ["miga-pan-2"],
+      "text": "Miga de pan desktop"
+    }
+  },
+  "image#flecha-miga-pan": {
+    "props": {
+      "blockClass": ["flecha-miga-pan"],
+      "src": "assets/icons/flecha-miga-pan.svg"
+    }
+  }
+}

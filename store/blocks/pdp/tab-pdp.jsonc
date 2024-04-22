@@ -1,0 +1,88 @@
+{
+  //SECCION TAB DESCRIPCION - ESPECIFICACIONES - RAITING
+  "tab-layout#tab-descripcion-especificaciones-resenas-pdp": {
+    "children": [
+      "tab-list#tab-descripcion-especificaciones-resenas-pdp",
+      "tab-content#tab-descripcion-especificaciones-resenas-pdp"
+    ],
+    "props": {
+      "blockClass": "tab-descripcion-especificaciones-resenas-pdp",
+      "defaultActiveTabId": "tab-descripcion-pdp"
+    }
+  },
+
+  // Listado de pestañas
+  "tab-list#tab-descripcion-especificaciones-resenas-pdp": {
+    "children": [
+      "tab-list.item#tab-descripcion-pdp",
+      "tab-list.item#tab-especificaciones-pdp",
+      "tab-list.item#tab-resenas-pdp"
+    ],
+    "props": {
+      "blockClass": "list-tab-descripcion-especificaciones-resenas-pdp"
+    }
+  },
+  "tab-list.item#tab-descripcion-pdp": {
+    "props": {
+      "tabId": "tab-descripcion-pdp",
+      "blockClass": "item-descripcion-especificaciones-resenas-pdp",
+      "label": "Descripción",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#tab-especificaciones-pdp": {
+    "props": {
+      "tabId": "tab-especificaciones-pdp",
+      "blockClass": "item-descripcion-especificaciones-resenas-pdp",
+      "label": "Especificaciones"
+    }
+  },
+  "tab-list.item#tab-resenas-pdp": {
+    "props": {
+      "tabId": "tab-resenas-pdp",
+      "blockClass": "item-descripcion-especificaciones-resenas-pdp",
+      "label": "Reseñas"
+    }
+  },
+
+  //Listado de los contenidos de las pestañas
+  "tab-content#tab-descripcion-especificaciones-resenas-pdp": {
+    "children": [
+      "tab-content.item#tab-descripcion-pdp",
+      "tab-content.item#tab-especificaciones-pdp",
+      "tab-content.item#tab-resenas-pdp"
+    ],
+    "props": {
+      "blockClass": "content-tab-descripcion-especificaciones-resenas-pdp"
+    }
+  },
+
+  // Detalle de cada contenido de las pestañas
+  "tab-content.item#tab-descripcion-pdp": {
+    "children": [
+      "product-description"
+    ],
+    "props": {
+      "tabId": "tab-descripcion-pdp",
+      "blockClass": "contenido-tab-descripcion-especificaciones-resenas-pdp"
+    }
+  },
+  "tab-content.item#tab-especificaciones-pdp": {
+    "children": [
+      "product-specification-group#table"
+    ],
+    "props": {
+      "tabId": "tab-especificaciones-pdp",
+      "blockClass": "contenido-tab-descripcion-especificaciones-resenas-pdp"
+    }
+  },
+  "tab-content.item#tab-resenas-pdp": {
+    "children": [
+      "product-reviews"
+    ],
+    "props": {
+      "tabId": "tab-resenas-pdp",
+      "blockClass": "contenido-tab-descripcion-especificaciones-resenas-pdp"
+    }
+  }
+}

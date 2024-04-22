@@ -1,0 +1,25 @@
+.summaryItemContainer,
+.summaryItemContainer {
+  color: #fff;
+  font-size: 13px;
+  gap: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.summarySmallDisclaimer {
+  display: none;
+}
+
+.summarySmallContent{
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.summaryItemLabel {
+  text-transform: uppercase;
+  font-weight: bold;
+}

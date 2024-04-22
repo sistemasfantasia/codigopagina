@@ -1,0 +1,132 @@
+{
+  "store.custom#plantilla-cupon": {
+    "children": ["flex-layout.row#contenedor-plantilla-cupon"]
+  },
+
+  //CONTENEDOR VISTA PLANTILLA CUPON
+  "flex-layout.row#contenedor-plantilla-cupon": {
+    "children": ["flex-layout.col#contenedor-plantilla-cupon"],
+    "props": {
+      "blockClass": ["contenedor-plantilla-cupon"]
+    }
+  },
+  "flex-layout.col#contenedor-plantilla-cupon": {
+    "children": [
+      "list-context.image-list#banner-plantilla-cupon",
+      "flex-layout.col#textos-seccion-1-plantilla-cupon",
+      "flex-layout.row#contenedor-banner-2-plantilla-cupon",
+      "flex-layout.row#seccion-3-plantilla-cupon"
+    ],
+    "props": {
+      "blockClass": ["col-contenedor-plantilla-cupon"]
+    }
+  },
+
+  // BANNER VISTA PLANTILLA CUPON
+  "list-context.image-list#banner-plantilla-cupon": {
+    "children": ["slider-layout#slider-banner-plantilla-cupon"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "/arquivos/banner-cupon-1.jpg",
+          "mobileImage": "/arquivos/banner-cupon-1.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-banner-plantilla-cupon": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "fullWidth": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "slider-banner-plantilla-cupon"
+    }
+  },
+
+  //SECCION 1 CUPON
+  "flex-layout.col#textos-seccion-1-plantilla-cupon": {
+    "children": ["rich-text#texto-seccion-1-plantilla-cupon"],
+    "props": {
+      "blockClass": ["textos-seccion-1-cuponera-fantastica"]
+    }
+  },
+  "rich-text#texto-seccion-1-plantilla-cupon": {
+    "props": {
+      "blockClass": ["texto-seccion-1-plantilla-cupon"],
+      "text": "¡El amor también se celebra en Fantasía! Este cupón permitirá que disfrutes el día de tu matrimonio y compartas con tus seres queridos ese momento tan especial. El beneficio otorga tres días libres (hábiles) consecutivos a partir del día de la ceremonia. Además, recibirás un detalle de parte de la compañía.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  // SECCION BANNER 2 VISTA PLANTILLA CUPON
+  "flex-layout.row#contenedor-banner-2-plantilla-cupon": {
+    "children": ["list-context.image-list#banner-2-plantilla-cupon"],
+    "props": {
+      "blockClass": ["contenedor-banner-2-plantilla-cupon"]
+    }
+  },
+  "list-context.image-list#banner-2-plantilla-cupon": {
+    "children": ["slider-layout#slider-banner-plantilla-cupon"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "/arquivos/REDIMIR-CUPON-1.jpg",
+          "mobileImage": "/arquivos/REDIMIR-CUPON-1.jpg"
+        }
+      ]
+    }
+  },
+
+  // SECCION 3 CUPON
+  "flex-layout.row#seccion-3-plantilla-cupon": {
+    "children": ["flex-layout.col#textos-seccion-3-plantilla-cupon","iframe.dynamic-src#formulario-cupon"],
+    "props": {
+      "blockClass": ["seccion-3-plantilla-cupon"]
+    }
+  },
+  "flex-layout.col#textos-seccion-3-plantilla-cupon": {
+    "children": ["rich-text#titulo-seccion-3-plantilla-cupon","rich-text#texto-seccion-3-plantilla-cupon"],
+    "props": {
+      "blockClass": ["textos-seccion-3-plantilla-cupon"]
+    }
+  },
+  "rich-text#titulo-seccion-3-plantilla-cupon": {
+    "props": {
+      "blockClass": ["titulo-seccion-3-plantilla-cupon"],
+      "text": "Términos y condiciones",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#texto-seccion-3-plantilla-cupon": {
+    "props": {
+      "blockClass": ["texto-seccion-3-plantilla-cupon"],
+      "text": "• Como este permiso interfiere en la jornada laboral se debe coordinar con anticipación con el jefe inmediato.\n\n• El detalle se puede reclamar con el área de contratación.\n\n• El beneficio brinda tres días libres (hábiles) consecutivos a partir del día de la ceremonia.\n\n• Para redimir este permiso debe llevar al menos 3 meses en la empresa.\n\n• Se debe presentar el certificado de matrimonio.\n\n• **Cada beneficio es utilizado una vez durante el año vigente, es personal e intransferible.**"
+    }
+  },
+  "iframe#formulario-cupon": {
+    "props": {
+      "src": "https://forms.office.com/Pages/ResponsePage.aspx?id=vtepcfjtMUKQwxWyLg9seZ8wqDxNjRZLn_aJcfQ9RWxUOVhURlA1WENZTEVPSklQRkhQSDlXWEZIUS4u&embed=true",
+      "className": "iframe-formulario-cupon",
+      "id": "iframe-formulario-cupon"
+    }
+  },
+  "iframe.dynamic-src#formulario-cupon": {
+    "props": {
+      "dynamicSrc": "https://forms.office.com/Pages/ResponsePage.aspx?id=vtepcfjtMUKQwxWyLg9seZ8wqDxNjRZLn_aJcfQ9RWxUOVhURlA1WENZTEVPSklQRkhQSDlXWEZIUS4u&embed=true",
+      "width":"600",
+      "height": "500",
+      "title": "iframe-formulario-cupon",
+      "allow": "iframe-formulario-cupon",
+      "className":"iframe-formulario-cupon"
+    }
+  }
+}

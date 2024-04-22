@@ -1,0 +1,461 @@
+/* estilos categorias header */
+
+.styledLinkContent--categoria-header {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2E3192;
+  display: flex;
+  align-items: center;
+}
+
+/* .menuItem--categoria-header--isClosed .styledLinkContainer--categoria-header::before {
+  background: url(assets/icons/icono-flecha-categoria.svg);
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  color: transparent;
+  height: 30px;
+  width: 32px;
+  transform: rotate(270deg);
+} */
+
+.menuContainer--menu-categorias-interno-drawer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: start;
+  height: 100%;
+}
+
+/* .menuItem--categoria-header--isOpen,
+.menuItem--categoria-header--isClosed {
+  display: flex;
+  align-items: center;
+} */
+
+/* .menuItem--categoria-header--isClosed:hover {
+  background: #2E3192;
+  color: #fff;
+} */
+
+.menuItem--categoria-header--isClosed .styledLinkContainer--categoria-header,
+.menuItem--categoria-header--isOpen .styledLinkContainer--categoria-header {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+/* .menuItem--categoria-header--isOpen .styledLinkContainer--categoria-header::before {
+  background: url(assets/icons/icono-flecha-categoria.svg);
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  color: transparent;
+  height: 30px;
+  transform: rotate(180deg);
+  width: 32px;
+} */
+
+.styledLinkContainer--categoria-header {
+  padding: 0;
+  margin: 0 10px;
+}
+
+.menuItem--menus-bloque-13-home-mobile--isClosed {
+  display: none;
+}
+
+.styledLinkContent--menu-seccion-3-bloque-13-home {
+  font-size: 14px;
+  width: fit-content;
+}
+
+.styledLinkContent--menu-seccion-3-bloque-13-home:hover {
+  border-bottom: 1px solid #03034E;
+}
+
+.menuItem--menu-politica-tratamiento-datos-mobile--isClosed ,
+.menuItem--menu-politica-entrega-mobile--isClosed ,
+.menuItem--menu-politica-compra-mobile--isClosed {
+  background: #2e3192;
+  padding: 15px 0px;
+}
+
+.menuItem--menu-politica-compra-mobile--isClosed {
+  border-radius: 24px 24px 0px 0px;
+}
+
+.menuItem--menu-politica-tratamiento-datos-mobile--isClosed {
+  border-radius: 0px 0px 24px 24px;
+}
+
+.menuItem--menu-politica-compra-mobile--isOpen .menuItemInnerDiv--menu-politica-compra-mobile {
+  background: #7DA6D7;
+  border-radius: 24px 24px 0px 0px;
+  padding: 15px 0px;
+}
+
+.menuItem--menu-politica-tratamiento-datos-mobile--isOpen .menuItemInnerDiv--menu-politica-tratamiento-datos-mobile,
+.menuItem--menu-politica-entrega-mobile--isOpen .menuItemInnerDiv--menu-politica-entrega-mobile {
+  background: #7DA6D7;
+  border-radius: 0px 0px 0px 0px;
+  padding: 15px 0px;
+}
+
+/* .submenuWrapper--menu-categorias-header--isOpen {
+  padding: 20px;
+  border-radius: 0px 0px 24px 24px;
+  border: 2px solid #2e3192;
+  border-top: none;
+  position: absolute;
+}
+
+.styledLinkContainer--categoria-header {
+  height: 100%;
+}
+
+.menuItem--categoria-header--isOpen ,
+.menuItem--categoria-header--isClosed {
+  height: 100%;
+} */
+
+.submenu--menu-categorias-header {
+  /* width: 1280px;
+  max-width: 1280px; */
+  display: flex;
+  justify-content: flex-end;
+  margin: auto;
+}
+
+.submenuWrapper--menu-categorias-header {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.menuContainer--menu-categorias-header {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.styledLinkContent--menu-categoria-header {
+  font-size: 16px;
+  color: #2E3192;
+  font-weight: 700;
+}
+
+.styledLinkContainer--menu-categoria-header{
+  margin: 0;
+}
+
+.menuContainer--categoria-header{
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+}
+
+/* .submenu--menu-categorias-header-base-cama {
+  position: relative;
+  right: 130px;
+}
+
+.submenu--menu-categorias-header-sofas-puff {
+  position: relative;
+  right: 270px;
+}
+
+.submenu--menu-categorias-header-combos {
+  position: relative;
+  right: 418px;
+}
+
+.submenu--menu-categorias-header-almohadas {
+  position: relative;
+  right: 533px;
+} */
+
+.submenuWrapper--menu-categorias-header-base-cama--isOpen {
+  left: -126px;
+}
+
+.submenuWrapper--menu-categorias-header-sofas-puff--isOpen {
+  left: -261px;
+}
+
+.submenuWrapper--menu-categorias-header-combos--isOpen {
+  left: -404px;
+}
+
+.submenuWrapper--menu-categorias-header-almohadas--isOpen {
+  left: -516px;
+}
+
+.menuContainer--articulos-blog {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuItem--articulos-blog{
+  list-style-type: initial !important;
+}
+
+.menuItem--articulos-blog::marker {
+  color: #7DA6D7;
+}
+
+.menuContainerNav--articulos-blog {
+  margin-left: 30px;
+}
+
+.styledLinkContainer--articulos-blog {
+  margin: 0;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 640px) {
+
+  .submenuAccordion--submenu-seccion-creditos-ventas-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+  }
+
+  .menuItem--menus-bloque-13-home-mobile--isOpen {
+    border: 1px solid #97B8DF;
+    background: #F2F6FB;
+    border-radius: 24px;
+    box-shadow: 0px 4px 25px 0px #0000001F;
+    max-width: 90vw;
+    margin: auto;
+    padding: 10px 0px;
+  }
+
+  .menuItem--menus-bloque-13-home-mobile--isClosed{
+    border: 1px solid #97B8DF;
+    background: #F2F6FB;
+    border-radius: 24px;
+    padding: 20px 0px;
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .styledLinkContent--menus-bloque-13-home-mobile {
+    color: #2E3192;
+    font-weight: bolder;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+
+  .styledLinkContent--menu-acordeon-1-bloque-13-home-mobile::before {
+    background: url(assets/image/imagen-titulo-seccion-2-bloque-13-home.svg);
+    content: "";
+    background-position: 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    color: transparent;
+    height: 25px;
+    width: 25px;
+    background-size: contain;
+  }
+
+  .styledLinkContent--menu-acordeon-2-bloque-13-home-mobile::before {
+    background: url(assets/image/imagen-titulo-seccion-3-bloque-13-home.svg);
+    content: "";
+    background-position: 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    color: transparent;
+    height: 25px;
+    width: 25px;
+    background-size: contain;
+  }
+
+  .menuItem--menus-footer-mobile--isClosed {
+    box-shadow: 0px 12px 24px 0px #0000000A;
+    border-radius: 20px;
+    height: 40px;
+  }
+
+  .menuItem--menus-bloque-13-home-mobile--isClosed {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .menuItem--menus-footer-mobile--isOpen {
+    height: 40px;
+  } */
+
+  .menuItemInnerDiv--menus-footer-mobile {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .styledLinkContent--menus-footer-mobile::before {
+    content: "";
+    background: url(assets/icons/icono-servicio-cliente.svg);
+    width: 25px;
+    height: 25px;
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+  }
+
+  .styledLinkContainer--menus-footer-mobile {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .styledLinkContent--menus-footer-mobile {
+    font-size: 14px;
+    color: #2E3192;
+    font-weight: 900;
+  }
+
+  .styledLinkContainer--menus-bloque-13-home-mobile {
+    width: 100%;
+    padding: 0px 20px;
+    margin: 0;
+  }
+
+  .menuItem--categoria-header--isClosed .styledLinkContainer--categoria-header,
+  .menuItem--categoria-header--isOpen .styledLinkContainer--categoria-header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .accordionIcon--menus-footer-mobile--isClosed::after,
+  .accordionIcon--menus-bloque-13-home-mobile--isClosed::after {
+    background: url(assets/icons/icono-flecha-categoria.svg);
+    content: "";
+    background-position: 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    color: transparent;
+    width: 15px;
+    height: 15px;
+  }
+
+  .accordionIcon--menus-footer-mobile--isClosed,
+  .accordionIcon--menus-bloque-13-home-mobile--isClosed {
+    font-size: 0;
+  }
+
+  .accordionIcon--menus-footer-mobile--isOpen::after,
+  .accordionIcon--menus-bloque-13-home-mobile--isOpen::after {
+    background: url(assets/icons/icono-flecha-categoria.svg);
+    content: "";
+    background-position: 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    color: transparent;
+    width: 15px;
+    height: 15px;
+    transform: rotate(180deg);
+  }
+
+  .accordionIcon--menus-footer-mobile--isOpen,
+  .accordionIcon--menus-bloque-13-home-mobile--isOpen {
+    font-size: 0;
+  }
+
+  .menuItem--menus-descripcion-especificaciones-resenas-mobile--isClosed .menuItemInnerDiv--menus-descripcion-especificaciones-resenas-mobile {
+    background: #2E3192;
+    color: #fff;
+    border-radius: 100px;
+    padding: 10px 0px;
+    border: 1px solid #2E3192
+  }
+
+  .menuItem--menus-descripcion-especificaciones-resenas-mobile--isClosed .styledLink--menus-descripcion-especificaciones-resenas-mobile {
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .menuItem--menus-descripcion-especificaciones-resenas-mobile--isOpen .styledLink--menus-descripcion-especificaciones-resenas-mobile {
+    color: #2E3192;
+    font-weight: bold;
+  }
+
+  .menuItem--menus-descripcion-especificaciones-resenas-mobile--isOpen .menuItemInnerDiv--menus-descripcion-especificaciones-resenas-mobile {
+    background: #F2F6FB;
+    color: #fff;
+    border-radius: 100px;
+    padding: 10px 0px;
+    border: 1px solid #2E3192;
+  }
+
+  .menuItem--menus-descripcion-especificaciones-resenas-mobile--isOpen {
+    background: #fff;
+    border-radius: 20px;
+  }
+
+  .submenuAccordion--submenu-descripcion-especificaciones-resenas-mobile {
+    padding: 20px 20px;
+  }
+
+  .accordionIcon--menus-descripcion-especificaciones-resenas-mobile--isClosed::after {
+    background: url(assets/icons/icono-flecha-categoria-blanca.svg);
+    content: "";
+    background-position: 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    color: transparent;
+    width: 15px;
+    height: 15px;
+  }
+
+  .accordionIcon--menus-descripcion-especificaciones-resenas-mobile--isOpen::after {
+    background: url(assets/icons/icono-flecha-categoria.svg);
+    content: "";
+    background-position: 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    color: transparent;
+    width: 15px;
+    transform: rotate(180deg);
+    height: 15px;
+  }
+
+  .accordionIcon--menus-descripcion-especificaciones-resenas-mobile--isClosed,
+  .accordionIcon--menus-descripcion-especificaciones-resenas-mobile--isOpen {
+    font-size: 0;
+  }
+
+  .menuContainer--menu-categorias-header {
+    flex-direction: column;
+  }
+
+  .styledLinkContent--menu-categoria-header {
+    flex-direction: row-reverse;
+    padding: 0px 20px;
+  }
+
+  .submenuAccordion--submenu-seccion-servicio-cliente-footer-mobile {
+    padding: 0;
+  }
+
+}

@@ -1,0 +1,271 @@
+{
+  "store.custom#cuponera-fantastica": {
+    "children": ["flex-layout.row#contenedor-cuponera-fantastica"]
+  },
+
+  //CONTENEDOR VISTA TRABAJA CON NOSOTROS
+  "flex-layout.row#contenedor-cuponera-fantastica": {
+    "children": ["flex-layout.col#contenedor-cuponera-fantastica"],
+    "props": {
+      "blockClass": ["contenedor-cuponera-fantastica"]
+    }
+  },
+  "flex-layout.col#contenedor-cuponera-fantastica": {
+    "children": [
+      "list-context.image-list#banner-cuponera-fantastica",
+      "flex-layout.col#textos-seccion-1-cuponera-fantastica",
+      "flex-layout.row#seccion-2-cuponera-fantastica",
+      "flex-layout.row#seccion-3-cuponera-fantastica"
+    ],
+    "props": {
+      "blockClass": ["col-contenedor-cuponera-fantastica"]
+    }
+  },
+
+  // BANNER VISTA CUPONERA
+  "list-context.image-list#banner-cuponera-fantastica": {
+    "children": ["slider-layout#slider-banner-cuponera-fantastica"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "/arquivos/banner-1-cuponera-fantastica.jpg",
+          "mobileImage": "/arquivos/banner-1-cuponera-fantastica-mobile.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-banner-cuponera-fantastica": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "fullWidth": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "slider-banner-cuponera-fantastica"
+    }
+  },
+
+  //SECCION 1 CUPONERA
+  "flex-layout.col#textos-seccion-1-cuponera-fantastica": {
+    "children": ["rich-text#texto-seccion-1-cuponera-fantastica"],
+    "props": {
+      "blockClass": ["textos-seccion-1-cuponera-fantastica"]
+    }
+  },
+  "rich-text#texto-seccion-1-cuponera-fantastica": {
+    "props": {
+      "blockClass": ["texto-seccion-1-cuponera-fantastica"],
+      "text": "¡Bienvenidos a la Cuponera de beneficios Fantástica 2023!\n\nEsta cuponera contiene una serie de beneficios que podrás redimir durante el año vigente. Se realizó pensando en tu bienestar tanto dentro como fuera de la empresa, reconociendo que en los diferentes momentos especiales de tu vida mereces lo mejor.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  //SECCION 2 CUPONERA
+  "flex-layout.row#seccion-2-cuponera-fantastica": {
+    "children": ["flex-layout.col#seccion-2-cuponera-fantastica"],
+    "props": {
+      "blockClass": ["seccion-2-cuponera-fantastica"]
+    }
+  },
+  "flex-layout.col#seccion-2-cuponera-fantastica": {
+    "children": [
+      "rich-text#titulo-seccion-2-cuponera-fantastica",
+      "list-context.info-card-list#infocards-cuponeras"
+    ],
+    "props": {
+      "blockClass": ["seccion-2-cuponera-fantastica"]
+    }
+  },
+  "rich-text#titulo-seccion-2-cuponera-fantastica": {
+    "props": {
+      "blockClass": ["titulo-seccion-2-cuponera-fantastica"],
+      "text": "Selecciona el cupón que quieres redimir, diligencia el formulario con tus datos más la información del cupón y espera las indicaciones que tiene el personal encargado para que disfrutes del beneficio o permiso.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  //INFOCARD CUPONERA
+  "list-context-renderer#infocards-cuponeras": {
+    "props": {
+      "listElement": "div",
+      "itemElement": "div",
+      "blockClass": "infocards-cuponeras"
+    }
+  },
+  "list-context.info-card-list#infocards-cuponeras": {
+    "children": ["list-context-renderer#infocards-cuponeras"],
+    "props": {
+      "infoCards": [
+        {
+          "id": "info-card-cuponera-1",
+          "title": "info-card-cuponera-1",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/BONO-DE-HELADO.png",
+          "imageActionUrl": "/cupon",
+          "callToActionMode": "link",
+          "callToActionText": "",
+          "callToActionUrl": "/cupon",
+          "blockClass": ["info-card-cuponera"]
+        },
+        {
+          "id": "info-card-cuponera-1",
+          "title": "info-card-cuponera-2",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/DISFRUTA-DE-LOS-GRADOS-DE-TUS-FAMILIARES.png",
+          "imageActionUrl": "/cupon",
+          "callToActionMode": "link",
+          "callToActionText": "",
+          "callToActionUrl": "#",
+          "blockClass": ["info-card-cuponera"]
+        },
+        {
+          "id": "info-card-cuponera-1",
+          "title": "info-card-cuponera-3",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/DISFRUTA-DE-TUS-GRADOS.png",
+          "imageActionUrl": "/cupon",
+          "callToActionMode": "link",
+          "callToActionText": "",
+          "callToActionUrl": "#",
+          "blockClass": ["info-card-cuponera"]
+        },
+        {
+          "id": "info-card-cuponera-1",
+          "title": "info-card-cuponera-1",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/DISFRUTA-TU-MATRIMONIO.png",
+          "imageActionUrl": "/cupon",
+          "callToActionMode": "link",
+          "callToActionText": "",
+          "callToActionUrl": "#",
+          "blockClass": ["info-card-cuponera"]
+        },
+        {
+          "id": "info-card-cuponera-1",
+          "title": "info-card-cuponera-1",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/PRESENTES-EN-EL-NACIMIENTO-DE-TU-HIJO.png",
+          "imageActionUrl": "/cupon",
+          "callToActionMode": "link",
+          "callToActionText": "",
+          "callToActionUrl": "#",
+          "blockClass": ["info-card-cuponera"]
+        },
+        {
+          "id": "info-card-cuponera-1",
+          "title": "info-card-cuponera-1",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/DIA-DE-LA-FAMILIA-1ER-SEMESTRE.png",
+          "imageActionUrl": "/cupon",
+          "callToActionMode": "link",
+          "callToActionText": "",
+          "callToActionUrl": "#",
+          "blockClass": ["info-card-cuponera"]
+        },
+        {
+          "id": "info-card-cuponera-1",
+          "title": "info-card-cuponera-2",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/DIA-DE-LA-FAMILIA-2DO-SEMESTRE.png",
+          "imageActionUrl": "/cupon",
+          "callToActionMode": "link",
+          "callToActionText": "",
+          "callToActionUrl": "#",
+          "blockClass": ["info-card-cuponera"]
+        },
+        {
+          "id": "info-card-cuponera-1",
+          "title": "info-card-cuponera-3",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/ACOMPANAMIENTO-PSICOLOGICO.png",
+          "imageActionUrl": "/cupon",
+          "callToActionMode": "link",
+          "callToActionText": "",
+          "callToActionUrl": "#",
+          "blockClass": ["info-card-cuponera"]
+        },
+        {
+          "id": "info-card-cuponera-1",
+          "title": "info-card-cuponera-1",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/BONO-DE-CINE.png",
+          "imageActionUrl": "/cupon",
+          "callToActionMode": "link",
+          "callToActionText": "",
+          "callToActionUrl": "#",
+          "blockClass": ["info-card-cuponera"]
+        },
+        {
+          "id": "info-card-cuponera-1",
+          "title": "info-card-cuponera-1",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/CLASE-FANTASTICA-1.png",
+          "imageActionUrl": "/cupon",
+          "callToActionMode": "link",
+          "callToActionText": "",
+          "callToActionUrl": "#",
+          "blockClass": ["info-card-cuponera"]
+        }
+      ]
+    }
+  },
+
+  //SECCION 3 CUPONERA
+  "flex-layout.row#seccion-3-cuponera-fantastica": {
+    "children": ["flex-layout.col#seccion-3-cuponera-fantastica"],
+    "props": {
+      "blockClass": ["seccion-3-cuponera-fantastica"]
+    }
+  },
+  "flex-layout.col#seccion-3-cuponera-fantastica": {
+    "children": [
+      "rich-text#titulo-seccion-3-cuponera-fantastica",
+      "flex-layout.row#textos-seccion-3-cuponera-fantastica"
+    ],
+    "props": {
+      "blockClass": ["seccion-3-cuponera-fantastica"]
+    }
+  },
+  "rich-text#titulo-seccion-3-cuponera-fantastica": {
+    "props": {
+      "blockClass": ["titulo-seccion-3-cuponera-fantastica"],
+      "text": "Es importante tener en cuenta los términos y condiciones para la redención de la Cuponera\ny las especificaciones que se encuentran en cada cupón:",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#textos-seccion-3-cuponera-fantastica": {
+    "children": ["rich-text#texto-1-seccion-3-cuponera-fantastica","rich-text#texto-2-seccion-3-cuponera-fantastica"],
+    "props": {
+      "blockClass": ["textos-seccion-3-cuponera-fantastica"]
+    }
+  },
+  "rich-text#texto-1-seccion-3-cuponera-fantastica": {
+    "props": {
+      "blockClass": ["texto-seccion-3-cuponera-fantastica"],
+      "text": "* Todos los cupones son personales, intransferibles y no acumulables.\n* Los detalles se pueden reclamar con el área de compensación y contratación.\n* Para la redención de algunos beneficios se tiene en cuenta el tiempo de permanencia en la empresa."
+    }
+  },
+  "rich-text#texto-2-seccion-3-cuponera-fantastica": {
+    "props": {
+      "blockClass": ["texto-seccion-3-cuponera-fantastica"],
+      "text": "* El uso de los beneficios que interfiera en la jornada laboral se debe coordinar con anticipación con el jefe inmediato.\n* Se deben presentar los documentos que evidencien los eventos especiales.\n* Aplica solo para empleados de Industrias Fantasía S.A.S y o la empresa temporal con contrato vigente, al momento del retiro no se pueden redimir."
+    }
+  }
+}

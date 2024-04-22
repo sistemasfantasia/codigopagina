@@ -1,0 +1,192 @@
+{
+  "store.custom#formulario-contacto": {
+    "blocks": ["flex-layout.row#contenedor-general-formulario-contacto"]
+  },
+  //CONTENEDOR VISTA FORMULARIO DE CONTACTO
+  "flex-layout.row#contenedor-general-formulario-contacto": {
+    "children": ["flex-layout.col#contenedor-general-formulario-contacto"],
+    "props": {
+      "blockClass": ["contenedor-general-formulario-contacto"]
+    }
+  },
+  "flex-layout.col#contenedor-general-formulario-contacto": {
+    "children": [
+      "flex-layout.row#contenedor-miga-pan-formulario-contacto",
+      "flex-layout.row#contenedor-formulario-contacto"
+    ],
+    "props": {
+      "blockClass": ["col-contenedor-general-formulario-contacto"]
+    }
+  },
+  "flex-layout.row#contenedor-formulario-contacto": {
+    "children": [
+      "info-card#infocard-formulario-contacto",
+      "flex-layout.row#formulario-contacto"
+    ],
+    "props": {
+      "blockClass": ["contenedor-formulario-contacto"]
+    }
+  },
+
+  // MIGA DE PAN FORMULARIO CONTACTO
+
+  "flex-layout.row#contenedor-miga-pan-formulario-contacto": {
+    "children": [
+      "rich-text#miga-pan-1-formulario-contacto",
+      "image#flecha-miga-pan",
+      "rich-text#miga-pan-2-formulario-contacto"
+    ],
+    "props": {
+      "blockClass": ["contenedor-miga-pan-formulario-contacto"]
+    }
+  },
+  "rich-text#miga-pan-1-formulario-contacto": {
+    "props": {
+      "blockClass": ["miga-pan-1"],
+      "text": "Miga de pan desktop"
+    }
+  },
+  "rich-text#miga-pan-2-formulario-contacto": {
+    "props": {
+      "blockClass": ["miga-pan-2"],
+      "text": "Miga de pan desktop"
+    }
+  },
+  "image#flecha-miga-pan": {
+    "props": {
+      "blockClass": ["flecha-miga-pan"],
+      "src": "assets/icons/flecha-miga-pan.svg"
+    }
+  },
+
+  //INFOCARD VISTA FORMULARIO DE CONTACTO
+  "info-card#infocard-formulario-contacto": {
+    "props": {
+      "blockClass": "infocard-formulario-contacto",
+      "isFullModeStyle": true,
+      "headline": "Contacto",
+      "id": "infocard-formulario-contacto",
+      "imageUrl": "/arquivos/img-infocard-formulario-contacto.png",
+      "mobileImageUrl": "/arquivos/img-infocard-formulario-contacto-mobile.png",
+      "subhead": "Corem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia",
+      "textAlignment": "center",
+      "textPosition": "center"
+    }
+  },
+
+  // ESTRUCTURA FORMULARIO DE CONTACTO
+  "flex-layout.row#formulario-contacto": {
+    "children": ["form#formulario-contacto"],
+    "props": {
+      "blockClass": ["formulario-contacto"]
+    }
+  },
+  "form#formulario-contacto": {
+    "props": {
+      "entity": "co",
+      "schema": "formulario-contacto",
+      "blockClass": "formulario-contacto"
+    },
+    "children": ["flex-layout.col#campos-formulario-contacto"],
+    "blocks": ["form-success#formulario-contacto"]
+  },
+  "form-success#formulario-contacto": {
+    "children": ["info-card#infocard-formulario-contacto-enviado"],
+    "props": {
+      "blockClass": "formulario-contacto-enviado"
+    }
+  },
+  //INFOCARD VISTA FORMULARIO DE CONTACTO
+  "info-card#infocard-formulario-contacto-enviado": {
+    "props": {
+      "blockClass": "infocard-formulario-contacto-enviado",
+      "isFullModeStyle": true,
+      "headline": "¡Gracias por Ponerte en Contacto!",
+      "id": "infocard-formulario-contacto",
+      "imageUrl": "/arquivos/img-formulario-contacto-enviado.png",
+      "mobileImageUrl": "/arquivos/img-infocard-formulario-contacto-mobile.png",
+      "subhead": "Tu mensaje ha sido recibido con éxito y nos pondremos en acción de inmediato",
+      "callToActionText": "Volver a la tienda",
+      "textAlignment": "center",
+      "textPosition": "center"
+    }
+  },
+  "rich-text#succes-submit-formulario-contacto": {
+    "props": {
+      "text": "¡Gracias por escribirnos a **Colchones Fantasia** daremos respuesta a tu \n solicitud lo más pronto posible, queremos hacer inolvidable tu experiencia.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.col#campos-formulario-contacto": {
+    "children": [
+      "form-input.text#names-formulario-contacto",
+      "form-input.text#lastname-formulario-contacto",
+      "form-input.text#email-formulario-contacto",
+      "form-input.text#taxNumber-formulario-contacto",
+      "form-input.text#city-formulario-contacto",
+      "form-input.text#addres-formulario-contacto",
+      "form-input.textarea#comments-formulario-contacto",
+      "form-input.checkbox#agreement-formulario-contacto",
+      "form-submit#boton-enviar-formulario-contacto"
+    ],
+    "props": {
+      "blockClass": ["campos-formulario-contacto"]
+    }
+  },
+  "form-input.text#names-formulario-contacto": {
+    "props": {
+      "pointer": "#/properties/names",
+      "placeholder": "Nombres",
+      "label": "Nombres"
+    }
+  },
+  "form-input.text#lastname-formulario-contacto": {
+    "props": {
+      "pointer": "#/properties/lastname",
+      "placeholder": "Apellidos"
+    }
+  },
+  "form-input.text#email-formulario-contacto": {
+    "props": {
+      "pointer": "#/properties/email",
+      "placeholder": "Email"
+    }
+  },
+  "form-input.text#taxNumber-formulario-contacto": {
+    "props": {
+      "pointer": "#/properties/taxNumber",
+      "placeholder": "Número de identificación"
+    }
+  },
+  "form-input.text#city-formulario-contacto": {
+    "props": {
+      "pointer": "#/properties/city",
+      "placeholder": "Ciudad"
+    }
+  },
+  "form-input.checkbox#agreement-formulario-contacto": {
+    "props": {
+      "pointer": "#/properties/agreement",
+      "label": "He leído y acepto la política de datos personales",
+      "blockClass": "text-agreement"
+    }
+  },
+  "form-input.text#addres-formulario-contacto": {
+    "props": {
+      "pointer": "#/properties/address",
+      "placeholder": "Dirección"
+    }
+  },
+  "form-input.textarea#comments-formulario-contacto": {
+    "props": {
+      "pointer": "#/properties/comments",
+      "placeholder": "Comentarios"
+    }
+  },
+  "form-submit#boton-enviar-formulario-contacto": {
+    "props": {
+      "label": "Enviar"
+    }
+  }
+}

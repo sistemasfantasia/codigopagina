@@ -1,0 +1,1425 @@
+{
+  "store.home": {
+    "blocks": [
+      "flex-layout.row#contenedor-home-desktop"
+    ]
+  },
+  // CONTENEDOR HOME DESKTOP
+  "flex-layout.row#contenedor-home-desktop": {
+    "children": ["flex-layout.col#contenedor-home-desktop"],
+    "props": {
+      "blockClass": "contenedor-home-desktop"
+    }
+  },
+  "flex-layout.col#contenedor-home-desktop": {
+    "children": [
+      "list-context.image-list#primer-banner-home",
+      "list-context.info-card-list#slider-categorias-home",
+      "flex-layout.row#bloque-3-home",
+      // "__fold__",
+      "flex-layout.col#bloque-4-home",
+      "list-context.image-list#segundo-banner-home",
+      // "flex-layout.row#bloque-6-home",
+      "flex-layout.col#contenedor-responsive-bloque-6-home",
+      "flex-layout.col#bloque-7-home",
+      "flex-layout.row#bloque-8-home",
+      "flex-layout.col#bloque-9-home",
+      "flex-layout.row#contenedor-bloque-10-home",
+      // "flex-layout.row#bloque-10-home",
+      "list-context.image-list#tercer-banner-home",
+      "flex-layout.row#bloque-12-home"
+      // "flex-layout.row#bloque-13-home",
+      // "menu-item#menu-seccion-creditos-ventas-mobile",
+      // "menu-item#menu-seccion-enlaces-interes-mobile"
+    ],
+    "props": {
+      "blockClass": "contenedor-home-desktop"
+    }
+  },
+
+  //PRIMER BANNER HOME
+  "list-context.image-list#primer-banner-home": {
+    "children": ["slider-layout#banner-home"],
+    "props": {
+      "height": 570,
+      "preload": true,
+      "images": [
+        {
+          "image": "assets/image/primer-banner-home.png",
+          "mobileImage": "assets/image/primer-banner-home-mobile.png"
+        },
+        {
+          "image": "assets/image/primer-banner-home.png",
+          "mobileImage": "assets/image/primer-banner-home-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#banner-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "blockClass": ["slider-banner-home"]
+    }
+  },
+
+  // SLIDER CATEGORIAS HOME
+  "list-context.info-card-list#slider-categorias-home": {
+    "children": ["slider-layout#slider-categorias-home"],
+    "props": {
+      "infoCards": [
+        {
+          "id": "infocard-categoria1-home",
+          "title": "infocard-categoria1-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/icons/icono-categoria-camas.svg",
+          "imageActionUrl": "/",
+          "headline": "Camas",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-categoria-home"]
+        },
+        {
+          "id": "infocard-categoria2-home",
+          "title": "infocard-categoria2-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/icons/icono-categoria-sofas.svg",
+          "imageActionUrl": "/",
+          "headline": "Sofás",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-categoria-home"]
+        },
+        {
+          "id": "infocard-categoria3-home",
+          "title": "infocard-categoria3-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/icons/icono-categoria-base-camas.svg",
+          "imageActionUrl": "/",
+          "headline": "Base Camas",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-categoria-home"]
+        },
+        {
+          "id": "infocard-categoria4-home",
+          "title": "infocard-categoria4-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/icons/icono-categoria-colchones.svg",
+          "imageActionUrl": "/",
+          "headline": "Colchones",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-categoria-home"]
+        },
+        {
+          "id": "infocard-categoria5-home",
+          "title": "infocard-categoria5-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/icons/icono-categoria-cabeceros.svg",
+          "imageActionUrl": "/",
+          "headline": "Cabeceros",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-categoria-home"]
+        },
+        {
+          "id": "infocard-categoria6-home",
+          "title": "infocard-categoria6-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/icons/icono-categoria-almohadas.svg",
+          "imageActionUrl": "/",
+          "headline": "Almohadas",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-categoria-home"]
+        },
+        {
+          "id": "infocard-categoria7-home",
+          "title": "infocard-categoria7-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/icons/icono-categoria-sillas-reclinables.svg",
+          "imageActionUrl": "/",
+          "headline": "Sillas Reclinables",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-categoria-home"]
+        },
+        {
+          "id": "infocard-categoria8-home",
+          "title": "infocard-categoria8-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/icons/icono-categoria-linea-bebes.svg",
+          "imageActionUrl": "/",
+          "headline": "Línea Bebés",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-categoria-home"]
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-categorias-home": {
+    "title": "Lista categorias homer",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 8,
+        "tablet": 1,
+        "phone": 3
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "mobileOnly",
+      "blockClass": "slider-categorias-home"
+    }
+  },
+
+  // TERCER BLOQUE HOME
+  "flex-layout.row#bloque-3-home": {
+    "children": ["flex-layout.col#bloque-3-home"],
+    "props": {
+      "blockClass": "bloque-3-home"
+    }
+  },
+  "flex-layout.col#bloque-3-home": {
+    "children": [
+      "rich-text#titulo-bloque-3-home",
+      "flex-layout.row#imagenes-bloque-3",
+      "rich-text#texto-bloque-3-home"
+    ],
+    "props": {
+      "blockClass": "bloque-3-home"
+    }
+  },
+  // TITULO BLOQUE 3
+  "rich-text#titulo-bloque-3-home": {
+    "props": {
+      "blockClass": ["titulo-bloque-3-home"],
+      "text": "Colchones y accesorios para el descanso",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  // FILA IMAGENES BLOQUE 3
+  "flex-layout.row#imagenes-bloque-3": {
+    "children": [
+      "image#imagen-1-bloque-3-home",
+      "image#imagen-2-bloque-3-home"
+    ],
+    "props": {
+      "blockClass": ["imagenes-bloque-3"]
+    }
+  },
+  // IMAGEN 1
+  "image#imagen-1-bloque-3-home": {
+    "props": {
+      "blockClass": ["imagen-1-bloque-3-home"],
+      "src": "assets/image/imagen-1-bloque-3-home.png"
+    }
+  },
+  // IMAGEN 2
+  "image#imagen-2-bloque-3-home": {
+    "props": {
+      "blockClass": ["imagen-2-bloque-3-home"],
+      "src": "assets/image/imagen-2-bloque-3-home.png"
+    }
+  },
+  // TEXTO BLOQUE 3
+  "rich-text#texto-bloque-3-home": {
+    "props": {
+      "blockClass": ["texto-bloque-3-home"],
+      "text": "Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  // BANNER 2 HOME - BLOQUE 5
+  "list-context.image-list#segundo-banner-home": {
+    "children": ["slider-layout#banner2-home"],
+    "props": {
+      "height": 570,
+      "preload": true,
+      "images": [
+        {
+          "image": "assets/image/segundo-banner-home.png",
+          "mobileImage": "assets/image/segundo-banner-home-mobile.png"
+        },
+        {
+          "image": "assets/image/segundo-banner-home.png",
+          "mobileImage": "assets/image/segundo-banner-home-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#banner2-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "blockClass": ["slider-banner2-home"]
+    }
+  },
+
+  //SEXTO BLOQUE HOME
+  "flex-layout.col#contenedor-responsive-bloque-6-home": {
+    "children": [
+      "responsive-layout.desktop#bloque-6-home",
+      "responsive-layout.tablet#bloque-6-home",
+      "responsive-layout.phone#bloque-6-home"
+    ]
+  },
+  "responsive-layout.desktop#bloque-6-home": {
+    "children": ["flex-layout.row#bloque-6-home"]
+  },
+  "responsive-layout.tablet#bloque-6-home": {
+    "children": ["flex-layout.col#bloque-6-home"]
+  },
+  "responsive-layout.phone#bloque-6-home": {
+    "children": ["flex-layout.col#bloque-6-home-mobile"]
+  },
+  "flex-layout.row#bloque-6-home": {
+    "children": ["flex-layout.col#bloque-6-home"],
+    "props": {
+      "blockClass": "bloque-6-home"
+    }
+  },
+  "flex-layout.col#bloque-6-home": {
+    "children": [
+      "rich-text#titulo-bloque-6-home",
+      "flex-layout.row#fila-1-infocards-bloque-6-home",
+      "flex-layout.row#fila-2-infocards-bloque-6-home"
+    ],
+    "props": {
+      "blockClass": "bloque-6-home"
+    }
+  },
+
+  // TITULO BLOQUE 6
+  "rich-text#titulo-bloque-6-home": {
+    "props": {
+      "blockClass": ["titulo-bloque-6-home"],
+      "text": "¿Qué estás buscando hoy?",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  // FILA INFOCARD 1 BLOQUE 6
+  "flex-layout.row#fila-1-infocards-bloque-6-home": {
+    "children": [
+      "info-card#infocard-1-fila-1-bloque-6-home",
+      "info-card#infocard-2-fila-1-bloque-6-home"
+    ],
+    "props": {
+      "blockClass": ["fila-1-infocards-bloque-6-home"],
+      "preventHorizontalStretch": false
+    }
+  },
+  "info-card#infocard-1-fila-1-bloque-6-home": {
+    "props": {
+      "blockClass": "infocard-1-fila-1-bloque-6-home",
+      "isFullModeStyle": true,
+      "callToActionText": "",
+      "headline": "",
+      "id": "infocard-1-fila-1-bloque-6-home",
+      "imageUrl": "assets/image/img-infocard-1-fila-1-bloque-6-home.png",
+      "subhead": "Almohadas",
+      "textAlignment": "center",
+      "textPosition": "center",
+      "width": "40%"
+    }
+  },
+  "info-card#infocard-2-fila-1-bloque-6-home": {
+    "props": {
+      "blockClass": "infocard-2-fila-1-bloque-6-home",
+      "isFullModeStyle": true,
+      "callToActionText": "",
+      "headline": "",
+      "id": "infocard-1-fila-1-bloque-6-home",
+      "imageUrl": "/arquivos/infocard-2-fila-1-bloque-6-home.png",
+      "mobileImageUrl": "assets/image/infocard-2-fila-1-bloque-6-home-mobile.png",
+      "subhead": "Colchones",
+      "textAlignment": "center",
+      "textPosition": "center",
+      "width": "60%"
+    }
+  },
+
+  // FILA INFOCARD 2 BLOQUE 6
+  "flex-layout.row#fila-2-infocards-bloque-6-home": {
+    "children": [
+      "info-card#infocard-1-fila-2-bloque-6-home",
+      "info-card#infocard-2-fila-2-bloque-6-home"
+    ],
+    "props": {
+      "blockClass": ["fila-2-infocards-bloque-6-home"],
+      "preventHorizontalStretch": false
+    }
+  },
+  "info-card#infocard-1-fila-2-bloque-6-home": {
+    "props": {
+      "blockClass": "infocard-1-fila-2-bloque-6-home",
+      "isFullModeStyle": true,
+      "callToActionText": "",
+      "headline": "",
+      "id": "infocard-1-fila-2-bloque-6-home",
+      "imageUrl": "/arquivos/img-infocard-1-fila-2-bloque-6-home.png",
+      "mobileImageUrl": "assets/image/img-infocard-1-fila-2-bloque-6-home-mobile.png",
+      "subhead": "Hotelero",
+      "textAlignment": "center",
+      "textPosition": "center",
+      "width": "60%"
+    }
+  },
+  "info-card#infocard-2-fila-2-bloque-6-home": {
+    "props": {
+      "blockClass": "infocard-2-fila-2-bloque-6-home",
+      "isFullModeStyle": true,
+      "callToActionText": "",
+      "headline": "",
+      "id": "infocard-2-fila-2-bloque-6-home",
+      "imageUrl": "/arquivos/img-infocard-2-fila-2-bloque-6-home.png",
+      "subhead": "Sillones",
+      "textAlignment": "center",
+      "textPosition": "center",
+      "width": "40%"
+    }
+  },
+
+  //INFOCARDS BLOQUE 6 MOBILE
+  "flex-layout.col#bloque-6-home-mobile": {
+    "children": [
+      "rich-text#titulo-bloque-6-home",
+      "info-card#infocard-2-fila-1-bloque-6-home",
+      "flex-layout.row#fila-2-bloque-6-home-mobile",
+      "info-card#infocard-1-fila-2-bloque-6-home"
+    ],
+    "props": {
+      "blockClass": "bloque-6-home-mobile"
+    }
+  },
+  "flex-layout.row#fila-2-bloque-6-home-mobile": {
+    "children": [
+      "info-card#infocard-1-fila-1-bloque-6-home",
+      "info-card#infocard-2-fila-2-bloque-6-home"
+    ],
+    "props": {
+      "blockClass": "fila-2-bloque-6-home-mobile"
+    }
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 570,
+      "preload": true,
+      "images": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Summer",
+      "blockClass": "shelfTitle"
+    }
+  },
+
+  // VITRINA BLOQUE 4
+  "flex-layout.col#bloque-4-home": {
+    "children": [
+      "rich-text#titulo-bloque-4-home",
+      "flex-layout.row#vitrina-bloque-4-home"
+    ],
+    "props": {
+      "blockClass": "bloque-4-home"
+    }
+  },
+  // TITULO BLOQUE 4
+  "rich-text#titulo-bloque-4-home": {
+    "props": {
+      "blockClass": ["titulo-bloque-4-home"],
+      "text": "Lo más vendido",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#vitrina-bloque-4-home": {
+    "children": ["list-context.product-list#vitrina-bloque-4-home"]
+  },
+  "list-context.product-list#vitrina-bloque-4-home": {
+    "blocks": ["product-summary.shelf#grande"],
+    "children": ["slider-layout#vitrina-bloque-4-home"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#vitrina-bloque-4-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "vitrina-bloque-4-home",
+      "showNavigationArrows": "never"
+    }
+  },
+
+  // VITRINA BLOQUE 7
+  "flex-layout.col#bloque-7-home": {
+    "children": [
+      "rich-text#titulo-bloque-7-home",
+      "flex-layout.row#vitrina-bloque-7-home"
+    ],
+    "props": {
+      "blockClass": "bloque-4-home"
+    }
+  },
+  // TITULO BLOQUE 7
+  "rich-text#titulo-bloque-7-home": {
+    "props": {
+      "blockClass": ["titulo-bloque-7-home"],
+      "text": "Lo más vendido",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+  "flex-layout.row#vitrina-bloque-7-home": {
+    "children": ["list-context.product-list#vitrina-bloque-7-home"]
+  },
+  "list-context.product-list#vitrina-bloque-7-home": {
+    "blocks": ["product-summary.shelf#grande"],
+    "children": ["slider-layout#vitrina-bloque-7-home"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#vitrina-bloque-7-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "vitrina-bloque-4-home",
+      "showNavigationArrows": "never"
+    }
+  },
+
+  // BLOQUE 8 INFOCARD
+  "flex-layout.row#bloque-8-home": {
+    "children": ["info-card#bloque-8-home"],
+    "props": {
+      "blockClass": ["bloque-8-home"]
+    }
+  },
+  "info-card#bloque-8-home": {
+    "props": {
+      "blockClass": "bloque-8-home",
+      "isFullModeStyle": false,
+      "callToActionText": "Solicitar ahora",
+      "headline": "¡Tú y tu familia merecen el descanso ideal!",
+      "id": "",
+      "imageUrl": "/arquivos/imagen-bloque-8-home.png",
+      "subhead": "Crédito Fantástico",
+      "textAlignment": "center",
+      "textPosition": "right"
+    }
+  },
+
+  //BLOQUE 9 HOME
+  "flex-layout.col#bloque-9-home": {
+    "children": [
+      "rich-text#titulo-bloque-9-home",
+      "list-context.info-card-list#slider-categorias-bloque-9-home"
+    ],
+    "props": {
+      "blockClass": ["bloque-9-home"]
+    }
+  },
+  // TITULO BLOQUE 9
+  "rich-text#titulo-bloque-9-home": {
+    "props": {
+      "blockClass": ["titulo-bloque-9-home"],
+      "text": "Beneficios",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+  "list-context.info-card-list#slider-categorias-bloque-9-home": {
+    "children": ["slider-layout#slider-categorias-home-2"],
+    "props": {
+      "infoCards": [
+        {
+          "id": "infocard-categoria1-home",
+          "title": "infocard-categoria1-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/icons/icono-categoria-camas-v2.svg",
+          "imageActionUrl": "/",
+          "headline": "Camas",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-categoria-home"]
+        },
+        {
+          "id": "infocard-categoria2-home",
+          "title": "infocard-categoria2-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/icons/icono-categoria-sofas-v2.svg",
+          "imageActionUrl": "/",
+          "headline": "Sofás",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-categoria-home"]
+        },
+        {
+          "id": "infocard-categoria3-home",
+          "title": "infocard-categoria3-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/icons/icono-categoria-base-camas-v2.svg",
+          "imageActionUrl": "/",
+          "headline": "Base Camas",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-categoria-home"]
+        },
+        {
+          "id": "infocard-categoria4-home",
+          "title": "infocard-categoria4-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/icons/icono-categoria-colchones-v2.svg",
+          "imageActionUrl": "/",
+          "headline": "Colchones",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-categoria-home"]
+        },
+        {
+          "id": "infocard-categoria5-home",
+          "title": "infocard-categoria5-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/icons/icono-categoria-cabeceros.svg",
+          "imageActionUrl": "/",
+          "headline": "Cabeceros",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-categoria-home"]
+        },
+        {
+          "id": "infocard-categoria6-home",
+          "title": "infocard-categoria6-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/icons/icono-categoria-almohadas-v2.svg",
+          "imageActionUrl": "/",
+          "headline": "Almohadas",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-categoria-home"]
+        },
+        {
+          "id": "infocard-categoria7-home",
+          "title": "infocard-categoria7-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/icons/icono-categoria-sillas-reclinables-v2.svg",
+          "imageActionUrl": "/",
+          "headline": "Sillas Reclinables",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-categoria-home"]
+        },
+        {
+          "id": "infocard-categoria8-home",
+          "title": "infocard-categoria8-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/icons/icono-categoria-linea-bebes-v2.svg",
+          "imageActionUrl": "/",
+          "headline": "Línea Bebés",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-categoria-home"]
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-categorias-home-2": {
+    "title": "Lista categorias homer",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 8,
+        "tablet": 1,
+        "phone": 3
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "mobileOnly",
+      "blockClass": ["slider-categorias-home", "slider-categorias-home-2"]
+    }
+  },
+
+  //BLOQUE 10 HOME
+  "flex-layout.row#contenedor-bloque-10-home": {
+    "children": ["flex-layout.col#contenedor-bloque-10-home"]
+  },
+  "flex-layout.col#contenedor-bloque-10-home": {
+    "children": [
+      "rich-text#titulo-bloque-10-home-mobile",
+      "flex-layout.row#bloque-10-home"
+    ]
+  },
+  "flex-layout.row#bloque-10-home": {
+    "children": [
+      "list-context.info-card-list#slider-ubicaciones-bloque-10-home",
+      "info-card#infocard-2-bloque-10-home"
+    ],
+    "props": {
+      "blockClass": ["bloque-10-home"]
+    }
+  },
+  "rich-text#titulo-bloque-10-home-mobile": {
+    "props": {
+      "blockClass": ["titulo-bloque-10-home-mobile"],
+      "text": "Encuentra una tienda cercana a ti",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "list-context.info-card-list#slider-ubicaciones-bloque-10-home": {
+    "children": ["slider-layout#slider-ubicaciones-home"],
+    "props": {
+      "infoCards": [
+        {
+          "id": "infocard-ubicacion1-home",
+          "title": "infocard-ubicacion1-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/image/img-infocard-bloque-10-home.png",
+          "imageActionUrl": "/",
+          "headline": "Ubicación 1",
+          "subhead": "318 565 7434 \nCra 74 # 163 - 33",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-ubicacion-home"]
+        },
+        {
+          "id": "infocard-ubicacion1-home",
+          "title": "infocard-ubicacion1-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/image/img-infocard-bloque-10-home.png",
+          "imageActionUrl": "/",
+          "headline": "Ubicación 1",
+          "subhead": "318 565 7434 \nCra 74 # 163 - 33",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-ubicacion-home"]
+        },
+        {
+          "id": "infocard-ubicacion1-home",
+          "title": "infocard-ubicacion1-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/image/img-infocard-bloque-10-home.png",
+          "imageActionUrl": "/",
+          "headline": "Ubicación 1",
+          "subhead": "318 565 7434 \nCra 74 # 163 - 33",
+          "blockClass": ["infocard-ubicacion-home"]
+        },
+        {
+          "id": "infocard-ubicacion1-home",
+          "title": "infocard-ubicacion1-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/image/img-infocard-bloque-10-home.png",
+          "imageActionUrl": "/",
+          "headline": "Ubicación 1",
+          "subhead": "318 565 7434 \nCra 74 # 163 - 33",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-ubicacion-home"]
+        },
+        {
+          "id": "infocard-ubicacion1-home",
+          "title": "infocard-ubicacion1-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/image/img-infocard-bloque-10-home.png",
+          "imageActionUrl": "/",
+          "headline": "Ubicación 1",
+          "subhead": "318 565 7434 \nCra 74 # 163 - 33",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-ubicacion-home"]
+        },
+        {
+          "id": "infocard-ubicacion1-home",
+          "title": "infocard-ubicacion1-home",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/image/img-infocard-bloque-10-home.png",
+          "imageActionUrl": "/",
+          "headline": "Ubicación 1",
+          "subhead": "318 565 7434 \nCra 74 # 163 - 33",
+          "blockClass": ["infocard-ubicacion-home"]
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-ubicaciones-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 2
+      },
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "slider-ubicaciones-home",
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always"
+    }
+  },
+  //CONTENEDOR BLOQUE 10 HOME MOBILE
+  "flex-layout.col#bloque-10-home-mobile": {
+    "children": [
+      "rich-text#titulo-bloque-10-home-mobile",
+      "flex-layout.row#bloque-10-home"
+    ],
+    "props": {
+      "blockClass": ["bloque-10-home-mobile"]
+    }
+  },
+
+  //INFOCARD BLOQUE 10
+  "info-card#infocard-2-bloque-10-home": {
+    "props": {
+      "blockClass": "infocard-2-bloque-10-home",
+      "callToActionText": "Ver más tiendas",
+      "headline": "Encuentra una tienda cercana a ti",
+      "id": "infocard-2-bloque-10-home",
+      "textAlignment": "center",
+      "textPosition": "center"
+    }
+  },
+
+  //BLOQUE 11 HOME - SLIDER
+  "list-context.image-list#tercer-banner-home": {
+    "children": ["slider-layout#banner3-home"],
+    "props": {
+      "height": 570,
+      "preload": true,
+      "images": [
+        {
+          "image": "assets/image/tercer-banner-home.png",
+          "mobileImage": "/arquivos/tercer-banner-home-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#banner3-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "blockClass": ["slider-banner3-home"]
+    }
+  },
+
+  //BLOQUE 12 HOME
+  "flex-layout.row#bloque-12-home": {
+    "children": ["info-card#infocard-bloque-12-home-nuevo"],
+    "props": {
+      "blockClass": ["bloque-12-home"]
+    }
+  },
+  "info-card#infocard-bloque-12-home-nuevo": {
+    "props": {
+      "blockClass": "infocard-bloque-12-home",
+      "headline": "## La mejor colchonería con precios y ofertas de outlet Los mejores productos para tu descanso certificados y excelentes ofertas.",
+      "id": "infocard-bloque-12-home",
+      "imageUrl": "assets/image/img-infocard-bloque-12-home.png",
+      "subhead": "Al ser fabricantes podemos controlar todas las etapas y materiales dentro de la creación de nuestros productos y respaldarlos con una sólida garantía. Compra con confianza y a los mejores precios en Colchones Fantasía y recibe tu pedido en la comodidad de tu hogar. Encuentra nuestras tiendas físicas en Antioquia y Bogotá.",
+      "textAlignment": "center",
+      "textPosition": "right",
+      "textMode": "rich-text"
+    }
+  },
+  "info-card#infocard-bloque-12-home": {
+    "props": {
+      "blockClass": "infocard-bloque-12-home",
+      "headline": "## La mejor colchonería con precios y ofertas de Outlet",
+      "id": "infocard-bloque-12-home",
+      "imageUrl": "assets/image/img-infocard-bloque-12-home.png",
+      "subhead": "Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.",
+      "textAlignment": "center",
+      "textPosition": "right",
+      "textMode": "rich-text"
+    }
+  },
+
+  //BLOQUE 13 HOME
+  "flex-layout.row#bloque-13-home": {
+    "children": [
+      "flex-layout.col#seccion-1-bloque-13-home",
+      "flex-layout.col#seccion-2-bloque-13-home",
+      "flex-layout.col#seccion-3-bloque-13-home"
+    ],
+    "props": {
+      "blockClass": ["bloque-13-home"]
+    }
+  },
+  "flex-layout.col#seccion-1-bloque-13-home": {
+    "children": [
+      "flex-layout.row#titulo-seccion-1-bloque-13-home",
+      "newsletter"
+    ],
+    "props": {
+      "blockClass": ["seccion-bloque-13-home"]
+    }
+  },
+  "flex-layout.row#titulo-seccion-1-bloque-13-home": {
+    "children": [
+      "image#imagen-titulo-seccion-1-bloque-13-home",
+      "rich-text#titulo-seccion-1-bloque-13-home"
+    ],
+    "props": {
+      "blockClass": ["titulo-seccion-bloque-13-home"]
+    }
+  },
+  "image#imagen-titulo-seccion-1-bloque-13-home": {
+    "props": {
+      "blockClass": ["imagen-titulo-seccion-1-bloque-13-home"],
+      "maxHeight": 24,
+      "src": "assets/image/imagen-titulo-seccion-1-bloque-13-home.svg"
+    }
+  },
+  "rich-text#titulo-seccion-1-bloque-13-home": {
+    "props": {
+      "blockClass": ["titulo-seccion-2-bloque-13-home"],
+      "text": "Newsletter"
+    }
+  },
+  "newsletter": {
+    "props": {
+      "label": "Suscríbete al club del descanso y entérate de las mejores ofertas.",
+      "submit": "Suscribete"
+    }
+  },
+  // SECCION 2 BLOQUE 13 HOME DESKTOP
+  "flex-layout.col#seccion-2-bloque-13-home": {
+    "children": [
+      "flex-layout.row#titulo-seccion-2-bloque-13-home",
+      "flex-layout.col#informacion-seccion-2-bloque-13-home",
+      "rich-text#boton-seccion-2-bloque-13-home"
+    ],
+    "props": {
+      "blockClass": ["seccion-bloque-13-home", "seccion-2-bloque-13-home"]
+    }
+  },
+  "flex-layout.row#titulo-seccion-2-bloque-13-home": {
+    "children": [
+      "image#imagen-titulo-seccion-2-bloque-13-home",
+      "rich-text#titulo-seccion-2-bloque-13-home"
+    ],
+    "props": {
+      "blockClass": ["titulo-seccion-bloque-13-home"]
+    }
+  },
+  "image#imagen-titulo-seccion-2-bloque-13-home": {
+    "props": {
+      "blockClass": ["imagen-titulo-seccion-2-bloque-13-home"],
+      "maxHeight": 24,
+      "src": "assets/image/imagen-titulo-seccion-2-bloque-13-home.svg"
+    }
+  },
+  "rich-text#titulo-seccion-2-bloque-13-home": {
+    "props": {
+      "blockClass": ["titulo-seccion-2-bloque-13-home"],
+      "text": "Crédito digital y Ventas Online"
+    }
+  },
+  "flex-layout.col#informacion-seccion-2-bloque-13-home": {
+    "children": [
+      "image#imagen-whatsapp-seccion-2-bloque-13-home",
+      "rich-text#texto1-informacion-seccion-2-bloque-13-home",
+      "rich-text#texto2-informacion-seccion-2-bloque-13-home"
+    ],
+    "props": {
+      "blockClass": ["informacion-seccion-2-bloque-13-home"]
+    }
+  },
+  "image#imagen-whatsapp-seccion-2-bloque-13-home": {
+    "props": {
+      "blockClass": ["imagen-whatsapp-seccion-2-bloque-13-home"],
+      "maxHeight": 24,
+      "src": "assets/image/imagen-whatsapp-seccion-2-bloque-13-home.svg"
+    }
+  },
+  "rich-text#texto1-informacion-seccion-2-bloque-13-home": {
+    "props": {
+      "blockClass": ["texto1-informacion-seccion-2-bloque-13-home"],
+      "text": "Te ayudamos con tu compra",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#texto2-informacion-seccion-2-bloque-13-home": {
+    "props": {
+      "blockClass": ["texto2-informacion-seccion-2-bloque-13-home"],
+      "text": "312 7760272",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  //prueba eccion creditos mobile
+  "menu-item#menu-seccion-enlaces-interes-mobile-prueba": {
+    "props": {
+      "id": "menu-seccion-enlaces-interes-mobile",
+      "blockClass": ["menu-acordeon-2-bloque-13-home-mobile", "menus-bloque-13-home-mobile"],
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "",
+        "text": "Enlaces de Interés"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#menu-seccion-enlaces-interes-mobile-prueba"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#menu-seccion-enlaces-interes-mobile-prueba": {
+    "children": [
+      "flex-layout.col#contenedor-menu-seccion-creditos-ventas-mobile"
+    ],
+    "props": {
+      "blockClass": "submenu-seccion-enlaces-interes-mobile"
+    }
+  },
+  // SECCION 2 BLOQUE 13 HOME MOBILE
+  "menu-item#menu-seccion-creditos-ventas-mobile": {
+    "props": {
+      "id": "menu-seccion-creditos-ventas-mobile",
+      "blockClass": ["menu-acordeon-1-bloque-13-home-mobile", "menus-bloque-13-home-mobile"],
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "",
+        "text": "Crédito digital y Ventas Online"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#menu-seccion-creditos-ventas-mobile"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#menu-seccion-creditos-ventas-mobile": {
+    "children": [
+      "flex-layout.col#contenedor-menu-seccion-creditos-ventas-mobile"
+    ],
+    "props": {
+      "blockClass": "submenu-seccion-creditos-ventas-mobile"
+    }
+  },
+  "flex-layout.col#contenedor-menu-seccion-creditos-ventas-mobile": {
+    "children": [
+      // "flex-layout.col#informacion-seccion-2-bloque-13-home",
+      "flex-layout.col#informacion-seccion-2-bloque-13-home-mobile",
+      "rich-text#boton-seccion-2-bloque-13-home"
+    ],
+    "props": {
+      "blockClass": ["contenedor-menu-seccion-creditos-ventas-mobile"]
+    }
+  },
+  "flex-layout.col#informacion-seccion-2-bloque-13-home-mobile": {
+    "children": [
+      // "image#imagen-whatsapp-seccion-2-bloque-13-home",
+      "rich-text#texto1-informacion-seccion-2-bloque-13-home",
+      "rich-text#texto2-informacion-seccion-2-bloque-13-home"
+    ],
+    "props": {
+      "blockClass": ["informacion-seccion-2-bloque-13-home"]
+    }
+  },
+  "flex-layout.row#contenedor-menu-seccion-creditos-ventas-mobile": {
+    "children": ["flex-layout.col#seccion-2-bloque-13-home"],
+    "props": {
+      "blockClass": ["contenedor-menu-seccion-creditos-ventas-mobile"]
+    }
+  },
+  //BOTON SECCION 2 BLOQUE 13
+  "rich-text#boton-seccion-2-bloque-13-home": {
+    "props": {
+      "blockClass": ["boton-seccion-2-bloque-13-home"],
+      "text": "¿Cómo pagar tu crédito?",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "flex-layout.col#seccion-3-bloque-13-home": {
+    "children": [
+      "flex-layout.row#titulo-seccion-3-bloque-13-home",
+      "vtex.menu@2.x:menu#menu-seccion-3-bloque-13-home"
+    ],
+    "props": {
+      "blockClass": ["seccion-bloque-13-home", "seccion-3-bloque-13-home"]
+    }
+  },
+  "flex-layout.row#titulo-seccion-3-bloque-13-home": {
+    "children": [
+      "image#imagen-titulo-seccion-3-bloque-13-home",
+      "rich-text#titulo-seccion-3-bloque-13-home"
+    ],
+    "props": {
+      "blockClass": ["titulo-seccion-bloque-13-home"]
+    }
+  },
+  "image#imagen-titulo-seccion-3-bloque-13-home": {
+    "props": {
+      "blockClass": ["imagen-titulo-seccion-3-bloque-13-home"],
+      "maxHeight": 24,
+      "src": "assets/image/imagen-titulo-seccion-3-bloque-13-home.svg"
+    }
+  },
+  "rich-text#titulo-seccion-3-bloque-13-home": {
+    "props": {
+      "blockClass": ["titulo-seccion-2-bloque-13-home"],
+      "text": "Enlaces de Interés"
+    }
+  },
+  "vtex.menu@2.x:menu#menu-seccion-3-bloque-13-home": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": ["menu-seccion-3-bloque-13-home"],
+      "items": [
+        {
+          "id": "menu-item-seccion-3-bloque-13-home",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/nuestra-empresa",
+            "noFollow": false,
+            "tagTitle": "Nuestra Empresa",
+            "text": "Nuestra Empresa"
+          }
+        },
+        {
+          "id": "menu-item-seccion-3-bloque-13-home",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/tratamiendo-datos",
+            "noFollow": false,
+            "tagTitle": "Política De Tratamiento De Datos",
+            "text": "Política De Tratamiento De Datos"
+          }
+        },
+        {
+          "id": "menu-item-seccion-3-bloque-13-home",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/terminos-condiciones",
+            "noFollow": false,
+            "tagTitle": "Términos Y Condiciones",
+            "text": "Términos Y Condiciones"
+          }
+        },
+        {
+          "id": "menu-item-seccion-3-bloque-13-home",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/politicas-devolucion",
+            "noFollow": false,
+            "tagTitle": "Políticas De Devolución",
+            "text": "Políticas De Devolución"
+          }
+        },
+        {
+          "id": "menu-item-seccion-3-bloque-13-home",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/preguntas-frecuentes",
+            "noFollow": false,
+            "tagTitle": "Preguntas Frecuentes",
+            "text": "Preguntas Frecuentes"
+          }
+        },
+        {
+          "id": "menu-item-seccion-3-bloque-13-home",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/trabaja-con-nosotros",
+            "noFollow": false,
+            "tagTitle": "Trabaja Con Nosotros",
+            "text": "Trabaja Con Nosotros"
+          }
+        }
+      ]
+    }
+  },
+  // SECCION 3 BLOQUE 13 HOME MOBILE
+  "menu-item#menu-seccion-enlaces-interes-mobile": {
+    "props": {
+      "id": "menu-seccion-enlaces-interes-mobile",
+      "blockClass": ["menu-acordeon-2-bloque-13-home-mobile", "menus-bloque-13-home-mobile"],
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "",
+        "text": "Enlaces de Interés"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#menu-seccion-enlaces-interes-mobile"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#menu-seccion-enlaces-interes-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#menu-seccion-3-bloque-13-home"
+    ],
+    "props": {
+      "blockClass": "submenu-seccion-enlaces-interes-mobile"
+    }
+  },
+
+  // "flex-layout.col#bloque-7-home": {
+  //   "children": [
+  //     "rich-text#titulo-bloque-7-home",
+  //     "flex-layout.row#vitrina-bloque-7-home"
+  //   ],
+  //   "props": {
+  //     "blockClass": "bloque-4-home"
+  //   }
+  // },
+  // // TITULO BLOQUE 4
+  // "rich-text#titulo-bloque-7-home": {
+  //   "props": {
+  //     "blockClass": ["titulo-bloque-3-home"],
+  //     "text": "Lo más vendido",
+  //     "textAlignment": "left",
+  //     "textPosition": "CENTER"
+  //   }
+  // },
+  // "flex-layout.row#vitrina-bloque-7-home": {
+  //   "children": ["list-context.product-list#vitrina-bloque-7-home"]
+  // },
+  // "list-context.product-list#vitrina-bloque-7-home": {
+  //   "blocks": ["product-summary.shelf#pequeña"],
+  //   "children": ["slider-layout#vitrina-bloque-7-home"],
+  //   "props": {
+  //     "orderBy": "OrderByTopSaleDESC"
+  //   }
+  // },
+  // "slider-layout#vitrina-bloque-7-home": {
+  //   "props": {
+  //     "itemsPerPage": {
+  //       "desktop": 3,
+  //       "tablet": 3,
+  //       "phone": 1
+  //     },
+  //     "infinite": true,
+  //     "fullWidth": false,
+  //     "blockClass": "vitrina-bloque-7-home",
+  //     "showNavigationArrows": "never"
+  //   }
+  // },
+  "list-context.product-list#vitrina-bloque-7-home-pequeña": {
+    "blocks": ["product-summary.shelf#pequeña"],
+    "children": ["slider-layout#vitrina-bloque-7-home-pequeña"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#vitrina-bloque-7-home-pequeña": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": ["vitrina-bloque-7-home", "vitrina-bloque-7-home-pequeña"],
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never"
+    }
+  },
+  "list-context.product-list#vitrina-bloque-7-home-grande": {
+    "blocks": ["product-summary.shelf#grande"],
+    "children": ["slider-layout#vitrina-bloque-7-home-grande"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#vitrina-bloque-7-home-grande": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": ["vitrina-bloque-7-home", "vitrina-bloque-7-home-grande"],
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never"
+    }
+  },
+
+  //PRUEBA VITRINA PEQUEÑA GRANDE
+  "flex-layout.row#vitrinas-bloque-7-home": {
+    "children": ["list-context.product-list#vitrina-bloque-7-home-pequeña"],
+    "props": {
+      "blockClass": ["vitrinas-bloque-7-home"]
+    }
+  },
+  "slider-layout#vitrinas-bloque-7-home": {
+    "title": "Slider vitrinas-bloque-7-home",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "slider-vitrinas-bloque-7-home",
+      "showPaginationDots": "always"
+    },
+    "children": [
+      "flex-layout.row#vitrinas-bloque-7-home",
+      "flex-layout.row#vitrinas-bloque-7-home",
+      "flex-layout.row#vitrinas-bloque-7-home"
+    ]
+  },
+
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+  "rich-text#question": {
+    "props": {
+      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "blockClass": "question"
+    }
+  },
+
+  "rich-text#link": {
+    "props": {
+      "text": "\n**Reach us at**\nwww.vtex.com.br",
+      "blockClass": "link"
+    }
+  }
+}

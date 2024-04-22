@@ -1,0 +1,89 @@
+{
+  "product-summary.shelf#comparador": {
+    "children": [
+      "responsive-layout.desktop#vitrina-comparador",
+      "responsive-layout.tablet#vitrina-comparador",
+      "responsive-layout.phone#vitrina-comparador"
+    ]
+  },
+
+  "product-summary.shelf.product-comparison#comparador": {
+    "children": [
+      "responsive-layout.desktop#vitrina-comparador",
+      "responsive-layout.tablet#vitrina-comparador",
+      "responsive-layout.phone#vitrina-comparador"
+    ]
+  },
+
+
+  //CONTENEDOR VITRINA COMPARADOR
+  "flex-layout.row#contenedor-vitrina-comparador": {
+    "children": [
+      // "flex-layout.col#contenedor-vitrina-comparador",
+      "responsive-layout.desktop#vitrina-comparador",
+      "responsive-layout.tablet#vitrina-comparador",
+      "responsive-layout.phone#vitrina-comparador"
+    ],
+    "props":{
+      "blockClass":"contenedor-vitrina-comparador"
+    }
+  },
+  "responsive-layout.desktop#vitrina-comparador": {
+    "children": ["flex-layout.col#contenedor-vitrina-comparador"]
+  },
+  "responsive-layout.tablet#vitrina-comparador": {
+    "children": ["flex-layout.col#contenedor-vitrina-comparador-mobile"]
+  },
+  "responsive-layout.phone#vitrina-comparador": {
+    "children": ["flex-layout.col#contenedor-vitrina-comparador-mobile"]
+  },
+  "flex-layout.col#contenedor-vitrina-comparador": {
+    "children": [
+      "stack-layout#vitrina",
+      "product-summary-space",
+      "condition-layout.product#especificacion-firmeza-firme",
+      "add-to-list-btn",
+      "product-summary-space",
+      "flex-layout.col#contenedor-nombre-dimensiones",
+      "product-summary-space",
+      "flex-layout.row#condicional-especificaciones-vitrina-grande",
+      "product-summary-space",
+      "flex-layout.col#spacer",
+      "condition-layout.product#especificacion-desde",
+      "flex-layout.row#fila-precio-botonComprar",
+      // "product-comparison-drawer", // Este componente no va acá
+      "product-comparison-block.selector"
+    ],
+    "props":{
+      "blockClass":"contenedor-vitrina-comparador"
+    }
+  },
+  "flex-layout.col#contenedor-vitrina-comparador-mobile": {
+    "children": [
+      "stack-layout#vitrina",
+      "add-to-list-btn",
+      "flex-layout.col#contenedor-nombre-dimensiones",
+      // "flex-layout.row#condicional-especificaciones-vitrina-grande",
+      // "product-summary-space",
+      // "flex-layout.col#spacer",
+      "product-summary-space",
+      "flex-layout.col#spacer",
+      "condition-layout.product#especificacion-desde",
+      "product-summary-space",
+      "flex-layout.col#spacer",
+      "flex-layout.row#contenedor-precios-minicart",
+      "flex-layout.row#boton-comprar-vitrina-comparador",
+      "product-comparison-drawer",
+      "product-comparison-block.selector"
+    ],
+    "props":{
+      "blockClass":"contenedor-vitrina-comparador-mobile"
+    }
+  },
+  "flex-layout.row#boton-comprar-vitrina-comparador": {
+    "children": ["add-to-cart-button#vitrina"],
+    "props": {
+      "blockClass": ["boton-comprar-vitrina-comparador"]
+    }
+  }
+}

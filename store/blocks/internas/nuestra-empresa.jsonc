@@ -1,0 +1,283 @@
+{
+  "store.custom#nuestra-empresa": {
+    "children": ["flex-layout.row#contenedor-vista-nuestra-empresa"]
+  },
+  //CONTENEDOR VISTA NUESTRA EMPRESA
+  "flex-layout.row#contenedor-vista-nuestra-empresa": {
+    "children": ["flex-layout.col#contenedor-responsive-vista-nuestra-empresa"],
+    "props": {
+      "blockClass": ["contenedor-vista-nuestra-empresa"]
+    }
+  },
+  "flex-layout.col#contenedor-responsive-vista-nuestra-empresa": {
+    "children": [
+      "responsive-layout.desktop#contenedor-vista-nuestra-empresa",
+      "responsive-layout.tablet#contenedor-vista-nuestra-empresa",
+      "responsive-layout.phone#contenedor-vista-nuestra-empresa"
+    ],
+    "props": {
+      "blockClass": ["contenedor-responsive-vista-nuestra-empresa"]
+    }
+  },
+  "responsive-layout.desktop#contenedor-vista-nuestra-empresa": {
+    "children": ["flex-layout.col#contenedor-vista-nuestra-empresa"]
+  },
+  "responsive-layout.tablet#contenedor-vista-nuestra-empresa": {
+    "children": ["flex-layout.col#contenedor-vista-nuestra-empresa-mobile"]
+  },
+  "responsive-layout.phone#contenedor-vista-nuestra-empresa": {
+    "children": ["flex-layout.col#contenedor-vista-nuestra-empresa-mobile"]
+  },
+  "flex-layout.col#contenedor-vista-nuestra-empresa": {
+    "children": [
+      "image#boton-trabaja-con-nosotros",
+      "flex-layout.row#contenedor-miga-pan-vista-nuestra-empresa",
+      "flex-layout.row#seccion-1-nuestra-empresa",
+      "flex-layout.col#seccion-2-nuestra-empresa",
+      "flex-layout.col#seccion-3-nuestra-empresa"
+    ],
+    "props": {
+      "blockClass": ["col-contenedor-vista-nuestra-empresa"]
+    }
+  },
+
+  //BOTON TRABAJA CON NOSOTROS
+  "image#boton-trabaja-con-nosotros": {
+    "props": {
+      "blockClass": ["boton-trabaja-con-nosotros"],
+      "src": "/arquivos/img-boton-trabaja-con-nosotros.svg",
+      "link": {
+        "url": "/trabaja-con-nosotros",
+        "openNewTab": true,
+        "title": "Trabaja con nosotros"
+      }
+    }
+  },
+
+  // MIGA DE PAN VISTA TERMINOS LEGALES
+  "flex-layout.row#contenedor-miga-pan-vista-nuestra-empresa": {
+    "children": [
+      "rich-text#miga-pan-1-vista-nuestra-empresa",
+      "image#flecha-miga-pan",
+      "rich-text#miga-pan-2-vista-nuestra-empresa"
+    ],
+    "props": {
+      "blockClass": ["contenedor-miga-pan-formulario-contacto"]
+    }
+  },
+  "rich-text#miga-pan-1-vista-nuestra-empresa": {
+    "props": {
+      "blockClass": ["miga-pan-1"],
+      "text": "Miga de pan desktop"
+    }
+  },
+  "rich-text#miga-pan-2-vista-nuestra-empresa": {
+    "props": {
+      "blockClass": ["miga-pan-2"],
+      "text": "Miga de pan desktop"
+    }
+  },
+
+  //SECCION 1 NUESTRA EMPRESA
+  "flex-layout.row#seccion-1-nuestra-empresa": {
+    "children": [
+      "flex-layout.col#textos-seccion-1-nuestra-empresa",
+      "image#imagen-seccion-1-nuestra-empresa"
+    ],
+    "props": {
+      "blockClass": ["seccion-1-nuestra-empresa"]
+    }
+  },
+  "flex-layout.col#textos-seccion-1-nuestra-empresa": {
+    "children": [
+      "rich-text#titulo-seccion-1-nuestra-empresa",
+      "rich-text#texto-seccion-1-nuestra-empresa"
+    ],
+    "props": {
+      "blockClass": ["textos-seccion-1-nuestra-empresa"]
+    }
+  },
+  "rich-text#titulo-seccion-1-nuestra-empresa": {
+    "props": {
+      "blockClass": ["titulo-seccion-1-nuestra-empresa"],
+      "text": "Nuestra Empresa"
+    }
+  },
+  "rich-text#texto-seccion-1-nuestra-empresa": {
+    "props": {
+      "blockClass": ["texto-seccion-1-nuestra-empresa"],
+      "text": "Somos una empresa fundada en el año 1992 en la ciudad de Medellín, nuestra misión es fabricar y comercializar artículos para el descanso: colchones, muebles de sala, almohadas y ropa hogar.\nNuestra innovación está enfocada en brindar a cada uno de nuestros clientes productos para su confort, haciendo uso de tecnología y materia prima de primera calidad, razón por la cual fuimos la primera empresa del sector en Colombia en ser certificada por ICONTEC bajo la norma NTC-2094. \nNuestra marca es líder en el departamento de Antioquia, hemos tenido un crecimiento en el mercado nacional a través de nuestras tiendas propias y desde el año 2000 con nuestra tienda web, la cual nos ha permitido llegar a todos los departamentos del país, además, de una alianza con distribuidores a nivel nacional. \nEs así como Colchones Fantasía, se ha convertido en una marca líder en descanso para las familias colombianas y gracias a ello, seguimos trabajando para llevar lo mejor de nuestros productos a sus hogares."
+    }
+  },
+  "image#imagen-seccion-1-nuestra-empresa": {
+    "props": {
+      "blockClass": ["imagen-seccion-1-nuestra-empresa"],
+      "src": "/arquivos/img-seccion-1-nuestra-empresa.png"
+    }
+  },
+
+  //SECCION 2 NUESTRA EMPRESA
+  "flex-layout.col#seccion-2-nuestra-empresa": {
+    "children": [
+      "rich-text#titulo-seccion-2-nuestra-empresa",
+      "list-context.image-list#slider-seccion-2-nuestra-empresa"
+    ],
+    "props": {
+      "blockClass": ["seccion-2-nuestra-empresa"]
+    }
+  },
+  "rich-text#titulo-seccion-2-nuestra-empresa": {
+    "props": {
+      "blockClass": ["titulo-seccion-1-nuestra-empresa"],
+      "text": "Nuestra cultura"
+    }
+  },
+  "list-context.image-list#slider-seccion-2-nuestra-empresa": {
+    "children": ["slider-layout#slider-seccion-2-nuestra-empresa"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "/arquivos/img-seccion-2-nuestra-empresa.png",
+          "mobileImage": "/arquivos/img-seccion-2-nuestra-empresa-mobile.png"
+        },
+        {
+          "image": "/arquivos/img-seccion-2-nuestra-empresa.png",
+          "mobileImage": "/arquivos/img-seccion-2-nuestra-empresa-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-seccion-2-nuestra-empresa": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 2000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "always",
+      "blockClass": "slider-seccion-2-nuestra-empresa"
+    }
+  },
+
+  //SECCION 3 NUESTRA EMPRESA
+  "flex-layout.col#seccion-3-nuestra-empresa": {
+    "children": [
+      "rich-text#titulo-seccion-2-nuestra-empresa",
+      "list-context.info-card-list#infocards-seccion-3-nuestra-empresa"
+    ],
+    "props": {
+      "blockClass": ["seccion-2-nuestra-empresa"]
+    }
+  },
+  "rich-text#titulo-seccion-3-nuestra-empresa": {
+    "props": {
+      "blockClass": ["titulo-seccion-1-nuestra-empresa"],
+      "text": "Nuestros valores"
+    }
+  },
+  "list-context-renderer#wrapped": {
+    "props": {
+      "listElement": "div",
+      "itemElement": "div",
+      "blockClass": "infocards-seccion-3-nuestra-empresa"
+    }
+  },
+  "list-context.info-card-list#infocards-seccion-3-nuestra-empresa": {
+    "children": [
+      "list-context-renderer#wrapped"
+    ],
+    "props": {
+      "infoCards": [
+        {
+          "id": "info-card-nuestros-valores-1",
+          "title": "info-card-nuestros-valores-1",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/img-1-valores.png",
+          "imageActionUrl": "/",
+          "callToActionMode": "link",
+          "callToActionText": "Ver más",
+          "callToActionUrl": "#",
+          "headline": "Respeto",
+          "subhead": "Somos parte de una misma familia, vivimos el buen trato, la aceptación de las diferencias y las buenas relaciones con nuestros compañeros.",
+          "blockClass": ["info-card-1-nuestros-valores"]
+        },
+        {
+          "id": "info-card-nuestros-valores-1",
+          "title": "info-card-nuestros-valores-1",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/img-2-valores.png",
+          "imageActionUrl": "/",
+          "callToActionMode": "link",
+          "callToActionText": "Ver más",
+          "callToActionUrl": "#",
+          "headline": "Trabajo en equipo",
+          "subhead": "Trabajando unidos realizamos las labores de forma conjunta y coordinada para conseguir buenos resultados, siempre en aras de mejorar y lograr las metas propuestas",
+          "blockClass": ["info-card-2-nuestros-valores"]
+        },
+        {
+          "id": "info-card-nuestros-valores-1",
+          "title": "info-card-nuestros-valores-1",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/img-1-valores.png",
+          "imageActionUrl": "/",
+          "callToActionMode": "link",
+          "callToActionText": "Ver más",
+          "callToActionUrl": "#",
+          "headline": "Compromiso",
+          "subhead": "Trabajamos con el mismo entusiasmo, dedicación y amor en nuestras labores, lo cual nos permite pasar de las palabras a los hechos para atender de manera oportuna y eficaz las necesidades de nuestros clientes",
+          "blockClass": ["info-card-3-nuestros-valores"]
+        },
+        {
+          "id": "info-card-nuestros-valores-1",
+          "title": "info-card-nuestros-valores-1",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "/arquivos/img-2-valores.png",
+          "imageActionUrl": "/",
+          "callToActionMode": "link",
+          "callToActionText": "Ver más",
+          "callToActionUrl": "#",
+          "headline": "Disciplina",
+          "subhead": "Con nuestra constancia, dedicación y manera ordenada cumplimos con los tiempos, los objetivos de nuestro proceso, las normas y leyes que forman parte del día a día de Industrias Fantasía.",
+          "blockClass": ["info-card-4-nuestros-valores"]
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-seccion-3-nuestra-empresa": {
+    "title": "lista cards terminos y condiciones",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 50,
+        "tablet": 50,
+        "phone": 50
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "blockClass": "slider-seccion-3-nuestra-empresa"
+    }
+  },
+
+  "flex-layout.col#contenedor-vista-nuestra-empresa-mobile": {
+    "children": [
+      "flex-layout.row#contenedor-miga-pan-vista-nuestra-empresa",
+      "flex-layout.row#seccion-1-nuestra-empresa",
+      "flex-layout.col#seccion-2-nuestra-empresa",
+      "flex-layout.col#seccion-3-nuestra-empresa"
+    ],
+    "props": {
+      "blockClass": ["col-contenedor-vista-nuestra-empresa"]
+    }
+  }
+}

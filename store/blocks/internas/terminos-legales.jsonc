@@ -1,0 +1,442 @@
+{
+  "store.custom#terminos-legales": {
+    "children": ["flex-layout.row#contenedor-vista-terminos-legales"]
+  },
+  //CONTENEDOR VISTA TERMINOS LEGALES
+  "flex-layout.row#contenedor-vista-terminos-legales": {
+    "children": [
+      "flex-layout.col#contenedor-responsive-vista-terminos-legales"
+    ],
+    "props": {
+      "blockClass": ["contenedor-vista-terminos-legales"]
+    }
+  },
+  "flex-layout.col#contenedor-responsive-vista-terminos-legales": {
+    "children": [
+      "responsive-layout.desktop#contenedor-vista-terminos-legales",
+      "responsive-layout.tablet#contenedor-vista-terminos-legales",
+      "responsive-layout.phone#contenedor-vista-terminos-legales"
+    ],
+    "props": {
+      "blockClass": ["contenedor-responsive-vista-terminos-legales"]
+    }
+  },
+  "responsive-layout.desktop#contenedor-vista-terminos-legales": {
+    "children": ["flex-layout.col#contenedor-vista-terminos-legales"]
+  },
+  "responsive-layout.tablet#contenedor-vista-terminos-legales": {
+    "children": ["flex-layout.col#contenedor-vista-terminos-legales-mobile"]
+  },
+  "responsive-layout.phone#contenedor-vista-terminos-legales": {
+    "children": ["flex-layout.col#contenedor-vista-terminos-legales-mobile"]
+  },
+  "flex-layout.col#contenedor-vista-terminos-legales": {
+    "children": [
+      "flex-layout.row#contenedor-miga-pan-vista-terminos-legales",
+      "flex-layout.row#titulo-vista-terminos-legales",
+      "tab-layout#tab-seccion-terminos-legales"
+    ],
+    "props": {
+      "blockClass": ["col-contenedor-vista-terminos-legales"]
+    }
+  },
+
+  // MIGA DE PAN VISTA TERMINOS LEGALES
+  "flex-layout.row#contenedor-miga-pan-vista-terminos-legales": {
+    "children": [
+      "rich-text#miga-pan-1-vista-terminos-legales",
+      "image#flecha-miga-pan",
+      "rich-text#miga-pan-2-vista-terminos-legales"
+    ],
+    "props": {
+      "blockClass": ["contenedor-miga-pan-formulario-contacto"]
+    }
+  },
+  "rich-text#miga-pan-1-vista-terminos-legales": {
+    "props": {
+      "blockClass": ["miga-pan-1"],
+      "text": "Miga de pan desktop"
+    }
+  },
+  "rich-text#miga-pan-2-vista-terminos-legales": {
+    "props": {
+      "blockClass": ["miga-pan-2"],
+      "text": "Miga de pan desktop"
+    }
+  },
+
+  //TITULO VISTA NUESTRAS TIENDAS
+  "flex-layout.row#titulo-vista-terminos-legales": {
+    "children": [
+      "rich-text#titulo-vista-terminos-legales",
+      "rich-text#subtitulo-vista-terminos-legales"
+    ],
+    "props": {
+      "blockClass": ["titulo-vista-terminos-legales"]
+    }
+  },
+  "rich-text#titulo-vista-terminos-legales": {
+    "props": {
+      "blockClass": ["titulo-vista-terminos-legales"],
+      "text": "Términos legales"
+    }
+  },
+  "rich-text#subtitulo-vista-terminos-legales": {
+    "props": {
+      "blockClass": ["subtitulo-vista-terminos-legales"],
+      "text": "Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+    }
+  },
+
+  //SECCION TAB TERMINOS LEGALES
+  "tab-layout#tab-seccion-terminos-legales": {
+    "children": [
+      "tab-list#tab-seccion-terminos-legales",
+      "tab-content#tab-seccion-terminos-legales"
+    ],
+    "props": {
+      "blockClass": "tab-seccion-terminos-legales",
+      "defaultActiveTabId": "tab-politica-compra"
+    }
+  },
+
+  // Listado de pestañas
+  "tab-list#tab-seccion-terminos-legales": {
+    "children": [
+      "tab-list.item#tab-politica-compra",
+      "tab-list.item#tab-politica-entrega",
+      "tab-list.item#tab-politica-tratamiento-datos"
+    ],
+    "props": {
+      "blockClass": "list-tab-terminos-legales"
+    }
+  },
+  "tab-list.item#tab-politica-compra": {
+    "props": {
+      "tabId": "tab-politica-compra",
+      "blockClass": "item-politica-compra",
+      "label": "Política de compra",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#tab-politica-entrega": {
+    "props": {
+      "tabId": "tab-politica-entrega",
+      "blockClass": "item-politica-entrega",
+      "label": "Política de entrega Industrias Fantasía S.A.S"
+    }
+  },
+  "tab-list.item#tab-politica-tratamiento-datos": {
+    "props": {
+      "tabId": "tab-politica-tratamiento-datos",
+      "blockClass": "item-politica-tratamiento-datos",
+      "label": "Política de tratamiento de datos"
+    }
+  },
+
+  //Listado de los contenidos de las pestañas
+  "tab-content#tab-seccion-terminos-legales": {
+    "children": [
+      "tab-content.item#tab-politica-compra",
+      "tab-content.item#tab-politica-entrega",
+      "tab-content.item#tab-politica-tratamiento-datos"
+    ],
+    "props": {
+      "blockClass": "content-tab-terminos-legales"
+    }
+  },
+
+  // Detalle de cada contenido de las pestañas
+  "tab-content.item#tab-politica-compra": {
+    "children": ["flex-layout.col#contenido-politica-compra"],
+    "props": {
+      "tabId": "tab-politica-compra",
+      "blockClass": "content-politica-compra"
+    }
+  },
+  "tab-content.item#tab-politica-entrega": {
+    "children": ["flex-layout.col#contenido-politica-entrega"],
+    "props": {
+      "tabId": "tab-politica-entrega",
+      "blockClass": "content-politica-entrega"
+    }
+  },
+  "tab-content.item#tab-politica-tratamiento-datos": {
+    "children": ["flex-layout.col#contenido-politica-tratamiento-datos"],
+    "props": {
+      "tabId": "tab-politica-tratamiento-datos",
+      "blockClass": "content-politica-tratamiento-datos"
+    }
+  },
+
+  // CONTENDIO POLITICA DE COMPRA
+  "flex-layout.col#contenido-politica-compra": {
+    "children": [
+      "image#img-contenido-politica-compra",
+      "rich-text#titulo-contenido-politica-compra",
+      "rich-text#texto-contenido-politica-compra"
+    ],
+    "props": {
+      "blockClass": ["contenedor-textos-terminos-legales"]
+    }
+  },
+  "image#img-contenido-politica-compra": {
+    "props": {
+      "blockClass": ["img-contenido-terminos-legales"],
+      "src": "/arquivos/img-terminos-legales-1.png"
+    }
+  },
+  "rich-text#titulo-contenido-politica-compra": {
+    "props": {
+      "blockClass": ["titulo-content-terminos-legales"],
+      "text": "Política de compra"
+    }
+  },
+  "rich-text#texto-contenido-politica-compra": {
+    "props": {
+      "blockClass": ["texto-content-terminos-legales"],
+      "text": "Identifique su necesidad de producto, basado en la ayuda y asesoramiento que aquí se le ofrece, proceda tranquilamente a la compra con total seguridad, siguiendo los pasos que indicamos a continuación:\n● Elija en el menú o en el home el producto que desea y de clic sobre él, allí aparecerá información en detalle.\n● Seleccione el o los productos que llevará en su compra, dé clic en el carrito de compra, donde podrá sumar otros productos, bajo el mismo proceso.\n● Una vez este seguro de que ingreso al carrito de compra los productos que necesita de clic en el botón superior carrito de compra y clic en el botón finalizar compra.\n● Ingrese la información de facturación que el sitio web le solicita, estos deben estar llenos en su totalidad; si ya es un cliente registrado de clic en el enlace superior el cual contiene el mensaje ¿Ya eres cliente? Haz clic para acceder.\n● Verifique la información de compra: productos, precios, valor del flete y datos de entrega de su pedido\n● Una vez verificado de clic en el botón finalizar compra\n● Seleccione el medio de pago tarjeta o efectivo / estas transacciones se realizan directamente con nuestro intermediario Epayco.\n● Ingrese todos los datos de pago de esta manera el proceso será exitoso.\n● Epayco realizará las validaciones respectivas para evitar que se realicen fraudes en sus compras.\n● El proceso de validación y aprobación depende de Epayco.\n● Cualquier información requerida por las autoridades sobre alguna transacción se entregará de acuerdo a los requisitos de ley.\n● La información de los clientes será almacenada y protegida de acuerdo con la normatividad vigente.\n● Al ingresar sus datos acepta la política de tratamiento de información personal."
+    }
+  },
+
+  // CONTENDIO POLITICA DE ENTREGA
+  "flex-layout.col#contenido-politica-entrega": {
+    "children": [
+      "image#img-contenido-politica-entrega",
+      "rich-text#titulo-contenido-politica-entrega",
+      "rich-text#texto-contenido-politica-entrega"
+    ],
+    "props": {
+      "blockClass": ["contenedor-textos-terminos-legales"]
+    }
+  },
+  "image#img-contenido-politica-entrega": {
+    "props": {
+      "blockClass": ["img-contenido-terminos-legales"],
+      "src": "/arquivos/img-terminos-legales-2.png"
+    }
+  },
+  "rich-text#titulo-contenido-politica-entrega": {
+    "props": {
+      "blockClass": ["titulo-content-terminos-legales"],
+      "text": "Política de entrega Industrias Fantasía S.A.S"
+    }
+  },
+  "rich-text#texto-contenido-politica-entrega": {
+    "props": {
+      "blockClass": ["texto-content-terminos-legales"],
+      "text": "1 . Industrias Fantasía S.A.S, desarrolla su actividad comercial procurando permanentemente el mejor servicio al cliente, la sana convivencia con el entorno social y la integridad personal de sus colaboradores, hechos que permiten realizar la entrega de nuestros productos sólo cuando las condiciones de acceso y circulación son las adecuadas para el ingreso de los mismos.\n2 . Para cumplir con nuestros objetivos, siendo uno de los más relevantes la claridad y transparencia con nuestros clientes, informamos las políticas que se deben observar en el proceso de LA ENTREGA:\na. Los pedidos sólo se entregan en la dirección suministrada por el cliente. El personal de Industrias Fantasía S.A.S y sus operadores logísticos no están autorizados a entregar en destinos diferentes a la registrada en la factura de compra.\nb. No se realizan envíos a direcciones que no cuenten con una nomenclatura oficial.\nc.Los pedidos sólo se despachan cuando estén pagos en su totalidad o exista un acuerdo de pago pactado acorde a nuestra política de compra.\nd.Los pagos contra entrega sólo se reciben en el mismo domicilio de la entrega del pedido (Sólo aplica para los puntos de venta en Medellín y su Área Metropolitana).\ne. La persona que recibe debe ser mayor de edad, con criterio y capacidad de análisis con el fin de que pueda evaluar la calidad del producto y el nivel de nuestro servicio.\nf. El cliente debe revisar los productos en presencia del transportador, observando que se encuentren en óptimas condiciones y que la entrega coincida en cantidad y descripción con los productos solicitados.\ng. El cliente debe registrar en la copia del documento de LA ENTREGA las observaciones si las hubiere, de no registrar ningún comentario se entiende que LA ENTREGA fue de su total aceptación y conformidad.\nh. El personal de Industrias Fantasía S.A.S y sus operadores logísticos no están autorizados para realizar entregas por balcones, terrazas y/o ventanales donde el producto deba ser forzado o se requiera modificar la zona de acceso, ni aun por solicitud de los clientes.\ni. No se realizan entregas en parqueaderos, centros comerciales ni lugares públicos.\nj. Los productos adquiridos a través de nuestra tienda virtual, sólo se despachan a las zonas y/o localidades de cobertura y a la tarifa que en el sitio web se indica.\nk. Los productos adquiridos a través de la tienda virtual, serán entregados en el lapso de tiempo que indica cada producto, dependiendo de la zona de cobertura. Es de anotar, que cuando se presenten causas ajenas a la voluntad de Industrias Fantasía S.A.S, como eventos de fuerza mayor, desórdenes sociales, desastres naturales entre otros, el lapso de tiempo puede variar.\nl. Cuando por alguna circunstancia LA ENTREGA no llegue a ser efectiva, nuestra área de servicio al cliente lo contactará con el fin de acordar el procedimiento a seguir y cuando la causa sea imputable al cliente le informará los costos correspondientes al reproceso.\nm. La hora de entrega está sujeta a la capacidad logística de Industrias Fantasía S.A.S o sus operadores logísticos. No nos comprometemos con una hora específica de entrega.\nn. La entrega se realizará en la dirección estipulada en la factura y que ha sido suministrada correctamente por el cliente al momento de la compra; bajo ninguna circunstancia se entregará en una dirección diferente.\no. Las entregas se realizarán en el sitio y lugar donde físicamente sea posible acceder con el vehículo. En caso de dificultarse el acceso del vehículo o personal de logística en el sitio de entrega, se acordará con el cliente un lugar cercano y que físicamente permita el acceso normal del producto.\np. No se realizarán entregas en sitios donde los transportadores pierdan de vista el vehículo. \nq. No se realizarán entregas en zonas donde las vías se encuentren en mantenimiento y/o cerradas."
+    }
+  },
+
+  // CONTENDIO POLITICA TRATAMIENTO DE DATOS
+  "flex-layout.col#contenido-politica-tratamiento-datos": {
+    "children": [
+      "image#img-contenido-politica-tratamiento-datos",
+      "rich-text#titulo-contenido-politica-tratamiento-datos",
+      "rich-text#texto-contenido-politica-tratamiento-datos",
+      "rich-text#boton-contenido-politica-tratamiento-datos"
+    ],
+    "props": {
+      "blockClass": ["contenedor-textos-terminos-legales"]
+    }
+  },
+  "image#img-contenido-politica-tratamiento-datos": {
+    "props": {
+      "blockClass": ["img-contenido-terminos-legales"],
+      "src": "/arquivos/img-terminos-legales-3.png"
+    }
+  },
+  "rich-text#titulo-contenido-politica-tratamiento-datos": {
+    "props": {
+      "blockClass": ["titulo-content-terminos-legales"],
+      "text": "Política de tratamiento de datos"
+    }
+  },
+  "rich-text#texto-contenido-politica-tratamiento-datos": {
+    "props": {
+      "blockClass": ["texto-content-terminos-legales"],
+      "text": "El presente manual es adoptado por Industrias Fantasía S.A.S. identificada con NIT. 800.163.260-1 con domicilio principal en la ciudad de Medellín, en adelante “INDUSTRIAS FANTASÍA”, con el fin de dar cumplimiento a la Ley 1581 de 2012, Decreto 1377 de 2013 y demás normas modificatorias y complementarias."
+    }
+  },
+  "rich-text#boton-contenido-politica-tratamiento-datos": {
+    "props": {
+      "blockClass": ["boton-content-terminos-legales"],
+      "text": "[Descargar](https://colchonesfantasiacol.vteximg.com.br/arquivos/Politica-de-tratamiento-de-datos.pdf?target=_blank)"
+    }
+  },
+
+  //CONTENEDOR VISTA TERMINOS LEGALES MOBILE
+  "flex-layout.col#contenedor-vista-terminos-legales-mobile": {
+    "children": [
+      "flex-layout.row#contenedor-miga-pan-vista-terminos-legales",
+      "flex-layout.row#titulo-vista-terminos-legales",
+      "flex-layout.col#contenedor-disclosure-vista-terminos-legales-mobile"
+    ],
+    "props": {
+      "blockClass": ["col-contenedor-vista-terminos-legales"]
+    }
+  },
+  //CONTENEDOR MENUS TERMINOS LEGALES MOBILE
+  "flex-layout.col#contenedor-disclosure-vista-terminos-legales-mobile": {
+    "children": ["disclosure-layout-group#terminos-legales"],
+    "props": {
+      "blockClass": ["contenedor-disclosure-vista-terminos-legales-mobile"]
+    }
+  },
+  "menu-item#menu-politica-compra": {
+    "props": {
+      "id": "menu-politica-compra-mobile",
+      "blockClass": ["menu-politica-compra-mobile"],
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "",
+        "text": "Política de compra"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#menu-politica-compra"]
+  },
+  "vtex.menu@2.x:submenu.accordion#menu-politica-compra": {
+    "children": ["rich-text#texto-contenido-politica-compra"],
+    "props": {
+      "blockClass": "submenu-acordeon-terminos-legales-mobile"
+    }
+  },
+  "menu-item#menu-politica-entrega": {
+    "props": {
+      "id": "menu-politica-entrega-mobile",
+      "blockClass": ["menu-politica-entrega-mobile"],
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "",
+        "text": "Política de entrega Industrias Fantasía S.A.S"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#menu-politica-entrega"]
+  },
+  "vtex.menu@2.x:submenu.accordion#menu-politica-entrega": {
+    "children": ["rich-text#texto-contenido-politica-entrega"],
+    "props": {
+      "blockClass": "submenu-acordeon-terminos-legales-mobile"
+    }
+  },
+  "menu-item#menu-politica-tratamiento-datos": {
+    "props": {
+      "id": "menu-politica-tratamiento-datos-mobile",
+      "blockClass": ["menu-politica-tratamiento-datos-mobile"],
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "",
+        "text": "Política de tratamiento de datos"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#menu-politica-tratamiento-datos"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#menu-politica-tratamiento-datos": {
+    "children": ["rich-text#texto-contenido-politica-tratamiento-datos"],
+    "props": {
+      "blockClass": "submenu-acordeon-terminos-legales-mobile"
+    }
+  },
+
+  //PRUEBA CON DISCLOUSURE
+  "disclosure-layout-group#terminos-legales": {
+    "children": [
+      "disclosure-layout#politica-compra",
+      "disclosure-layout#politica-entrega",
+      "disclosure-layout#politica-tratamiento-datos"
+    ],
+    "props": {
+      "blockClass": "disclosure-terminos-legales-mobile"
+    }
+  },
+  //POLITICA COMPRA
+  "disclosure-layout#politica-compra": {
+    "children": [
+      "disclosure-trigger#politica-compra",
+      "disclosure-content#politica-compra"
+    ]
+  },
+  "disclosure-trigger#politica-compra": {
+    "children": ["rich-text#disclosure-trigger-politica-compra"],
+    "props": {
+      "blockClass": "disclosure-trigger-politica-compra"
+    }
+  },
+  "disclosure-content#politica-compra": {
+    "children": ["rich-text#texto-contenido-politica-compra"],
+    "props": {
+      "blockClass": "disclosure-content-terminos-legales-mobile"
+    }
+  },
+  "rich-text#disclosure-trigger-politica-compra": {
+    "props": {
+      "blockClass": "disclosure-trigger-terminos-legales-mobile",
+      "text": "Politica compra"
+    }
+  },
+  //POLITICA ENTREGA
+  "disclosure-layout#politica-entrega": {
+    "children": [
+      "disclosure-trigger#politica-entrega",
+      "disclosure-content#politica-entrega"
+    ]
+  },
+  "disclosure-trigger#politica-entrega": {
+    "children": ["rich-text#disclosure-trigger-politica-entrega"],
+    "props": {
+      "blockClass": "disclosure-trigger-politica-entrega"
+    }
+  },
+  "disclosure-content#politica-entrega": {
+    "children": ["rich-text#texto-contenido-politica-entrega"],
+    "props": {
+      "blockClass": "disclosure-content-terminos-legales-mobile"
+    }
+  },
+  "rich-text#disclosure-trigger-politica-entrega": {
+    "props": {
+      "blockClass": "disclosure-trigger-terminos-legales-mobile",
+      "text": "Politica Entrega"
+    }
+  },
+  //POLITICA TRATAMIENDO DE DATOS
+  "disclosure-layout#politica-tratamiento-datos": {
+    "children": [
+      "disclosure-trigger#politica-tratamiento-datos",
+      "disclosure-content#politica-tratamiento-datos"
+    ]
+  },
+  "disclosure-trigger#politica-tratamiento-datos": {
+    "children": ["rich-text#disclosure-trigger-politica-tratamiento-datos"],
+    "props": {
+      "blockClass": "disclosure-trigger-politica-tratamiento-datos"
+    }
+  },
+  "disclosure-content#politica-tratamiento-datos": {
+    "children": ["rich-text#texto-contenido-politica-tratamiento-datos","rich-text#boton-contenido-politica-tratamiento-datos"],
+    "props": {
+      "blockClass": "disclosure-content-terminos-legales-mobile"
+    }
+  },
+  "rich-text#disclosure-trigger-politica-tratamiento-datos": {
+    "props": {
+      "blockClass": "disclosure-trigger-terminos-legales-mobile",
+      "text": "Política de tratamiento de datos"
+    }
+  }
+}

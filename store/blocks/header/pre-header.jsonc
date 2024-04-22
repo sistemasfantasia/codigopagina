@@ -1,0 +1,59 @@
+{
+  // PREHEADER SLIDER INFOCARDS
+  "flex-layout.row#contenedor-preheader": {
+    "children": [
+      "list-context.info-card-list#slider-preheader"
+    ],
+    "props": {
+      "blockClass": ["contenedor-preheader"]
+    }
+  },
+  "list-context.info-card-list#slider-preheader": {
+    "children": ["slider-layout#slider-preheader"],
+    "props": {
+      "infoCards": [
+        {
+          "id": "infocard-preheader-anuncio1",
+          "title": "infocard-preheader-anuncio1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/icons/icono-infocard-preheader.svg",
+          "imageActionUrl": "/",
+          "headline": "Descuento en colchones",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-preheader-anuncio"]
+        },
+        {
+          "id": "infocard-preheader-anuncio1",
+          "title": "infocard-preheader-anuncio1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/icons/icono-infocard-preheader.svg",
+          "imageActionUrl": "/",
+          "headline": "Descuento en colchones",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-preheader-anuncio"]
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-preheader": {
+    "title": "Lista anuncios preheader",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": "slider-infocards-preheader",
+      "arrowSize": 6
+    }
+  }
+}

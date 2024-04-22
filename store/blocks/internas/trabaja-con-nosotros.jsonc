@@ -1,0 +1,267 @@
+{
+  "store.custom#trabaja-con-nosotros": {
+    "children": ["flex-layout.row#contenedor-vista-trabaja-con-nosotros"]
+  },
+
+  //CONTENEDOR VISTA TRABAJA CON NOSOTROS
+  "flex-layout.row#contenedor-vista-trabaja-con-nosotros": {
+    "children": ["flex-layout.col#contenedor-vista-trabaja-con-nosotros"],
+    "props": {
+      "blockClass": ["contenedor-vista-trabaja-con-nosotros"]
+    }
+  },
+  "flex-layout.col#contenedor-vista-trabaja-con-nosotros": {
+    "children": [
+      "flex-layout.row#contenedor-miga-pan-vista-trabaja-con-nosotros",
+      "flex-layout.row#seccion-1-vista-trabaja-con-nosotros",
+      "list-context.image-list#seccion-2-vista-trabaja-con-nosotros",
+      "flex-layout.row#seccion-3-vista-trabaja-con-nosotros"
+    ],
+    "props": {
+      "blockClass": ["col-contenedor-vista-trabaja-con-nosotros"]
+    }
+  },
+
+  // MIGA DE PAN VISTA COMO COMPRAR
+  "flex-layout.row#contenedor-miga-pan-vista-trabaja-con-nosotros": {
+    "children": [
+      "rich-text#miga-pan-1-vista-trabaja-con-nosotros",
+      "image#flecha-miga-pan",
+      "rich-text#miga-pan-2-vista-trabaja-con-nosotros"
+    ],
+    "props": {
+      "blockClass": ["contenedor-miga-pan-formulario-contacto"]
+    }
+  },
+  "rich-text#miga-pan-1-vista-trabaja-con-nosotros": {
+    "props": {
+      "blockClass": ["miga-pan-1"],
+      "text": "Miga de pan desktop"
+    }
+  },
+  "rich-text#miga-pan-2-vista-trabaja-con-nosotros": {
+    "props": {
+      "blockClass": ["miga-pan-2"],
+      "text": "Miga de pan desktop"
+    }
+  },
+  "flex-layout.row#seccion-1-vista-trabaja-con-nosotros": {
+    "children": [
+      "flex-layout.col#seccion-1-vista-trabaja-con-nosotros-textos",
+      "image#seccion-1-vista-trabaja-con-nosotros-imagen",
+      "rich-text#boton-ver-ofertas"
+    ],
+    "props": {
+      "blockClass": ["seccion-1-vista-trabaja-con-nosotros"]
+    }
+  },
+  "flex-layout.col#seccion-1-vista-trabaja-con-nosotros-textos": {
+    "children": [
+      "rich-text#seccion-1-vista-trabaja-con-nosotros-titulo",
+      "rich-text#seccion-1-vista-trabaja-con-nosotros-texto"
+    ],
+    "props": {
+      "blockClass": ["contenedor-texto-vista-como-comprar"],
+      "width": "30%"
+    }
+  },
+  "rich-text#seccion-1-vista-trabaja-con-nosotros-titulo": {
+    "props": {
+      "blockClass": ["titulo-vista-trabaja-con-nosotros"],
+      "text": "Trabaja con nosotros"
+    }
+  },
+  "rich-text#seccion-1-vista-trabaja-con-nosotros-texto": {
+    "props": {
+      "blockClass": ["texto-vista-como-comprar"],
+      "text": "¡Te invitamos a hacer parte de este gran equipo de trabajo! Somos una empresa que vela día a día por brindarle a cada colaborador un entorno donde pueda crecer, aprender y desarrollar todo su potencial. Buscamos que, en cada proyecto de vida, prime la estabilidad y crecimiento laboral en unas condiciones óptimas. Estamos convencidos que tu aporte será fundamental para la consecución de todos los objetivos. Te esperan experiencias memorables junto a un excelente equipo humano, que te hará sentir como en casa. Postúlate a nuestras vacantes, diligenciando el siguiente formulario. "
+    }
+  },
+  "image#seccion-1-vista-trabaja-con-nosotros-imagen": {
+    "props": {
+      "blockClass": ["seccion-1-vista-trabaja-con-nosotros-imagen"],
+      "src": "/arquivos/img-seccion-1-trabaja-con-nosotros.png"
+    }
+  },
+
+  //BOTON DESCUBRE NUESTRA CULTURA
+  "rich-text#boton-ver-ofertas": {
+    "props": {
+      "blockClass": ["boton-ver-ofertas"],
+      "text": "[Descubre nuestra cultura](/)",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  // SECCION 2 TRABAJA CON NOSOTROS
+  "list-context.image-list#seccion-2-vista-trabaja-con-nosotros": {
+    "children": ["slider-layout#seccion-2-vista-trabaja-con-nosotros"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image":"/arquivos/img-1-seccion2-trabaja-con-nosotros.png"
+        },
+        {
+          "image":"/arquivos/img-2-seccion2-trabaja-con-nosotros.png"
+        },
+        {
+          "image":"/arquivos/img-3-seccion2-trabaja-con-nosotros.png"
+        },
+        {
+          "image":"/arquivos/img-1-seccion2-trabaja-con-nosotros.png"
+        },
+        {
+          "image":"/arquivos/img-2-seccion2-trabaja-con-nosotros.png"
+        },
+        {
+          "image":"/arquivos/img-3-seccion2-trabaja-con-nosotros.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#seccion-2-vista-trabaja-con-nosotros": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 1
+      },
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots":"always",
+      "blockClass": "slider-seccion-2-vista-trabaja-con-nosotros"
+    }
+  },
+
+  //SECCION 3 TRABAJA CON NOSOTROS
+  "flex-layout.row#seccion-3-vista-trabaja-con-nosotros": {
+    "children": [
+      "flex-layout.col#seccion-3-vista-trabaja-con-nosotros-textos",
+      "image#seccion-3-vista-trabaja-con-nosotros-imagen",
+      "flex-layout.col#contenedor-formulario-vista-trabaja-con-nosotros"
+    ],
+    "props": {
+      "blockClass": ["seccion-3-vista-trabaja-con-nosotros"]
+    }
+  },
+  "flex-layout.col#seccion-3-vista-trabaja-con-nosotros-textos": {
+    "children": [
+      "rich-text#seccion-3-vista-trabaja-con-nosotros-titulo",
+      "rich-text#seccion-3-vista-trabaja-con-nosotros-texto"
+    ],
+    "props": {
+      "blockClass": ["contenedor-texto-vista-trabaja-con-nosotros-textos"]
+    }
+  },
+  "rich-text#seccion-3-vista-trabaja-con-nosotros-titulo": {
+    "props": {
+      "blockClass": ["titulo-vista-como-comprar"],
+      "text": "¿No has encontrado el trabajo que buscas?"
+    }
+  },
+  "rich-text#seccion-3-vista-trabaja-con-nosotros-texto": {
+    "props": {
+      "blockClass": ["texto-vista-como-comprar"],
+      "text": "Déjanos tus datos y descubre oportunidades exclusivas que podrían ser perfectas para ti. ¡Tu próxima gran oportunidad podría estar a un paso de distancia!"
+    }
+  },
+  "image#seccion-3-vista-trabaja-con-nosotros-imagen": {
+    "props": {
+      "blockClass": ["seccion-3-vista-trabaja-con-nosotros-imagen"],
+      "src": "/arquivos/img-seccion3-trabaja-con-nosotros.png"
+    }
+  },
+  "flex-layout.col#contenedor-formulario-vista-trabaja-con-nosotros": {
+    "children": ["form#formulario-trabaja-con-nosotros"],
+    "props": {
+      "blockClass": ["contenedor-formulario-vista-trabaja-con-nosotros"]
+    }
+  },
+  "form#formulario-trabaja-con-nosotros": {
+    "props": {
+      "entity": "tn",
+      "schema": "formulario-trabaja-con-nosotros",
+      "blockClass": "formulario-trabaja-con-nosotros"
+    },
+    "children": ["flex-layout.col#campos-formulario-trabaja-con-nosotros"],
+    "blocks": ["form-success#formulario-trabaja-con-nosotros"]
+  },
+  "form-success#formulario-trabaja-con-nosotros": {
+    "children": ["rich-text#success-submit-formulario-trabaja-con-nosotros"],
+    "props": {
+      "blockClass": "formulario-trabaja-con-nosotros-enviado"
+    }
+  },
+  "rich-text#success-submit-formulario-trabaja-con-nosotros": {
+    "props": {
+      "text": "¡Gracias por escribirnos a **Colchones Fantasia** daremos respuesta a tu \n solicitud lo más pronto posible, queremos hacer inolvidable tu experiencia.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.col#campos-formulario-trabaja-con-nosotros": {
+    "children": [
+      "form-input.text#names-formulario-trabaja-con-nosotros",
+      "form-input.text#email-formulario-trabaja-con-nosotros",
+      "form-input.text#phone-formulario-trabaja-con-nosotros",
+      "form-input.text#jobTitle-formulario-trabaja-con-nosotros",
+      "flex-layout.row#contenedor-adjuntarcv-submit-trabaja-con-nosotros"
+    ],
+    "props": {
+      "blockClass": ["campos-formulario-trabaja-con-nosotros"]
+    }
+  },
+  "form-input.text#names-formulario-trabaja-con-nosotros": {
+    "props": {
+      "pointer": "#/properties/names",
+      "placeholder": "Nombres",
+      "label": "Nombres"
+    }
+  },
+  "form-input.text#email-formulario-trabaja-con-nosotros": {
+    "props": {
+      "pointer": "#/properties/email",
+      "placeholder": "Email"
+    }
+  },
+  "form-input.text#phone-formulario-trabaja-con-nosotros": {
+    "props": {
+      "pointer": "#/properties/phone",
+      "placeholder": "Telefono"
+    }
+  },
+  "form-input.text#jobTitle-formulario-trabaja-con-nosotros": {
+    "props": {
+      "pointer": "#/properties/jobTitle",
+      "placeholder": "Nombre del cargo"
+    }
+  },
+  "flex-layout.row#contenedor-adjuntarcv-submit-trabaja-con-nosotros": {
+    "children": [
+      "flex-layout.row#cv-formulario-trabaja-con-nosotros",
+      "form-submit#boton-enviar-formulario-trabaja-con-nosotros"
+    ],
+    "props": {
+      "blockClass": ["contenedor-adjuntarcv-submit-trabaja-con-nosotros"]
+    }
+  },
+  "flex-layout.row#cv-formulario-trabaja-con-nosotros": {
+    "children": ["form-input.upload#cv-formulario-trabaja-con-nosotros"],
+    "props": {
+      "preventHorizontalStrech": true,
+      "blockClass": ["cv-formulario-trabaja-con-nosotros"]
+    }
+  },
+  "form-input.upload#cv-formulario-trabaja-con-nosotros": {
+    "props": {
+      "pointer": "#/properties/cv"
+      // "placeholder":"Adjunta un archivo"
+    }
+  },
+  "form-submit#boton-enviar-formulario-trabaja-con-nosotros": {
+    "props": {
+      "label": "Postúlate"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.profile,
+.label {
+  display: flex;
+  align-items: center;
+  color: #3E3F40;
+  font-size: 0px;
+  padding: 0;
+}
+.box .contentContainer{
+  border-radius: 20px;
+  overflow: hidden;
+}
+.arrowUp{
+  display: none;
+}
+
+.container :global(.vtex-button__label)::before {
+  background: url(assets/icons/icono-cuenta.svg);
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  color: transparent;
+  height: 30px;
+  width: 25px;
+  padding: 0;
+}
+
+/* .label::before {
+  background: url(assets/icons/icono-cuenta.svg);
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  color: transparent;
+  height: 30px;
+  width: 25px;
+  padding: 0;
+} */
+
+.label::after {
+  content: "Ingresa";
+  display: flex;
+  align-items: center;
+  color: #3E3F40;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.profile::after {
+  content: "Mi perfil";
+  display: flex;
+  align-items: center;
+  color: #3E3F40;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.profile:hover {
+  border-bottom: 1px solid #03034E;
+}
+
+.label:hover {
+  border-bottom: 1px solid #03034E;
+}
+
+.container :global(.vtex-button):hover {
+  background: transparent;
+}
+
+.container:hover  :global(.vtex-button){
+  background: transparent;
+}
+
+.container :global(.vtex-button__label) {
+  padding: 0;
+  gap: 15px;
+}
+
+.accessCodeOptionBtn :global(.vtex-button),
+.optionsListItem :global(.vtex-button)
+{
+  border-radius: 20px !important;
+  color: #2e3192
+}
+
+.inputContainer :global(.vtex-input-prefix__group),
+.sendButton :global(.vtex-button){
+  border-radius: 20px !important;
+}
+.backButton :global(.vtex-button){
+  border-radius: 20px !important;
+  background-color: rgba(0,0,0,0.04);
+}
+.backButton :global(.vtex-button__label){
+  color: #000;
+}
+
+
+@media only screen and (max-width: 640px){
+
+  .label::after {
+    display: none;
+  }
+
+  .profile {
+    display: none;
+  }
+
+}

@@ -1,0 +1,1216 @@
+.sliderLayoutContainer {
+  justify-content: center;
+}
+
+.sliderLayoutContainer--carousel {
+  background-color: #F0F0F0;
+  min-height: 450px;
+}
+
+.sliderTrackContainer {
+  max-width: 100%;
+}
+
+.paginationDotsContainer {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.layoutContainer--shelf {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 96rem;
+  min-height: 550px;
+}
+
+.slide--shelf {
+  margin-bottom: 25px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  min-height: 550px;
+}
+
+/* estilos preheader */
+
+.infoCardContainer--slider-infocards-preheader,
+.sliderLayoutContainer--slider-infocards-preheader {
+  background: #2E3192;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.infoCardContainer--slider-infocards-preheader {
+  margin-bottom: 5px;
+}
+
+.infoCardCallActionContainer--slider-infocards-preheader {
+  display: none;
+}
+
+.infoCardHeadline--slider-infocards-preheader {
+  margin: 0;
+  font-size: 14px;
+  color: #F2F6FB;
+  white-space: nowrap;
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+.sliderLayoutContainer--slider-infocards-preheader {
+  width: 20% !important;
+}
+
+.infoCardTextContainer--slider-infocards-preheader {
+  width: 90% !important;
+}
+
+.infoCardImageContainer--slider-infocards-preheader {
+  width: 10% !important;
+  display: flex;
+  align-items: center;
+}
+
+.caretIcon--slider-infocards-preheader {
+  color: #fff;
+}
+
+.sliderLayoutContainer--slider-banner-home {
+  width: 100vw;
+}
+
+.paginationDot--slider-promesas,
+.paginationDot--slider-soluciones,
+.paginationDot--slider-seccion-2-nuestra-empresa,
+.paginationDot--slider-tiendas,
+.paginationDot--slider-seccion-2-vista-trabaja-con-nosotros,
+.paginationDot--slider-vitrina-favoritos,
+.paginationDot--vitrina-1-pdp,
+.paginationDot--vitrina-bloque-4-home,
+.paginationDot--slider-banner-home {
+  background:#A8C3E4!important;
+  box-shadow: 0px 1px 2px 0px #00000029;
+}
+
+.paginationDotsContainer--slider-banner-home {
+  display: flex;
+  align-items: center;
+}
+
+.paginationDot--slider-promesas--isActive,
+.paginationDot--slider-soluciones--isActive,
+.paginationDot--slider-seccion-2-nuestra-empresa--isActive,
+.paginationDot--slider-tiendas--isActive,
+.paginationDot--slider-seccion-2-vista-trabaja-con-nosotros--isActive,
+.paginationDot--slider-vitrina-favoritos--isActive,
+.paginationDot--vitrina-1-pdp--isActive,
+.paginationDot--slider-vitrinas-bloque-7-home--isActive,
+.paginationDot--vitrina-bloque-4-home--isActive,
+.paginationDot--slider-banner2-home--isActive,
+.paginationDot--slider-banner-home--isActive {
+  height: 8px!important;
+  width: 100px!important;
+  border-radius: 4px!important;
+  background: #2E3192 !important;
+  box-shadow: 0px 1px 2px 0px #00000029;
+
+}
+
+/* .sliderTrackContainer--slider-banner2-home, */
+.sliderTrackContainer--slider-banner-home {
+  margin-bottom: 35px;
+}
+
+.infoCardCallActionContainer--slider-categorias-home {
+  display: none;
+}
+
+.infoCardContainer--slider-categorias-home {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+
+.infoCardHeadline--slider-categorias-home {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #2E3192;
+  white-space: nowrap;
+}
+
+.infoCardTextContainer--slider-categorias-home {
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoCardImage--slider-categorias-home {
+  height: 80px;
+  width: 80px;
+  object-fit: contain !important;
+}
+
+.infoCardImage--slider-categorias-home-2 {
+  height: 80px;
+  object-fit: contain !important;
+}
+
+.infoCardImageContainer--slider-categorias-home {
+  width: 80px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliderLayoutContainer--slider-categorias-home {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.sliderLayoutContainer--slider-banner3-home,
+.sliderLayoutContainer--slider-banner2-home {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.sliderTrackContainer--slider-banner3-home {
+  box-shadow: 0px 4px 25px 0px #0000001F;
+  border-radius: 30px;
+}
+
+/* estilos vitrina grande */
+
+.slide--vitrina-cross-selling :global(.vtex-product-summary-2-x-containerNormal),
+.slideChildrenContainer--vitrina-1-pdp :global(.vtex-product-summary-2-x-containerNormal),
+.slideChildrenContainer--vitrina-bloque-4-home :global(.vtex-product-summary-2-x-containerNormal){
+  max-width: 100% !important;
+  overflow: inherit;
+}
+
+.slideChildrenContainer--vitrina-1-pdp,
+.slideChildrenContainer--vitrina-bloque-4-home {
+  border: 1px solid #97B8DF;
+  border-radius: 24px;
+  padding: 10px 15px;
+  background: #fff;
+  transition: .5s all ease;
+}
+
+/* prueba hover vitrina  */
+
+.slideChildrenContainer--vitrina-bloque-4-home:hover {
+  border: 1px solid #2E3192;
+  box-shadow: 0px 4px 25px 0px #0000001F;
+
+}
+
+.slideChildrenContainer--vitrina-bloque-7-home {
+  border: 1px solid #97B8DF;
+  border-radius: 24px;
+  padding: 0px 0px;
+}
+
+.sliderTrack--vitrina-1-pdp,
+.sliderTrack--vitrina-bloque-4-home {
+  gap: 20px;
+}
+
+.sliderLayoutContainer--vitrina-1-pdp,
+.sliderLayoutContainer--vitrina-bloque-4-home {
+  padding-bottom: 30px;
+}
+
+.sliderLayoutContainer--vitrina-1-pdp,
+.sliderLayoutContainer--vitrina-bloque-4-home {
+  padding: 0 !important;
+  padding-bottom: 30px !important;
+}
+
+.sliderTrackContainer--vitrina-bloque-4-home{
+  padding-bottom: 10px;
+}
+
+/* estilos vitrina 7 home */
+
+/* .slide--vitrina-bloque-7-home--lastVisible {
+  background: pink;
+  width: 17% !important;
+}
+
+.sliderTrack--vitrina-bloque-7-home {
+  gap: 30px;
+} */
+
+:global(.vtex-flex-layout-0-x-flexRowContent--vitrinas-bloque-7-home) .sliderLayoutContainer--vitrina-bloque-7-home {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.sliderTrack--vitrina-bloque-7-home {
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.slideChildrenContainer--vitrina-bloque-7-home :global(.vtex-product-summary-2-x-containerNormal) {
+  max-width: 100% !important;
+  padding: 10px;
+}
+
+.infoCardContainer--slider-ubicaciones-home {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 10px;
+  border-radius: 16px;
+  height: 320px;
+    width: 225px;
+    justify-content: left;
+}
+
+.infoCardCallActionContainer--slider-ubicaciones-home {
+  display: none;
+}
+
+.infoCardImageContainer--slider-ubicaciones-home,
+.infoCardTextContainer--slider-ubicaciones-home{
+  width: 100%;
+}
+
+.infoCardImage--slider-ubicaciones-home {
+  width: 100%;
+  border-radius: 8px;
+  height: 180px;
+}
+
+.infoCardTextContainer--slider-ubicaciones-home {
+  display: flex;
+  padding: 10px 5px 5px;
+}
+
+.infoCardSubhead--slider-ubicaciones-home::before {
+  content: "";
+  background: url(assets/icons/icono-texto-infocard-bloque-10-home.svg);
+  width: 40px;
+  height: 40px;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  top: -10px;
+}
+
+.infoCardHeadline--slider-ubicaciones-home {
+  font-size: 14px;
+  color: #2E3192;
+  font-weight: bolder;
+  margin: 0;
+  width: 100%;
+  text-align: end;
+  height: 30px;
+}
+
+.infoCardSubhead--slider-ubicaciones-home {
+  font-size: 12px;
+  white-space: break-spaces;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  width: 100%;
+  justify-content: space-between;
+  text-align: end;
+  align-items: end;
+  height: 60px;
+}
+
+/* estilos vitrina menu header */
+
+.sliderLayoutContainer--slider-vitrina-menu-categoria {
+  padding: 0 !important;
+}
+
+.slideChildrenContainer--slider-vitrina-menu-categoria {
+  border: 1px solid #97B8DF;
+  border-radius: 24px;
+  margin: 0 10px;
+}
+
+.slideChildrenContainer--slider-vitrina-menu-categoria :global(.vtex-store-components-3-x-imageElement--icono-firmeza-firme ){
+  right: 0px;
+}
+
+.sliderLayoutContainer--slider-vitrina-menu-categoria :global(.vtex-product-summary-2-x-containerNormal) {
+  width: 350px;
+  max-width: 350px !important;
+}
+
+.sliderLayoutContainer--slider-vitrina-menu-categoria :global(.vtex-product-summary-2-x-image) {
+  width: 200px !important;
+}
+
+.sliderTrackContainer--slider-ubicaciones-home {
+  padding-bottom: 40px;
+}
+
+.paginationDot--slider-ubicaciones-home--isActive {
+  height: 8px!important;
+  width: 30px!important;
+  border-radius: 4px!important;
+  background: #fff!important;
+}
+
+.infoCardImageLinkWrapper--slider-infocards-categorias-vista-departamento{
+  height: 280px;
+  display: flex;
+}
+
+.sliderTrack--slider-infocards-categorias-vista-departamento {
+  gap: 20px;
+}
+
+.sliderLeftArrow--slider-infocards-categorias-vista-departamento{
+  background: #fff !important;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-left: 15em !important;
+  box-shadow: 0px 1px 2px 0px #00000029;
+}
+
+.sliderRightArrow--slider-infocards-categorias-vista-departamento{
+  background: #fff !important;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-right: 15em !important;
+  box-shadow: 0px 1px 2px 0px #00000029;
+}
+
+.infoCardContainer--slider-infocards-categorias-vista-departamento {
+  border-radius: 24px;
+  width: 15vw;
+}
+
+.infoCardTextContainer--slider-infocards-categorias-vista-departamento {
+  bottom: -80px;
+  position: relative;
+}
+
+.infoCardCallActionContainer--slider-infocards-categorias-vista-departamento :global(.vtex-button) {
+  background: #fff;
+  border-radius: 100px;
+  border: 1px solid #fff;
+}
+
+.infoCardCallActionContainer--slider-infocards-categorias-vista-departamento :global(.vtex-button__label) {
+  color: #2E3192;
+  font-weight: 800;
+  text-transform: capitalize;
+  display: flex;
+  gap: 10px;
+  padding: 10px 0px;
+  width: 180px;
+}
+
+.infoCardCallActionContainer--slider-infocards-categorias-vista-departamento :global(.vtex-button__label)::after {
+  content: "";
+  background: url(assets/icons/icono-flecha-categorias.svg);
+  width: 15px;
+  height: 15px;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+}
+
+.sliderTrackContainer--slider-infocards-categorias-vista-departamento {
+  padding-bottom: 35px;
+}
+
+.paginationDot--slider-infocards-categorias-vista-departamento--isActive {
+  height: 8px!important;
+  width: 100px!important;
+  border-radius: 4px!important;
+  background: #2E3192 !important;
+  box-shadow: 0px 1px 2px 0px #00000029;
+}
+
+.sliderLayoutContainer--comparison-drawer {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.sliderTrack--comparison-drawer {
+  gap: 20px;
+}
+
+.slide--slider-vitrina-favoritos :global(.vtex-product-summary-2-x-containerNormal) {
+  max-width: 100% !important;
+}
+
+.slideChildrenContainer--slider-vitrina-favoritos :global(.vtex-product-summary-2-x-containerNormal) {
+  border: 1px solid #97B8DF;
+  border-radius: 24px;
+  padding: 10px 15px;
+  background: #fff;
+  overflow: inherit!important;
+  margin: 5px;
+}
+
+.sliderTrack--slider-vitrina-favoritos {
+  gap: 20px;
+}
+
+.sliderTrackContainer--slider-vitrina-favoritos {
+  padding-bottom: 30px;
+}
+
+.productSpecificationValue--comparison-page {
+  width: 250px;
+  overflow: hidden;
+  color: #2E3192;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sliderTrackContainer--slider-img-vista-como-comprar-mobile {
+  padding-bottom: 30px;
+}
+
+.sliderLayoutContainer--slider-seccion-2-vista-trabaja-con-nosotros {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.sliderTrack--slider-seccion-2-vista-trabaja-con-nosotros {
+  gap: 20px;
+}
+
+.sliderTrackContainer--slider-seccion-2-vista-trabaja-con-nosotros {
+  padding-bottom: 35px;
+}
+
+.sliderLayoutContainer--slider-tiendas {
+  justify-content: flex-start;
+}
+
+.sliderArrows--slider-soluciones,
+.sliderArrows--slider-seccion-2-vista-trabaja-con-nosotros {
+  background: #F4F4F5 !important;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 1px 2px 0px #00000029;
+}
+
+.infoCardContainer--slider-tiendas {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 315px;
+  padding: 10px;
+  border: 1px solid #2e3192;
+  border-radius: 25px;
+  margin-right: 20px;
+}
+
+/* .slide--slider-tiendas {
+  width: fit-content !important;
+} */
+
+.wrapper--slider-tiendas,
+.container--slider-tiendas {
+  width: 100%;
+}
+
+.headingLevel4--slider-tiendas {
+  background: #2e3192;
+  color: #fff;
+  border-radius: 100px;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  margin: 5px 0px -5px;
+}
+
+.infoCardImage--slider-tiendas {
+  border-radius: 24px;
+}
+
+.paragraph--slider-tiendas {
+  font-size: 12px;
+  color: #2E3192;
+  margin-bottom: 0;
+  height: 175px;
+}
+
+.italic--slider-tiendas {
+  font-style: normal;
+  font-size: 15px;
+}
+
+.strong--slider-tiendas {
+  font-size: 14px;
+  font-weight: 300;
+  border-top: 1px solid;
+  width: 100%;
+  display: flex;
+}
+
+.infoCardCallActionContainer--slider-tiendas{
+  margin: 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.infoCardCallActionContainer--slider-tiendas :global(.vtex-button) {
+  width: 100%;
+  border-radius: 100px;
+  border: none;
+  background-color: #F4F4F5;
+}
+
+.infoCardCallActionContainer--slider-tiendas :global(.vtex-button__label) {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #2E3192;
+}
+
+.infoCardCallActionContainer--slider-tiendas :global(.vtex-button__label)::after {
+  content: "";
+  background: url(assets/icons/icono-boton-tiendas.svg);
+  width: 20px;
+  height: 20px;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+}
+
+.infoCardImageContainer--slider-tiendas,
+.infoCardTextContainer--slider-tiendas {
+  width: 100% !important;
+}
+
+.sliderTrackContainer--slider-tiendas {
+  padding-bottom: 30px;
+  /* width: fit-content;
+  gap: 20px;
+  display: inline-grid; */
+}
+
+.slide--slider-tiendas {
+  justify-content: center;
+}
+/* .slide--slider-tiendas--hidden,
+.slide--slider-tiendas--visible, */
+.slideChildrenContainer--slider-tiendas{
+  width: fit-content !important;
+}
+
+.sliderLeftArrow--slider-seccion-2-vista-trabaja-con-nosotros {
+  margin-left: -50px;
+}
+
+.sliderRightArrow--slider-seccion-2-vista-trabaja-con-nosotros {
+  margin-right: -45px !important;
+}
+
+.caretIcon--slider-seccion-2-vista-trabaja-con-nosotros {
+  color: #2e3192;
+  font-weight: bold;
+}
+
+.sliderArrows--slider-seccion-2-nuestra-empresa {
+  background: #F4F4F5 !important;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0px 1px 2px 0px #00000029;
+}
+
+.sliderLeftArrow--slider-seccion-2-nuestra-empresa {
+  margin-left: -25px;
+}
+
+.sliderRightArrow--slider-seccion-2-nuestra-empresa{
+  margin-right: -25px;
+}
+
+.sliderTrackContainer--slider-soluciones,
+.sliderTrackContainer--slider-seccion-2-nuestra-empresa {
+  padding-bottom: 35px;
+}
+
+.infoCardContainer--slider-soluciones {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 10px;
+  border: 1px solid #97B8DF;
+  border-radius: 36px;
+}
+
+.infoCardImageContainer--slider-soluciones,
+.infoCardTextContainer--slider-soluciones {
+  width: 100%;
+}
+
+.wrapper--slider-soluciones,
+.paragraph--slider-soluciones {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+}
+
+.wrapper--slider-soluciones {
+  width: 100%;
+}
+
+/* .paragraph--slider-soluciones {
+  width: 33% !important;
+} */
+
+.headingLevel6--slider-soluciones,
+.headingLevel4--slider-soluciones,
+.headingLevel3--slider-soluciones,
+.headingLevel2--slider-soluciones,
+.headingLevel5--slider-soluciones,
+.strong--slider-soluciones,
+.italic--slider-soluciones {
+  font-size: 12px;
+  font-style: normal;
+  color: #2e3192;
+  font-weight: 600;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 110px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.headingLevel1--slider-soluciones {
+  font-size: 28px;
+  color: #2e3192;
+  font-weight: 700;
+  margin: 5px 0px;
+}
+
+.headingLevel2--slider-soluciones::before,
+.headingLevel3--slider-soluciones::before,
+.headingLevel4--slider-soluciones::before,
+.headingLevel5--slider-soluciones::before,
+.headingLevel6--slider-soluciones::before,
+.italic--slider-soluciones::before,
+.strong--slider-soluciones::before {
+  content: "";
+  background-position: 50% !important;
+  background-repeat: no-repeat !important;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  color: transparent;
+  width: 60px;
+  height: 60px;
+}
+
+.headingLevel2--slider-soluciones::before {
+  background: url(/arquivos/ico-altura-final.svg);
+}
+
+.headingLevel3--slider-soluciones::before {
+  background: url(/arquivos/ico-firmeza-blando.svg);
+}
+
+.headingLevel4--slider-soluciones::before {
+  background: url(/arquivos/ico-transferencia-moviento.svg);
+}
+
+.headingLevel5--slider-soluciones::before {
+  background: url(/arquivos/ico-firmeza-firme.svg);
+}
+
+.headingLevel6--slider-soluciones::before {
+  background: url(/arquivos/ico-lumbar-care-system.svg);
+}
+
+.italic--slider-soluciones::before {
+  background: url(/arquivos/ico-firmeza-semifirme.svg);
+}
+
+.strong--slider-soluciones::before {
+  background: url(/arquivos/ico-unidad-resortada-bonell.svg);
+}
+
+.infoCardCallActionContainer--slider-soluciones {
+  width: 100%;
+}
+
+.infoCardCallActionContainer--slider-soluciones :global(.vtex-button) {
+  width: 100%;
+}
+
+.infoCardCallActionContainer--slider-soluciones :global(.vtex-button) {
+  width: 100%;
+  background: #B0E4BD;
+  border-radius: 100px;
+  border: 1px solid #B0E4BD;
+}
+
+.infoCardCallActionContainer--slider-soluciones:hover :global(.vtex-button) {
+  background: #008622;
+  border: 1px solid #008622;
+}
+
+.infoCardCallActionContainer--slider-soluciones :global(.vtex-button__label) {
+  color: #008622;
+  text-transform: capitalize;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+.infoCardCallActionContainer--slider-soluciones:hover :global(.vtex-button__label) {
+  color: #B0E4BD;
+}
+
+.infoCardCallActionContainer--slider-soluciones :global(.vtex-button__label)::after {
+  background: url(assets/icons/icono-boton-ver-detalle-soluciones.svg);
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  color: transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.infoCardCallActionContainer--slider-soluciones:hover :global(.vtex-button__label)::after {
+  background: url(assets/icons/icono-boton-ver-detalle-soluciones-hover.svg);
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  color: transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.sliderLeftArrow--slider-soluciones {
+  margin-left: -20px;
+}
+
+.sliderRightArrow--slider-soluciones {
+  margin-right: -20px;
+}
+
+.sliderTrackContainer--slider-2-banner-vista-hotelero{
+  box-shadow: 0px 4px 25px 0px #0000001F;
+  max-width: 1280px;
+  margin: auto;
+  border-radius: 8px;
+  padding: 0 20px;
+}
+
+.caretIcon--slider-infocards-categorias-vista-departamento,
+.caretIcon--vitrina-bloque-4-home {
+  color: #2e3192
+}
+
+.slideChildrenContainer--banner-menu-categorias {
+  justify-content: end;
+}
+
+.infoCardContainer--slider-promesas {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.infoCardTextContainer--slider-promesas {
+  width: 100%;
+}
+
+.infoCardCallActionContainer--slider-promesas :global(.vtex-button) {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: #2E3192;
+  font-weight: 700;
+  text-transform: initial;
+  margin: 0;
+}
+
+.infoCardCallActionContainer--slider-promesas {
+  margin: 0;
+  pointer-events: none;
+}
+
+/* .slide--slider-promesas {
+  width: fit-content !important;
+}
+
+.sliderTrack--slider-promesas {
+  justify-content: center;
+} */
+
+.infoCardImage--slider-promesas {
+  width: 80px;
+}
+
+.infoCardImageContainer--slider-promesas {
+  height: 80px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.infoCardTextContainer--slider-infocards-cards-vista-blog {
+  width: 65%;
+  align-items: end;
+}
+
+.infoCardImageContainer--slider-infocards-cards-vista-blog {
+  width: 35%;
+  position: relative;
+  top: 25px;
+}
+
+.italic--slider-infocards-cards-vista-blog {
+  position: relative;
+  top: 30px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.headingLevel4--slider-infocards-cards-vista-blog {
+  position: absolute;
+  height: 30px;
+  left: 20px;
+  display: flex;
+  width: 96%;
+  justify-content: space-between;
+  margin-left: 10px;
+  font-size: 24px;
+  color: #2E3192;
+  font-weight: 700;
+  margin: 10px;
+  top: 65px;
+}
+
+.infoCardContainer--slider-infocards-cards-vista-blog {
+  border: 1px solid #97B8DF;
+  border-radius: 12px;
+  /* box-shadow: 0px 4px 25px 0px #0000001F; */
+  padding: 10px 30px;
+  margin-bottom: 45px;
+  margin-top: 45px;
+  height: 380px;
+  max-height: 380px;
+  min-height: 380px;
+}
+
+.infoCardCallActionContainer--slider-infocards-cards-vista-blog :global(.vtex-button) {
+  background: transparent;
+  border: transparent;
+}
+
+.infoCardCallActionContainer--slider-infocards-cards-vista-blog :global(.vtex-button__label) {
+  color: #3E3F40;
+  font-size: 14px;
+  text-transform: initial;
+}
+
+/* .caretIcon--slider-infocards-cards-vista-blog {
+  position: relative;
+  bottom: -225px;
+} */
+
+.sliderLeftArrow--slider-infocards-cards-vista-blog {
+  left: 92%;
+  top: 433px;
+  background: #F2F6FB !important;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.sliderRightArrow--slider-infocards-cards-vista-blog {
+  top: 433px;
+  background: #F2F6FB !important;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.paragraph--slider-infocards-cards-vista-blog {
+  /* max-height: 250px; */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box!important;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  position: relative;
+  top: 35px;
+}
+
+@media only screen and (max-width: 640px){
+
+  .sliderLayoutContainer--slider-infocards-preheader {
+    width: 100% !important;
+  }
+
+  .sliderTrack--vitrina-bloque-4-home {
+    gap: 0px;
+  }
+
+  .sliderTrackContainer--slider-vitrina-favoritos,
+  .sliderLayoutContainer--slider-banner3-home,
+  .sliderLayoutContainer--slider-banner2-home {
+    max-width: 90vw;
+    padding: 0;
+  }
+
+  .sliderTrack--slider-ubicaciones-home {
+    gap: 10px;
+  }
+
+  .sliderLayoutContainer--slider-ubicaciones-home {
+    padding: 0 !important;
+  }
+
+  /* .sliderTrackContainer--slider-banner2-home, */
+  .sliderTrackContainer--slider-banner-home {
+    margin-bottom: 35px;
+  }
+
+  .infoCardImage--slider-categorias-home {
+    object-fit: contain !important;
+    height: 48px;
+    min-height: 48px;
+    min-width: 70px;
+  }
+
+  .sliderTrackContainer--slider-categorias-home {
+    padding-bottom: 25px;
+  }
+
+  .paginationDotsContainer--slider-categorias-home {
+    align-items: center;
+  }
+
+  .paginationDot--slider-img-vista-como-comprar-mobile,
+  .paginationDot--slider-categorias-home {
+    background: #A8C3E4 !important;
+    box-shadow: 0px 1px 2px 0px #00000029;
+  }
+
+  .paginationDot--slider-img-vista-como-comprar-mobile--isActive,
+  .paginationDot--slider-categorias-home--isActive {
+    height: 8px!important;
+    width: 30px!important;
+    border-radius: 4px!important;
+    background: #2E3192 !important;
+    box-shadow: 0px 1px 2px 0px #00000029;
+  }
+
+  .infoCardSubhead--slider-ubicaciones-home {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 100%;
+    justify-content: space-between;
+    text-align: end;
+    align-items: center;
+  }
+
+  .infoCardSubhead--slider-ubicaciones-home::before {
+    width: 30px;
+    height: 30px;
+    top: 20px;
+  }
+
+  .slideChildrenContainer--vitrina-1-pdp,
+  .slideChildrenContainer--vitrina-bloque-4-home {
+    border: 1px solid #97B8DF;
+    border-radius: 24px;
+    padding: 10px 15px;
+    background: #fff;
+    margin: 10px;
+    transition: .5s all ease;
+  }
+
+  .slide--vitrina-cross-selling :global(.vtex-product-summary-2-x-containerNormal),
+  .slideChildrenContainer--vitrina-1-pdp :global(.vtex-product-summary-2-x-containerNormal),
+  .slideChildrenContainer--vitrina-bloque-4-home :global(.vtex-product-summary-2-x-containerNormal){
+    max-width: 100% !important;
+    overflow: inherit !important;
+    margin: 5px;
+  }
+
+  /* estilos mobile vista de departamento */
+
+  .sliderTrack--vitrina-1-pdp,
+  .sliderTrack--vitrina-bloque-4-home {
+    gap: 0px;
+  }
+
+  .infoCardImageLinkWrapper--slider-infocards-categorias-vista-departamento {
+    height: 180px;
+    display: flex;
+  }
+
+  .infoCardTextContainer--slider-infocards-categorias-vista-departamento {
+    bottom: -50px;
+    position: relative;
+  }
+
+  .infoCardCallActionContainer--slider-infocards-categorias-vista-departamento :global(.vtex-button) {
+    width: 100%;
+  }
+
+  .infoCardCallActionContainer--slider-infocards-categorias-vista-departamento :global(.vtex-button__label) {
+    color: #2E3192;
+    font-weight: 800;
+    text-transform: capitalize;
+    display: flex;
+    gap: 5px;
+  }
+
+  .sliderTrack--slider-vitrina-favoritos {
+    gap: 0px;
+  }
+
+  .slideChildrenContainer--slider-vitrina-favoritos :global(.vtex-store-components-3-x-discountInsideContainer) {
+    left: -21px;
+  }
+
+  .sliderTrack--slider-infocards-categorias-vista-departamento {
+    gap: 10px;
+  }
+
+  .sliderTrack--slider-seccion-2-vista-trabaja-con-nosotros {
+    gap: 0px;
+  }
+
+  .sliderLayoutContainer--slider-seccion-2-vista-trabaja-con-nosotros {
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .infoCardContainer--slider-infocards-categorias-vista-departamento {
+    width: 45vw;
+  }
+
+  .sliderLayoutContainer--slider-tiendas {
+    justify-content: center;
+  }
+
+  .infoCardContainer--slider-tiendas {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 80vw;
+    padding: 10px;
+    border: 1px solid #2e3192;
+    border-radius: 25px;
+    margin-right: 0px;
+  }
+
+  .infoCardContainer--slider-ubicaciones-home {
+    width: 40vw;
+    height: 340px;
+  }
+
+  .infoCardSubhead--slider-ubicaciones-home {
+    height: 100px;
+    align-items: flex-start;
+  }
+
+  .infoCardContainer--slider-soluciones {
+    max-width: 90vw;
+  }
+
+  .infoCardImage--slider-categorias-home-2 {
+    height: 80px;
+    object-fit: contain !important;
+  }
+
+  .sliderTrackContainer--slider-2-banner-vista-hotelero {
+    padding: 0;
+  }
+
+  .sliderTrack--slider-promesas{
+    margin-bottom: 30px;
+  }
+
+  .infoCardImage--slider-promesas {
+    width: 80px;
+  }
+
+  .infoCardContainer--slider-infocards-cards-vista-blog {
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: 100%;
+    max-height: 100%;
+    height: 100%;
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 45px;
+  }
+
+  .infoCardTextContainer--slider-infocards-cards-vista-blog {
+    width: 100%;
+    align-items: center;
+  }
+
+  .infoCardImageContainer--slider-infocards-cards-vista-blog {
+    width: 100%;
+  }
+
+  .headingLevel4--slider-infocards-cards-vista-blog {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    height: auto;
+  }
+
+  .sliderLeftArrow--slider-infocards-cards-vista-blog {
+    left: 70%;
+    top: -10px;
+  }
+
+  .sliderRightArrow--slider-infocards-cards-vista-blog {
+    top: -10px;
+    right: 5%;
+  }
+
+  .italic--slider-infocards-cards-vista-blog {
+    top: 0px;
+  }
+
+  .infoCardCallActionContainer--slider-infocards-cards-vista-blog {
+    margin: 0;
+  }
+
+  .paragraph--slider-infocards-cards-vista-blog  {
+    top: 15px;
+  }
+
+  .headingLevel4--slider-infocards-cards-vista-blog {
+    top: 20px;
+    left: 0;
+    text-align: center;
+  }
+
+}

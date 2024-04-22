@@ -1,0 +1,11 @@
+.groupName {
+  font-size: 1.25rem;
+}
+
+.specificationName {
+  font-weight: bold;
+}
+
+.specificationValue {
+  white-space: break-spaces;
+}

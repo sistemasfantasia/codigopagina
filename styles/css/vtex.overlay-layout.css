@@ -1,0 +1,73 @@
+.trigger--compartir-redes {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 35px;
+  z-index: 100 !important;
+}
+
+.trigger--compartir-redes .dropdown {
+  inset: auto auto -47px 25px!important;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.trigger--compartir-redes .dropdown::before {
+  background: url(assets/icons/icono-compartir-redes.svg);
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  width: 20px;
+  height: 30px;
+  background-size: contain;
+}
+
+.container :global(.vtex-store-components-3-x-shareLabel ) {
+  display: none;
+}
+
+.trigger--boton-whatsapp .container {
+  width: 200px;
+  right: -40px;
+  position: absolute;
+  background: transparent;
+  top: -90px;
+}
+
+.container {
+  border: none;
+}
+
+.trigger--boton-whatsapp {
+  position: absolute;
+  right: 0;
+  top: 620px;
+}
+
+/* .trigger--boton-whatsapp .dropdown {
+  transition: 800ms;
+} */
+
+@media only screen and (max-width: 640px){
+
+  /* .dropdown {
+    inset: auto auto -55px 25px!important;
+  } */
+
+  .trigger--compartir-redes .dropdown {
+    inset: auto auto -52px 0px!important;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background: #fff;
+  }
+
+  .trigger--boton-whatsapp {
+    top: 520px;
+  }
+}

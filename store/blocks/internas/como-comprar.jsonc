@@ -1,0 +1,203 @@
+{
+  "store.custom#como-comprar": {
+    "children": ["flex-layout.row#contenedor-vista-como-comprar"]
+  },
+  //CONTENEDOR VISTA COMO COMPRAR
+  "flex-layout.row#contenedor-vista-como-comprar": {
+    "children": ["flex-layout.col#contenedor-vista-como-comprar"],
+    "props": {
+      "blockClass": ["contenedor-vista-como-comprar"]
+    }
+  },
+  "flex-layout.col#contenedor-vista-como-comprar": {
+    "children": [
+      "flex-layout.row#contenedor-miga-pan-vista-como-comprar",
+      "flex-layout.row#contenedor-texto-imagenes-vista-como-comprar",
+      "rich-text#boton-ver-ofertas"
+    ],
+    "props": {
+      "blockClass": ["col-contenedor-vista-como-comprar"]
+    }
+  },
+  "flex-layout.row#contenedor-texto-imagenes-vista-como-comprar": {
+    "children": [
+      "flex-layout.col#contenedor-texto-vista-como-comprar",
+      "flex-layout.col#contenedor-imagenes-como-comprar-responsive"
+    ],
+    "props": {
+      "blockClass": ["contenedor-texto-imagenes-vista-como-comprar"]
+    }
+  },
+  "flex-layout.col#contenedor-texto-vista-como-comprar": {
+    "children": [
+      "rich-text#titulo-vista-como-comprar",
+      "rich-text#texto-vista-como-comprar"
+    ],
+    "props": {
+      "blockClass": ["contenedor-texto-vista-como-comprar"],
+      "width": "30%"
+    }
+  },
+  "rich-text#titulo-vista-como-comprar": {
+    "props": {
+      "blockClass": ["titulo-vista-como-comprar"],
+      "text": "¡Comprar en Colchones fantasía es muy fácil!"
+    }
+  },
+  "rich-text#texto-vista-como-comprar": {
+    "props": {
+      "blockClass": ["texto-vista-como-comprar"],
+      "text": "Comprar por internet tiene ventajas, ahorras tiempo y dinero.\nExplora nuestro catálogo y sigue nuestras recomendaciones de cómo comprar "
+    }
+  },
+
+    "flex-layout.col#contenedor-imagenes-como-comprar-responsive": {
+    "children": [
+      "responsive-layout.desktop#img-vista-como-comprar",
+      "responsive-layout.tablet#img-vista-como-comprar",
+      "responsive-layout.phone#img-vista-como-comprar"
+    ],
+    "props": {
+      "blockClass": ["contenedor-imagenes-como-comprar-responsive"]
+    }
+  },
+
+  "responsive-layout.desktop#img-vista-como-comprar": {
+    "children": ["flex-layout.row#img-vista-como-comprar-desktop"]
+  },
+  "responsive-layout.tablet#img-vista-como-comprar": {
+    "children": ["flex-layout.row#img-vista-como-comprar-desktop"]
+  },
+  "responsive-layout.phone#img-vista-como-comprar": {
+    "children": ["flex-layout.row#img-vista-como-comprar-mobile"]
+  },
+
+  "flex-layout.row#img-vista-como-comprar-desktop": {
+    "children": [
+      "image#img-1-vista-como-comprar",
+      "image#img-2-vista-como-comprar",
+      "image#img-3-vista-como-comprar",
+      "image#img-4-vista-como-comprar"
+    ],
+    "props": {
+      "blockClass": ["img-vista-como-comprar-desktop"]
+    }
+  },
+
+  //IMG 1 VISTA COMO COMPRAR
+  "image#img-1-vista-como-comprar": {
+    "props": {
+      "blockClass": ["img-vista-como-comprar"],
+      "src": "/arquivos/img-como-comprar-1.png"
+    }
+  },
+
+  //IMG 2 VISTA COMO COMPRAR
+  "image#img-2-vista-como-comprar": {
+    "props": {
+      "blockClass": ["img-vista-como-comprar"],
+      "src": "/arquivos/img-como-comprar-2.png"
+    }
+  },
+
+  //IMG 3 VISTA COMO COMPRAR
+  "image#img-3-vista-como-comprar": {
+    "props": {
+      "blockClass": ["img-vista-como-comprar"],
+      "src": "/arquivos/img-como-comprar-3.png"
+    }
+  },
+
+  //IMG 4 VISTA COMO COMPRAR
+  "image#img-4-vista-como-comprar": {
+    "props": {
+      "blockClass": ["img-vista-como-comprar"],
+      "src": "/arquivos/img-como-comprar-4.png"
+    }
+  },
+
+  // MIGA DE PAN VISTA COMO COMPRAR
+
+  "flex-layout.row#contenedor-miga-pan-vista-como-comprar": {
+    "children": [
+      "rich-text#miga-pan-1-vista-como-comprar",
+      "image#flecha-miga-pan",
+      "rich-text#miga-pan-2-vista-como-comprar"
+    ],
+    "props": {
+      "blockClass": ["contenedor-miga-pan-formulario-contacto"]
+    }
+  },
+  "rich-text#miga-pan-1-vista-como-comprar": {
+    "props": {
+      "blockClass": ["miga-pan-1"],
+      "text": "Miga de pan desktop"
+    }
+  },
+  "rich-text#miga-pan-2-vista-como-comprar": {
+    "props": {
+      "blockClass": ["miga-pan-2"],
+      "text": "Miga de pan desktop"
+    }
+  },
+
+  //BOTON VER FOERTAS
+  "rich-text#boton-ver-ofertas": {
+    "props": {
+      "blockClass": ["boton-ver-ofertas"],
+      "text": "[Ver ofertas](/)",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  // PRUEBA SLIDER IMG VISTA COMO COMPRAR
+  "flex-layout.row#img-vista-como-comprar-mobile": {
+    "children": [
+      "list-context.image-list#img-vista-como-comprar-mobile",
+      "rich-text#sombra-derecha-categorias-vista-departamento"
+    ],
+    "props": {
+      "blockClass": ["img-vista-como-comprar-mobile"]
+    }
+  },
+
+  "list-context.image-list#img-vista-como-comprar-mobile": {
+    "children": ["slider-layout#img-vista-como-comprar-mobile"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image":"/arquivos/img-como-comprar-1.png",
+          "mobileImage": "/arquivos/img-como-comprar-1.png"
+        },
+        {
+          "image":"/arquivos/img-como-comprar-2.png",
+          "mobileImage": "/arquivos/img-como-comprar-2.png"
+        },
+        {
+          "image":"/arquivos/img-como-comprar-3.png",
+          "mobileImage": "/arquivos/img-como-comprar-3.png"
+        },
+        {
+          "image":"/arquivos/img-como-comprar-4.png",
+          "mobileImage": "/arquivos/img-como-comprar-4.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#img-vista-como-comprar-mobile": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "centerMode":"to-the-left",
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots":"always",
+      "blockClass": "slider-img-vista-como-comprar-mobile"
+    }
+  }
+}

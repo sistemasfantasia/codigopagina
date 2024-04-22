@@ -1,0 +1,276 @@
+{
+  "store.custom#pqrs": {
+    "children": ["flex-layout.row#contenedor-vista-pqrs"]
+  },
+  //CONTENEDOR VISTA PQRS
+  "flex-layout.row#contenedor-vista-pqrs": {
+    "children": ["flex-layout.col#contenedor-responsive-vista-pqrs"],
+    "props": {
+      "blockClass": ["contenedor-vista-pqrs"]
+    }
+  },
+  "flex-layout.col#contenedor-responsive-vista-pqrs": {
+    "children": [
+      "responsive-layout.desktop#contenedor-vista-pqrs",
+      "responsive-layout.tablet#contenedor-vista-pqrs",
+      "responsive-layout.phone#contenedor-vista-pqrs"
+    ],
+    "props": {
+      "blockClass": ["contenedor-responsive-vista-pqrs"]
+    }
+  },
+  "responsive-layout.desktop#contenedor-vista-pqrs": {
+    "children": ["flex-layout.col#contenedor-vista-pqrs"]
+  },
+  "responsive-layout.tablet#contenedor-vista-pqrs": {
+    "children": ["flex-layout.col#contenedor-vista-pqrs-mobile"]
+  },
+  "responsive-layout.phone#contenedor-vista-pqrs": {
+    "children": ["flex-layout.col#contenedor-vista-pqrs-mobile"]
+  },
+  "flex-layout.col#contenedor-vista-pqrs": {
+    "children": [
+      "flex-layout.row#contenedor-miga-pan-vista-pqrs",
+      "flex-layout.row#titulo-vista-pqrs",
+      "flex-layout.row#seccion-1-pqrs"
+    ],
+    "props": {
+      "blockClass": ["col-contenedor-vista-pqrs"]
+    }
+  },
+
+  // MIGA DE PAN VISTA TERMINOS LEGALES
+  "flex-layout.row#contenedor-miga-pan-vista-pqrs": {
+    "children": [
+      "rich-text#miga-pan-1-vista-pqrs",
+      "image#flecha-miga-pan",
+      "rich-text#miga-pan-2-vista-pqrs"
+    ],
+    "props": {
+      "blockClass": ["contenedor-miga-pan-formulario-contacto"]
+    }
+  },
+  "rich-text#miga-pan-1-vista-pqrs": {
+    "props": {
+      "blockClass": ["miga-pan-1"],
+      "text": "Miga de pan desktop"
+    }
+  },
+  "rich-text#miga-pan-2-vista-pqrs": {
+    "props": {
+      "blockClass": ["miga-pan-2"],
+      "text": "Miga de pan desktop"
+    }
+  },
+
+  // TITULO VISTA pqrs
+  "flex-layout.row#titulo-vista-pqrs": {
+    "children": ["rich-text#titulo-vista-pqrs", "rich-text#texto-vista-pqrs"],
+    "props": {
+      "blockClass": ["titulo-vista-pqrs"]
+    }
+  },
+  "rich-text#titulo-vista-pqrs": {
+    "props": {
+      "blockClass": ["titulo-vista-pqrs"],
+      "text": "PQR’s",
+      "width": "20%"
+    }
+  },
+  "rich-text#texto-vista-pqrs": {
+    "props": {
+      "blockClass": ["texto-vista-pqrs"],
+      "text": "Corem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia"
+    }
+  },
+
+  // SECCION 1 PQRS - FORM
+  "flex-layout.row#seccion-1-pqrs": {
+    "children": ["flex-layout.col#seccion-1-pqrs"],
+    "props": {
+      "blockClass": ["seccion-1-pqrs"]
+    }
+  },
+  "flex-layout.col#seccion-1-pqrs": {
+    "children": [
+      "rich-text#titulo-formulario-pqrs",
+      "form#formulario-pqrs"
+    ],
+    "props": {
+      "blockClass": ["seccion-1-pqrs"]
+    }
+  },
+  "form#formulario-pqrs": {
+    "props": {
+      "entity": "PQ",
+      "schema": "formulario-pqrs",
+      "blockClass": "formulario-pqrs"
+    },
+    "children": [
+      "flex-layout.col#contenedor-tipo-solicitud-pqrs",
+      "flex-layout.row#contenedor-campos-formulario-pqrs",
+      "flex-layout.row#contenedor-enviar-formulario-pqrs"
+    ],
+    "blocks": ["form-success#formulario-pqrs"]
+  },
+  "form-success#formulario-pqrs": {
+    "children": ["rich-text#succes-submit-formulario-pqrs"],
+    "props": {
+      "blockClass": "formulario-contacto-pqrs"
+    }
+  },
+  "rich-text#succes-submit-formulario-pqrs": {
+    "props": {
+      "text": "¡Gracias por escribirnos a **Colchones Fantasia** daremos respuesta a tu \n solicitud lo más pronto posible, queremos hacer inolvidable tu experiencia.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#titulo-formulario-pqrs": {
+    "props": {
+      "blockClass": ["titulo-formulario-hotelero"],
+      "text": "Ingresa tu información"
+    }
+  },
+  "flex-layout.row#contenedor-campos-formulario-pqrs": {
+    "children": ["flex-layout.col#col-1-campos-formulario-pqrs","flex-layout.col#col-2-campos-formulario-pqrs"],
+    "props": {
+      "blockClass": ["contenedor-campos-formulario-pqrs"]
+    }
+  },
+  "flex-layout.col#col-1-campos-formulario-pqrs": {
+    "children": [
+      "form-input.text#names-formulario-pqrs",
+      "form-input.text#taxNumber-formulario-pqrs",
+      "form-input.text#phone-formulario-pqrs",
+      "form-input.text#email-formulario-pqrs"
+    ],
+    "props": {
+      "blockClass": ["col-campos-formulario-pqrs"]
+    }
+  },
+  "flex-layout.col#col-2-campos-formulario-pqrs": {
+    "children": [
+      "form-input.text#city-formulario-pqrs",
+      "form-input.text#address-formulario-pqrs",
+      "form-input.textarea#situationDescription-formulario-pqrs"
+    ],
+    "props": {
+      "blockClass": ["col-campos-formulario-pqrs","col-2-campos-formulario-pqrs"]
+    }
+  },
+  "flex-layout.col#contenedor-tipo-solicitud-pqrs": {
+    "children": [
+      "responsive-layout.desktop#tipo-solicitud-pqrs",
+      "responsive-layout.tablet#tipo-solicitud-pqrs",
+      "responsive-layout.phone#tipo-solicitud-pqrs"
+    ],
+    "props": {
+      "blockClass": ["contenedor-tipo-solicitud-pqrs"]
+    }
+  },
+  "responsive-layout.desktop#tipo-solicitud-pqrs": {
+    "children": ["form-input.radiogroup#requestType-formulario-pqrs"]
+  },
+  "responsive-layout.tablet#tipo-solicitud-pqrs": {
+    "children": ["form-input.radiogroup#requestType-formulario-pqrs"]
+  },
+  "responsive-layout.phone#tipo-solicitud-pqrs": {
+    "children": ["rich-text#label-dropdpwn-pqrs-mobile","form-input.dropdown#requestType-formulario-pqrs"]
+  },
+  "form-input.radiogroup#requestType-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/requestType/properties/Tipo",
+      "label": "Selecciona uno de los siguientes ítems y diligencia el formulario",
+      "blockClass": "tipo-solicitud-pqrs"
+    }
+  },
+  "rich-text#label-dropdpwn-pqrs-mobile": {
+    "props": {
+      "blockClass": ["label-dropdpwn-pqrs-mobile"],
+      "text": "Selecciona uno de los siguientes ítems y diligencia el formulario"
+    }
+  },
+  "form-input.dropdown#requestType-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/requestType/properties/Tipo",
+      "placeholder": "Seleccion tu peticion",
+      "label": "Selecciona",
+      "blockClass": "tipo-solicitud-mobile"
+    }
+  },
+  "form-input.text#names-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/names",
+      "placeholder": "Nombre completo",
+      "label": "Nombre completo"
+    }
+  },
+  "form-input.text#taxNumber-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/taxNumber",
+      "placeholder": "Nombre completo",
+      "label": "Numero de identificación"
+    }
+  },
+  "form-input.text#email-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/email",
+      "placeholder": "Correo electronico"
+    }
+  },
+  "form-input.text#phone-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/phone",
+      "placeholder": "Teléfono de contacto"
+    }
+  },
+  "form-input.text#city-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/city",
+      "placeholder": "Ciudad"
+    }
+  },
+  "form-input.text#address-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/address",
+      "placeholder": "Dirección"
+    }
+  },
+  "form-input.textarea#situationDescription-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/situationDescription",
+      "placeholder": "Descripción de la solicitud"
+    }
+  },
+  "flex-layout.row#contenedor-enviar-formulario-pqrs": {
+    "children": ["form-input.checkbox#agreement-formulario-pqrs","form-submit#boton-enviar-formulario-hotelero"],
+    "props": {
+      "blockClass": ["contenedor-enviar-formulario-pqrs"]
+    }
+  },
+  "form-input.checkbox#agreement-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/agreement",
+      "label": "He leído y acepto la política de datos personales",
+      "blockClass": "texto-acepto-politicas"
+    }
+  },
+  "form-submit#boton-enviar-formulario-hotelero": {
+    "props": {
+      "label": "Enviar"
+    }
+  },
+
+  // CONTENEDOR MOBILE VISTA HOTELERA
+  "flex-layout.col#contenedor-vista-pqrs-mobile": {
+    "children": [
+      "flex-layout.row#contenedor-miga-pan-vista-pqrs",
+      "flex-layout.row#titulo-vista-pqrs",
+      "flex-layout.row#seccion-1-pqrs"
+    ],
+    "props": {
+      "blockClass": ["col-contenedor-vista-pqrs"]
+    }
+  }
+}

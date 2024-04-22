@@ -1,0 +1,1279 @@
+.container--deals {
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+}
+
+.container--shelfTitle {
+  color: #727273;
+  justify-content: center;
+  text-align: center;
+}
+
+.headingLevel2--shelfTitle {
+  font-weight: 200;
+}
+
+.container--deals .paragraph {
+  margin: 0;
+}
+
+.container--link {
+  justify-content: center;
+}
+
+.container--question {
+  justify-content: center;
+}
+
+.container--question .paragraph {
+  text-align: center;
+  max-width: 540px;
+  margin: 0 16px;
+  padding-top: 120px;
+  color: #03034E;
+}
+
+.container--question .strong {
+  font-size: 32px;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.container--link .paragraph {
+  text-align: center;
+  max-width: 540px;
+  padding-top: 36px;
+  padding-bottom: 84px;
+  color: #03034E;
+}
+
+.container--link .strong {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container--link .link {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 300;
+  color: #03034E;
+}
+
+.container--title {
+  color: #03034E;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.container--layout-option {
+  margin-left: 0.3em;
+}
+
+.paragraph--layout-option {
+  margin: 0;
+}
+
+.paragraph--summarySpecificationBullet {
+  margin: 0;
+  line-height: initial;
+  font-size: 1.25rem;
+  line-height: 1.15rem;
+}
+
+/* estilos header */
+
+.link--link-tiendas,
+.paragraph--link-rastrea-tu-pedido,
+.paragraph--link-tiendas {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+  text-decoration: none;
+  color:#3E3F40;
+}
+
+/* .link--link-tiendas:hover, */
+.paragraph--link-rastrea-tu-pedido:hover,
+.paragraph--link-tiendas:hover {
+  border-bottom: 1px solid #03034E;
+}
+
+.wrapper--link-rastrea-tu-pedido,
+.wrapper--link-tiendas {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.wrapper--link-tiendas::before {
+  background: url(assets/icons/icono-tiendas.svg);
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  color: transparent;
+  height: 30px;
+  width: 30px;
+  border: none;
+}
+
+.wrapper--link-rastrea-tu-pedido::before {
+  background: url(assets/icons/icono-rastreoPedido.svg);
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  color: transparent;
+  height: 30px;
+  width: 32px;
+}
+
+/* estilos menu categorias */
+
+.container--link-mis-favoritos {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.link--link-mis-favoritos,
+.paragraph--link-mis-favoritos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #000;
+  text-decoration: none;
+}
+
+.paragraph--link-mis-favoritos::before {
+  background: url(assets/icons/icono-mis-favoritos.svg);
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  color: transparent;
+  height: 30px;
+  width: 32px;
+}
+
+.wrapper--trigger-texto-menu-categoria,
+.container--trigger-texto-menu-categoria {
+  width: 100%;
+}
+
+.paragraph--trigger-texto-menu-categoria{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  padding: 10px 5px;
+  color: #2E3192;
+  font-weight: 700;
+  margin: 0;
+  gap: 10px;
+}
+
+/* .paragraph--trigger-texto-menu-categoria:hover {
+  color: #fff;
+  font-weight: 700;
+} */
+
+/* estilos home */
+
+.headingLevel1--titulo-bloque-3-home,
+.paragraph--titulo-bloque-7-home,
+.paragraph--titulo-bloque-6-home,
+.paragraph--titulo-bloque-4-home,
+.paragraph--titulo-bloque-3-home {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2E3192;
+  margin: 25px 0px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.paragraph--titulo-bloque-7-home,
+.paragraph--titulo-bloque-6-home,
+.paragraph--titulo-bloque-4-home {
+  margin: 0px 0px 25px;
+}
+
+.paragraph--texto-bloque-3-home {
+  font-size: 14px;
+  text-align: justify;
+  margin: 35px 0px 25px 0px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.container--boton-seccion-2-bloque-13-home {
+  background: #F33333;
+  border-radius: 100px;
+  color: #fff;
+  /* margin-top: 40px; */
+}
+
+.link--boton-seccion-2-bloque-13-home {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.container--boton-seccion-2-bloque-13-home:hover {
+  background: #EAEAF4;
+  border-radius: 100px;
+  color: #2E3192;
+  font-weight: 700;
+  box-shadow: 0px 4px 25px 0px #0000001F;
+}
+
+.container--boton-seccion-2-bloque-13-home:hover  .link--boton-seccion-2-bloque-13-home {
+  color: #2E3192;
+}
+
+.paragraph--titulo-seccion-2-bloque-13-home {
+  color: #2E3192;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.link--texto2-informacion-seccion-2-bloque-13-home,
+.paragraph--texto2-informacion-seccion-2-bloque-13-home,
+.paragraph--texto1-informacion-seccion-2-bloque-13-home {
+  margin: 5px 0px;
+  font-size: 14px;
+  color: #008622;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.container--texto-2-seccion-2-footer-2-desktop{
+  background: #2E3192;
+  color: #fff;
+  padding: 0px 20px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.container--texto-1-seccion-2-footer-2-desktop {
+  padding: 0px 0px 0px 20px;
+}
+
+.link--texto-1-seccion-2-footer-2-desktop,
+.paragraph--texto-1-seccion-2-footer-2-desktop {
+  flex-direction: row;
+  display: flex;
+  gap: 10px;
+  color: #233192;
+  text-decoration: none;
+}
+
+.paragraph--texto-1-seccion-2-footer-2-desktop::before {
+  content: "";
+  background: url(assets/icons/icono-servicio-cliente.svg);
+  width: 25px;
+  height: 25px;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+}
+
+.link--seguir-comprando {
+  text-decoration: none;
+  color: #2E3192;
+}
+
+.paragraph--titulo-bloque-9-home {
+  font-size: 24px;
+  color: #2E3192;
+  font-weight: 900;
+  margin: 0px 0px 25px;
+}
+
+.container--titulo-bloque-10-home-mobile {
+  display: none;
+}
+
+.paragraph--redes-footer,
+.paragraph--medios-pago-footer {
+  font-size: 14px;
+  color: #2E3192;
+  font-weight: bold;
+}
+
+.paragraph--prueba-dimensiones-colchones {
+  margin: 0;
+}
+
+/* estilos vista producto */
+
+.paragraph--titulo-vitrina-1-pdp {
+  color: #2E3192;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.paragraph--titulo-caracteristicas-principales-pdp {
+  color: #2E3192;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* estilos vista resultados de busqueda */
+
+.paragraph--texto-trigger-todos-los-filtros {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin: 12px;
+}
+
+.paragraph--titulo-cantidad-productos-encontrados {
+  color: #2E3192;
+  font-size: 14px;
+}
+
+.paragraph--titulo-drawer-todos-los-filtros {
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.paragraph--titulo-vitrina-1-vista-departamento,
+.paragraph--titulo-vitrina-2-vista-departamento {
+  font-size: 36px;
+  color: #2E3192;
+  font-weight: 900;
+}
+
+.link--miga-pan-1,
+.paragraph--miga-pan-1 {
+  font-size: 14px;
+  color: #97B8DF;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.paragraph--miga-pan-2 {
+  font-size: 14px;
+  color: #2E3192;
+  font-weight: 700;
+}
+
+.paragraph--texto-banner-no-enontrado {
+  font-size: 28px;
+  color: #2e3192;
+  font-weight: 800;
+  text-shadow: 0 0 #2e3192;
+}
+
+.container--boton-volver-tienda-no-encontrado {
+  background: #B0E4BD;
+  border: 2px solid #B0E4BD;
+  width: 25vw;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 100px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.container--boton-volver-tienda-no-encontrado:hover {
+  background: #ffffff;
+  border: 2px solid #B0E4BD;
+  width: 25vw;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 100px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.link--boton-volver-tienda-no-encontrado,
+.wrapper--boton-volver-tienda-no-encontrado,
+.paragraph--boton-volver-tienda-no-encontrado {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  color: #008622;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.headingLevel1--texto-1-404,
+.paragraph--texto-1-404 {
+  font-size: 80px;
+  color: #2e3192;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.paragraph--texto-2-404 {
+  font-size: 38px;
+  color: #2e3192;
+  font-weight: bold;
+  margin: 0;
+}
+
+.paragraph--texto-3-404 {
+  font-size: 28px;
+  color: #2e3192;
+  font-weight: bold;
+  margin: 0;
+}
+
+.paragraph--texto-1-confirmacion-order-placed,
+.paragraph--titulo-confirmacion-order-placed {
+  color: #233192;
+  margin: 0;
+  font-weight: bold;
+}
+
+.paragraph--titulo-confirmacion-order-placed {
+  font-size: 76px;
+  line-height: 1;
+  margin: 5px 0px;
+  letter-spacing: -2px;
+  font-weight: 600;
+}
+
+.paragraph--texto-1-confirmacion-order-placed {
+  font-size: 14px;
+}
+
+.paragraph--texto-2-confirmacion-order-placed {
+  font-size: 13px;
+  color: #233192;
+  font-weight: 400;
+  line-height: 1;
+  text-align: left;
+}
+
+.container--boton-seguir-comprando-order-placed {
+  background: #2e3192;
+  border-radius: 100px;
+}
+
+.wrapper--boton-seguir-comprando-order-placed {
+  width: 100%;
+}
+
+.link--boton-seguir-comprando-order-placed,
+.paragraph--boton-seguir-comprando-order-placed {
+  color: #F2F6FB;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.container--titulo-wishlist {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.headingLevel3--titulo-wishlist {
+  font-size: 50px;
+  color: #2E3192;
+  margin: 20px 0px;
+}
+
+.paragraph--titulo-vista-como-comprar {
+  font-size: 22px;
+  color: #2E3192;
+  font-weight: 700;
+  margin: 0;
+}
+
+.paragraph--texto-vista-como-comprar {
+  font-size: 16px;
+  color: #444343;
+  font-weight: 400;
+  margin: 0;
+}
+
+.container--boton-ver-ofertas {
+  width: 400px !important;
+  height: 50px;
+  margin: 30px auto;
+  border-radius: 100px;
+  background: #B0E4BD;
+  border: 2px solid #B0E4BD;
+}
+
+.container--boton-ver-ofertas:hover {
+  background: #fff;
+  border: 2px solid #B0E4BD;
+}
+
+.wrapper--boton-ver-ofertas {
+  width: 100%;
+  height: 100%;
+}
+
+.paragraph--boton-ver-ofertas {
+  font-size: 14px;
+  color: #008622;
+  font-weight: 700;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.link--boton-ver-ofertas {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #008622;
+  font-weight: 700;
+}
+
+.paragraph--titulo-vista-preguntas-frecuentes,
+.paragraph--titulo-vista-terminos-legales,
+.paragraph--titulo-vista-nuestras-tiendas {
+  color: #2E3192;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.paragraph--subtitulo-vista-preguntas-frecuentes,
+.paragraph--subtitulo-vista-terminos-legales {
+  font-size: 14px;
+  font-weight: 400;
+  color: #2E3192;
+}
+
+.paragraph--subtitulo-vista-nuestras-tiendas {
+  color: #2E3192;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--ciudad-ancla-tienda) .link--nombre-tienda,
+:global(.vtex-flex-layout-0-x-flexColChild--ciudad-ancla-tienda) .paragraph--nombre-tienda {
+  font-size: 36px;
+  color: #2E3192;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--contenedor-listado-tiendas) .container--nombre-tienda {
+  justify-content: center;
+  /* margin: 15px 0px; */
+  padding: 5px 0px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--contenedor-listado-tiendas) .container--nombre-tienda:hover {
+  background: #2E3192;
+  border-radius: 100px;
+  color: #fff;
+  padding: 5px 0px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--contenedor-listado-tiendas) .container--nombre-tienda:hover .paragraph--nombre-tienda,
+:global(.vtex-flex-layout-0-x-flexRowContent--contenedor-listado-tiendas) .container--nombre-tienda:hover .link--nombre-tienda {
+  color: #fff;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--contenedor-listado-tiendas) .link--nombre-tienda,
+:global(.vtex-flex-layout-0-x-flexRowContent--contenedor-listado-tiendas)  .paragraph--nombre-tienda {
+  margin: 0;
+  font-size: 18px;
+  color: #2E3192;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.container--subtitulo-vista-nuestras-tiendas {
+  align-items: center;
+}
+
+.paragraph--titulo-content-preguntas-frecuentes,
+.paragraph--titulo-content-terminos-legales {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2e3192;
+  margin-bottom: 0;
+}
+
+.paragraph--texto-content-terminos-legales {
+  font-size: 14px;
+  color: #3E3F40;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.paragraph--texto-content-terminos-legales::-webkit-scrollbar{
+  -webkit-appearance: none;
+  width: 8px;
+  height: 5px;
+  background: #C3D6ED;
+}
+
+.paragraph--texto-content-terminos-legales::-webkit-scrollbar-thumb{
+  background-color: #2E3192;
+  border-radius: 5px;
+}
+
+.container--boton-content-terminos-legales {
+  justify-content: center;
+}
+
+.wrapper--boton-content-terminos-legales {
+  border-radius: 100px;
+  background: #B0E4BD;
+  border: 2px solid #B0E4BD;
+  padding: 0px 30px;
+}
+
+.wrapper--boton-content-terminos-legales:hover {
+  background: #fff;
+  border: 2px solid #B0E4BD;
+}
+
+.link--boton-content-terminos-legales,
+.paragraph--boton-content-terminos-legales {
+  font-size: 14px;
+  color: #008622;
+  font-weight: 700;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-decoration: none;
+}
+
+.container--texto-content-preguntas-frecuentes{
+  height: 270px;
+  overflow-y: scroll;
+}
+
+.container--texto-content-preguntas-frecuentes::-webkit-scrollbar{
+  -webkit-appearance: none;
+  width: 8px;
+  height: 5px;
+  background: #C3D6ED;
+}
+
+.container--texto-content-preguntas-frecuentes::-webkit-scrollbar-thumb{
+  background-color: #2E3192;
+  border-radius: 5px;
+}
+
+.paragraph--titulo-vista-pqrs ,
+.paragraph--titulo-seccion-1-hotelero,
+.paragraph--titulo-vista-hotelero,
+.paragraph--titulo-seccion-1-nuestra-empresa {
+  font-size: 50px;
+  color: #2E3192;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.paragraph--texto-seccion-1-nuestra-empresa {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.container--titulo-vista-hotelero {
+  align-items: center;
+}
+
+.paragraph--texto-vista-hotelero {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.paragraph--titulo-formulario-hotelero {
+  font-size: 18px;
+  color: #2E3192;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.paragraph--texto-formulario-hotelero {
+  font-size: 16px;
+  color: #3E3F40;
+}
+
+.paragraph--texto-vista-pqrs {
+  text-align: justify;
+}
+
+.paragraph--titulo-seccion-2-hotelero {
+  font-size: 38px;
+  color: #2e3192;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.container--ancla-2 {
+  position: relative;
+  top: -200px;
+}
+
+.link--boton-cotizar,
+.paragraph--boton-cotizar {
+  background: #2e3192;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 8px 20px;
+  margin: 0;
+}
+
+.paragraph--titulo-vista-trabaja-con-nosotros {
+  font-size: 50px;
+  color: #2e3192;
+  font-weight: 700;
+  margin: 20px 0px;
+}
+
+.paragraph--texto-tecnologia,
+.paragraph--texto-xtrategik,
+.paragraph--texto-derechos-footer {
+  font-size: 14px;
+}
+
+.paragraph--texto-2-seccion-1-landing-ecologizate {
+  text-align: center;
+  color: #91C362;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.paragraph--titulo-seccion-2-landing-ecologizate {
+  color: #2E3192;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.container--texto-2-tarjeta-informativa-4 {
+  background: #4c945c;
+  border-radius: 15px;
+}
+
+.link--texto-2-tarjeta-informativa-4 {
+  color: #fff;
+  font-weight: bolder;
+  text-decoration: none;
+  padding: 0px 30px;
+}
+
+.paragraph--texto-1-tarjeta-informativa {
+  color: #2e3192;
+  font-weight: bold;
+}
+
+.paragraph--numeral-tarjeta-destino-ecologico {
+  font-size: 60px;
+  margin: 0;
+  color: #2e3192;
+  font-weight: bold;
+}
+
+.paragraph--texto-tarjeta-destino-ecologico {
+  font-size: 20px;
+}
+
+.paragraph--titulo-seccion-3-landing-ecologizate {
+  font-size: 25px;
+  font-weight: 800;
+  color: #2e3192;
+  margin: 0;
+}
+
+.paragraph--texto-seccion-3-landing-ecologizate {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.link--link-categoria-mascotas {
+  font-size: 16px;
+  color: #2E3192;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.paragraph--link-categoria-mascotas {
+  line-height: 1;
+}
+
+.paragraph--texto-seccion-1-cuponera-fantastica {
+  color: #797979;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+
+.paragraph--titulo-seccion-2-cuponera-fantastica {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.4em;
+  letter-spacing: -0.8px;
+  word-spacing: 0.1em;
+}
+
+.paragraph--titulo-seccion-3-cuponera-fantastica {
+  color: #797979;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.listItem--texto-seccion-3-cuponera-fantastica {
+  color: #797979;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.paragraph--titulo-seccion-3-plantilla-cupon {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+.paragraph--texto-seccion-1-plantilla-cupon {
+  color: #757575;
+  font-weight: 500;
+  line-height: 1.2em;
+  font-size: 19px;
+}
+
+.link--texto-2-seccion-2-footer-2-desktop {
+  color: #fff;
+  text-decoration: auto;
+}
+
+.headingLevel4--slider-infocards-cards-vista-blog {
+  position: absolute;
+  height: 30px;
+  left: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.paragraph--desde-condicional-colchones {
+  color: #2e3192;
+  font-weight: 700;
+  margin: 0;
+}
+
+.headingLevel1--titulo-vista-template-blog,
+.paragraph--titulo-vista-template-blog {
+  font-size: 40px;
+  color: #2E3192;
+  font-weight: 700;
+  margin: 20px 0px 0px;
+}
+
+.paragraph--texto-vista-template-blog {
+  font-size: 25px;
+  color: #2E3192;
+  font-weight: 700;
+  margin: 0;
+}
+
+.paragraph--texto-seccion-2-template-blog {
+  font-size: 14px;
+}
+
+.headingLevel1--titulo-seo-search,
+.paragraph--titulo-seo-search {
+  font-size: 50px;
+  color: #2E3192;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+.link--link-ofertas {
+  font-size: 16px;
+  color: #2E3192;
+  font-weight: 700;
+}
+
+.container--texto-seo-vista-departamento {
+  display: flex;
+  align-items: center;
+}
+
+.paragraph--texto-vista-template-blog,
+.paragraph--texto-seccion-2-template-blog {
+  text-align: justify;
+}
+
+.paragraph--titulo-contenedor-articulos-vista-blog {
+  font-size: 36px;
+  color: #2E3192;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0;
+}
+
+@media only screen and (min-width: 640px) {
+  .container--question .strong {
+    font-size: 40px;
+    line-height: 3rem;
+  }
+
+  .container--about {
+    max-width: 85%;
+  }
+
+  .container--title {
+    color: #03034E;
+    font-size: 40px;
+    font-weight: 700;
+    max-width: 60%;
+  }
+
+  .container--title .paragraph {
+    line-height: 1.3em;
+  }
+}
+
+@media only screen and (max-width: 640px){
+
+  .paragraph--texto-bloque-3-home {
+    max-width: 90vw;
+  }
+
+  .paragraph--titulo-bloque-6-home {
+    display: flex;
+    font-size: 24px;
+    text-align: initial;
+    margin: 0 auto 20px;
+    max-width: 90vw;
+  }
+
+  .headingLevel1--titulo-bloque-3-home,
+  .paragraph--titulo-bloque-3-home {
+    font-size: 24px;
+    text-align: initial;
+    margin: 20px auto;
+    max-width: 90vw;
+  }
+
+  .paragraph--titulo-bloque-7-home,
+  .paragraph--titulo-bloque-4-home {
+    font-size: 24px;
+    text-align: initial;
+    margin: 0px auto 20px;
+    max-width: 90vw;
+  }
+
+  /* :global(.vtex-flex-layout-0-x-flexColChild--bloque-6-home-mobile) .paragraph--titulo-bloque-3-home,
+  :global(.vtex-flex-layout-0-x-flexColChild--bloque-4-home) .paragraph--titulo-bloque-3-home {
+    display: none;
+  } */
+
+  .paragraph--titulo-bloque-7-home,
+  .paragraph--titulo-bloque-6-home,
+  .paragraph--titulo-bloque-4-home,
+  .paragraph--titulo-bloque-3-home {
+    font-weight: 600;
+  }
+
+  .container--titulo-bloque-9-home {
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 24px;
+  }
+
+  .paragraph--titulo-bloque-9-home {
+    margin: 0;
+  }
+
+  .container--titulo-bloque-10-home-mobile{
+    background: #2E3192;
+    color: #fff;
+    bottom: -10px;
+    position: relative;
+    display: flex;
+  }
+
+  .link--seguir-comprando {
+    font-size: 12px;
+  }
+
+  .container--texto-2-seccion-2-footer-2-desktop {
+    background: #2E3192;
+    color: #fff;
+    border-radius: 0px 0px 20px 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .paragraph--texto-2-seccion-2-footer-2-desktop {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .paragraph--texto-tecnologia,
+  .paragraph--texto-xtrategik,
+  .paragraph--texto-derechos-footer {
+    font-size: 10px;
+    color: #3E3F40;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .container--link-tiendas,
+  .container--link-rastrea-tu-pedido {
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .paragraph--titulo-bloque-10-home-mobile {
+    font-size: 24px;
+    text-align: initial;
+    max-width: 90vw;
+    font-weight: 800;
+    margin-bottom: 0;
+  }
+
+  .paragraph--titulo-caracteristicas-principales-pdp {
+    color: #2E3192;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .container--titulo-caracteristicas-principales-pdp {
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  /* estilos vista resultado de busqueda */
+
+  .paragraph--texto-tus-resultados {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #686A6C;
+  }
+
+  .paragraph--titulo-cantidad-productos-encontrados {
+    color: #2E3192;
+    font-size: 12px;
+  }
+
+  .paragraph--titulo-vitrina-1-vista-departamento,
+  .paragraph--titulo-vitrina-2-vista-departamento {
+    font-size: 22px;
+  }
+
+  .paragraph--texto-seo-vista-departamento {
+    text-align: justify;
+  }
+
+  .paragraph--texto-banner-no-enontrado {
+    font-size: 14px;
+  }
+
+  .container--boton-volver-tienda-no-encontrado {
+    width: 80vw;
+  }
+
+  .container--boton-volver-tienda-no-encontrado:hover  {
+    width: 80vw;
+  }
+
+  .headingLevel1--texto-1-404,
+  .paragraph--texto-1-404 {
+    font-size: 50px;
+    margin: 0;
+  }
+
+  .paragraph--titulo-seccion-2-hotelero,
+  .paragraph--texto-2-404 {
+    font-size: 22px;
+  }
+
+  .paragraph--texto-3-404 {
+    font-size: 16px;
+  }
+
+  .paragraph--titulo-confirmacion-order-placed {
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+
+  .headingLevel3--titulo-wishlist {
+    font-size: 28px;
+  }
+
+  .container--titulo-seccion-2-hotelero{
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .container--titulo-wishlist {
+    max-width: 90vw;
+    padding: 0;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexColChild--contenedor-menu-seccion-creditos-ventas-mobile) .paragraph--texto1-informacion-seccion-2-bloque-13-home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexColChild--contenedor-menu-seccion-creditos-ventas-mobile) .paragraph--texto1-informacion-seccion-2-bloque-13-home::before {
+    background: url(assets/image/imagen-whatsapp-seccion-2-bloque-13-home.svg);
+    content: "";
+    background-position: 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    color: transparent;
+    height: 30px;
+    width: 30px;
+    border: none;
+  }
+
+  .paragraph--titulo-vista-nuestras-tiendas,
+  .paragraph--titulo-seccion-1-hotelero,
+  .paragraph--titulo-vista-terminos-legales{
+    font-size: 28px;
+  }
+
+  .wrapper--texto-content-preguntas-frecuentes {
+    max-width: 88vw;
+  }
+
+  .paragraph--titulo-vista-hotelero,
+  .paragraph--titulo-seccion-1-nuestra-empresa {
+    font-size: 38px;
+  }
+
+  .paragraph--label-dropdpwn-pqrs-mobile {
+    font-size: 16px;
+    color: #3E3F40;
+    text-align: justify;
+    margin-top: 0;
+  }
+
+  .paragraph--subtitulo-vista-nuestras-tiendas {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .container--boton-seccion-2-bloque-13-home {
+    background: #F33333;
+    border-radius: 100px;
+    color: #fff;
+    margin-top: 0px;
+  }
+
+  .paragraph--titulo-vista-trabaja-con-nosotros {
+    font-size: 28px;
+    margin: 10px 0px;
+  }
+
+  .link--boton-cotizar,
+  .paragraph--boton-cotizar {
+    border-radius: 100px;
+    padding: 10px 10px;
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .paragraph--texto-tarjeta-destino-ecologico {
+    font-size: 16px;
+  }
+
+  .paragraph--titulo-seccion-3-landing-ecologizate {
+    font-size: 26px;
+    max-width: 90vw;
+    margin: auto;
+    line-height: 1;
+  }
+
+  .paragraph--texto-seccion-3-landing-ecologizate {
+    font-size: 16px;
+  }
+
+  .paragraph--titulo-seccion-2-landing-ecologizate {
+    font-size: 20px;
+    max-width: 90vw;
+  }
+
+  .paragraph--texto-2-seccion-1-landing-ecologizate {
+    text-align: center;
+    color: #91C362;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .container--link-categoria-mascotas{
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexCol--contenedor-vitrina-comparador-mobile) .container--desde-condicional-colchones {
+    justify-content: start;
+  }
+
+  .paragraph--desde-condicional-colchones {
+    font-size: 12px;
+  }
+
+  .paragraph--texto-vista-template-blog,
+  .paragraph--texto-seccion-2-template-blog {
+    text-align: justify;
+  }
+
+  .paragraph--titulo-seo-search {
+    font-size: 35px;
+    color: #2E3192;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .paragraph--titulo-contenedor-articulos-vista-blog {
+    font-size: 22px;
+  }
+}
+
+

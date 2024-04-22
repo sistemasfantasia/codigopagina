@@ -1,0 +1,549 @@
+{
+  //CONTENEDOR MENU COLCHONES
+  "flex-layout.row#contenedor-menu-colchones": {
+    "children": [
+      "flex-layout.col#contenedor-items-menu-colchones",
+      "list-context.image-list#banner-menu-colchones"
+      // "info-card#infocard-menu-categoria-colchones"
+      // "list-context.product-list#vitrina-menu-categoria"
+    ],
+    "props": {
+      "blockClass": ["contenedor-menu-colchones"]
+    }
+  },
+  // BANNER MENU COLCHONES
+  "list-context.image-list#banner-menu-colchones": {
+    "children": ["slider-layout#banner-menu-categorias"],
+    "props": {
+      "width": "100%",
+      "height": "auto",
+      "blockClass": "menu-categoria",
+      "images": [
+        {
+          "image": "/arquivos/img-infocard-menu-categorias.png",
+          "mobileImage": "/arquivos/img-infocard-menu-categorias.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#banner-menu-categorias": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "banner-menu-categorias"
+    }
+  },
+  //INFOCARD MENU
+  "info-card#infocard-menu-categoria-colchones": {
+    "props": {
+      "blockClass": "infocard-menu-categorias",
+      "isFullModeStyle": true,
+      "callToActionText": "Combos de Fantasía",
+      "id": "infocard-menu",
+      "imageUrl": "/arquivos/img-infocard-menu-categorias.png"
+    }
+  },
+  //CONTENEDOR DEL SUBMENU
+  "flex-layout.col#contenedor-items-menu-colchones": {
+    "children": ["vtex.menu@2.x:menu#menu-interno-colchones"],
+    "props": {
+      "blockClass": ["contenedor-items-menu"]
+    }
+  },
+  "vtex.menu@2.x:menu#menu-interno-colchones": {
+    "props": {
+      "blockClass": "categoria-header",
+      "items": [
+        {
+          "id": "menu-item-categoria-colchones",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Item colchon 1",
+            "text": "Item colchon 1"
+          }
+        },
+        {
+          "id": "menu-item-categoria-colchones",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Item colchon 2",
+            "text": "Item colchon 2"
+          }
+        },
+        {
+          "id": "menu-item-categoria-colchones",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Item colchon 3",
+            "text": "Item colchon 3"
+          }
+        }
+      ]
+    }
+  },
+
+  //CONTENEDOR MENU BASE CAMAS
+  "flex-layout.row#contenedor-menu-base-cama": {
+    "children": [
+      "flex-layout.col#contenedor-items-menu-base-cama",
+      "list-context.image-list#banner-menu-base-cama"
+      // "info-card#infocard-menu-categoria-base-cama"
+      // "list-context.product-list#vitrina-menu-categoria"
+    ],
+    "props": {
+      "blockClass": ["contenedor-menu-colchones"]
+    }
+  },
+  // BANNER MENU BSE CAMA
+  "list-context.image-list#banner-menu-base-cama": {
+    "children": ["slider-layout#banner-menu-categorias"],
+    "props": {
+      "width": "100%",
+      "height": "auto",
+      "blockClass": "menu-categoria",
+      "images": [
+        {
+          "image": "/arquivos/img-infocard-menu-categorias.png",
+          "mobileImage": "/arquivos/img-infocard-menu-categorias.png"
+        }
+      ]
+    }
+  },
+  //INFOCARD MENU
+  "info-card#infocard-menu-categoria-base-cama": {
+    "props": {
+      "blockClass": "infocard-menu-categorias",
+      "isFullModeStyle": true,
+      "callToActionText": "Combos de Fantasía",
+      "id": "infocard-menu",
+      "imageUrl": "/arquivos/img-infocard-menu-categorias.png"
+    }
+  },
+  //CONTENEDOR DEL SUBMENU
+  "flex-layout.col#contenedor-items-menu-base-cama": {
+    "children": ["vtex.menu@2.x:menu#menu-interno-base-cama"],
+    "props": {
+      "blockClass": ["contenedor-items-menu"]
+    }
+  },
+  "vtex.menu@2.x:menu#menu-interno-base-cama": {
+    "props": {
+      "blockClass": "categoria-header",
+      "items": [
+        {
+          "id": "menu-item-categoria-colchones",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Item Base cama 1",
+            "text": "Item Base cama 1"
+          }
+        },
+        {
+          "id": "menu-item-categoria-colchones",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Item Base cama 2",
+            "text": "Item Base cama 2"
+          }
+        },
+        {
+          "id": "menu-item-categoria-colchones",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Item Base cama 3",
+            "text": "Item Base cama 3"
+          }
+        },
+        {
+          "id": "menu-item-categoria-colchones",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Item Base cama 4",
+            "text": "Item Base cama 4"
+          }
+        }
+      ]
+    }
+  },
+
+  //CONTENEDOR MENU SOFAS Y PUFF
+  "flex-layout.row#contenedor-menu-sofas-puff": {
+    "children": [
+      "flex-layout.col#contenedor-items-menu-sofas-puff",
+      "list-context.image-list#banner-menu-sofas-puff"
+      // "info-card#infocard-menu-categoria-sofas-puff"
+      // "list-context.product-list#vitrina-menu-categoria"
+    ],
+    "props": {
+      "blockClass": ["contenedor-menu-colchones"]
+    }
+  },
+  // BANNER MENU SOFAS PUFF
+  "list-context.image-list#banner-menu-sofas-puff": {
+    "children": ["slider-layout#banner-menu-categorias"],
+    "props": {
+      "width": "100%",
+      "height": "auto",
+      "blockClass": "menu-categoria",
+      "images": [
+        {
+          "image": "/arquivos/img-infocard-menu-categorias.png",
+          "mobileImage": "/arquivos/img-infocard-menu-categorias.png"
+        }
+      ]
+    }
+  },
+  //INFOCARD MENU
+  "info-card#infocard-menu-categoria-sofas-puff": {
+    "props": {
+      "blockClass": "infocard-menu-categorias",
+      "isFullModeStyle": true,
+      "callToActionText": "Combos de Fantasía",
+      "id": "infocard-menu",
+      "imageUrl": "/arquivos/img-infocard-menu-categorias.png"
+    }
+  },
+  //CONTENEDOR DEL SUBMENU
+  "flex-layout.col#contenedor-items-menu-sofas-puff": {
+    "children": ["vtex.menu@2.x:menu#menu-interno-sofas-puff"],
+    "props": {
+      "blockClass": ["contenedor-items-menu"]
+    }
+  },
+  "vtex.menu@2.x:menu#menu-interno-sofas-puff": {
+    "props": {
+      "blockClass": "categoria-header",
+      "items": [
+        {
+          "id": "menu-item-categoria-colchones",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Item Sofas y Puff  1",
+            "text": "Item Sofas y Puff 1"
+          }
+        },
+        {
+          "id": "menu-item-categoria-colchones",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Item Sofas y Puff  2",
+            "text": "Item Sofas y Puff  2"
+          }
+        },
+        {
+          "id": "menu-item-categoria-colchones",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Item Sofas y Puff  3",
+            "text": "Item Sofas y Puff  3"
+          }
+        },
+        {
+          "id": "menu-item-categoria-colchones",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Item Sofas y Puff  4",
+            "text": "Item Sofas y Puff  4"
+          }
+        },
+        {
+          "id": "menu-item-categoria-colchones",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Item Sofas y Puff 5",
+            "text": "Item Sofas y Puff 5"
+          }
+        }
+      ]
+    }
+  },
+
+  //CONTENEDOR MENU COMBOS
+  "flex-layout.row#contenedor-menu-combos": {
+    "children": [
+      "flex-layout.col#contenedor-items-menu-combos",
+      "list-context.image-list#banner-menu-combos"
+      // "info-card#infocard-menu-categoria-combos"
+      // "list-context.product-list#vitrina-menu-categoria"
+    ],
+    "props": {
+      "blockClass": ["contenedor-menu-colchones"]
+    }
+  },
+  // BANNER MENU COMBOS
+  "list-context.image-list#banner-menu-combos": {
+    "children": ["slider-layout#banner-menu-categorias"],
+    "props": {
+      "width": "100%",
+      "height": "auto",
+      "blockClass": "menu-categoria",
+      "images": [
+        {
+          "image": "/arquivos/img-infocard-menu-categorias.png",
+          "mobileImage": "/arquivos/img-infocard-menu-categorias.png"
+        }
+      ]
+    }
+  },
+  //INFOCARD MENU
+  "info-card#infocard-menu-categoria-combos": {
+    "props": {
+      "blockClass": "infocard-menu-categorias",
+      "isFullModeStyle": true,
+      "callToActionText": "Combos de Fantasía",
+      "id": "infocard-menu",
+      "imageUrl": "/arquivos/img-infocard-menu-categorias.png"
+    }
+  },
+  //CONTENEDOR DEL SUBMENU
+  "flex-layout.col#contenedor-items-menu-combos": {
+    "children": ["vtex.menu@2.x:menu#menu-interno-combos"],
+    "props": {
+      "blockClass": ["contenedor-items-menu"]
+    }
+  },
+  "vtex.menu@2.x:menu#menu-interno-combos": {
+    "props": {
+      "blockClass": "categoria-header",
+      "items": [
+        {
+          "id": "menu-item-categoria-colchones",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Item combos 1",
+            "text": "Item combos 1"
+          }
+        }
+      ]
+    }
+  },
+
+  //CONTENEDOR MENU ALMOHADAS
+  "flex-layout.row#contenedor-menu-almohadas": {
+    "children": [
+      "flex-layout.col#contenedor-items-menu-almohadas",
+      "list-context.image-list#banner-menu-almohadas"
+      // "info-card#infocard-menu-categoria-almohadas"
+    ],
+    "props": {
+      "blockClass": ["contenedor-menu-colchones"]
+    }
+  },
+  // BANNER MENU ALMOHADAS
+  "list-context.image-list#banner-menu-almohadas": {
+    "children": ["slider-layout#banner-menu-categorias"],
+    "props": {
+      "width": "100%",
+      "height": "auto",
+      "blockClass": "menu-categoria",
+      "images": [
+        {
+          "image": "/arquivos/img-infocard-menu-categorias.png",
+          "mobileImage": "/arquivos/img-infocard-menu-categorias.png"
+        }
+      ]
+    }
+  },
+  //INFOCARD MENU
+  "info-card#infocard-menu-categoria-almohadas": {
+    "props": {
+      "blockClass": "infocard-menu-categorias",
+      "isFullModeStyle": true,
+      "callToActionText": "Combos de Fantasía",
+      "id": "infocard-menu",
+      "imageUrl": "/arquivos/img-infocard-menu-categorias.png"
+    }
+  },
+  //CONTENEDOR DEL SUBMENU
+  "flex-layout.col#contenedor-items-menu-almohadas": {
+    "children": ["vtex.menu@2.x:menu#menu-interno-almohadas"],
+    "props": {
+      "blockClass": ["contenedor-items-menu"]
+    }
+  },
+  "vtex.menu@2.x:menu#menu-interno-almohadas": {
+    "props": {
+      "blockClass": "categoria-header",
+      "items": [
+        {
+          "id": "menu-item-categoria-colchones",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Item almohadas 1",
+            "text": "Item almohadas 1"
+          }
+        },
+        {
+          "id": "menu-item-categoria-colchones",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Item almohadas 2",
+            "text": "Item almohadas 2"
+          }
+        },
+        {
+          "id": "menu-item-categoria-colchones",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Item almohadas 3",
+            "text": "Item almohadas 3"
+          }
+        },
+        {
+          "id": "menu-item-categoria-colchones",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Item almohadas 4",
+            "text": "Item almohadas 4"
+          }
+        }
+      ]
+    }
+  },
+
+  //CONTENEDOR MENU PETS
+  "flex-layout.row#contenedor-menu-pets": {
+    "children": [
+      "flex-layout.col#contenedor-items-menu-pets",
+      "info-card#infocard-menu-categoria-pets"
+      // "list-context.product-list#vitrina-menu-categoria"
+    ],
+    "props": {
+      "blockClass": ["contenedor-menu-colchones"]
+    }
+  },
+  //INFOCARD MENU
+  "info-card#infocard-menu-categoria-pets": {
+    "props": {
+      "blockClass": "infocard-menu-categorias",
+      "isFullModeStyle": true,
+      "callToActionText": "Combos de Fantasía",
+      "id": "infocard-menu",
+      "imageUrl": "/arquivos/img-infocard-menu-categorias.png"
+    }
+  },
+  //CONTENEDOR DEL SUBMENU
+  "flex-layout.col#contenedor-items-menu-pets": {
+    "children": ["vtex.menu@2.x:menu#menu-interno-pets"],
+    "props": {
+      "blockClass": ["contenedor-items-menu"]
+    }
+  },
+  "vtex.menu@2.x:menu#menu-interno-pets": {
+    "props": {
+      "blockClass": "categoria-header",
+      "items": [
+        {
+          "id": "menu-item-categoria-colchones",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Item pets 1",
+            "text": "Item pets 1"
+          }
+        },
+        {
+          "id": "menu-item-categoria-colchones",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Item pets 2",
+            "text": "Item pets 2"
+          }
+        },
+        {
+          "id": "menu-item-categoria-colchones",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Item pets 3",
+            "text": "Item pets 3"
+          }
+        }
+      ]
+    }
+  }
+}

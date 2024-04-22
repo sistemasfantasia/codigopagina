@@ -1,0 +1,130 @@
+{
+  "store.orderplaced": {
+    "blocks": [
+      "order-placed"
+    ]
+  },
+
+  "store.account": {
+    "blocks": ["flex-layout.row#contenedor-miga-pan-order-placed","my-account", "flex-layout.row#contenedor-vitrina-no-encontrado"],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+
+  "store.login": {
+    "blocks": ["login-content#default"]
+  },
+
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+
+  "store.product-review-form": {
+    "blocks": ["product-review-form"]
+  },
+
+  "store.not-found#product": {
+    "blocks": ["flex-layout.row#contenedor-vista-404"]
+  },
+
+  "store.not-found#search": {
+    "blocks": ["flex-layout.row#contenedor-vista-404"]
+  },
+
+  // CONTENEDOR VISTA 404
+  "flex-layout.row#contenedor-vista-404": {
+    "children": ["flex-layout.col#contenedor-responsive-404"],
+    "props": {
+      "blockClass": ["contenedor-vista-404"]
+    }
+  },
+  "flex-layout.col#contenedor-responsive-404": {
+    "children": ["responsive-layout.desktop#contenedor-vista-404","responsive-layout.tablet#contenedor-vista-404","responsive-layout.phone#contenedor-vista-404"],
+    "props": {
+      "blockClass": ["contenedor-responsive-404"]
+    }
+  },
+  "responsive-layout.desktop#contenedor-vista-404": {
+    "children": ["flex-layout.col#contenedor-vista-404"]
+  },
+  "responsive-layout.tablet#contenedor-vista-404": {
+    "children": ["flex-layout.col#contenedor-vista-404-mobile"]
+  },
+  "responsive-layout.phone#contenedor-vista-404": {
+    "children": ["flex-layout.col#contenedor-vista-404-mobile"]
+  },
+  "flex-layout.col#contenedor-vista-404": {
+    "children": ["flex-layout.row#seccion-texto-img-404","flex-layout.row#contenedor-vitrina-no-encontrado"],
+    "props": {
+      "blockClass": ["contenedor-vista-404"]
+    }
+  },
+  "flex-layout.col#contenedor-vista-404-mobile": {
+    "children": ["flex-layout.col#textos-boton-404-mobile","flex-layout.row#contenedor-vitrina-no-encontrado"],
+    "props": {
+      "blockClass": ["contenedor-vista-404"]
+    }
+  },
+  "flex-layout.row#seccion-texto-img-404": {
+    "children": ["flex-layout.col#textos-boton-404",  "image#img-404"],
+    "props": {
+      "blockClass": ["seccion-texto-img-404"]
+    }
+  },
+  "image#img-404": {
+    "props": {
+      "blockClass": ["img-404"],
+      "src": "assets/image/imagen-404.svg"
+    }
+  },
+  "flex-layout.col#textos-boton-404": {
+    "children": ["rich-text#texto-1-404","rich-text#texto-2-404","rich-text#texto-3-404","rich-text#boton-volver-tienda-no-encontrado"],
+    "props": {
+      "blockClass": ["textos-boton-404"]
+    }
+  },
+  "flex-layout.col#textos-boton-404-mobile": {
+    "children": ["rich-text#texto-1-404","image#img-404","rich-text#texto-2-404","rich-text#texto-3-404","rich-text#boton-volver-tienda-no-encontrado"],
+    "props": {
+      "blockClass": ["textos-boton-404"]
+    }
+  },
+  "rich-text#texto-1-404": {
+    "props": {
+      "blockClass": ["texto-1-404"],
+      "text": "# Error 404",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#texto-2-404": {
+    "props": {
+      "blockClass": ["texto-2-404"],
+      "text": "El camino se esfumó. ",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#texto-3-404": {
+    "props": {
+      "blockClass": ["texto-3-404"],
+      "text": "Vamos a redirigirte a  un lugar mejor.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#not-found": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**PAGE NOT FOUND**",
+      "font": "t-heading-1"
+    }
+  }
+}

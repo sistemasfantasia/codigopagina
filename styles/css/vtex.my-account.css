@@ -1,0 +1,205 @@
+:global(.vtex-account__page-body) .flex-column-s  {
+  flex-direction: column !important;
+}
+
+.profile main  {
+  flex-direction: column !important;
+}
+
+.profileBoxContainer {
+  width: 980px;
+}
+
+:global(.vtex-my-authentication-1-x-box_container),
+:global(.vtex-my-orders-app-3-x-orderCard),
+.addressBox .boxContainer,
+.newsletterBoxContainer .boxContainer,
+.profileBoxContainer .boxContainer {
+  border: 1px solid #D6D4D4;
+  border-radius: 24px;
+}
+
+.profileBoxContainer .dataEntryLabel {
+  font-size: 16px;
+  color: #2E3192;
+  font-weight: 700;
+}
+
+.profileBoxContainer .dataEntryChildren {
+  border: 1px solid #D6D4D4;
+  border-radius: 8px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.newsletterBoxContainer {
+  width: 1230px;
+  position: relative;
+  left: -250px;
+}
+
+:global(.vtex-account__page) :global(.vtex-pageHeader__container) {
+  display: none;
+}
+
+.passwordBox,
+.newsletterContainerMessage,
+.newsletterContainerTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletterContainerMessage,
+.newsletterContainerTitle {
+  color: #2E3192;
+  font-weight: 700;
+}
+
+.newsletterContainerTitle {
+  font-size: 18px;
+}
+
+.newsletterContainerMessage {
+  font-size: 14px;
+}
+
+:global(.vtex-account) {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.menu {
+  padding-left: 0;
+}
+
+.menuLinks div div a[href="#/wishlist"] {
+  display: flex;
+}
+
+.userImage {
+  display: grid;
+}
+
+.userImage::before {
+  background: url(assets/icons/icono-usuario.svg);
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex !important;
+  color: transparent;
+  border: none;
+  height: 70px;
+}
+
+.userName {
+  display: none;
+}
+
+.userGreeting::before {
+  content: "¡Hola!";
+  font-size: 22px;
+  color: #2E3192;
+  font-weight: 700;
+}
+
+.userGreeting {
+  font-size: 0px;
+}
+
+.userInfo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+:global(.vtex-my-account-1-x-menuLink),
+:global(.vtex-account_menu-link){
+  font-size: 14px;
+  color: #686A6C;
+  font-weight: 700;
+}
+
+:global(.vtex-my-authentication-1-x-box_footer) :global(.vtex-button),
+:global(.vtex-pageHeader__children) :global(.vtex-button){
+    background: #B0E4BD;
+    border-radius: 100px;
+    border: 2px solid #B0E4BD;
+}
+
+.boxContainerFooter :global(.vtex-button) {
+  width: 50% !important;
+  background: #B0E4BD;
+  border-radius: 100px;
+}
+
+:global(.vtex-my-authentication-1-x-box_footer) :global(.vtex-button__label),
+:global(.vtex-pageHeader__children) :global(.vtex-button__label),
+.boxContainerFooter :global(.vtex-button__label) {
+  color: #008622;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.passwordBox :global(.vtex-checkbox__container){
+  border: 1px solid #2E3192;
+  border-radius: 50%;
+  background: #F2F6FB;
+}
+
+.passwordBox :global(.vtex-checkbox__inner-container){
+  border: none;
+  border-radius: 50%;
+}
+
+.addressBox .boxContainer {
+  width: 100% !important;
+}
+
+@media only screen and (max-width: 640px) {
+  :global(.vtex-account__page) :global(.vtex-pageHeader__container) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  :global(.vtex-account__page) :global(.vtex-pageHeader__title) {
+    display: none;
+  }
+
+  .profileBoxContainer {
+    width: 90vw;
+    margin: auto;
+  }
+
+  .phoneNumberSubContainer,
+  .dateOfBirthSubContainer,
+  .genderSubContainer,
+  .documentsSubContainer,
+  .emailContainer,
+  .lastNameSubContainer,
+  .firstNameSubContainer {
+    margin-bottom: 20px;
+  }
+
+  .menu {
+    padding: 0;
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .newsletterBoxContainer {
+    width: 90vw;
+    position: inherit;
+    margin: auto;
+  }
+
+  :global(.vtex-account) {
+    padding: 0;
+  }
+}

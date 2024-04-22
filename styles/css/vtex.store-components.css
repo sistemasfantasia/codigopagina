@@ -1,0 +1,1375 @@
+.notificationBarContainer {
+  background-color: #e6f1e6;
+  color: #03034e;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.infoCardContainer--info-card-home {
+  max-width: 1520px;
+  margin: 0 auto;
+  background-color: #e6f1e6;
+  padding: 0px;
+}
+
+.logoContainer .sizeDesktop {
+  padding: 0 !important;
+  max-width: 250px !important;
+  max-height: 80px !important;
+}
+
+.imageElement--boton-whatsapp-flotante {
+  top: 65%;
+  /* position: fixed; */
+  right: 0px;
+  width: 216px;
+  height: fit-content !important;
+}
+
+.imageElement--overlay-trigger-whatsapp {
+  width: 63px;
+  height: 58px !important;
+  position: relative;
+  top: -7px;
+}
+
+.sizeDesktop {
+  padding: 0 !important;
+  max-width: 250px !important;
+  max-height: 80px !important;
+}
+
+.searchBarIcon--search::before {
+  background: url(assets/icons/icono-search-bar.svg);
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  color: transparent;
+  width: 30px;
+  height: 30px;
+}
+
+.searchIcon {
+  display: none;
+}
+
+.searchBarIcon--search {
+  padding: 0;
+}
+
+.newsletter {
+  max-width: 1528px;
+  margin: 0 auto;
+}
+
+.newsletter :global(.vtex-store-components-3-x-label){
+  color: #3E3F40;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.newsletter :global(.vtex-store-components-3-x-inputGroup) {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.newsletter :global(.vtex-store-components-3-x-buttonContainer) {
+  background: #2E3192;
+  border-radius: 100px;
+  color: #fff;
+  text-transform: initial;
+  height: 59px;
+}
+
+.newsletter :global(.vtex-store-components-3-x-buttonContainer):hover {
+  background: #EAEAF4;
+  border-radius: 100px;
+  color: #2E3192;
+  text-transform: initial;
+  height: 52px;
+  box-shadow: 0px 4px 25px 0px #0000001F;
+}
+
+.newsletter :global(.vtex-store-components-3-x-buttonContainer):hover :global(.vtex-button__label){
+  font-weight: bold;
+  color: #2E3192;
+  text-transform: initial;
+}
+
+.newsletter :global(.vtex-store-components-3-x-buttonContainer) :global(.vtex-button__label){
+  font-weight: bold;
+  color: #fff;
+  text-transform: initial;
+}
+
+.newsletter :global(.vtex-store-components-3-x-container) {
+  padding: 0 !important;
+}
+
+.newsletter :global(.vtex-input-prefix__group) {
+  background: #D7E3F3;
+  border: none;
+  height: 40px;
+}
+
+.newsletter :global(.vtex-store-components-3-x-inputGroup)::before {
+  content: "Email";
+  color: #2E3192;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+
+.newsletter .container {
+  padding: 60px 10px;
+}
+
+.label {
+  color: #fff;
+  font-size: 26px;
+}
+
+.inputGroup {
+  padding-bottom: 4px;
+  display: flex;
+  color: #fff;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  color: #2E3192;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.inputGroup :global(.vtex-button) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  margin-right: -24px;
+}
+
+.newsletter .inputGroup :global(.vtex-button) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  margin-right: 0px;
+  height: 100%;
+}
+
+.buttonContainer {
+  padding-top: 0px;
+}
+
+.imageElement--storePrint {
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+/* .skuSelectorContainer {
+  margin: 1rem 0;
+} */
+
+.productBrandName--summaryListDesktop {
+  text-decoration: none;
+  font-weight: 500;
+  color: #0067C7;
+  font-size: .875rem;
+}
+
+.productBrandName--summaryListMobile {
+  text-decoration: none;
+  color: #0067C7;
+  font-size: .875rem;
+}
+
+/* estilos header */
+
+.logoImage {
+  height: 80px;
+  width: 210px;
+}
+
+.searchBarInnerContainer :global(.vtex-input-prefix__group) {
+  border: 1px solid #585AA8;
+  border-radius: 100px;
+}
+
+.searchBarInnerContainer :global(.vtex-styleguide-9-x-input)::placeholder {
+  font-size: 14px;
+  color: #585AA8;
+}
+
+/* estilos home */
+
+.imageElement--slider-banner2-home,
+.imageElement--imagen-2-bloque-3-home,
+.imageElement--imagen-1-bloque-3-home {
+  box-shadow: 0px 4px 25px 0px #0000001F;
+  border-radius: 24px;
+}
+
+.imageElement--slider-banner3-home {
+  border-radius: 24px;
+  height: 100%;
+}
+
+.infoCardSubhead--infocard-2-fila-2-bloque-6-home,
+.infoCardSubhead--infocard-1-fila-2-bloque-6-home,
+.infoCardSubhead--infocard-2-fila-1-bloque-6-home {
+  font-size: 28px;
+  color: #fff;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+.infoCardSubhead--infocard-1-fila-1-bloque-6-home {
+  font-size: 28px;
+  color: #fff;
+  font-weight: bolder;
+  margin-top: 30px;
+}
+
+/* .infoCardTextContainer--infocard-1-fila-1-bloque-6-home:hover {
+  background: black;
+  opacity: 60%;
+  width: 100%;
+  margin: 0 !important;
+  border-radius: 28px;
+  padding-right: 3rem;
+} */
+
+.infoCardTextContainer--infocard-1-fila-1-bloque-6-home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  justify-content: end;
+  align-items: flex-start;
+}
+
+.infoCardTextContainer--infocard-1-fila-2-bloque-6-home,
+.infoCardTextContainer--infocard-2-fila-2-bloque-6-home,
+.infoCardTextContainer--infocard-2-fila-1-bloque-6-home {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.infoCardContainer--infocard-1-fila-2-bloque-6-home,
+.infoCardContainer--infocard-2-fila-2-bloque-6-home,
+.infoCardContainer--infocard-1-fila-1-bloque-6-home,
+.infoCardContainer--infocard-2-fila-1-bloque-6-home {
+  border-radius: 24px;
+  height: 100%;
+}
+
+.infoCardCallActionContainer--infocard-1-fila-2-bloque-6-home :global(.vtex-button),
+.infoCardCallActionContainer--infocard-2-fila-2-bloque-6-home :global(.vtex-button),
+.infoCardCallActionContainer--infocard-1-fila-1-bloque-6-home :global(.vtex-button),
+.infoCardCallActionContainer--infocard-2-fila-1-bloque-6-home :global(.vtex-button) {
+  background: url(assets/icons/icono-flecha-infocard-bloque-6.svg);
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  color: transparent;
+  border: none;
+  height: 50px;
+}
+
+.infoCardTextContainer--infocard-2-fila-2-bloque-6-home:hover,
+.infoCardTextContainer--infocard-1-fila-2-bloque-6-home:hover,
+.infoCardTextContainer--infocard-2-fila-1-bloque-6-home:hover,
+.infoCardTextContainer--infocard-1-fila-1-bloque-6-home:hover {
+  background: #00000094;
+  width: 100%;
+  margin: 0 !important;
+  border-radius: 28px;
+  padding-right: 3rem;
+}
+
+.infoCardTextContainer--infocard-2-fila-2-bloque-6-home:hover :global(.vtex-button),
+.infoCardTextContainer--infocard-1-fila-2-bloque-6-home:hover :global(.vtex-button),
+.infoCardTextContainer--infocard-2-fila-1-bloque-6-home:hover :global(.vtex-button),
+.infoCardTextContainer--infocard-1-fila-1-bloque-6-home:hover :global(.vtex-button) {
+  background: url(assets/icons/icono-flecha-categoria-blanca.svg);
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  color: transparent;
+  border: none;
+  transform: rotate(270deg);
+  height: 50px;
+  width: 30px;
+  background-size: contain;
+}
+
+.infoCardCallActionContainer--infocard-1-fila-2-bloque-6-home :global(.vtex-button__label),
+.infoCardCallActionContainer--infocard-2-fila-1-bloque-6-home :global(.vtex-button__label),
+.infoCardCallActionContainer--infocard-1-fila-1-bloque-6-home :global(.vtex-button__label),
+.infoCardCallActionContainer--infocard-2-fila-2-bloque-6-home :global(.vtex-button__label) {
+  font-size: 0px;
+}
+
+.infoCardContainer--bloque-8-home {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* estilos vitrina grande */
+
+.imageElement--icono-firmeza-firme {
+  position: absolute;
+  right: -7px;
+  bottom: 220px;
+  height: 50px;
+}
+
+/* estilos bloque 8 home */
+
+.infoCardHeadline--bloque-8-home {
+  font-size: 22px;
+  color: #2E3192;
+  font-weight: 800;
+}
+
+.infoCardSubhead--bloque-8-home {
+  font-size: 36px;
+  color: #2E3192;
+  font-weight: 800;
+  width: 100%;
+  text-align: initial;
+}
+
+.infoCardCallActionContainer--bloque-8-home :global(.vtex-button) {
+  border-radius: 100px;
+  text-transform: initial;
+  width: 340px;
+  font-weight: 800;
+}
+
+.infoCardCallActionContainer--bloque-8-home :global(.vtex-button):hover {
+  background: #EAEAF4;
+  color: #2E3192;
+  font-weight: 800;
+  border: #EAEAF4;
+}
+
+.infoCardCallActionContainer--bloque-8-home :global(.vtex-button):hover :global(.vtex-button__label){
+  color: #2E3192;
+  font-weight: 800;
+}
+
+
+.infoCardTextContainer--infocard-2-bloque-10-home {
+  width: 100%;
+}
+
+.infoCardImageContainer--infocard-2-bloque-10-home {
+  display: none !important;
+}
+
+.infoCardContainer--infocard-2-bloque-10-home {
+  width: 100% !important;
+  background: transparent;
+}
+
+.infoCardHeadline--infocard-2-bloque-10-home {
+  font-size: 32px;
+  color: #EAEAF4;
+  text-align: inherit;
+  font-weight: bolder;
+}
+
+.infoCardCallActionContainer--infocard-2-bloque-10-home :global(.vtex-button) {
+  background: #EAEAF4;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.infoCardCallActionContainer--infocard-2-bloque-10-home :global(.vtex-button__label) {
+  color: #2E3192;
+  text-transform: initial;
+  font-weight: bolder;
+}
+
+.infoCardCallActionContainer--infocard-2-bloque-10-home {
+  width: 80%;
+}
+
+.infoCardCallActionContainer--infocard-bloque-12-home {
+  display: none;
+}
+
+.headingLevel2--infocard-bloque-12-home,
+.infoCardHeadline--infocard-bloque-12-home {
+  font-size: 18px;
+  color: #2E3192;
+  font-weight: bolder;
+  width: 100%;
+  text-align: initial;
+}
+
+.paragraph--infocard-bloque-12-home,
+.infoCardSubhead--infocard-bloque-12-home {
+  font-size: 14px;
+  color: #515254;
+  text-align: justify;
+}
+
+.infoCardContainer--infocard-bloque-12-home {
+  gap: 100px;
+}
+
+.discountContainer{
+  position: relative !important;
+  width: 100%;
+}
+
+.discountInsideContainer {
+  position: absolute;
+  left: -21px;
+  background: url(assets/image/background-etiqueta-descuento.svg);
+  content: "";
+  background-position: 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: cover;
+  width: 55px;
+  height: 37px;
+  font-size: 16px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  z-index: 200;
+}
+
+/* estilos vista pdp */
+
+.productImageTag--main {
+  border-radius: 60px;
+}
+
+.productImagesGallerySwiperContainer {
+  /* padding-bottom: 35px; */
+  /* background: #fff; */
+  /* border-radius: 60px; */
+  /* height: 545px; */
+}
+
+.swiperBullet--active {
+  width: 30px !important;
+  border-radius: 10px !important;
+}
+
+.productBrand--quickview {
+  font-size: 20px;
+  color: #2E3192;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box!important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.productImageTag--main {
+  /* object-fit: inherit !important; */
+  /* height: 600px !important; */
+}
+
+.swiperPaginationClickable {
+  position: relative;
+  /* text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0); */
+  z-index: 10;
+  bottom: 0 !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--contenedor-nombre-dimensiones-sku-pdp) .Dimensiones {
+  font-size: 16px;
+  color: #2E3192;
+  font-weight: 700;
+  margin-bottom: 0px;
+  display: flex;
+    align-items: center;
+}
+
+.imageElement--img-banners-pdp {
+  border-radius: 24px;
+}
+
+.ImgCaracteristicaPrincipal {
+  height: 80px;
+}
+
+.VerGarantia {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 0px 0px 50px 50px;
+  width: 100%;
+}
+
+.VerGarantia:hover {
+  display: flex;
+  align-items: center;
+  background:  #B0E4BD;
+  border-radius: 0px 0px 50px 50px;
+  width: 100%;
+}
+
+.VerGarantia--Link {
+  color: #008622;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.VerGarantia--Link::before {
+  background: url(assets/icons/icono-ver-garantia.svg);
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  color: transparent;
+  border: none;
+  height: 25px;
+  width: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.ImgCaracteristicaSecundaria {
+  width: 61px;
+}
+
+.skuSelectorNameContainer {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  border-top: 1px solid;
+  border-image: linear-gradient(90deg,#fff,#2E3192,#fff) 1;
+  padding-top: 10px;
+  margin-top: 15px;
+}
+
+.skuSelectorOptionsList{
+  display: flex;
+  width: 40vw;
+  overflow-x: overlay;
+  flex-flow: row;
+  padding: 10px 0px;
+}
+
+.skuSelectorOptionsList::-webkit-scrollbar{
+  -webkit-appearance: none;
+  width: 8px;
+  height: 5px;
+  background: #C3D6ED;
+}
+.skuSelectorOptionsList::-webkit-scrollbar-thumb{
+  background-color: #2E3192;
+  border-radius: 5px;
+}
+
+.skuSelectorInternalBox {
+  border: 1px solid #2E3192;
+  border-radius: 30px;
+}
+
+.skuSelectorItem--selected .frameAround {
+  border: none;
+}
+
+.skuSelectorItemTextValue {
+  color: #2E3192;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.skuSelectorItem--selected .skuSelectorInternalBox {
+  background: #C3D6ED;
+  color: #2E3192;
+  font-weight: 900;
+}
+.skuSelectorItem--selected .skuSelectorItemTextValue {
+  color: #2E3192;
+  font-weight: 900;
+}
+
+.descripcionCorta {
+  width: 100% !important;
+  display: flex;
+  margin: auto;
+  text-align: justify;
+}
+
+.productDescriptionTitle {
+  display: none;
+}
+
+/* estilos vista formulstio de contacto */
+
+.infoCardContainer--infocard-formulario-contacto {
+  height: 900px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.infoCardTextContainer--infocard-formulario-contacto {
+  width: 100%;
+  height: 100%;
+  justify-content: end;
+  padding-bottom: 30px;
+}
+
+.infoCardHeadline--infocard-formulario-contacto-enviado{
+  font-size: 56px;
+  color: #fff;
+  font-weight: 700;
+  width: 100%;
+  text-align: initial;
+}
+
+.infoCardHeadline--infocard-formulario-contacto {
+  font-size: 56px;
+  color: #2E3192;
+  font-weight: 700;
+  width: 100%;
+  text-align: initial;
+}
+
+.infoCardSubhead--infocard-formulario-contacto-enviado{
+  font-size: 18px;
+  color: #fff;
+  text-align: justify;
+}
+
+.infoCardSubhead--infocard-formulario-contacto {
+  font-size: 18px;
+  color: #2E3192;
+  text-align: justify;
+}
+
+.infoCardCallActionContainer--infocard-formulario-contacto {
+  display: none;
+}
+
+.infoCardContainer--infocard-formulario-contacto-enviado {
+  width: 100vw;
+  position: relative;
+  left: -640px;
+  height: 900px;
+  max-width: 1280px;
+  border-radius: 20px;
+  justify-content: flex-start;
+  align-items: end;
+}
+
+.infoCardCallActionContainer--infocard-formulario-contacto-enviado {
+  width: 100%;
+}
+
+.imageElement--img-vista-como-comprar {
+  height: 260px;
+}
+
+.imageElement--seccion-3-vista-trabaja-con-nosotros-imagen {
+  border-radius: 12px;
+  box-shadow: 0px 4px 25px 0px #0000001F;
+}
+
+.imageElement--slider-seccion-2-vista-trabaja-con-nosotros {
+  border-radius: 24px;
+  border: 1px solid #C3D6ED;
+}
+
+.imageElement--imagen-seccion-1-nuestra-empresa {
+  border-radius: 10px;
+}
+
+.infoCardImage--bloque-8-home {
+  width: 100%;
+}
+
+.infoCardImageContainer--bloque-8-home {
+  width: 100%;
+}
+
+.infoCardTextContainer--bloque-8-home {
+  display: none;
+}
+
+.subscriberContainer .content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 100%;
+}
+
+.subscriberContainer .inputEmail,
+.subscriberContainer .inputName {
+  width: 48%;
+  margin: 0;
+}
+
+.subscriberContainer .submit {
+  width: 100%;
+}
+
+.subscriberContainer .submit :global(.vtex-button){
+  width: 100%;
+  background: #2E3192;
+  border: 2px solid #2E3192;
+  color: #D7E3F3;
+  padding: 10px 40px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.subscriberContainer .submit :global(.vtex-button):hover {
+  background: #D7E3F3;
+  border: 2px solid #D7E3F3;
+  color: #2E3192;
+  box-shadow: 0px 4px 25px 0px #0000001F;
+}
+
+.subscriberContainer .inputEmail :global(.vtex-input-prefix__group),
+.subscriberContainer .inputName :global(.vtex-input-prefix__group) {
+  border: 1px solid #2e3192;
+  border-radius: 24px;
+}
+
+.subscriberContainer {
+  border:1px solid #D7E3F3;
+  padding: 20px;
+  box-shadow: 2px 1px 2px 0px #00000029;
+  border-radius: 18px;
+}
+
+.subscriberContainer .title {
+  color: #2E3192;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 640px) {
+  /* .newsletter .container {
+    padding: 140px;
+  } */
+  .label {
+     font-size: 40px;
+  }
+  .infoCardContainer--info-card-home .infoCardTextContainer {
+    width: 30%;
+  }
+  .infoCardContainer--info-card-home .infoCardImageContainer {
+    width: 70%;
+  }
+  .imageElement--storePrint {
+    margin-bottom: 0px;
+    max-height: 600px;
+  }
+}
+
+.productImagesContainer--quickview .carouselContainer {
+  justify-content: flex-start;
+}
+
+.productImagesContainer--quickview .productImageTag {
+  object-fit: cover !important;
+}
+
+.productImagesContainer--quickview .carouselGaleryThumbs {
+  display: none;
+}
+
+.productImagesContainer--quickview .carouselGaleryCursor {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.productNameContainer {
+  color: #3f3f40;
+  font-weight: bold;
+  font-size: 30px;
+  max-height: 65px;
+}
+
+.image {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.imageElement--seccion-1-vista-trabaja-con-nosotros-imagen {
+  border-radius: 8px;
+}
+
+.imageElement--img-contenido-terminos-legales {
+  border-radius: 16px;
+}
+
+.imageElement--boton-trabaja-con-nosotros {
+  position: fixed;
+  right: 0;
+  top: 55vh;
+  width: 192px;
+  z-index: 1000;
+}
+
+.imageElement--sello-hotelero {
+  width: 160px;
+  height: 200px;
+}
+
+.infoCardContainer--infocard-seccion-3-hotelero {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.infoCardImageContainer--infocard-seccion-3-hotelero,
+.infoCardTextContainer--infocard-seccion-3-hotelero {
+  width: 100%;
+}
+
+.infoCardImage--infocard-seccion-3-hotelero {
+  border-radius: 8px;
+  box-shadow: 0px 4px 25px 0px #0000001F;
+}
+
+.infoCardHeadline--infocard-seccion-3-hotelero {
+  font-size: 22px;
+  color: #2e3192;
+  font-weight: 700;
+  margin: 10px 0px;
+}
+
+.infoCardHeadline--infocard-seccion-3-hotelero {
+  font-size: 22px;
+  color: #2e3192;
+  font-weight: 700;
+  margin: 10px 0px;
+}
+
+.infoCardCallActionContainer--infocard-seccion-3-hotelero {
+  display: none;
+}
+
+.imageElement--slider-2-banner-vista-hotelero{
+  object-fit: cover;
+}
+
+.imageElement--imagen-seccion-1-hotelero {
+  border-radius: 8px;
+}
+
+.infoCardTextContainer--infocard-menu-categorias {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  justify-content: end;
+}
+
+.infoCardCallActionContainer--infocard-menu-categorias :global(.vtex-button) {
+  background: transparent;
+  border: none;
+}
+
+.infoCardCallActionContainer--infocard-menu-categorias :global(.vtex-button__label) {
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: capitalize;
+  color: #EAEAF4;
+}
+
+.infoCardCallActionContainer--infocard-menu-categorias :global(.vtex-button__label)::after {
+  background: url(assets/icons/icono-flecha-categoria-blanca.svg);
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  color: transparent;
+  border: none;
+  transform: rotate(270deg);
+  height: 30px;
+  width: 20px;
+  background-size: contain;
+}
+
+.infoCardContainer--infocard-menu-categorias {
+  border-radius: 24px;
+  width: 500px !important;
+  height: 250px;
+}
+
+.imageElement--icono-redes {
+  height: 100%;
+}
+
+.infoCardImageContainer--infocard-2-seccion-4-landing-ecologizate,
+.infoCardCallActionContainer--infocard-1-seccion-4-landing-ecologizate {
+  display: none;
+}
+
+.strong--infocard-1-seccion-4-landing-ecologizate {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.strong--infocard-1-seccion-4-landing-ecologizate::before {
+  background: url(/arquivos/icono-infocard-1-seccion-4-ecologizate.png);
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  color: transparent;
+  height: 220px;
+  width: 200px;
+  background-size: contain;
+}
+
+.infoCardTextContainer--infocard-2-seccion-4-landing-ecologizate {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto
+}
+
+.infoCardContainer--infocard-2-seccion-4-landing-ecologizate {
+  background: #D1F3C1;
+}
+
+.italic--infocard-1-seccion-4-landing-ecologizate  {
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+  font-style: normal;
+}
+
+.infoCardTextContainer--infocard-1-seccion-4-landing-ecologizate {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.infoCardHeadline--infocard-2-seccion-4-landing-ecologizate {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2e3192;
+}
+
+.infoCardSubhead--infocard-2-seccion-4-landing-ecologizate {
+  font-size: 26px;
+  font-weight: 700;
+  color: #666666;
+}
+
+.infoCardCallActionContainer--infocard-2-seccion-4-landing-ecologizate :global(.vtex-button) {
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #237634;
+  border-radius: 50px;
+  padding: 10px;
+  border: none;
+}
+
+.imageElement--banner-menu-categorias {
+  height: 300px;
+  width: 300px !important;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.imageElementLink--slider-banner3-home {
+  width: 100%;
+  height: 100%;
+}
+
+.imageElement--slider-banner-cuponera-fantastica {
+  max-height: initial !important;
+}
+
+@media only screen and (max-width: 640px){
+
+  .infoCardTextContainer--infocard-1-fila-2-bloque-6-home,
+  .infoCardTextContainer--infocard-2-fila-1-bloque-6-home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 285px;
+    justify-content: end;
+    align-items: flex-end;
+  }
+
+  /* .infoCardTextContainer--infocard-2-fila-2-bloque-6-home{
+    height: 138px;
+  } */
+
+  .infoCardSubhead--infocard-2-fila-2-bloque-6-home{
+    font-size: 16px;
+    margin-bottom: 118px;
+  }
+
+  .infoCardSubhead--infocard-1-fila-1-bloque-6-home {
+    font-size: 16px;
+    margin-top: 40px;
+  }
+
+  .infoCardSubhead--infocard-1-fila-2-bloque-6-home,
+  .infoCardSubhead--infocard-2-fila-1-bloque-6-home {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .infoCardCallActionContainer--infocard-1-fila-2-bloque-6-home :global(.vtex-button),
+  .infoCardCallActionContainer--infocard-2-fila-2-bloque-6-home :global(.vtex-button),
+  .infoCardCallActionContainer--infocard-1-fila-1-bloque-6-home :global(.vtex-button),
+  .infoCardCallActionContainer--infocard-2-fila-1-bloque-6-home :global(.vtex-button) {
+    width: 30px;
+    background-size: contain !important;
+  }
+
+  .infoCardCallActionContainer--infocard-1-fila-1-bloque-6-home :global(.vtex-button){
+    margin-bottom: 80px;
+  }
+
+  .infoCardCallActionContainer--infocard-2-fila-2-bloque-6-home :global(.vtex-button) {
+    margin-bottom: 80px;
+  }
+
+  .infoCardContainer--bloque-8-home {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .infoCardSubhead--bloque-8-home {
+    font-size: 22px;
+    color: #2E3192;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+  }
+
+  .infoCardHeadline--infocard-2-bloque-10-home {
+    display: none;
+  }
+
+  .imageElement--boton-ventas-online {
+    border-radius: 8px;
+  }
+
+  .imageElement--icono-redes,
+  .imageElement--medios-pago-footer {
+    width: 30px !important;
+  }
+
+  .logoContainer .sizeMobile {
+    padding: 0 !important;
+    max-width: 190px !important;
+    max-height: 80px !important;
+  }
+
+   .sizeMobile {
+    padding: 0 !important;
+    max-width: 190px !important;
+    max-height: 80px !important;
+  }
+
+  .logoImage {
+    height: 80px;
+    width: 190px;
+  }
+
+  .discountInsideContainer {
+    position: absolute;
+    left: -26px;
+  }
+
+  .imageElement--icono-firmeza-firme {
+    position: absolute;
+    right: 3px;
+    bottom: 220px;
+    height: 50px;
+  }
+
+  .infoCardHeadline--infocard-bloque-12-home {
+    margin-top: 0;
+  }
+
+  .infoCardTextContainer--infocard-2-fila-2-bloque-6-home:hover,
+  .infoCardTextContainer--infocard-1-fila-2-bloque-6-home:hover,
+  .infoCardTextContainer--infocard-2-fila-1-bloque-6-home:hover,
+  .infoCardTextContainer--infocard-1-fila-1-bloque-6-home:hover {
+    padding-right: 1rem;
+  }
+
+  .infoCardTextContainer--infocard-2-fila-2-bloque-6-home:hover,
+  .infoCardTextContainer--infocard-1-fila-1-bloque-6-home:hover {
+    height: 100% !important;
+  }
+
+  .infoCardTextContainer--infocard-1-fila-1-bloque-6-home:hover {
+    height: 184px !important;
+  }
+
+  .infoCardTextContainer--infocard-2-fila-2-bloque-6-home:hover :global(.vtex-button),
+  .infoCardTextContainer--infocard-1-fila-2-bloque-6-home:hover :global(.vtex-button),
+  .infoCardTextContainer--infocard-2-fila-1-bloque-6-home:hover :global(.vtex-button),
+  .infoCardTextContainer--infocard-1-fila-1-bloque-6-home:hover :global(.vtex-button) {
+    transform: rotate(270deg);
+    height: 30px;
+    width: 20px;
+    background-size: contain;
+  }
+
+  .infoCardCallActionContainer--infocard-2-fila-1-bloque-6-home {
+    margin-bottom: 30px;
+  }
+
+  .infoCardCallActionContainer--infocard-1-fila-1-bloque-6-home {
+    margin-top: 30px;
+  }
+
+  .VerGarantia--Link {
+    color: #008622;
+    font-size: 11px;
+  }
+
+  .descripcionCorta {
+    width: 90vw !important;
+    display: flex;
+    margin: auto;
+    text-align: justify;
+    border-top: 1px solid;
+    border-image: linear-gradient(90deg,#fff,#2E3192,#fff) 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  /* estilos vista formulstio de contacto */
+
+  .infoCardContainer--infocard-formulario-contacto {
+    height: 375px;
+    border-radius: 00px 0px 0px 0px;
+  }
+
+  .infoCardSubhead--infocard-formulario-contacto {
+    font-size: 14px;
+    text-align: justify;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box!important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+
+  .infoCardContainer--infocard-formulario-contacto-enviado {
+    width: 100vw;
+    position: absolute;
+    left: 0vw;
+    height: 385px;
+    max-width: 1280px;
+    border-radius: 0px;
+    justify-content: flex-start;
+    align-items: end;
+    top: 225px;
+    border: none;
+  }
+
+  .infoCardHeadline--infocard-formulario-contacto-enviado {
+    font-size: 38px;
+    color: #fff;
+    font-weight: 700;
+    width: 100%;
+    text-align: initial;
+  }
+
+  .infoCardSubhead--infocard-formulario-contacto-enviado {
+    font-size: 18px;
+    color: #fff;
+    text-align: justify;
+  }
+
+  .imageElement--img-vista-como-comprar {
+    display: none;
+  }
+
+  .productBrand--quickview {
+    font-size: 14px;
+    color: #2E3192;
+    font-weight: 700;
+    width: 65vw;
+    display: flex;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box!important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+
+  /* :global(.vtex-flex-layout-0-x-flexCol--contenedor-vista-producto-mobile) .swiper-wrapper,
+  :global(.vtex-flex-layout-0-x-flexCol--contenedor-vista-producto-mobile) .productImagesGallerySwiperContainer,
+  :global(.vtex-flex-layout-0-x-flexCol--contenedor-vista-producto-mobile) .productImagesGallerySlide,
+  :global(.vtex-flex-layout-0-x-flexCol--contenedor-vista-producto-mobile) .productImage {
+    height: 340px !important;
+    margin: 0;
+  } */
+
+  .productImageTag--main {
+    border-radius: 25px;
+    height: 350px !important;
+  }
+
+  .VerGarantia {
+    border-radius: 0px 0px 25px 25px;
+  }
+
+  .VerGarantia:hover {
+    background:  #B0E4BD;
+    border-radius: 0px 0px 25px 25px;
+    width: 100%;
+  }
+
+  .skuSelectorOptionsList {
+    width: 70vw;
+    flex-flow: wrap;
+  }
+
+  .skuSelectorNameContainer {
+    gap: 10px;
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--contenedor-vista-nuestras-tiendas) .container {
+    padding: 0;
+  }
+
+  .imageElementLink--boton-atencion-inmediata {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .imageElement--sello-hotelero {
+    width: 160px;
+    height: 160px;
+  }
+
+  .imageElement--slider-seccion-2-nuestra-empresa {
+    border-radius: 8px;
+  }
+
+  .infoCardTextContainer--infocard-seccion-3-hotelero {
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .infoCardImageContainer--bloque-8-home {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+  }
+
+  .skuSelectorInternalBox {
+    width: 120px;
+  }
+
+  .imageElement--icono-tarjeta-destino-ecologico {
+    height: 100px;
+  }
+
+  .paragraph--infocard-1-seccion-4-landing-ecologizate {
+    text-align: center;
+  }
+
+  .italic--infocard-1-seccion-4-landing-ecologizate {
+    font-size: 22px;
+  }
+
+  .infoCardTextContainer--infocard-1-seccion-4-landing-ecologizate {
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .infoCardHeadline--infocard-2-seccion-4-landing-ecologizate {
+    font-size: 26px;
+  }
+
+  .infoCardTextContainer--infocard-2-seccion-4-landing-ecologizate {
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .infoCardSubhead--infocard-2-seccion-4-landing-ecologizate {
+    font-size: 20px;
+  }
+
+  .infoCardCallActionContainer--infocard-2-seccion-4-landing-ecologizate :global(.vtex-button) {
+    font-size: 17px;
+  }
+
+  .strong--infocard-1-seccion-4-landing-ecologizate {
+    font-size: 20px;
+  }
+
+  .subscriberContainer {
+   max-width: 90vw;
+   margin-top: 20px;
+  }
+
+  .subscriberContainer .inputEmail,
+  .subscriberContainer .inputName {
+    width: 100%;
+  }
+}

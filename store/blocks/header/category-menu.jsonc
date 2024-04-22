@@ -1,0 +1,312 @@
+{
+  //CONTENEDOR MENUS HEADER DESKTOP
+  "flex-layout.row#contenedor-menu-header": {
+    "children": [
+      "menu-item#colchones",
+      "menu-item#base-cama",
+      "menu-item#sofas-puff",
+      "menu-item#combos",
+      "menu-item#almohadas",
+      "menu-item#pets"
+    ],
+    "props": {
+      "blockClass": ["contenedor-menu-header"],
+      "width": "62%"
+    }
+  },
+  "vtex.menu@2.x:menu#menu-categorias-desktop": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "blockClass": "menu-categorias-header"
+    },
+    "children": [
+      "menu-item#colchones",
+      "menu-item#base-cama",
+      "menu-item#sofas-puff",
+      "menu-item#combos",
+      "menu-item#almohadas",
+      // "menu-item#pets",
+      "rich-text#link-categoria-mascotas"
+    ]
+  },
+  "menu-item#colchones": {
+    "props": {
+      "blockClass": "menu-categoria-header",
+      "id": "menu-item-categoria-colchones",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Colchones",
+        "noFollow": false,
+        "tagTitle": "Colchones",
+        "text": "Colchones"
+      },
+      "iconPosition": "left",
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 10,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "vtex-menu-icon"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#categoria-colchones"]
+  },
+  "vtex.menu@2.x:submenu#categoria-colchones": {
+    "children": ["flex-layout.row#contenedor-menu-colchones"],
+    "props": {
+      "blockClass": "menu-categorias-header"
+      // "width": "100%"
+    }
+  },
+
+  //MENU BASE CAMA
+  "menu-item#base-cama": {
+    "props": {
+      "blockClass": "menu-categoria-header",
+      "id": "menu-item-categoria-base-cama",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/base-cama",
+        "noFollow": false,
+        "tagTitle": "Base Cama",
+        "text": "Base Cama"
+      },
+      "iconPosition": "left",
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 10,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "vtex-menu-icon"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#categoria-base-cama"]
+  },
+  "vtex.menu@2.x:submenu#categoria-base-cama": {
+    "children": ["flex-layout.row#contenedor-menu-base-cama"],
+    "props": {
+      "blockClass": ["menu-categorias-header","menu-categorias-header-base-cama"]
+      // "width": "100%"
+    }
+  },
+
+  //MENU SOFAS Y PUFF
+  "menu-item#sofas-puff": {
+    "props": {
+      "blockClass": "menu-categoria-header",
+      "id": "menu-item-categoria-sofas-puff",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/sofas-puff",
+        "noFollow": false,
+        "tagTitle": "Sofás y Puff",
+        "text": "Sofás y Puff"
+      },
+      "iconPosition": "left",
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 10,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "vtex-menu-icon"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#categoria-sofas-puff"]
+  },
+  "vtex.menu@2.x:submenu#categoria-sofas-puff": {
+    "children": ["flex-layout.row#contenedor-menu-sofas-puff"],
+    "props": {
+      "blockClass": ["menu-categorias-header","menu-categorias-header-sofas-puff"]
+      // "width": "100%"
+    }
+  },
+
+  //MENU COMBOS
+  "menu-item#combos": {
+    "props": {
+      "blockClass": "menu-categoria-header",
+      "id": "menu-item-categoria-combos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/combos",
+        "noFollow": false,
+        "tagTitle": "Combos",
+        "text": "Combos"
+      },
+      "iconPosition": "left",
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 10,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "vtex-menu-icon"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#categoria-combos"]
+  },
+
+  "vtex.menu@2.x:submenu#categoria-combos": {
+    "children": ["flex-layout.row#contenedor-menu-combos"],
+    "props": {
+      "blockClass": ["menu-categorias-header","menu-categorias-header-combos"]
+      // "width": "100%"
+    }
+  },
+
+  //MENU ALMOHADAS
+  "menu-item#almohadas": {
+    "props": {
+      "blockClass": "menu-categoria-header",
+      "id": "menu-item-categoria-almohadas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/almohadas",
+        "noFollow": false,
+        "tagTitle": "Almohadas",
+        "text": "Almohadas"
+      },
+      "iconPosition": "left",
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 10,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "vtex-menu-icon"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#categoria-almohadas"]
+  },
+
+  "vtex.menu@2.x:submenu#categoria-almohadas": {
+    "children": ["flex-layout.row#contenedor-menu-almohadas"],
+    "props": {
+      "blockClass": ["menu-categorias-header","menu-categorias-header-almohadas"]
+    }
+  },
+
+  //MENU PETS
+  "menu-item#pets": {
+    "props": {
+      "blockClass": "menu-categoria-header",
+      "id": "menu-item-categoria-pets",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/pets",
+        "noFollow": false,
+        "tagTitle": "Pets",
+        "text": "Pets"
+      },
+      "iconPosition": "left",
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 10,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "vtex-menu-icon"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#categoria-pets"]
+  },
+
+  "vtex.menu@2.x:submenu#categoria-pets": {
+    "children": ["flex-layout.row#contenedor-menu-pets"],
+    "props": {
+      "blockClass": "menu-categorias-header",
+      "width": "100%"
+    }
+  },
+  "menu-item#more": {
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "More",
+        "text": "More"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#more"]
+  },
+  "vtex.menu@2.x:submenu#more": {
+    "props": {
+      "width": "100%"
+    },
+    "children": ["flex-layout.row#menu-more"]
+  },
+  "flex-layout.row#menu-more": {
+    "children": ["flex-layout.col#menu-more-1", "flex-layout.col#menu-more-2"]
+  },
+  "flex-layout.col#menu-more-1": {
+    "children": ["vtex.menu@2.x:menu#more"]
+  },
+  "flex-layout.col#menu-more-2": {
+    "children": ["info-card#home"]
+  },
+  "vtex.menu@2.x:menu#more": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#about-us", "menu-item#faq"]
+  },
+  "menu-item#about-us": {
+    "props": {
+      "id": "menu-item-about-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "About us",
+        "text": "About us"
+      }
+    }
+  },
+  "menu-item#faq": {
+    "props": {
+      "id": "menu-item-faq",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "FAQ",
+        "text": "FAQ"
+      }
+    }
+  },
+  "menu-item#contact-us": {
+    "props": {
+      "id": "menu-item-contact-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Contact Us",
+        "text": "Contact Us"
+      }
+    }
+  }
+}

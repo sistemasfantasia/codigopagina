@@ -1,0 +1,96 @@
+.container {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.link--3,
+.link--2,
+.link--1 {
+  font-size: 14px;
+  color: #97B8DF;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding-top: 0;
+}
+
+.link {
+  padding-bottom: 0;
+}
+
+/* .homeLink::after {
+  background: url(assets/icons/icono-mis-favoritos.svg);
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  color: transparent;
+  width: 25px;
+  height: 23px !important;
+} */
+
+.homeIcon {
+  display: flex;
+  color: #2E3192;
+}
+
+.term {
+  color: #2E3192;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.arrow .termArrow {
+  color: #7DA6D7;
+}
+
+.arrow .caretIcon {
+  width: 15px;
+  height: 10px !important;
+  color: #7DA6D7;
+}
+
+.arrow  {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 640px) {
+
+  .container {
+    max-width: 90vw;
+    padding: 0;
+    align-items: center;
+  }
+
+  .link--3,
+  .link--2,
+  .link--1 {
+    max-width: 22vw;
+    width: fit-content !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box!important;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+
+  .term {
+    max-width: 20vw;
+    width: fit-content !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box!important;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+
+}

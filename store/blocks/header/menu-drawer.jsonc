@@ -1,0 +1,234 @@
+{
+  "flex-layout.col#contenedor-drawer-categorias-mobile": {
+    "children": [
+      "drawer#colchones",
+      "drawer#base-cama",
+      "drawer#sofas-puff",
+      "drawer#combos",
+      "drawer#almohadas",
+      "rich-text#link-categoria-mascotas"
+      // "drawer#pets"
+    ],
+    "props": {
+      "blockClass": ["contenedor-drawer-categorias-mobile"]
+    }
+  },
+  //DRAWER COLCHONES
+  "drawer#colchones": {
+    "children": ["flex-layout.col#contenedor-items-menu-colchones"],
+    "blocks": ["drawer-header#drawer-menu-categoria-mobile","drawer-trigger#colchones"],
+    "props": {
+      "blockClass": ["drawer-menu-categoria"],
+      "slideDirection": "vertical"
+    }
+  },
+  "drawer-trigger#colchones": {
+    "children": ["rich-text#trigger-drawer-colchones"],
+    "props": {
+      "blockClass": ["drawer-trigger-menu-categoria"]
+    }
+  },
+  "rich-text#trigger-drawer-colchones": {
+    "props": {
+      "text": "Colchones",
+      "blockClass": ["trigger-texto-menu-categoria"]
+    }
+  },
+  "drawer-header#drawer-menu-categoria-mobile": {
+    "children": [
+      "drawer-close-button#drawer-menu-categoria-mobile"
+    ],
+    "props":{
+      "blockClass":"drawer-menu-categoria-mobile"
+    }
+  },
+  "drawer-close-button#drawer-menu-categoria-mobile":{
+    "props": {
+      "text": "Volver",
+      "blockClass": ["drawer-close-header-menu-categoria-mobile"]
+    }
+  },
+  //CONTENEDOR MENU
+  // "flex-layout.row#contenedor-menu-colchones": {
+  //   "children": [
+  //     "flex-layout.col#contenedor-items-menu",
+  //     "info-card#infocard-menu-categoria-colchones"
+  //     // "list-context.product-list#vitrina-menu-categoria"
+  //   ],
+  //   "props": {
+  //     "blockClass": ["contenedor-menu-colchones"]
+  //   }
+  // },
+  // //INFOCARD MENU
+  // "info-card#infocard-menu-categoria-colchones": {
+  //   "props": {
+  //     "blockClass": "infocard-menu-categorias",
+  //     "isFullModeStyle":true,
+  //     "callToActionText": "Combos de Fantasía",
+  //     "id": "infocard-menu",
+  //     "imageUrl": "/arquivos/img-infocard-menu-categorias.png"
+  //   }
+  // },
+  // //CONTENEDOR DEL SUBMENU
+  // "flex-layout.col#contenedor-items-menu": {
+  //   "children": [
+  //     "menu-item#boton1",
+  //     "menu-item#boton1",
+  //     "menu-item#boton1",
+  //     "menu-item#boton1",
+  //     "menu-item#boton1",
+  //     "menu-item#boton1",
+  //     "menu-item#boton1"
+  //   ],
+  //   "props": {
+  //     "blockClass": ["contenedor-items-menu"]
+  //   }
+  // },
+  // "menu-item#boton1": {
+  //   "props": {
+  //     "blockClass": "categoria-header",
+  //     "id": "menu-item-categoria-colchones",
+  //     "type": "custom",
+  //     "iconId": null,
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "/Colchones",
+  //       "noFollow": false,
+  //       "tagTitle": "Botón Menú desplegable",
+  //       "text": "Botón Menú desplegable"
+  //     }
+  //   }
+  // },
+  "list-context.product-list#vitrina-menu-categoria": {
+    "blocks": ["product-summary.shelf#pequeña"],
+    "children": ["slider-layout#slider-vitrina-menu-categoria"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#slider-vitrina-menu-categoria": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "slider-vitrina-menu-categoria",
+      "showNavigationArrows": "always",
+      "showPaginationDots":"never"
+    }
+  },
+
+  //DRAWER COLCHONES
+  "drawer#base-cama": {
+    "children": ["flex-layout.col#contenedor-items-menu-base-cama"],
+    "blocks": ["drawer-header#drawer-menu-categoria-mobile","drawer-trigger#base-cama"],
+    "props": {
+      "blockClass": ["drawer-menu-categoria"],
+      "slideDirection": "vertical"
+    }
+  },
+  "drawer-trigger#base-cama": {
+    "children": ["rich-text#trigger-drawer-base-cama"],
+    "props": {
+      "blockClass": ["drawer-trigger-menu-categoria"]
+    }
+  },
+  "rich-text#trigger-drawer-base-cama": {
+    "props": {
+      "text": "Base cama",
+      "blockClass": ["trigger-texto-menu-categoria"]
+    }
+  },
+
+  //DRAWER SOFAS Y PUFF
+  "drawer#sofas-puff": {
+    "children": ["flex-layout.col#contenedor-items-menu-sofas-puff"],
+    "blocks": ["drawer-header#drawer-menu-categoria-mobile","drawer-trigger#sofas-puff"],
+    "props": {
+      "blockClass": ["drawer-menu-categoria"],
+      "slideDirection": "vertical"
+    }
+  },
+  "drawer-trigger#sofas-puff": {
+    "children": ["rich-text#trigger-drawer-sofas-puff"],
+    "props": {
+      "blockClass": ["drawer-trigger-menu-categoria"]
+    }
+  },
+  "rich-text#trigger-drawer-sofas-puff": {
+    "props": {
+      "text": "Sofás y Puff",
+      "blockClass": ["trigger-texto-menu-categoria"]
+    }
+  },
+
+  //DRAWER COMBOS
+  "drawer#combos": {
+    "children": ["flex-layout.col#contenedor-items-menu-combos"],
+    "blocks": ["drawer-header#drawer-menu-categoria-mobile","drawer-trigger#combos"],
+    "props": {
+      "blockClass": ["drawer-menu-categoria"],
+      "slideDirection": "vertical"
+    }
+  },
+  "drawer-trigger#combos": {
+    "children": ["rich-text#trigger-drawer-combos"],
+    "props": {
+      "blockClass": ["drawer-trigger-menu-categoria"]
+    }
+  },
+  "rich-text#trigger-drawer-combos": {
+    "props": {
+      "text": "Combos",
+      "blockClass": ["trigger-texto-menu-categoria"]
+    }
+  },
+
+  //DRAWER ALMOHADAS
+  "drawer#almohadas": {
+    "children": ["flex-layout.col#contenedor-items-menu-almohadas"],
+    "blocks": ["drawer-header#drawer-menu-categoria-mobile","drawer-trigger#almohadas"],
+    "props": {
+      "blockClass": ["drawer-menu-categoria"],
+      "slideDirection": "vertical"
+    }
+  },
+  "drawer-trigger#almohadas": {
+    "children": ["rich-text#trigger-drawer-almohadas"],
+    "props": {
+      "blockClass": ["drawer-trigger-menu-categoria"]
+    }
+  },
+  "rich-text#trigger-drawer-almohadas": {
+    "props": {
+      "text": "Almohadas",
+      "blockClass": ["trigger-texto-menu-categoria"]
+    }
+  },
+
+  //DRAWER PETS
+  "drawer#pets": {
+    "children": ["flex-layout.col#contenedor-items-menu-pets"],
+    "blocks": ["drawer-header#drawer-menu-categoria-mobile","drawer-trigger#pets"],
+    "props": {
+      "blockClass": ["drawer-menu-categoria"],
+      "slideDirection": "vertical"
+    }
+  },
+  "drawer-trigger#pets": {
+    "children": ["rich-text#trigger-drawer-pets"],
+    "props": {
+      "blockClass": ["drawer-trigger-menu-categoria"]
+    }
+  },
+  "rich-text#trigger-drawer-pets": {
+    "props": {
+      "text": "Pets",
+      "blockClass": ["trigger-texto-menu-categoria"]
+    }
+  }
+}

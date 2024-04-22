@@ -1,0 +1,60 @@
+{
+  "store.custom#about-us": {
+    "path": "/about-us"
+  },
+  "store.custom#faq": {
+    "path": "/faq"
+  },
+  "store.custom#contact-us": {
+    "path": "/contact-us"
+  },
+  "store.wishlist": {
+    "path": "/wishlist"
+  },
+  "store.custom#product-comparison-list": {
+    "path": "/product-comparison",
+    "isSitemapEntry": false
+  },
+  "store.custom#formulario-contacto": {
+    "path": "/contacto"
+  },
+  "store.custom#como-comprar": {
+    "path": "/como-comprar"
+  },
+  "store.custom#trabaja-con-nosotros": {
+    "path": "/trabaja-con-nosotros"
+  },
+  "store.custom#nuestras-tiendas": {
+    "path": "/nuestras-tiendas"
+  },
+  "store.custom#terminos-legales": {
+    "path": "/terminos-legales"
+  },
+  "store.custom#preguntas-frecuentes": {
+    "path": "/preguntas-frecuentes"
+  },
+  "store.custom#nuestra-empresa": {
+    "path": "/nuestra-empresa"
+  },
+  "store.custom#hotelero": {
+    "path": "/hotelero"
+  },
+  "store.custom#pqrs": {
+    "path": "/pqrs"
+  },
+  "store.custom#blog-colchones": {
+    "path": "/blog"
+  },
+  "store.custom#template-blog": {
+    "path": "/template-blog"
+  },
+  "store.custom#landing-ecologizate": {
+    "path": "/ecologizate"
+  },
+  "store.custom#cuponera-fantastica": {
+    "path": "/cuponera-fantastica"
+  },
+  "store.custom#plantilla-cupon": {
+    "path": "/cupon"
+  }
+}

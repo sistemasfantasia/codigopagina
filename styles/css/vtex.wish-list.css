@@ -1,0 +1,59 @@
+.wishlistIconContainer {
+  position: absolute;
+  right: 5%;
+  z-index: 2;
+}
+
+:global(.vtex-slider-layout-0-x-slide--vitrina-bloque-4-home) .wishlistIconContainer {
+  right: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--col-contenedor-vitrina-no-encontrado) .wishlistIconContainer :global(.vtex-button__label){
+  padding-right: 0 !important;
+}
+
+:global(.vtex-slider-layout-0-x-slide--vitrina-bloque-4-home) .wishlistIconContainer :global(.vtex-button__label) {
+  padding-left: 0 !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--col-contenedor-vitrina-2-vista-departamento) .wishlistIconContainer :global(.vtex-button__label),
+:global(.vtex-shelf-1-x-slide--vitrina-cross-selling) .wishlistIconContainer :global(.vtex-button__label) {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.wishlistIconContainer :global(.vtex-button):hover {
+  background: transparent;
+}
+
+.iconSize {
+  width: 26px !important;
+}
+
+.outline{
+  background: url(assets/icons/outline-wishlist.svg) !important;
+  background-size: contain;
+  background-repeat: no-repeat !important;
+}
+
+.fill {
+  background: url(assets/icons/icono-mis-favoritos.svg) !important;
+  background-size: contain;
+  background-repeat: no-repeat !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--contenedor-nombre-dimensiones-sku-pdp) .wishlistIconContainer {
+  position: relative;
+  right: 0;
+  display: contents;
+}
+
+@media only screen and (max-width: 640px) {
+
+  :global(.vtex-flex-layout-0-x-flexColChild--stack-layout-vista-producto) .wishlistIconContainer--wishlistHeart  {
+    position: relative !important;
+    top: -345px !important;
+    left: 75% !important;
+    width: fit-content;
+  }
+}

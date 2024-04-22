@@ -1,0 +1,94 @@
+/* :global(.vtex-orderquote-1-x-containerCreate) {
+  max-width: 1280px;
+  margin: auto;
+} */
+
+.descriptionContainer :global(.vtex-textarea__input),
+.inputCreate :global(.vtex-input-prefix__group) {
+  border: 1px solid #B7B8BA;
+  border-radius: 100px;
+}
+
+.descriptionContainer :global(.vtex-textarea__label),
+.inputCreate :global(.vtex-input__label) {
+  font-size: 18px;
+  color: #2E3192;
+  font-weight: 700;
+}
+
+.containerCreate :global(.vtex-pageHeader__title) {
+  font-size: 28px;
+  color: #2E3192;
+  font-weight: 700;
+}
+
+.listContainer :global(.vtex-table__container) {
+  background: #EAEAF4!important;
+  color: #233192;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.listContainer .ReactVirtualized__Grid__innerScrollContainer {
+  background: greenyellow !important;
+}
+
+.totalizerContainer {
+  border: 1.5px solid #2e3192;
+  border-radius: 10px;
+}
+
+.totalizerContainer .item_container{
+  background: #008622 !important;
+}
+
+.ReactVirtualized__Grid {
+  overflow: visible !important;
+}
+
+.TopRightGrid_ScrollWrapper {
+  background: purple;
+}
+
+.checkboxClear :global(.vtex-checkbox__label) {
+  font-size: 14px;
+  color: #2E3192;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.checkboxClear :global(.vtex-checkbox__container){
+  border: 1px solid #2E3192;
+  border-radius: 50%;
+  background: #F2F6FB;
+}
+
+.checkboxClear :global(.vtex-checkbox__inner-container){
+  border: none;
+  border-radius: 50%;
+}
+
+.buttonSave {
+  width: 50% !important;
+}
+
+.buttonSave :global(.vtex-button){
+  background: #B0E4BD;
+  border-radius: 100px;
+  border: 2px solid #B0E4BD;
+}
+
+.buttonSave :global(.vtex-button__label) {
+  color: #008622;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.buttonsContainer .flex {
+  background: #B0E4BD;
+}
+
+.checkboxClear {
+  width: 425px !important;
+}

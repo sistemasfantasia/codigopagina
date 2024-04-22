@@ -1,0 +1,2794 @@
+:global(.vtex-store__template) {
+  overflow-x: clip;
+}
+
+.flexRowContent--menu-link,
+.flexRowContent--main-header {
+  padding: 0 0.5rem;
+}
+
+.flexRowContent--main-header {
+  justify-content: space-between !important;
+}
+
+.flexRow--productSpecificationGroup:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.flexRow--productSpecificationGroupName {
+  background-color: #eaeaea;
+  padding: 0.5rem 1rem;
+  display: none;
+}
+
+.flexCol--productSpecificationName {
+  padding: 1rem;
+  background: #F2F6FB;
+  border-radius: 100px;
+}
+
+.flexCol--productSpecificationValue {
+  padding: 1rem 1rem 1rem 0;
+}
+
+/* .flexRow--productSpecification:nth-child(even) {
+  background-color: #f9f9f9;
+} */
+
+.flexRowContent--faq {
+  max-width: 700px;
+  margin: auto;
+}
+
+.flexRow--orderByAndSwitcher {
+  padding-right: 1.5em;
+}
+
+.flexRowContent--savingsSummaryListDesktop {
+  justify-content: flex-start;
+}
+
+.flexCol--summaryRightListDesktop {
+  justify-content: space-around;
+}
+
+.flexRow--buyNowButton :global(.vtex-button) {
+  background: #eef3f7;
+  border-color:#eef3f7;
+  color: #0f3e99;
+}
+
+.flexRow--buyNowButton:hover :global(.vtex-button) {
+  background: #dbe9fd;
+  border-color:#dbe9fd;
+}
+
+.flexCol--productRating {
+  margin-bottom: 3rem;
+}
+
+.flexCol--summaryDetailsListMobile {
+  justify-content: space-between;
+}
+
+.flexCol--summaryUpDetailsListMobile {
+  margin-bottom: 0.25rem
+}
+
+
+
+/* estilos contacto */
+
+.flexRowContent--contact {
+  max-width: 700px;
+  margin: auto;
+}
+
+.flexRowContent--contact :global(.vtex-input__label),
+.flexRowContent--contact :global(.vtex-textarea__label) {
+  font-size: 1rem;
+  color: #3f3f40;
+}
+
+.flexRowContent--contact :global(.vtex-input),
+.flexRowContent--contact :global(.vtex-textarea) {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+
+/* estilos preheader */
+
+.flexRow--contenedor-preheader {
+  background: #2E3192;
+}
+
+.flexRowContent--contenedor-preheader {
+  padding: 0px;
+}
+
+.flexRowContent--menu-link {
+  background-color: #03044e;
+  color: #fff;
+}
+
+.flexRowContent--main-header {
+  max-width: 1290px;
+  background-color: #fff;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0 20px !important;
+}
+
+.flexRow--main-header {
+  background: #fff;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(90deg, #fff, #2E3192, #fff) 1;
+}
+
+.flexRowContent--boton-whatsapp-flotante {
+  height: 0;
+}
+
+.flexRow--boton-whatsapp-flotante {
+  z-index: 200;
+}
+
+/* estilos menu categorias */
+
+.flexRow--menu-categorias-desktop {
+  /* border-top: 1px solid #2E3192; */
+  box-shadow: 0px 12px 24px 0px #0000000A;
+  background: #fff;
+}
+
+.flexRowContent--menu-categorias-desktop {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.flexRowContent--contenedor-menu-header {
+  justify-content: space-between;
+  gap: 10px;
+  height: 100%;
+}
+
+.flexRow--contenedor-menu-colchones {
+  width: 100%;
+}
+
+/* .flexRowContent--menu-categorias-desktop .stretchChildrenWidth:first-child {
+  width: 40% !important;
+}
+
+.flexRowContent--menu-categorias-desktop .stretchChildrenWidth:last-child {
+  width: 60% !important;
+} */
+
+.flexRowContent--menu-categorias-desktop :global(.vtex-menu-2-x-menuContainerNav){
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flexRowContent--main-header-mobile {
+  align-items: center;
+  padding: 0.625rem 0.5rem;
+  background-color: #fff;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(90deg, #fff, #2E3192, #fff) 1;
+}
+
+.flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
+  color: #727273;
+  font-size: 14px;
+}
+
+/* estilos home */
+
+.flexCol--contenedor-home-desktop {
+  gap: 40px;
+}
+
+.flexRow--contenedor-vista-blog :global(.vtex-store-components-3-x-container),
+.flexRow--contenedor-plantilla-cupon :global(.vtex-store-components-3-x-container),
+.flexRow--contenedor-cuponera-fantastica :global(.vtex-store-components-3-x-container),
+.flexRow--contenedor-vista-landing-ecologizate :global(.vtex-store-components-3-x-container),
+.flexRow--contenedor-vista-hotelero :global(.vtex-store-components-3-x-container),
+.flexRow--contenedor-vista-nuestra-empresa :global(.vtex-store-components-3-x-container),
+.flexRow--contenedor-vista-404 :global(.vtex-store-components-3-x-container),
+.flexRow--contenedor-vista-trabaja-con-nosotros :global(.vtex-store-components-3-x-container),
+.flexRow--contenedor-home-desktop :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+  margin:inherit ;
+  max-width: 100% !important;
+}
+
+.flexRow--bloque-3-home {
+  background: #F4F4F5;
+  width: 100vw;
+}
+
+.flexCol--bloque-3-home {
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+  left: -9px;
+  padding: 0 20px;
+}
+
+.flexCol--contenedor-responsive-vista-blog,
+.flexRowContent--imagenes-bloque-3 {
+  gap: 20px;
+}
+
+.flexCol--bloque-6-home {
+  max-width: 1280px;
+  margin: auto;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* estilos vitrina grande */
+
+.flexRow--condicional-especificaciones-vitrina-grande {
+  padding: 15px 0px;
+}
+
+.flexRowContent--fila-precio-vitrina-pequena {
+  max-height: 40px;
+  min-height: 40px;
+  height: 40px;
+}
+
+.flexRowContent--fila-precio-botonComprar :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+  width: fit-content !important;
+}
+
+.flexRowContent--fila-precio-botonComprar :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(2n){
+  width: fit-content !important;
+}
+
+.flexRowContent--fila-precio-botonComprar :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+  width: 50% !important;
+}
+
+.flexRowContent--fila-precio-botonComprar{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  transition: .5s all ease;
+}
+
+.flexColChild--fila-nombreProducto-especificacion :global(.vtex-rich-text-0-x-container--summarySpecificationBullet) {
+  display: none;
+}
+
+.flexColChild--fila-nombreProducto-especificacion :global(.vtex-product-specifications-1-x-specificationValue--last) {
+  font-weight: 900;
+  font-size: 14px;
+  color: #686A6C;
+  left: -8px;
+  position: relative;
+}
+
+.flexRowContent--fila-2-infocards-bloque-6-home,
+.flexRowContent--fila-1-infocards-bloque-6-home {
+  height: 415px;
+  gap: 20px;
+}
+
+.flexRowContent--boton-comprar :global(.vtex-button),
+.flexRowContent--fila-precio-botonComprar :global(.vtex-button){
+  border-radius: 100px;
+  background: #B0E4BD;
+  border: #B0E4BD;
+  border: 2px solid #B0E4BD;
+  transition: .5s all ease;
+}
+
+.flexRowContent--boton-comprar :global(.vtex-button):hover,
+.flexRowContent--fila-precio-botonComprar :global(.vtex-button):hover{
+  border-radius: 100px;
+  background: #fff;
+  border: 2px solid #B0E4BD;
+  transition: .5s all ease;
+}
+
+.flexRowContent--boton-comprar :global(.vtex-button__label),
+.flexRowContent--fila-precio-botonComprar :global(.vtex-button__label){
+  color:#008622;
+  font-weight: 900;
+  text-transform: capitalize;
+  transition: .5s all ease;
+}
+
+.flexCol--bloque-7-home,
+.flexCol--bloque-4-home {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.flexRowContent--contenedor-cards-vista-blog,
+.flexRow--vitrinas-bloque-7-home {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.flexRowContent--vitrinas-bloque-7-home {
+  gap: 10px;
+}
+
+.flexCol--fila-nombreProducto-especificacion {
+  border-bottom: 1px solid #97B8DF;
+  padding: 10px 0px;
+}
+
+.flexCol--contenedor-nombre-dimensiones {
+  border-bottom: 1px solid #97B8DF;
+  padding: 10px 0px;
+  height: 60px;
+  min-height: 60px;
+  max-height: 60px;
+}
+
+/* estilos boque 8 home */
+
+.flexRowContent--bloque-10-home,
+.flexCol--bloque-9-home,
+.flexRowContent--bloque-8-home {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.flexRow--bloque-10-home {
+  background: #2E3192;
+  padding: 40px 0px;
+}
+
+.flexRowContent--bloque-10-home .stretchChildrenWidth:first-child {
+  width: 70% !important;
+}
+
+.flexRowContent--bloque-10-home .stretchChildrenWidth:last-child {
+  width: 30% !important;
+}
+
+/* estilos bloque 12 */
+
+.flexRowContent--bloque-12-home {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* estilos bloque 13 */
+
+.flexRowContent--bloque-13-home {
+  max-width: 1280px;
+  margin: auto;
+  gap: 25px;
+  padding: 0 20px;
+}
+
+.flexCol--seccion-bloque-13-home {
+  border: 1px solid #97B8DF;
+  background: #F2F6FB;
+  border-radius: 24px;
+  box-shadow: 0px 4px 25px 0px #0000001F;
+  gap: 20px;
+}
+
+.flexColChild--seccion-bloque-13-home {
+  height: fit-content !important;
+}
+
+.flexCol--seccion-bloque-13-home {
+  padding: 20px;
+}
+
+.flexCol--informacion-seccion-2-bloque-13-home {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background: #D9F2DF;
+  border-radius: 12px;
+  padding: 10px 0px;
+}
+
+.flexRowContent--titulo-seccion-bloque-13-home .stretchChildrenWidth {
+  width: fit-content !important;
+}
+
+.flexRowContent--titulo-seccion-bloque-13-home {
+  align-items: center;
+  gap: 20px;
+}
+
+/* estilos footer */
+
+.flexRowContent--footer-3-credits .stretchChildrenWidth {
+  width: fit-content !important;
+}
+
+.flexRowContent--footer-3-credits {
+  justify-content: center;
+  gap: 25px;
+  align-items: center;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.flexRow--footer-3-credits {
+  background: #F4F4F5;
+}
+
+.flexRowContent--seccion-2-footer-2-desktop .stretchChildrenWidth,
+.flexRowContent--seccion-1-footer-2-desktop .stretchChildrenWidth{
+  width: fit-content !important;
+}
+
+.flexRowContent--footer-2-sello-comunicacion .stretchChildrenWidth:first-child {
+  width: fit-content !important;
+}
+
+.flexRowContent--footer-2-sello-comunicacion .stretchChildrenWidth:last-child {
+  width: fit-content !important;
+  align-items: center;
+}
+
+.flexRowContent--seccion-2-footer-2-desktop .stretchChildrenWidth,
+.flexRowContent--seccion-1-footer-2-desktop .stretchChildrenWidth{
+  width: fit-content !important;
+}
+
+.flexRowContent--footer-2-sello-comunicacion {
+  justify-content: center;
+  gap: 60px;
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.flexRowContent--seccion-1-footer-2-desktop{
+  align-items: center;
+  gap: 10px;
+}
+
+.flexRowContent--seccion-2-footer-2-desktop {
+  align-items: center;
+  gap: 10px;
+}
+
+.flexRow--footer-2-sello-comunicacion {
+  padding: 50px 0px;
+}
+
+.flexRow--seccion-2-footer-2-desktop {
+  box-shadow: 0px 4px 25px 0px #0000001F;
+  border-radius: 20px;
+  height: fit-content !important;
+}
+
+.flexRow--footer-1-medios-pago-redes {
+  border-width: 1px 0px 1px 0px;
+  border-style: solid;
+  border-color: #97B8DF;
+  margin-top: 30px;
+}
+
+.flexRowContent--seccion-1-footer-1-desktop .stretchChildrenWidth {
+  width: fit-content !important;
+}
+
+.flexRowContent--seccion-1-footer-1-desktop {
+  justify-content: center;
+  gap: 20px;
+}
+
+.flexRowContent--seccion-2-footer-1-desktop .stretchChildrenWidth {
+  width: fit-content !important;
+}
+
+.flexRowContent--seccion-2-footer-1-desktop {
+  justify-content: center;
+  gap: 20px;
+}
+
+.flexRowContent--footer-1-medios-pago-redes{
+  padding: 0;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.flexRow--seccion-1-footer-1-desktop{
+  border-right: 1px solid #97B8DF;
+}
+
+/* estilos minicart */
+
+.flexRow--contenedor-minicart-summary {
+  background: #2E3192 !important;
+  margin-right: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.flexRowContent--contenedor-footer-minicart .stretchChildrenWidth:first-child {
+  width: 33% !important;
+}
+
+.flexRowContent--contenedor-footer-minicart .stretchChildrenWidth:nth-child(2n) {
+  width: 33% !important;
+}
+
+.flexRowContent--contenedor-footer-minicart .stretchChildrenWidth:last-child {
+  width: 33% !important;
+}
+
+.flexRow--contenedor-footer-minicart {
+  border-top: 1px solid #97B8DF;
+  margin-top: 10px;
+}
+
+.flexRowContent--contenedor-listaProductos-totales {
+  gap: 20px;
+}
+
+.flexRowContent--ProductItemCarrito {
+  border-bottom: 1px solid #97B8DF;
+  padding: 10px;
+}
+
+.flexRowContent--contenedor-selector-botonEliminar{
+  justify-content: space-between;
+}
+
+.flexColChild--product-cart {
+  height: fit-content !important;
+}
+
+.flexCol--product-cart {
+  gap: 4px;
+}
+
+.flexRow--deals {
+  background-color: #0F3E99;
+  padding: 14px 0px;
+}
+
+.flexRow--deals .stretchChildrenWidth {
+  align-items: center;
+}
+
+.flexRow--deals .flexCol {
+  align-items: center;
+  margin-bottom: 5px;
+  padding-top: 5px;
+}
+
+.flexCol--filterCol {
+  max-width: 500px;
+  min-width: 230px;
+}
+
+.flexCol--productCountCol {
+  align-items: flex-start;
+}
+
+.flexCol--orderByCol {
+  align-items: flex-end;
+}
+
+.flexCol--orderByMobileCol {
+  width: 42%;
+}
+
+.flexCol--filterMobileCol {
+  width: 38%;
+}
+
+.flexRow--quickviewMainRow {
+  display: flex;
+  max-height: 100%;
+}
+
+.flexColChild--quickviewDetails:first-child {
+  overflow-y: auto;
+  height: 66% !important;
+  overflow-x: hidden;
+}
+
+.flexColChild--quickviewDetails:last-child {
+  height: 34% !important;
+}
+
+.flexRow--addToCartRow {
+  padding-bottom: 1rem;
+}
+
+.flexRowContent--contenedor-precios-minicart {
+  gap: 10px;
+}
+
+/* estilos vista producto */
+
+/* .flexRow--contenedor-vista-producto {
+  max-width: 1280px;
+  margin: auto;
+} */
+
+.flexRow--product-main,
+.flexRow--contenedor-vista-producto :global(.vtex-breadcrumb-1-x-container ){
+  max-width: 1290px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* .flexRow--contenedor-nombre-dimensiones-sku-pdp {
+  background: #F2F6FB;
+  width: 95vw;
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: end;
+  box-shadow: 0px 1px 2px 0px #00000029;
+  border-radius: 0px 18px 18px 0px;
+  margin-top: 50px;
+} */
+
+.flexRow--contenedor-nombre-dimensiones-sku-pdp {
+  background: #F2F6FB;
+  width: 100%;
+  /* position: absolute; */
+  /* left: 0; */
+  /* display: flex; */
+  justify-content: end;
+  box-shadow: 2px 1px 2px 0px #00000029;
+  border-radius: 0px 18px 18px 0px;
+  margin-top: 50px;
+  height: 110px;
+  z-index: 10;
+  display: flex;
+  position: relative;
+}
+
+.flexRow--cintilla-azul-stack {
+  background: #F2F6FB;
+  height: 110px;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  /* right: 0; */
+  margin-top: 50px;
+  width: 54vw;
+  box-shadow: -7rem 1px 2px 0px #00000029;
+}
+
+/* .flexRowContent--contenedor-nombre-dimensiones-sku-pdp {
+  width: 51%;
+  max-width: 860px;
+} */
+
+.flexRowContent--contenedor-nombre-dimensiones-sku-pdp {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.flexColChild--contenedor-right-col-pdp:first-child {
+  height: 150px !important;
+}
+
+.flexColChild--stack-layout-vista-producto {
+  z-index: 3;
+  height: fit-content !important;
+}
+
+.flexRowContent--contenedor-nombre-dimensiones-sku-pdp .stretchChildrenWidth:first-child {
+  width: 89% !important;
+}
+
+.flexRowContent--contenedor-nombre-dimensiones-sku-pdp .stretchChildrenWidth:last-child {
+  width: 10% !important;
+}
+
+.flexRowContent--product-name-pdp .stretchChildrenWidth:last-child {
+  width: 100% !important;
+}
+
+.flexCol--contenedor-nombre-dimensiones-sku-pdp {
+  gap: 5px;
+}
+
+.flexColChild--contenedor-nombre-dimensiones-sku-pdp:first-child {
+  height: 30px !important;
+  display: flex;
+}
+
+.flexColChild--contenedor-nombre-dimensiones-sku-pdp :global(.vtex-product-identifier-0-x-product-identifier) {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #3E3F40;
+}
+
+.flexCol--contenedor-nombre-dimensiones-sku-pdp  {
+  padding: 10px 0px;
+}
+
+.flexRowContent--contenedor-precios-pdp .stretchChildrenWidth{
+  width:fit-content!important;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.flexRowContent--contenedor-precios-pdp :global(.vtex-product-price-1-x-listPrice) {
+  font-size: 18px;
+  color: #DA0000;
+  font-weight: 700;
+}
+
+.flexRowContent--contenedor-precios-pdp :global(.vtex-product-price-1-x-sellingPrice) {
+  font-size: 28px;
+  color: #2E3192;
+  font-weight: 700;
+}
+
+.flexRowContent--boton-comprar-pdp {
+  margin: 0;
+}
+
+.flexRowContent--boton-comprar-pdp :global(.vtex-button) {
+  border-radius: 100px;
+  background: #B0E4BD;
+  border: #B0E4BD;
+}
+
+.flexRowContent--boton-comprar-pdp :global(.vtex-button):hover {
+  border-radius: 100px;
+  background: #fff;
+  border: 2px solid #B0E4BD;
+}
+
+.flexRowContent--boton-comprar-pdp :global(.vtex-button__label){
+  color:#008622;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.flexCol--contenedor-right-col-pdp {
+  gap: 10px;
+}
+
+.flexRowContent--productSpecification {
+  gap: 20px;
+}
+
+.flexColChild--col-spec-group {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flexColChild--productSpecificationName {
+  justify-content: center;
+  display: flex;
+}
+
+.flexColChild--productSpecificationName :global(.vtex-product-specifications-1-x-specificationName){
+  color: #2E3192;
+  font-size: 16px;
+}
+
+.flexRow--contenedor-vitrina-1-pdp {
+  width: 100vw;
+  background: #F2F6FB;
+}
+
+.flexCol--col-contenedor-vitrina-1-pdp {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0px 20px 20px 20px;
+}
+
+.flexCol--contenedor-vista-producto {
+  gap: 35px;
+}
+
+.flexRowContent--contenedor-banners-pdp {
+  max-width: 1280px;
+  margin: auto;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.flexRow--contenedor-vista-producto :global(.vtex-store-components-3-x-container) {
+  padding: 0 !important;
+  margin: 0;
+}
+
+.flexRowContent--contenedor-vista-producto {
+  width: 100vw;
+}
+
+/* .flexRowContent--contenedor-cantidad-botonComprar-pdp .stretchChildrenWidth:first-child {
+  border: 2px solid pink;
+} */
+
+.flexRowContent--boton-comprar-pdp {
+  height: 100%;
+}
+
+.flexRowContent--boton-comprar-pdp :global(.vtex-product-quantity-1-x-quantitySelectorContainer) {
+  margin: 0;
+}
+
+.flexCol--col-caracteristica-principal-pdp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexCol--col-caracteristica-principal-pdp :global(.vtex-product-specification-badges-0-x-badgeText) {
+  font-size: 14px;
+  color: #2E3192;
+  font-weight: bold;
+}
+
+.flexRowContent--contenedor-cantidad-botonComprar-pdp :global(.vtex-product-quantity-1-x-quantitySelectorContainer) {
+  margin: 0;
+}
+
+.flexRow--contenedor-caracteristicas-secundarias-pdp {
+  max-width: 1280px;
+  margin: 30px auto;
+  background: #EAEAF4;
+  border-radius: 28px;
+  padding: 20px;
+}
+
+.flexRowContent--contenedor-caracteristicas-secundarias-pdp {
+  gap: 20px;
+}
+
+.flexRow--contenedor-infografia-pdp {
+  border-radius: 12px;
+  background: #fff;
+}
+
+.flexColChild--textos-infografia-pdp:first-child :global(.vtex-product-specification-badges-0-x-badgeText) {
+  color: #2E3192;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.flexColChild--textos-infografia-pdp:last-child :global(.vtex-product-specification-badges-0-x-badgeText) {
+  color: #2E3192;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: justify;
+  margin: 0;
+}
+
+.flexRowContent--contenedor-descripcion-especifica-pdp {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.flexColChild--contenedor-descripcion-especifica-pdp:first-child :global(.vtex-product-specification-badges-0-x-badgeText) {
+  color: #2E3192;
+  font-size: 38px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.flexRowContent--contenedor-menu-colchones {
+  height: 100%;
+}
+
+.flexRowContent--contenedor-menu-colchones :global(.vtex-slider-layout-0-x-sliderLayoutContainer--slider-vitrina-menu-categoria){
+  margin: 10px 0px;
+}
+
+.flexRowContent--contenedor-menu-colchones .flexColChild--fila-nombreProducto-especificacion {
+  height: 35px !important;
+}
+
+.flexRowContent--fila-precio-vitrina-pequena .stretchChildrenWidth {
+  width: fit-content !important;
+}
+
+.flexRowContent--fila-precio-vitrina-pequena {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* estilos resultado de busqueda */
+
+.flexRowContent--contenedor-titulo-resultado-busqueda {
+  max-width: 1280px;
+  margin: auto;
+  align-items: center;
+}
+
+.flexRowContent--contenedor-filtros {
+  max-width: 1280px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.flexRowContent--trigger-todos-los-filtros {
+  background: #2e3192;
+  border-radius: 200px;
+}
+
+.flexRow--contenedor-cantidad-productos-ordenar {
+  box-shadow: 0px 12px 24px 0px #0000000A;
+}
+
+.flexRowContent--contenedor-cantidad-productos-ordenar {
+  max-width: 1280px;
+  margin: auto;
+  justify-content: end;
+  padding: 0 20px;
+  gap: 20px;
+}
+
+.flexRowContent--cantidad-productos-encontrados {
+  display: flex;
+  gap: 10px;
+}
+
+.flexRow--cantidad-productos-encontrados .stretchChildrenWidth {
+  width: fit-content !important;
+}
+
+.flexRowContent--contenedor-cantidad-productos-ordenar .stretchChildrenWidth {
+  width: fit-content !important;
+}
+
+.flexColChild--contenedor-vitrina-comparador {
+  position: relative;
+}
+
+.flexColChild--contenedor-vitrina-comparador :global(.vtex-store-components-3-x-imageElement--icono-firmeza-firme ){
+  position: absolute;
+  right: -22px;
+  bottom: 40px;
+  height: 50px;
+}
+
+.flexColChild--contenedor-vitrina-comparador :global(.vtex-wish-list-1-x-wishlistIconContainer) {
+  position: absolute;
+  right: -25px;
+  top: -300px;
+}
+
+.flexColChild--contenedor-vitrina-comparador :global(.vtex-checkbox__label) {
+  font-size: 0;
+  width: fit-content !important;
+}
+
+.flexColChild--contenedor-vitrina-comparador :global(.vtex-checkbox__label)::after {
+  font-size: 12px;
+  color: #2E3192;
+  content: "Compara este producto";
+}
+
+.flexColChild--contenedor-vitrina-comparador :global(.vtex-checkbox__line-container){
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 0px 0px !important;
+  align-items: center;
+}
+
+.flexColChild--contenedor-vitrina-comparador :global(.vtex-search-result-3-x-galleryItem--grid) :global(.vtex-product-summary-2-x-element) {
+  padding-bottom: 40px !important;
+}
+
+.flexColChild--contenedor-vitrina-comparador-mobile :global(.vtex-checkbox__box),
+.flexColChild--contenedor-vitrina-comparador :global(.vtex-checkbox__box) {
+  background: url(assets/icons/icono-check-comparador.svg);
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
+.flexColChild--contenedor-vitrina-comparador-mobile  :global(.vtex-checkbox__inner-container),
+.flexColChild--contenedor-vitrina-comparador  :global(.vtex-checkbox__inner-container){
+  border: none !important;
+}
+
+.flexRowContent--contenedor-titulo-texto-vista-departamento {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+.flexRow--contenedor-filtros{
+  /* max-width: 1280px; */
+  padding: 0 20px;
+}
+
+.flexCol--col-contenedor-vitrina-2-vista-departamento,
+.flexRow--contenedor-vitrina-1-vista-departamento {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.flexCol--col-contenedor-vitrina-2-vista-departamento {
+  padding-bottom: 36px;
+}
+
+.flexRow--contenedor-vitrina-2-vista-departamento {
+  background: #F2F6FB;
+}
+
+.flexRowContent--promesas {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.flexCol--promesa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexRow--promesas {
+  /* border-bottom: 2px solid; */
+  border-image: linear-gradient(90deg,#fff,#2E3192,#fff) 1;
+  border-top: 2px solid;
+  padding-top: 23px;
+}
+
+.flexRow--categorias-vista-departamento :global(.vtex-store-components-3-x-container) {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: 100vw !important;
+}
+
+.flexRow--categorias-vista-departamento .stretchChildrenWidth:first-child {
+  position: absolute;
+  width: 220px !important;
+  height: 331px;
+  /* background: aquamarine; */
+  z-index: 99;
+  background: linear-gradient(90deg, #FFFFFF 28.65%, rgba(255, 255, 255, 0) 100.06%);
+
+}
+
+.flexRow--categorias-vista-departamento .stretchChildrenWidth:last-child {
+  position: absolute;
+  width: 220px !important;
+  height: 331px;
+  z-index: 99;
+  right: 0;
+  background: linear-gradient(90deg, #FFFFFF 28.65%, rgba(255, 255, 255, 0) 100.06%);
+  transform: rotate(180deg);
+}
+
+.flexRow--categorias-vista-departamento .stretchChildrenWidth:nth-child(2n) {
+  width: 100vw !important;
+  /* background: pink; */
+}
+
+/* estlos vista formulario de contacto */
+
+.flexRow--contenedor-formulario-contacto {
+  background: #F2F6FB;
+  padding: 20px 0px;
+}
+
+.flexRowContent--contenedor-formulario-contacto {
+  max-width: 1280px;
+  margin: auto;
+  gap: 30px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.flexCol--campos-formulario-contacto {
+  padding: 30px 30px 30px 0px;
+  justify-content: space-evenly;
+}
+
+.flexRowContent--formulario-contacto {
+  height: 100%!important;
+}
+
+.flexColChild--campos-formulario-contacto {
+  height: fit-content !important;
+}
+
+.flexColChild--seccion-1-pqrs :global(.vtex-radio__label),
+.flexRowContent--contenedor-enviar-formulario-pqrs :global(.vtex-checkbox__label),
+.flexColChild--seccion-1-pqrs  :global(.vtex-textarea__label),
+.flexColChild--seccion-1-pqrs :global(.vtex-input__label),
+.flexColChild--col-campos-formulario-hotelero :global(.vtex-input__label),
+.flexColChild--col-campos-formulario-hotelero :global(.vtex-textarea__label),
+.flexColChild--campos-formulario-contacto :global(.vtex-textarea__label),
+.flexColChild--campos-formulario-contacto :global(.vtex-input__label) {
+  color: #2E3192;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.flexColChild--seccion-1-pqrs  :global(.vtex-radioGroup__label){
+  color: #3E3F40;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.flexRowContent--contenedor-enviar-formulario-pqrs {
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.flexRowContent--contenedor-enviar-formulario-pqrs :global(.vtex-checkbox__inner-container) {
+  border: 1px solid #2E3192;
+  border-radius: 50%;
+}
+
+.flexRow--contenedor-enviar-formulario-pqrs {
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+}
+
+.flexColChild--seccion-1-pqrs :global(.vtex-store-form-0-x-formSubmitButton) :global(.vtex-button),
+.flexColChild--col-campos-formulario-hotelero :global(.vtex-store-form-0-x-formSubmitButton) :global(.vtex-button),
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--infocard-formulario-contacto-enviado) :global(.vtex-button),
+.flexColChild--campos-formulario-contacto :global(.vtex-store-form-0-x-formSubmitButton) :global(.vtex-button) {
+  width: 100%;
+  border-radius: 100px;
+  background: #B0E4BD;
+  border: #B0E4BD;
+}
+
+.flexColChild--seccion-1-pqrs :global(.vtex-store-form-0-x-formSubmitButton) :global(.vtex-button):hover,
+.flexColChild--col-campos-formulario-hotelero :global(.vtex-store-form-0-x-formSubmitButton) :global(.vtex-button):hover,
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--infocard-formulario-contacto-enviado) :global(.vtex-button):hover,
+.flexColChild--campos-formulario-contacto :global(.vtex-store-form-0-x-formSubmitButton) :global(.vtex-button):hover {
+  border-radius: 100px;
+  background: #fff;
+  border: 2px solid #B0E4BD;
+}
+
+.flexColChild--seccion-1-pqrs :global(.vtex-store-form-0-x-formSubmitButton) :global(.vtex-button__label),
+.flexColChild--col-campos-formulario-hotelero :global(.vtex-store-form-0-x-formSubmitButton) :global(.vtex-button__label),
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--infocard-formulario-contacto-enviado) :global(.vtex-button__label),
+.flexColChild--campos-formulario-contacto :global(.vtex-store-form-0-x-formSubmitButton) :global(.vtex-button__label){
+  color:#008622;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.flexColChild--col-campos-formulario-hotelero  :global(.vtex-textarea__input){
+  border-radius: 40px;
+  border: none;
+  height: 175px;
+}
+
+.flexColChild--seccion-1-pqrs :global(.vtex-textarea__input){
+  border-radius: 24px;
+  border: none;
+}
+
+.flexColChild--seccion-1-pqrs :global(.vtex-input-prefix__group),
+.flexColChild--col-campos-formulario-hotelero :global(.vtex-input-prefix__group){
+  border-radius: 100px;
+  border: none;
+}
+
+.flexRowContent--contenedor-campos-formulario-pqrs,
+.flexRowContent--contenedor-campos-formulario-hotelero,
+.flexCol--col-2-campos-formulario-hotelero {
+  gap: 20px;
+}
+
+.flexColChild--campos-formulario-contacto :global(.vtex-textarea__input),
+.flexColChild--campos-formulario-contacto :global(.vtex-input-prefix__group) {
+  border: 1px solid #B7B8BA;
+  border-radius: 8px;
+}
+
+.flexColChild--campos-formulario-contacto :global(.vtex-checkbox__label) {
+  width: fit-content !important;
+  font-size: 14px;
+  color: #2e3192;
+  font-weight: 700;
+}
+
+.flexColChild--campos-formulario-contacto :global(.vtex-checkbox__line-container) {
+  justify-content: center;
+}
+
+.flexColChild--campos-formulario-contacto :global(.vtex-checkbox__inner-container) {
+  border:none;
+  border-radius: 50%;
+}
+
+.flexColChild--campos-formulario-contacto :global(.vtex-checkbox__container) {
+  border: 1px solid #2E3192;
+  border-radius: 50%;
+  background: #F2F6FB;
+}
+
+.flexRow--contenedor-general-formulario-contacto {
+  background: #F2F6FB;
+  margin-bottom: 40px;
+  border-image: linear-gradient(90deg,#fff,#2E3192,#fff) 1;
+  border-bottom: 2px solid;
+}
+
+.flexRow--contenedor-miga-pan-formulario-contacto,
+.flexCol--col-contenedor-general-formulario-contacto {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.flexRowContent--contenedor-miga-pan-formulario-contacto .stretchChildrenWidth {
+  width: fit-content !important;
+}
+
+.flexRowContent--contenedor-miga-pan-formulario-contacto {
+  gap: 20px;
+}
+
+.flexRow--contenedor-miga-pan-formulario-contacto {
+  padding-top: 20px;
+}
+
+/* estilos vista no encontrado */
+
+.flexCol--contenedor-vista-no-encontrado {
+  gap: 30px;
+  margin: 30px 0px;
+}
+
+.flexRowContent--seccion-banner-no-encontrado .stretchChildrenWidth {
+  width: fit-content !important;
+}
+
+.flexRowContent--seccion-banner-no-encontrado {
+  justify-content: center;
+  max-width: 1280px;
+  margin: auto;
+  gap: 30px;
+}
+
+.flexRow--contenedor-vitrina-no-encontrado {
+  background: #F4F4F5;
+}
+
+.flexRow--contenedor-listado-tiendas {
+  padding: 0 20px;
+}
+
+/* .flexCol--col-contenedor-vitrina-no-encontrado {
+  max-width: 1280px;
+  margin: auto;
+} */
+
+.flexCol--col-contenedor-vitrina-no-encontrado :global(.vtex-rich-text-0-x-container--titulo-vitrina-1-vista-departamento),
+.flexCol--col-contenedor-vitrina-no-encontrado :global(.vtex-slider-layout-0-x-sliderLayoutContainer--vitrina-1-pdp) {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.flexColChild--textos-boton-404 {
+  height: fit-content !important;
+}
+
+.flexCol--seccion-5-hotelero,
+.flexRowContent--seccion-texto-img-404 {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.flexCol--contenedor-vista-404 {
+  gap: 40px;
+}
+
+.flexCol--textos-boton-404 {
+  gap: 10px;
+  justify-content: center;
+}
+
+.flexRowContent--banner-confirmacion-order-placed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexRow--contenedor-vista-favoritos :global(.vtex-store-components-3-x-container),
+.flexRow--banner-confirmacion-order-placed :global(.vtex-store-components-3-x-container) {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  max-width: 100vw;
+}
+
+.flexCol--contenedor-confirmacion-order-placed {
+  width: 470px!important;
+  background: #FFFFFFE5;
+  border-radius: 36px;
+  padding: 30px 40px;
+  gap: 10px;
+}
+
+.flexRowContent--banner-confirmacion-order-placed .stretchChildrenWidth:last-child {
+  position: absolute;
+  z-index: 10;
+  right: 275px;
+}
+
+.flexRow--contenedor-vitrina-vista-favoritos {
+  background: #F4F4F5;
+  padding: 30px 0px;
+}
+
+.flexRowContent--contenedor-texto-imagenes-vista-como-comprar,
+.flexRowContent--contenedor-vitrina-vista-favoritos {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.flexRow--contenedor-vista-como-comprar :global(.vtex-store-components-3-x-container) {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  max-width: 100vw;
+  padding: 0;
+}
+
+.flexColChild--contenedor-texto-vista-como-comprar {
+  height: fit-content !important;
+}
+
+.flexCol--contenedor-texto-vista-como-comprar {
+  align-items: center;
+  justify-content: center;
+  padding-right: 50px;
+}
+
+.flexRow--contenedor-texto-imagenes-vista-como-comprar {
+  background: #F4F4F5;
+  width: 100vw;
+  padding: 30px 0px;
+}
+
+.flexRowContent--contenedor-texto-imagenes-vista-como-comprar {
+  justify-content: space-between;
+}
+
+.flexRow--seccion-1-vista-trabaja-con-nosotros {
+  background: #F4F4F5;
+  padding: 40px 0px;
+}
+
+.flexRowContent--seccion-3-vista-trabaja-con-nosotros,
+.flexRowContent--seccion-1-vista-trabaja-con-nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  margin: auto;
+  gap: 20px;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.flexRowContent--seccion-1-vista-trabaja-con-nosotros .stretchChildrenWidth{
+  width: 48% !important;
+}
+
+.flexRowContent--seccion-3-vista-trabaja-con-nosotros .stretchChildrenWidth:nth-child(2n),
+.flexRowContent--seccion-3-vista-trabaja-con-nosotros .stretchChildrenWidth:last-child {
+  width: 48% !important;
+}
+
+.flexRowContent--seccion-3-vista-trabaja-con-nosotros .stretchChildrenWidth:first-child {
+  width: 100% !important;
+}
+
+.flexCol--col-contenedor-vista-trabaja-con-nosotros {
+  gap: 20px;
+}
+
+.flexRow--seccion-3-vista-trabaja-con-nosotros {
+  background: #F2F6FB;
+  padding: 30px 0px;
+}
+
+.flexColChild--campos-formulario-trabaja-con-nosotros :global(.vtex-input-prefix__group) {
+  border: none;
+  border-radius: 100px;
+}
+
+.flexCol--campos-formulario-trabaja-con-nosotros  {
+  gap: 15px;
+}
+
+.flexColChild--campos-formulario-trabaja-con-nosotros :global(.vtex-input__label) {
+  font-size: 16px;
+  color: #2E3192;
+  font-weight: 700;
+}
+
+.flexRowContent--cv-formulario-trabaja-con-nosotros .stretchChildrenWidth :global(.vtex-styleguide-9-x-dropdown)::first-line {
+  font-size: 0px !important;
+  display: none;
+  margin: 0;
+}
+
+.flexRowContent--cv-formulario-trabaja-con-nosotros :global(.vtex-styleguide-9-x-container) {
+  background-color: #2E3192 !important;
+  border-radius: 100px;
+  border: none;
+  width: 100%!important;
+  background: url(/arquivos/adjuntar-cv.png);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.flexRowContent--contenedor-adjuntarcv-submit-trabaja-con-nosotros {
+  gap: 30px;
+}
+
+.flexRowContent--contenedor-adjuntarcv-submit-trabaja-con-nosotros .stretchChildrenWidth:first-child{
+  width: 70% !important;
+}
+
+.flexRowContent--contenedor-adjuntarcv-submit-trabaja-con-nosotros .stretchChildrenWidth :global(.vtex-button){
+  width: 100% !important;
+  margin-top: 10px;
+  background-color: #B0E4BD;
+  border-radius: 100px;
+  border: none;
+}
+
+.flexRowContent--contenedor-adjuntarcv-submit-trabaja-con-nosotros .stretchChildrenWidth :global(.vtex-button__label){
+  color: #008622;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+.flexRowContent--cv-formulario-trabaja-con-nosotros .stretchChildrenWidth {
+  width: 100% !important;
+}
+
+.flexRowContent--contenedor-vista-trabaja-con-nosotros{
+  margin-bottom: 20px;
+}
+
+.flexRow--bloque-13-home {
+  padding-top: 40px;
+  border-image: linear-gradient(90deg,#fff,#2E3192,#fff) 1;
+  border-top: 2px solid;
+  margin-top: 30px;
+}
+
+.flexRowContent--seccion-1-pqrs,
+.flexRowContent--titulo-vista-pqrs,
+.flexRowContent--contenedor-tienda-infocard,
+.flexRowContent--titulo-vista-nuestras-tiendas {
+  max-width: 1280px;
+  margin: auto;
+  gap: 20px;
+  padding: 0 20px;
+  /* align-items: end; */
+}
+
+.flexRowContent--titulo-vista-nuestras-tiendas .stretchChildrenWidth{
+  width: fit-content !important;
+}
+
+.flexRowContent--contenedor-tienda-infocard .stretchChildrenWidth:first-child {
+  width: 19% !important;
+}
+
+.flexRowContent--contenedor-tienda-infocard .stretchChildrenWidth:last-child {
+  width: 81% !important;
+}
+
+.flexColChild--ciudad-ancla-tienda {
+  height: fit-content !important;
+}
+
+.flexRowContent--contenedor-listado-tiendas {
+  max-width: 1280px;
+  margin: auto;
+  border: 1px solid #97B8DF;
+  border-radius: 100px;
+  box-shadow: 0px 12px 24px 0px #0000000A;
+}
+
+.flexRowContent--contenedor-listado-tiendas .stretchChildrenWidth {
+  padding: 0px 10px;
+  border-right: 2px solid #97B8DF;
+  margin: 15px 0px;
+}
+
+.flexRowContent--contenedor-listado-tiendas .stretchChildrenWidth:last-child {
+  padding: 0px 10px;
+  border-right: none;
+  margin: 15px 0px;
+}
+
+.flexRowContent--contenedor-tienda-infocard {
+  border-bottom: 1px solid;
+  border-image: linear-gradient(90deg,#fff,#2E3192,#fff) 1;
+  padding-top: 20px;
+}
+
+.flexCol--col-contenedor-vitrina-no-encontrado {
+  padding:0px 20px 20px 20px;
+}
+
+.flexCol--col-contenedor-vitrina-no-encontrado :global(.vtex-slider-layout-0-x-sliderLayoutContainer--vitrina-1-pdp) {
+  padding-bottom: 40px!important;
+}
+
+.flexRowContent--titulo-vista-preguntas-frecuentes,
+.flexRowContent--titulo-vista-terminos-legales {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.flexRowContent--titulo-vista-preguntas-frecuentes .stretchChildrenWidth,
+.flexRowContent--titulo-vista-terminos-legales .stretchChildrenWidth{
+  width:100%!important;
+}
+
+.flexColChild--col-contenedor-vista-preguntas-frecuentes:last-child,
+.flexColChild--col-contenedor-vista-terminos-legales:last-child {
+  background: #F2F6FB;
+}
+
+.flexColChild--contenedor-disclosure-vista-terminos-legales-mobile {
+  display: contents;
+}
+
+.flexRowContent--botones-contenedor-preguntas-frecuentes .stretchChildrenWidth {
+  width: fit-content !important;
+}
+
+.flexRowContent--botones-contenedor-preguntas-frecuentes {
+  justify-content: space-between;
+}
+
+.flexRowContent--seccion-1-hotelero,
+.flexRowContent--titulo-vista-hotelero,
+.flexRowContent--seccion-1-nuestra-empresa {
+  max-width: 1280px;
+  margin: auto;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.flexRowContent--contenedor-campos-formulario-hotelero,
+.flexCol--seccion-3-hotelero,
+.flexRowContent--seccion-2-hotelero,
+.flexCol--seccion-2-nuestra-empresa {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.flexRow--seccion-1-nuestra-empresa {
+  background: #F4F4F5;
+  padding: 20px 0px;
+}
+
+.flexCol--col-contenedor-vista-hotelero,
+.flexCol--col-contenedor-vista-nuestra-empresa  {
+  gap: 20px;
+}
+
+.flexRowContent--seccion-1-hotelero .stretchChildrenWidth:nth-child(2n) {
+  position: relative;
+  width: 160px!important;
+  left: 0%;
+  top: -40px;
+}
+
+.flexRowContent--seccion-1-hotelero .stretchChildrenWidth:last-child,
+.flexRowContent--seccion-1-hotelero .stretchChildrenWidth:first-child {
+  width: 50% !important;
+}
+
+.flexColChild--textos-seccion-1-hotelero {
+  height: fit-content !important;
+}
+
+.flexCol--textos-seccion-1-hotelero {
+  justify-content: center;
+}
+
+.flexRow--seccion-1-hotelero {
+  background: #F4F4F5;
+  padding: 30px 0px;
+}
+
+.flexRow--seccion-1-pqrs,
+.flexRow--seccion-5-hotelero {
+  background: #F2F6FB;
+  padding: 30px 0px;
+}
+
+.flexColChild--seccion-1-pqrs :global(.vtex-radioGroup__fieldset) {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.flexCol--col-contenedor-vista-blog,
+.flexCol--seccion-1-pqrs {
+  gap: 20px;
+}
+
+.flexRow--contenedor-menu-colchones {
+  width: 650px;
+  max-width: 1280px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  border-radius: 0px 0px 24px 24px;
+  border: 2px solid #2e3192;
+  border-top: none;
+  background: #fff;
+  position: relative;
+  top: 6px;
+  /* right: 112px; */
+  padding-right: 30px;
+}
+
+/* :global(.vtex-menu-2-x-submenu--menu-categorias-header-base-cama) .flexRow--contenedor-menu-colchones {
+  right: 130px;
+}
+
+:global(.vtex-menu-2-x-submenu--menu-categorias-header-sofas-puff) .flexRow--contenedor-menu-colchones {
+  right: 270px;
+}
+
+:global(.vtex-menu-2-x-submenu--menu-categorias-header-combos) .flexRow--contenedor-menu-colchones {
+  right: 418px;
+}
+
+:global(.vtex-menu-2-x-submenu--menu-categorias-header-almohadas) .flexRow--contenedor-menu-colchones {
+  right: 533px;
+} */
+
+/* .flexRowContent--contenedor-caracteristicas-principales-pdp {
+  gap: 10px;
+} */
+
+.flexRowContent--contenedor-caracteristicas-principales-pdp .stretchChildrenWidth {
+  width: fit-content !important;
+  padding: 0;
+  max-width: 25%;
+}
+
+.flexColChild--seccion-2-bloque-13-home:nth-child(2n) {
+  height: 48% !important;
+}
+
+.flexCol--contenedor-descripcion-especifica-pdp {
+  gap: 30px;
+}
+
+.flexRowContent--contenedor-menu-colchones .stretchChildrenWidth:first-child{
+  width: 30% !important;
+}
+
+.flexRowContent--contenedor-menu-colchones .stretchChildrenWidth:last-child{
+  width: 70% !important;
+}
+
+.flexColChild--stack-layout-vista-producto:last-child {
+  display: none;
+}
+
+.flexColChild--contenedor-info-producto-mobile :global(.vtex-store-components-3-x-skuSelectorSubcontainer),
+.flexColChild--contenedor-right-col-pdp :global(.vtex-store-components-3-x-skuSelectorSubcontainer) {
+  margin: 0;
+}
+
+.flexCol--seccion-3-landing-ecologizate,
+.flexRowContent--seccion-2-landing-ecologizate,
+.flexCol--seccion-1-landing-ecologizate {
+  align-items: center;
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.flexRow--seccion-2-landing-ecologizate {
+  background: url(/arquivos/background-seccion-2-ecologizate.png);
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  padding-bottom: 30px;
+}
+
+.flexRowContent--tarjetas-informativas-seccion-2-landing-ecologizate{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.flexRowContent--tarjetas-informativas-seccion-2-landing-ecologizate .stretchChildrenWidth {
+  width: 49% !important;
+}
+
+.flexCol--tarjeta-informativa-5,
+.flexCol--tarjeta-informativa-2,
+.flexCol--tarjeta-informativa-1 {
+  align-items: center;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.flexCol--tarjeta-informativa-1 {
+  background: #FFFFFF;
+}
+
+.flexCol--tarjeta-informativa-2 {
+  background: #D1F3C1;
+}
+
+.flexCol--tarjeta-informativa-5 {
+  background: #FFFFFFCC;
+  width: 75% !important;
+  position: relative;
+  left: 550px;
+  margin: 20px 0px;
+}
+
+.flexRowContent--tarjetas-informativas-seccion-2-landing-ecologizate .stretchChildrenWidth:last-child {
+  width: 80% !important;
+}
+
+.flexRow--contenedor-tarjeta-informativa-5 {
+  background: url(/arquivos/background-tarjeta-informativa-5.png);
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  height: 480px;
+  border-radius: 20px;
+}
+
+.flexColChild--tarjeta-informativa-2,
+.flexColChild--tarjeta-informativa-1 {
+  height: fit-content !important;
+}
+
+.flexCol--tarjeta-informativa-2,
+.flexCol--tarjeta-informativa-1 {
+  gap: 15px;
+}
+
+.flexColChild--seccion-3-landing-ecologizate {
+  width: 100%;
+}
+
+.flexRowContent--tarjeta-destino-ecologico-1 {
+  background: #D1F3C1;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.flexRowContent--tarjeta-destino-ecologico-2 {
+  background: #F3F3F3;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.flexCol--seccion-3-landing-ecologizate {
+  gap: 20px;
+}
+
+.flexCol--col-contenedor-vista-landing-ecologizate {
+  gap: 30px;
+}
+
+.flexRowContent--contenedor-nombre-share-mobile {
+  display: flex;
+  max-width: 90vw;
+  margin: auto;
+}
+
+.flexCol--seccion-3-cuponera-fantastica,
+.flexCol--seccion-2-cuponera-fantastica,
+.flexColChild--textos-seccion-1-cuponera-fantastica {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.flexCol--productSpecificationName {
+  height: max-content !important;
+}
+
+.flexRow--contenedor-banner-2-plantilla-cupon{
+  background: #5923bd;
+  padding: 30px 0px;
+}
+
+.flexRow--seccion-2-cuponera-fantastica {
+  background: #4615AA;
+  padding: 30px 0px;
+}
+
+.flexRowContent--seccion-3-plantilla-cupon,
+.flexRowContent--contenedor-banner-2-plantilla-cupon {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.flexRow--seccion-3-plantilla-cupon {
+  background: #EDEDED;
+  padding: 30px 0px;
+}
+
+.flexColChild--textos-seccion-3-plantilla-cupon {
+  height: fit-content !important;
+}
+
+.flexCol--contenedor-articulos-vista-blog,
+.flexRowContent--pdp-availability,
+.flexRowContent--contenedor-vista-template-blog {
+  max-width: 1280px;
+  width: 90vw;
+  margin: auto;
+}
+
+.flexRowContent--titulo-vista-template-blog {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRowContent--seccion-2-template-blog,
+.flexCol--contenedor-vista-template-blog {
+  gap: 20px;
+}
+
+.flexRowContent--pdp-availability :global(.vtex-store-components-3-x-skuSelectorSubcontainer) {
+  margin: 0;
+}
+
+.flexRow--contenedor-seatchtitle {
+  display: flex;
+  align-items: center;
+}
+
+.flexRow--contenedor-infografia-pdp{
+  padding: 15px 10px;
+}
+
+@media only screen and (max-width: 640px){
+
+  .flexRowContent--imagenes-bloque-3 {
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .flexColChild--bloque-4-home {
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .flexRowContent--fila-precio-botonComprar {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .flexRowContent--contenedor-precios-minicart {
+    display: flex;
+    gap: 20px;
+  }
+
+  .flexRowContent--fila-precio-botonComprar :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+    width: 100% !important;
+  }
+
+  .flexColChild--fila-nombreProducto-especificacion :global(.vtex-product-specifications-1-x-specificationValue--last) {
+    left: 0px;
+    position: relative;
+  }
+
+  .flexRowContent--condicional-especificaciones-vitrina-grande {
+    display: flex;
+  }
+
+  .flexRowContent--fila-2-bloque-6-home-mobile {
+    display: flex;
+    gap: 10px;
+  }
+
+  .flexRowContent--fila-2-bloque-6-home-mobile .stretchChildrenWidth{
+    width: 50% !important;
+  }
+
+  .flexCol--bloque-6-home-mobile {
+    max-width: 90vw;
+    margin: auto;
+    gap: 10px;
+  }
+
+  .flexRowContent--bloque-10-home .stretchChildrenWidth:first-child {
+    width: 100% !important;
+  }
+
+  .flexRowContent--bloque-10-home .stretchChildrenWidth:last-child {
+    width: 100% !important;
+  }
+
+  .flexRowContent--bloque-10-home {
+    max-width: 90vw;
+  }
+
+  .flexRow--bloque-10-home {
+    background: #2E3192;
+    padding: 30px 0px;
+  }
+
+  .flexRowContent--bloque-12-home{
+    max-width: 90vw;
+    padding: 0;
+  }
+
+  .flexRowContent--contenedor-footer-minicart{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flexRowContent--contenedor-footer-minicart .stretchChildrenWidth:first-child {
+    width: 50% !important;
+  }
+
+  .flexRowContent--contenedor-footer-minicart .stretchChildrenWidth:nth-child(2n) {
+    width: 50% !important;
+  }
+
+  .flexRowContent--contenedor-footer-minicart .stretchChildrenWidth:last-child {
+    width: 100% !important;
+  }
+
+  .flexRowContent--contenedor-footer-minicart :global(.vtex-minicart-2-x-minicartCheckoutButton) {
+    margin: 0px 30px;
+  }
+
+  .flexRowContent--ProductItemCarrito .stretchChildrenWidth:first-child {
+    width: 40% !important;
+  }
+
+  .flexRowContent--ProductItemCarrito .stretchChildrenWidth:last-child {
+    width: 60% !important;
+  }
+
+  .flexRowContent--contenedor-listaProductos-totales {
+    gap: 20px;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flexRowContent--seccion-1-footer-1-desktop {
+    display: flex;
+  }
+
+  .flexRowContent--seccion-2-footer-1-desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flexRowContent--bloque-13-home {
+    max-width: 90vw;
+    padding: 0;
+  }
+
+  .flexRowContent--titulo-seccion-bloque-13-home {
+    display: flex;
+  }
+
+  .flexRow--contenedor-minicart-summary {
+    background: #2E3192!important;
+    margin: 0 10px;
+    border-radius: 10px;
+  }
+
+  .flexRowContent--contenedor-footer-minicart .stretchChildrenWidth:first-child {
+    width: 50% !important;
+  }
+
+  .flexRowContent--contenedor-selector-botonEliminar {
+    display: flex;
+  }
+
+  .flexColChild--product-cart .stretchChildrenWidth:first-child {
+    width: 100% !important;
+  }
+
+  .flexCol--seccion-3-bloque-13-home,
+  .flexCol--seccion-2-bloque-13-home {
+    display: none;
+  }
+
+  .flexRowContent--seccion-1-footer-2-desktop {
+    display: flex;
+    max-width: 70vw;
+    margin: auto;
+  }
+
+  .flexRow--seccion-1-footer-2-desktop {
+    /* border-bottom: 1px solid #2E3192; */
+    padding: 10px 0px;
+  }
+
+  .flexCol--col-contenedor-footer-mobile{
+    padding-bottom: 10px;
+    gap: 10px;
+  }
+
+  .flexRow--seccion-1-footer-1-desktop {
+    border-right: none;
+  }
+
+  .flexRowContent--fila-footer-xtrategik-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .flexRow--footer-xtrategik-mobile {
+    background: #DEDEDF;
+  }
+
+  .flexRowContent--fila-footer-xtrategik-mobile .stretchChildrenWidth {
+    width: fit-content !important;
+  }
+
+  .flexRow--seccion-1-footer-1-desktop {
+    border-top: 1px solid #97B8DF;
+    border-bottom: 1px solid #97B8DF;
+    padding: 5px 0px;
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .flexRowContent--seccion-2-footer-1-desktop {
+    border-bottom: 1px solid #97B8DF;
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .flexRow--contenedor-menu-categorias-mobile {
+    width: 100%;
+  }
+
+  .flexColChild--col-contenedor-menu-categorias-mobile :global(.vtex-store-components-3-x-searchBarContainer) {
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .flexColChild--col-contenedor-menu-categorias-mobile:nth-child(3n) {
+    border-bottom: 1px solid #97B8DF;
+  }
+
+  .flexCol--contenedor-items-menu {
+    margin-top: 20px;
+  }
+
+
+  /* estilos vista pdp mobile */
+
+  .flexRowContent--contenedor-precios-pdp {
+    display: flex;
+    gap: 10px;
+    width: 90vw;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .flexRowContent--contenedor-cantidad-botonComprar-pdp :global(.vtex-product-quantity-1-x-quantitySelectorStepper) {
+    width: 100% !important;
+    padding: 5px;
+    border: 1px solid #2E3192;
+    border-radius: 30px;
+  }
+
+  .flexRowContent--contenedor-cantidad-botonComprar-pdp :global(.vtex-numeric-stepper-container ){
+    justify-content: space-between;
+  }
+
+  .flexRowContent--contenedor-cantidad-botonComprar-pdp {
+    max-width: 90vw;
+    margin: auto;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flexRowContent--contenedor-caracteristicas-principales-pdp {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .flexRowContent--contenedor-caracteristicas-principales-pdp .stretchChildrenWidth {
+    max-width: none;
+  }
+
+  .flexCol--footer-xtrategik-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flexCol--bloque-3-home {
+    left: 0px;
+    padding: 0;
+  }
+
+  .flexCol--contenedor-vista-producto-mobile {
+    gap: 25px;
+  }
+
+  .flexRowContent--contenedor-caracteristicas-secundarias-pdp {
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flexRowContent--contenedor-infografia-pdp {
+    display: flex;
+  }
+
+  .flexRowContent--contenedor-infografia-pdp .stretchChildrenWidth:first-child{
+    width: 30% !important;
+  }
+
+  .flexColChild--contenedor-descripcion-especifica-pdp:first-child :global(.vtex-product-specification-badges-0-x-badgeText) {
+    font-size: 18px;
+  }
+
+  .flexCol--contenedor-descripcion-especifica-pdp {
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .flexRow--contenedor-vista-producto-mobile :global(.vtex-store-components-3-x-container) {
+    padding: 0;
+  }
+
+  .flexColChild--contenedor-nombre-dimensiones :global(.vtex-product-summary-2-x-brandName ){
+    font-weight: 800;
+    font-size: 15px;
+    color: #2E3192;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box!important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+
+  .flexRowContent--contenedor-banners-pdp {
+    max-width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .flexRow--product-main,
+  .flexRow--contenedor-vista-producto :global(.vtex-breadcrumb-1-x-container ){
+    padding: 0px;
+  }
+
+  .flexRow--contenedor-caracteristicas-secundarias-pdp {
+    max-width: 90vw;
+    margin: 20px auto;
+  }
+
+  .flexCol--contenedor-nombre-dimensiones-sku-pdp {
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .flexRowContent--menus-descripcion-especificaciones-resenas-mobile {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-image: linear-gradient(90deg,#fff,#2E3192,#fff) 1;
+    background: #F2F6FB;
+  }
+
+  .flexCol--contenedor-menus-descripcion-especificaciones-resenas-mobile {
+    max-width: 90vw;
+    margin: 30px auto;
+    gap: 10px;
+  }
+
+  .flexCol--contenedor-menus-descripcion-especificaciones-resenas-mobile :global(.vtex-store-components-3-x-productDescriptionTitle) {
+    display: none;
+  }
+
+  .flexCol--contenedor-menus-descripcion-especificaciones-resenas-mobile .flexRowContent--productSpecification {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flexCol--contenedor-menus-descripcion-especificaciones-resenas-mobile .flexRow--productSpecificationGroup {
+    width: 100%;
+  }
+
+  .flexCol--contenedor-menus-descripcion-especificaciones-resenas-mobile .flexRowContent--productSpecification .stretchChildrenWidth {
+    width: 100% !important;
+  }
+
+  .flexCol--contenedor-menus-descripcion-especificaciones-resenas-mobile .flexRowContent--productSpecification .flexColChild--productSpecificationValue {
+    justify-content: center;
+    display: flex;
+  }
+
+  .flexRowContent--contenedor-ordenar-filtros-mobile {
+    display: flex;
+    box-shadow: 0px 12px 24px 0px #0000000A;
+  }
+
+  .flexRowContent--cantidad-productos-encontrados {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .flexColChild--contenedor-vitrina-comparador :global(.vtex-wish-list-1-x-wishlistIconContainer) {
+    position: absolute;
+    right: -25px;
+    top: -215px;
+  }
+
+  .flexColChild--contenedor-vitrina-comparador-mobile {
+    position: relative;
+  }
+
+  .flexColChild--contenedor-vitrina-comparador-mobile .flexRowContent--contenedor-precios-minicart{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .flexColChild--contenedor-vitrina-comparador-mobile .flexRowContent--contenedor-precios-minicart :global(.vtex-product-price-1-x-sellingPrice--summary--hasListPrice),
+  .flexColChild--contenedor-vitrina-comparador-mobile .flexRowContent--contenedor-precios-minicart :global(.vtex-product-price-1-x-listPrice--summary){
+    justify-content: start;
+  }
+
+  .flexColChild--contenedor-vitrina-comparador-mobile :global(.vtex-stack-layout-0-x-stackContainer--stack-layout-vitrina) :global(.vtex-product-summary-2-x-image) {
+    max-height: 190px;
+    min-height: 160px;
+    object-fit: contain;
+    width: 350px;
+    height: 160px;
+  }
+
+  .flexColChild--contenedor-vitrina-comparador-mobile :global(.vtex-store-components-3-x-discountInsideContainer) {
+    position: absolute;
+    left: -20px;
+    top: 0px;
+  }
+
+  .flexColChild--contenedor-vitrina-comparador-mobile :global(.vtex-wish-list-1-x-wishlistIconContainer ){
+    position: absolute;
+    right: -25px;
+    top: -175px;
+  }
+
+  .flexColChild--contenedor-vitrina-comparador-mobile :global(.vtex-store-components-3-x-imageElement--icono-firmeza-firme) {
+    position: absolute;
+    right: -20px;
+    bottom: 427px;
+    height: 30px;
+  }
+
+  .flexColChild--contenedor-vitrina-comparador-mobile .flexRowContent--boton-comprar-vitrina-comparador :global(.vtex-button){
+    border-radius: 100px;
+    background: #B0E4BD;
+    border: #B0E4BD;
+    border: 2px solid #B0E4BD;
+  }
+
+  .flexColChild--contenedor-vitrina-comparador-mobile .flexRowContent--boton-comprar-vitrina-comparador :global(.vtex-button):hover{
+    border-radius: 100px;
+    background: #fff;
+    border: 2px solid #B0E4BD;
+  }
+
+  .flexColChild--contenedor-vitrina-comparador-mobile .flexRowContent--boton-comprar-vitrina-comparador :global(.vtex-button__label){
+    color:#008622;
+    font-weight: 900;
+    text-transform: capitalize;
+  }
+
+  .flexColChild--contenedor-vitrina-comparador-mobile :global(.vtex-product-summary-2-x-brandName ){
+    font-weight: 800;
+    font-size: 14px;
+    color: #2E3192;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box!important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+
+  .flexColChild--contenedor-vitrina-comparador-mobile :global(.vtex-store-components-3-x-Dimensiones){
+    font-weight: 600;
+    font-size: 12px;
+    color: #686A6C;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box!important;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+
+  .flexColChild--contenedor-vitrina-comparador-mobile :global(.vtex-product-price-1-x-listPriceValue--summary ){
+    font-size: 12px;
+    color: #F55454;
+    font-weight: bold;
+  }
+
+  .flexColChild--contenedor-vitrina-comparador-mobile :global(.vtex-product-price-1-x-sellingPriceValue--summary) {
+    font-size: 16px;
+    color: #2E3192;
+    font-weight: bold;
+  }
+
+  .flexColChild--contenedor-vitrina-comparador-mobile :global(.vtex-product-price-1-x-sellingPrice--summary) {
+    text-align: start;
+  }
+
+  .flexCol--contenedor-vitrina-comparador-mobile {
+    gap: 5px;
+  }
+
+  .flexColChild--contenedor-vitrina-comparador-mobile :global(.vtex-checkbox__label) {
+    font-size: 0;
+    width: fit-content !important;
+  }
+
+  .flexColChild--contenedor-vitrina-comparador-mobile :global(.vtex-checkbox__label)::after {
+    font-size: 12px;
+    color: #2E3192;
+    content: "Compara este producto";
+    width: fit-content !important;
+  }
+
+  .flexColChild--contenedor-vitrina-comparador-mobile :global(.vtex-checkbox__line-container){
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0px;
+  }
+
+  .flexColChild--contenedor-vitrina-comparador-mobile :global(.vtex-checkbox__line-container) .stretchChildrenWidth{
+    width: fit-content !important;
+  }
+
+  .flexColChild--contenedor-vitrina-comparador-mobile .flexRow--contenedor-precios-minicart {
+    height: 45px;
+  }
+
+  .flexRowContent--contenedor-ordenar-filtros-mobile .stretchChildrenWidth:last-child {
+    width: 50% !important;
+  }
+
+  .flexRowContent--contenedor-titulo-texto-vista-departamento,
+  .flexRowContent--contenedor-vitrina-1-vista-departamento {
+    max-width: 90vw;
+    padding: 0;
+  }
+
+  .flexRowContent--contenedor-titulo-texto-vista-departamento :global(.vtex-search-result-3-x-galleryTitle--layout) {
+    font-size: 50px;
+    margin: 0;
+  }
+
+  .flexRow--categorias-vista-departamento .stretchChildrenWidth:first-child {
+    display: none;
+  }
+
+  .flexCol--col-contenedor-vista-como-comprar  .flexRow--categorias-vista-departamento .stretchChildrenWidth:first-child {
+    display: flex;
+  }
+
+  .flexRow--categorias-vista-departamento .stretchChildrenWidth:last-child {
+    position: absolute;
+    width: 120px !important;
+  }
+
+  .flexRowContent--categorias-vista-departamento {
+    display: flex;
+    width: 90vw;
+    margin: auto;
+  }
+
+  .flexRowContent--promesas {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* .flexRowContent--promesas .stretchChildrenWidth{
+    height: 150px;
+    width: 150px !important;
+  } */
+
+  .flexRow--contenedor-vista-blog :global(.vtex-store-components-3-x-container),
+  .flexRow--contenedor-vista-trabaja-con-nosotros :global(.vtex-store-components-3-x-container),
+  .flexRow--contenedor-general-formulario-contacto :global(.vtex-store-components-3-x-container) {
+    padding: 0 !important;
+  }
+
+  .flexCol--campos-formulario-contacto {
+    padding: 30px 30px 30px 30px;
+    justify-content: space-evenly;
+    gap: 15px;
+  }
+
+  .flexRowContent--contenedor-formulario-contacto {
+    border-radius: 0px;
+    border-bottom: 1px solid;
+    border-image-source: linear-gradient(90deg, rgba(46, 49, 146, 0) 0%, #2E3192 50%, rgba(46, 49, 146, 0) 100%);
+  }
+
+  .flexRowContent--contenedor-miga-pan-formulario-contacto {
+    gap: 10px;
+    display: flex;
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .flexRowContent--seccion-banner-no-encontrado .stretchChildrenWidth {
+    width: auto !important;
+  }
+
+  .flexCol--col-contenedor-vitrina-no-encontrado {
+    max-width: 95vw;
+    padding: 0 0 20px 0;
+  }
+
+  .flexRowContent--banner-confirmacion-order-placed .stretchChildrenWidth:last-child {
+    position: relative;
+    z-index: 10;
+    top: -36px;
+    left: 0;
+    width: 90vw !important;
+  }
+
+  .flexRowContent--banner-confirmacion-order-placed {
+    display: inherit;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(90deg,#fff,#2E3192,#fff) 1;
+    margin-bottom: 20px;
+  }
+
+  .flexCol--contenedor-confirmacion-order-placed {
+    padding: 30px 25px;
+  }
+
+  .flexCol--col-contenedor-vitrina-2-vista-departamento {
+    padding-bottom: 22px;
+  }
+
+  .flexCol--seccion-bloque-13-home{
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .flexCol--contenedor-texto-vista-como-comprar {
+    padding-right: 0px;
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .flexRowContent--img-vista-como-comprar-mobile {
+    display: flex;
+  }
+
+  .flexRowContent--img-vista-como-comprar-mobile .stretchChildrenWidth:last-child {
+    position: absolute;
+    width: 120px !important;
+    height: 215px;
+    z-index: 99;
+    right: 0;
+    background: linear-gradient(90deg, #FFFFFF 28.65%, rgba(255, 255, 255, 0) 100.06%);
+    transform: rotate(180deg);
+    top: 26.5rem;
+  }
+
+  .flexRowContent--seccion-1-vista-trabaja-con-nosotros .stretchChildrenWidth{
+    width: 100% !important;
+  }
+
+  .flexRowContent--seccion-3-vista-trabaja-con-nosotros .stretchChildrenWidth:nth-child(2n),
+  .flexRowContent--seccion-3-vista-trabaja-con-nosotros .stretchChildrenWidth:last-child {
+    width: 100% !important;
+  }
+
+  .flexRowContent--seccion-3-vista-trabaja-con-nosotros,
+  .flexRowContent--seccion-1-vista-trabaja-con-nosotros {
+    max-width: 90vw;
+    padding: 0;
+  }
+
+  .flexRowContent--contenedor-adjuntarcv-submit-trabaja-con-nosotros .stretchChildrenWidth:first-child{
+    width: 100% !important;
+  }
+
+  .flexRowContent--cv-formulario-trabaja-con-nosotros :global(.vtex-styleguide-9-x-container) {
+    background-size: 40%;
+  }
+
+  .flexRow--cintilla-azul-stack {
+    display: none;
+  }
+
+  .flexRowContent--contenedor-vitrina-order-placed {
+    background: #F4F4F5;
+    margin-bottom: 20px;
+  }
+
+  .flexRow--contenedor-vitrina-order-placed :global(.vtex-store-components-3-x-container) {
+    padding: 0;
+  }
+
+  .flexRow--contenedor-footer-mobile {
+    margin-top: 25px;
+  }
+
+  .flexColChild--col-contenedor-vista-terminos-legales:last-child {
+    background: #FFFFFF;
+  }
+
+  .flexCol--textos-seccion-3-plantilla-cupon,
+  .flexRowContent--bloque-8-home,
+  .flexRowContent--titulo-vista-nuestras-tiendas,
+  .flexCol--contenedor-disclosure-vista-terminos-legales-mobile,
+  .flexRowContent--titulo-vista-preguntas-frecuentes,
+  .flexCol--col-contenedor-vista-terminos-legales,
+  .flexRowContent--titulo-vista-pqrs,
+  .flexColChild--seccion-1-pqrs,
+  .flexCol--seccion-5-hotelero,
+  .flexCol--seccion-3-hotelero,
+  .flexRowContent--seccion-1-hotelero,
+  .flexRowContent--titulo-vista-hotelero,
+  .flexCol--seccion-2-nuestra-empresa,
+  .flexRowContent--seccion-1-nuestra-empresa {
+    max-width: 90vw;
+    margin: auto;
+    padding: 0;
+  }
+
+  .flexColChild--col-contenedor-vista-preguntas-frecuentes:last-child {
+    background: transparent;
+  }
+
+  .flexRowContent--seccion-1-hotelero {
+    padding-top: 60px;
+    position: relative;
+  }
+
+  .flexRowContent--seccion-1-hotelero .stretchChildrenWidth:nth-child(2n) {
+    position: absolute;
+    width: 123px!important;
+    top: -55px;
+    left: 55vw;
+  }
+
+  .flexRowContent--seccion-1-hotelero .stretchChildrenWidth:last-child,
+  .flexRowContent--seccion-1-hotelero .stretchChildrenWidth:first-child {
+    width: 100% !important;
+  }
+
+  .flexColChild--seccion-1-pqrs :global(.vtex-dropdown__container) {
+    background: #B0E4BD;
+    border-radius: 100px;
+    border: none;
+  }
+
+  .flexCol--col-campos-formulario-pqrs {
+    gap: 20px;
+  }
+
+  .flexRowContent--contenedor-enviar-formulario-pqrs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flexRowContent--contenedor-enviar-formulario-pqrs :global(.vtex-checkbox__label) {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .flexCol--contenedor-tipo-solicitud-pqrs {
+    margin: 15px 0px;
+  }
+
+  .flexColChild--contenedor-tipo-solicitud-pqrs :global(.vtex-styleguide-9-x-dropdown) :global(.vtex-dropdown__label) {
+    display: none;
+  }
+
+  .flexColChild--contenedor-tipo-solicitud-pqrs :global(.vtex-dropdown__caption) {
+    color: #008622;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .flexRow--seccion-1-vista-trabaja-con-nosotros {
+    padding: 20px 0px;
+  }
+
+  .flexCol--contenedor-drawer-categorias-mobile {
+    max-width: 95vw;
+    margin: auto;
+  }
+
+  .flexColChild--stack-layout-vista-producto:last-child {
+    display: flex;
+  }
+
+  .flexCol--seccion-1-landing-ecologizate{
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .flexRowContent--tarjetas-informativas-seccion-2-landing-ecologizate .stretchChildrenWidth {
+    width: 100%!important;
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .flexCol--tarjeta-informativa-5 {
+    width: 95% !important;
+    position: relative;
+    left: 0px;
+    margin: 5px 0px;
+  }
+
+  .flexRowContent--tarjetas-informativas-seccion-2-landing-ecologizate .stretchChildrenWidth:last-child {
+    width: 100% !important;
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .flexRowContent--tarjeta-destino-ecologico-2,
+  .flexRowContent--tarjeta-destino-ecologico-1 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .flexRowContent--tarjeta-destino-ecologico-2 .stretchChildrenWidth:first-child,
+  .flexRowContent--tarjeta-destino-ecologico-1 .stretchChildrenWidth:first-child {
+    width: 100% !important;
+  }
+
+  .flexRowContent--tarjeta-destino-ecologico-2 .stretchChildrenWidth:nth-child(2n),
+  .flexRowContent--tarjeta-destino-ecologico-1 .stretchChildrenWidth:nth-child(2n) {
+    width: 30% !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flexRowContent--tarjeta-destino-ecologico-2 .stretchChildrenWidth:last-child ,
+  .flexRowContent--tarjeta-destino-ecologico-1 .stretchChildrenWidth:last-child {
+    width: 70% !important;
+  }
+
+  .flexCol--seccion-3-landing-ecologizate,
+  .flexRowContent--seccion-2-landing-ecologizate,
+  .flexCol--seccion-1-landing-ecologizate,
+  .flexRow--contenedor-listado-tiendas,
+  .flexRowContent--titulo-vista-terminos-legales,
+  .flexRowContent--contenedor-texto-imagenes-vista-como-comprar,
+  .flexRowContent--contenedor-vitrina-vista-favoritos,
+  .flexRowContent--seccion-texto-img-404,
+  .flexRowContent--contenedor-campos-formulario-hotelero,
+  .flexCol--seccion-3-hotelero,
+  .flexRowContent--seccion-2-hotelero,
+  .flexCol--seccion-2-nuestra-empresa,
+  .flexRow--contenedor-miga-pan-formulario-contacto,
+  .flexRowContent--contenedor-cantidad-productos-ordenar,
+  .flexRow--contenedor-filtros,
+  .flexCol--col-contenedor-vitrina-2-vista-departamento,
+  .flexRow--contenedor-vitrina-1-vista-departamento,
+  .flexRowContent--contenedor-descripcion-especifica-pdp {
+    padding: 0;
+  }
+
+  .flexRow--contenedor-miga-pan-formulario-contacto {
+    padding-top: 20px;
+  }
+
+  .flexCol--seccion-3-cuponera-fantastica,
+  .flexCol--seccion-2-cuponera-fantastica,
+  .flexColChild--textos-seccion-1-cuponera-fantastica {
+    max-width: 90vw;
+  }
+
+  .flexRow--categorias-vista-departamento .stretchChildrenWidth:last-child {
+    height: 190px;
+  }
+
+  .flexColChild--contenedor-nombre-dimensiones-sku-pdp:first-child {
+    height: 40px !important;
+    display: flex;
+  }
+
+  .flexRow--condicional-especificaciones-vitrina-grande {
+    padding: 10px 0px;
+  }
+
+
+}
+
+@media screen and (min-width: 40em) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 0.25rem;
+  }
+}

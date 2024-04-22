@@ -1,0 +1,398 @@
+{
+  "product-summary.shelf#grande": {
+    "children": [
+      "stack-layout#vitrina",
+      "product-summary-space",
+      "condition-layout.product#especificacion-firmeza-firme",
+      "add-to-list-btn",
+      "product-summary-space",
+      "flex-layout.col#contenedor-nombre-dimensiones",
+      // "flex-layout.col#fila-nombreProducto-especificacion",
+      // "condition-layout.product#dimensiones-colchones",
+      // "product-specification-badges#dimensiones",
+      // "flex-layout.row#especificacion-dimensiones",
+      // "condition-layout.product#especificacion-dimensiones",
+      "product-summary-space",
+      "flex-layout.row#condicional-especificaciones-vitrina-grande",
+      "product-summary-space",
+      "flex-layout.col#spacer",
+      "condition-layout.product#especificacion-desde",
+      "flex-layout.row#fila-precio-botonComprar"
+    ]
+  },
+  "flex-layout.col#contenedor-nombre-dimensiones": {
+    "children": [
+      "product-summary-name",
+      "flex-layout.col#spacer",
+      "Dimensiones",
+      // "condition-layout.product#dimensiones-colchones",
+      "flex-layout.col#spacer"
+    ],
+    "props": {
+      "blockClass": ["contenedor-nombre-dimensiones"]
+    }
+  },
+  "flex-layout.col#fila-nombreProducto-especificacion": {
+    "children": [
+      "product-summary-name",
+      // "flex-layout.row#productSpecifications",
+      "condition-layout.product#dimensiones-colchones"
+    ],
+    "props": {
+      "blockClass": ["fila-nombreProducto-especificacion"]
+    }
+  },
+
+  //CONDICIONAL PALABRA DESDE PARA LOS PRECIOS
+  "condition-layout.product#especificacion-desde": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Etiqueta Desde",
+            "value": "Sí"
+          }
+        }
+      ],
+      "Then": "rich-text#desde-condicional-colchones"
+    }
+  },
+  "rich-text#desde-condicional-colchones": {
+    "props": {
+      "blockClass": ["desde-condicional-colchones"],
+      "text": "Desde:"
+    }
+  },
+  "condition-layout.category#desde": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "department",
+          "arguments": {
+            "ids": ["1"]
+          }
+        }
+      ],
+      "Then": "rich-text#desde-condicional-colchones"
+      //  "Else": "rich-text#desde-condicional-colchones"
+    }
+  },
+
+  //FLEX PRECIO TOTAL - PRECIO CON DESCUENTO - BOTON COMPRAR
+  "flex-layout.row#fila-precio-botonComprar": {
+    "children": [
+      "flex-layout.row#contenedor-precios-minicart",
+      "add-to-cart-button#vitrina"
+    ],
+    "props": {
+      "blockClass": ["fila-precio-botonComprar"],
+      "preventHorizontalStretch": false
+    }
+  },
+  "flex-layout.row#contenedor-precios-minicart": {
+    "children": ["product-list-price#summary", "product-selling-price#summary"],
+    "props": {
+      "blockClass": ["contenedor-precios-minicart"]
+    }
+  },
+  "add-to-cart-button#vitrina": {
+    "props": {
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "add-to-cart-button-shelf",
+      "text": "Comprar",
+      "onClickBehavior": "ensure-sku-selection"
+    }
+  },
+
+  // CONDICIONAL PARA VER ESPECIFICACION DIMENSIONES
+
+  "condition-layout.product#especificacion-dimensiones": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Dimensiones del producto"
+          }
+        }
+      ],
+      "Then": "rich-text#prueba-dimensiones"
+    }
+  },
+  "rich-text#prueba-dimensiones": {
+    "props": {
+      "blockClass": ["prueba-dimensiones"],
+      "text": "PRUEBA DIMENSIONES",
+      "textAlignment": "CENTER",
+      "textColor": "c-on-base",
+      "textPosition": "CENTER"
+    }
+  },
+
+  // CONDICIONAL PARA VER ESPECIFICACION FIRMEZA FIRME
+
+  "condition-layout.product#especificacion-firmeza-firme": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Grado de Firmeza",
+            "value": "Firme"
+          }
+        }
+      ],
+      "Then": "image#icono-firmeza-firme"
+    }
+  },
+  "image#icono-firmeza-firme": {
+    "props": {
+      "blockClass": ["icono-firmeza-firme"],
+      "maxHeight": 50,
+      "src": "/arquivos/firmeza-firme.png"
+    }
+  },
+
+  // CONDICIONAL PARA VER ESPECIFICACION INCLIYE FORRO
+  "flex-layout.row#condicional-especificaciones-vitrina-grande": {
+    "children": [
+      "condition-layout.product#especificacion-incluye-forro",
+      "condition-layout.product#especificacion-doble-cara",
+      "condition-layout.product#especificacion-ergonomico"
+    ],
+    "props": {
+      "blockClass": ["condicional-especificaciones-vitrina-grande"]
+    }
+  },
+
+  "condition-layout.product#especificacion-incluye-forro": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Incluye Forro",
+            "value": "Sí"
+          }
+        }
+      ],
+      "Then": "image#icono-incluye-forro"
+    }
+  },
+  "image#icono-incluye-forro": {
+    "props": {
+      "blockClass": ["icono-incluye-forro"],
+      "maxHeight": 60,
+      "src": "assets/icons/icono-incluye-forro.svg"
+    }
+  },
+
+  // condicional doble cara
+  "condition-layout.product#especificacion-doble-cara": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Doble Cara",
+            "value": "Sí"
+          }
+        }
+      ],
+      "Then": "image#icono-doble-cara"
+    }
+  },
+  "image#icono-doble-cara": {
+    "props": {
+      "blockClass": ["icono-doble-cara"],
+      "maxHeight": 60,
+      "src": "assets/icons/icono-doble-cara.svg"
+    }
+  },
+
+  // condicional ergonomico
+  "condition-layout.product#especificacion-ergonomico": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Ergonómico",
+            "value": "Sí"
+          }
+        }
+      ],
+      "Then": "image#icono-ergonomico"
+    }
+  },
+  "image#icono-ergonomico": {
+    "props": {
+      "blockClass": ["icono-ergonomico"],
+      "maxHeight": 60,
+      "src": "assets/icons/icono-ergonomico.svg"
+    }
+  },
+
+  "flex-layout.row#especificacion-dimensiones": {
+    "children": ["product-specification-badges#dimensiones"],
+    "props": {
+      "blockClass": "especificacion-dimensiones",
+      "fulwidth": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": false,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "left",
+      "verticalAlign": "middle",
+      "paddingTop": 0,
+      "paddingBottom": 0
+    }
+  },
+  // CONDICIONAL DIEMSIONES DE LOS COLCHONES
+  "condition-layout.product#dimensiones-colchones": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "1"
+          }
+        }
+      ],
+      "Then": "rich-text#prueba-dimensiones-colchones"
+    }
+  },
+  "rich-text#prueba-dimensiones-colchones": {
+    "props": {
+      "blockClass": ["prueba-dimensiones-colchones"],
+      "text": "Prueba dimensiones colchones"
+    }
+  },
+
+  "product-specification-badges#dimensiones": {
+    "props": {
+      "specificationGroupName": "allSpecifications",
+      "specificationsOptions": [
+        {
+          "specificationName": "Dimensiones del producto",
+          "displayValue": "SPECIFICATION_VALUE"
+        }
+      ]
+    }
+  },
+
+  "flex-layout.row#productSpecifications": {
+    "children": ["product-specification-group#summary"]
+  },
+  "product-summary-name#summaryListDesktop": {
+    "props": {
+      "blockClass": "summaryListDesktop"
+    }
+  },
+  "flex-layout.col#productRating": {
+    "props": {
+      "blockClass": "productRating"
+    },
+    "children": ["product-rating-inline"]
+  },
+
+  "stack-layout#prodsum": {
+    "children": [
+      "product-summary-image#prueba"
+      // "product-summary-image#shelf",
+      // "vtex.product-highlights@2.x:product-highlights#collection"
+      // "modal-trigger#quickview" // Check quickview.jsonc
+    ]
+  },
+  "stack-layout#vitrina": {
+    "props": {
+      "blockClass": "stack-layout-vitrina"
+    },
+    "children": [
+      "product-summary-image#vitrina",
+      "flex-layout.row#contenedor-custom-tag",
+      "modal-trigger#quickview" // Check quickview.jsonc
+    ]
+  },
+  "product-summary-image#vitrina": {
+    "props": {
+      "showCollections": false,
+      "showBadge": true,
+      "mainImageLabel": {
+        "label": "1",
+        "labelMatchCriteria": "exact"
+      },
+      "hoverImage": {
+        "criteria": "index",
+        "index": 1
+      },
+      "displayMode": "normal"
+    }
+  },
+  "flex-layout.row#contenedor-custom-tag": {
+    "children": ["custom-product-tags-list"],
+    "props": {
+      "blockClass": ["contenedor-custom-tag"]
+    }
+  },
+
+  "product-summary-image#shelf": {
+    "props": {
+      "showBadge": true,
+      "aspectRatio": "1:1",
+      "maxHeight": 300
+    }
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#collection": {
+    "props": {
+      "type": "collection"
+    },
+    "children": ["product-highlight-wrapper"]
+  },
+  "product-highlight-wrapper": {
+    "props": {
+      "blockClass": "collection"
+    },
+    "children": ["product-highlight-text"]
+  },
+  "product-highlight-text": {
+    "props": {
+      "message": "{highlightName}"
+    }
+  },
+
+  "product-list-price#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "flex-layout.row#selling-price-savings": {
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "marginBottom": 4
+    },
+    "children": [
+      "product-selling-price#summary",
+      "product-price-savings#summary"
+    ]
+  },
+  "product-installments#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "product-selling-price#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "product-price-savings#summary": {
+    "props": {
+      "markers": ["discount"],
+      "blockClass": "summary"
+    }
+  }
+}

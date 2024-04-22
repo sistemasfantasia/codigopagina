@@ -1,0 +1,266 @@
+.expandCollapseButton {
+  text-transform: uppercase;
+  background: #F2F6FB;
+  font-weight: bold;
+  width: 150px;
+  border-radius: 100px;
+}
+
+.removeAllWrapper{
+  text-transform: uppercase;
+  background: #ee2132;
+  font-weight: bold;
+  width: 150px;
+  border-radius: 100px;
+  color: #fff;
+}
+
+.removeAllWrapper :global(.vtex-button__label){
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.compareProductButtonWrapper {
+  background: #2E3192;
+  width: 150px;
+  border-radius: 100px;
+}
+
+.compareProductButtonWrapper :global(.vtex-button){
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 100px;
+  color: #fff;
+}
+
+.pageContainer {
+  max-width: 1280px;
+  margin: auto;
+}
+
+:global(.vtex-product-comparison-0-x-pageContainer) :global(.vtex-pageHeader__title) {
+  font-size: 0px;
+  color: #2E3192;
+  font-weight: 700;
+}
+
+:global(.vtex-product-comparison-0-x-pageContainer) :global(.vtex-pageHeader__title)::after {
+  content: "Comparación de productos";
+  font-size: 28px;
+  color: #2E3192;
+  font-weight: 700;
+}
+
+.removeAllItemsButtonWrapper :global(.vtex-button) {
+  background: #B0E4BD;
+  border-radius: 100px;
+}
+
+.removeAllItemsButtonWrapper :global(.vtex-button__label) {
+  font-size: 14px;
+  color: #008622;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.productSummaryRowContainer :global(.vtex-slider-layout-0-x-slideChildrenContainer),
+.productSummaryRowContainer :global(.vtex-slider-layout-0-x-slide){
+  width: 100% !important;
+}
+
+.productSummaryRowContainer :global(.vtex-product-summary-2-x-buyButton) :global(.vtex-button) {
+  background: #2E3192;
+  border-radius: 100px;
+  border: none;
+}
+
+.productSummaryRowContainer :global(.vtex-product-summary-2-x-buyButton) :global(.vtex-button__label) {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.title--comparador {
+  background: #2E3192;
+  border-radius: 100px;
+  color: #fff;
+}
+
+.rowContainer--comparador:nth-child(even) {
+  background-color: #F4F4F5;
+  border-radius: 100px;
+}
+
+.productSummaryRowContainer .fieldNameCol {
+  position: relative;
+  right: -52em;
+  top: -6em;
+  width: fit-content!important;
+  height: fit-content;
+}
+
+.productSummaryRowContainer :global(.vtex-slider-layout-0-x-sliderLayoutContainer--comparison-page) {
+  width: 100%;
+}
+
+.showDifferencesContainer :global(.vtex-checkbox__label) {
+  color: #2E3192;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.showDifferencesContainer :global(.vtex-checkbox__container ){
+  border: 1px solid #2E3192;
+  border-radius: 50%;
+  background: #F2F6FB;
+  width: 18px;
+}
+
+.showDifferencesContainer :global(.vtex-checkbox__inner-container) {
+  border: none;
+}
+
+:global(.vtex-product-summary-2-x-containerNormal--comparison-page-summary) :global(.vtex-store-components-3-x-discountInsideContainer) {
+  left: 11px;
+}
+
+.rowContainer--comparador .fieldNameCol--comparador {
+  color: #2E3192;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 30px;
+}
+
+.productSummaryRowContainer :global(.vtex-product-summary-2-x-nameContainer) {
+  border-bottom: 1px solid #2e3192;
+  justify-content: flex-start;
+}
+
+:global(.vtex-slider-layout-0-x-sliderTrack--comparison-page) {
+  gap: 30px;
+}
+
+:global(.vtex-pageHeader-link__container) :global(.vtex-button) .t-action--small {
+  font-size: 14px;
+}
+
+.rowContainer :global(.vtex-slider-layout-0-x-slide ){
+  border-left: 2px solid #CDCED0;
+  margin: 10px;
+}
+
+.drawerContainer {
+  z-index: 201;
+}
+
+@media only screen and (max-width: 640px) {
+
+  .productSummaryRowContainer .fieldNameCol {
+    position: inherit;
+    width: 100% !important;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .productSummaryRowContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  :global(.vtex-slider-layout-0-x-sliderLeftArrow--comparison-page),
+  :global(.vtex-slider-layout-0-x-sliderRightArrow--comparison-page){
+    background: #F4F4F5 !important;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 2px 0px #00000029;
+    position: absolute;
+    top: 24em;
+  }
+
+  :global(.vtex-product-comparison-0-x-pageContainer) :global(.vtex-pageHeader__title)::after {
+    font-size: 20px;
+  }
+
+  :global(.vtex-product-summary-2-x-containerNormal--comparison-page-summary) :global(.vtex-flex-layout-0-x-flexRowContent--fila-precio-vitrina-pequena){
+    display: flex;
+  }
+
+  .removeAllItemsButtonWrapper {
+    width: fit-content;
+    position: absolute;
+    left: 30vw;
+    top: 37em;
+  }
+
+  .rowContainer--comparador {
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .rowContainer--comparador:nth-child(even) {
+    border-radius: 20px;
+  }
+
+  .rowContainer :global(.vtex-slider-layout-0-x-slide) {
+    border-left: none;
+    margin: 10px 10px;
+    width: 100% !important;
+  }
+
+  .fieldNameCol {
+    width: 100%;
+  }
+
+  .comparisonButtons {
+    display: flex;
+    width: 90vw;
+    flex-wrap: wrap;
+  }
+
+  .drawerTitleOuterContainer {
+    flex: 1 0 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+  }
+
+  .expandCollapseButton,
+  .removeAllWrapper,
+  .compareProductButtonWrapper {
+    width: 25vw;
+    font-size: 10px;
+  }
+
+  .expandCollapseButton :global(.vtex-button__label),
+  .removeAllWrapper :global(.vtex-button__label),
+  .compareProductButtonWrapper :global(.vtex-button__label){
+    width: 25vw;
+    font-size: 10px;
+  }
+
+  .drawerOpened :global(.vtex-styleguide-9-x-jsFocusVisible ){
+    padding-bottom: 30px;
+  }
+
+  .closeButton {
+    border: none;
+  }
+
+  .title--comparador {
+    max-width: 95vw;
+    margin: auto;
+  }
+
+}

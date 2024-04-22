@@ -1,0 +1,268 @@
+{
+  "store.custom#blog-colchones": {
+    "blocks": ["flex-layout.row#contenedor-vista-blog"]
+  },
+  //CONTENEDOR VISTA BLOG
+  "flex-layout.row#contenedor-vista-blog": {
+    "children": ["flex-layout.col#contenedor-responsive-vista-blog"],
+    "props": {
+      "blockClass": ["contenedor-vista-blog"]
+    }
+  },
+  "flex-layout.col#contenedor-responsive-vista-blog": {
+    "children": [
+      "flex-layout.row#contenedor-miga-pan-vista-blog",
+      "list-context.image-list#banner-vista-blog",
+      "flex-layout.row#contenedor-cards-vista-blog",
+      "flex-layout.col#contenedor-articulos-vista-blog",
+      "flex-layout.row#contenedor-vitrina-no-encontrado"
+    ],
+    "props": {
+      "blockClass": ["contenedor-responsive-vista-blog"]
+    }
+  },
+  "responsive-layout.desktop#contenedor-vista-blog": {
+    "children": ["flex-layout.col#contenedor-vista-blog"]
+  },
+  "responsive-layout.tablet#contenedor-vista-blog": {
+    "children": ["flex-layout.col#contenedor-vista-blog-mobile"]
+  },
+  "responsive-layout.phone#contenedor-vista-blog": {
+    "children": ["flex-layout.col#contenedor-vista-blog-mobile"]
+  },
+  "flex-layout.col#contenedor-vista-blog": {
+    "children": [
+      "flex-layout.row#contenedor-miga-pan-vista-blog",
+      "list-context.image-list#banner-vista-blog",
+      "flex-layout.row#contenedor-cards-vista-blog",
+      "flex-layout.col#contenedor-articulos-vista-blog",
+      "flex-layout.row#contenedor-vitrina-no-encontrado"
+    ],
+    "props": {
+      "blockClass": ["col-contenedor-vista-blog"]
+    }
+  },
+
+  // MIGA DE PAN VISTA TERMINOS LEGALES
+  "flex-layout.row#contenedor-miga-pan-vista-blog": {
+    "children": [
+      "rich-text#miga-pan-1-vista-blog",
+      "image#flecha-miga-pan",
+      "rich-text#miga-pan-2-vista-blog"
+    ],
+    "props": {
+      "blockClass": ["contenedor-miga-pan-formulario-contacto"]
+    }
+  },
+  "rich-text#miga-pan-1-vista-blog": {
+    "props": {
+      "blockClass": ["miga-pan-1"],
+      "text": "Miga de pan desktop"
+    }
+  },
+  "rich-text#miga-pan-2-vista-blog": {
+    "props": {
+      "blockClass": ["miga-pan-2"],
+      "text": "Miga de pan desktop"
+    }
+  },
+  // BANNER VISTA HOTELERA
+  "list-context.image-list#banner-vista-blog": {
+    "children": ["slider-layout#slider-banner-vista-blog"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "/arquivos/banner-blog.png",
+          "mobileImage": "/arquivos/banner-blog-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-banner-vista-blog": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "fullWidth": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "slider-banner-vista-blog"
+    }
+  },
+
+  //PRUEBA INFOCARDS VISTA BLOG COLCHONES
+  "flex-layout.row#contenedor-cards-vista-blog": {
+    "children": ["list-context.info-card-list#cards-vista-blog"],
+    "props": {
+      "blockClass": ["contenedor-cards-vista-blog"]
+    }
+  },
+  "list-context.info-card-list#cards-vista-blog": {
+    "children": ["slider-layout#slider-cards-vista-blog"],
+    "props": {
+      "infoCards": [
+        {
+          "id": "info-card-blog-1",
+          "title": "info-card-blog-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "/arquivos/img-card-vista-blog.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Ver más",
+          "callToActionUrl": "#",
+          "headline": "#### Nombre de la entrada **26 de marzo de 2023**",
+          "subhead": "*Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.\nCurabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus, porttitor eu mauris a, blandit ultrices nibh. Mauris sit amet magna non ligula vestibulum eleifend. Nulla varius volutpat turpis sed lacinia. Nam eget mi in purus lobortis eleifend. Sed nec ante dictum sem condimentum ullamcorper quis venenatis nisi. Proin vitae facilisis nisi, ac posuere leo.*",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-cards-vista-blog"]
+        },
+        {
+          "id": "info-card-blog-1",
+          "title": "info-card-blog-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "/arquivos/img-card-vista-blog.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Ver más",
+          "callToActionUrl": "#",
+          "headline": "#### Nombre de la entrada **26 de marzo de 2023**",
+          "subhead": "*Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.\nCurabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus, porttitor eu mauris a, blandit ultrices nibh. Mauris sit amet magna non ligula vestibulum eleifend. Nulla varius volutpat turpis sed lacinia. Nam eget mi in purus lobortis eleifend. Sed nec ante dictum sem condimentum ullamcorper quis venenatis nisi. Proin vitae facilisis nisi, ac posuere leo.*",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-cards-vista-blog"]
+        },
+        {
+          "id": "info-card-blog-1",
+          "title": "info-card-blog-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "/arquivos/img-card-vista-blog.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Ver más",
+          "callToActionUrl": "#",
+          "headline": "#### Nombre de la entrada **26 de marzo de 2023**",
+          "subhead": "*Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.\nCurabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus, porttitor eu mauris a, blandit ultrices nibh. Mauris sit amet magna non ligula vestibulum eleifend. Nulla varius volutpat turpis sed lacinia. Nam eget mi in purus lobortis eleifend. Sed nec ante dictum sem condimentum ullamcorper quis venenatis nisi. Proin vitae facilisis nisi, ac posuere leo.*",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-cards-vista-blog"]
+        },
+        {
+          "id": "info-card-blog-1",
+          "title": "info-card-blog-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "/arquivos/img-card-vista-blog.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Ver más",
+          "callToActionUrl": "#",
+          "headline": "#### Nombre de la entrada **26 de marzo de 2023**",
+          "subhead": "*Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.\nCurabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus, porttitor eu mauris a, blandit ultrices nibh. Mauris sit amet magna non ligula vestibulum eleifend. Nulla varius volutpat turpis sed lacinia. Nam eget mi in purus lobortis eleifend. Sed nec ante dictum sem condimentum ullamcorper quis venenatis nisi. Proin vitae facilisis nisi, ac posuere leo.*",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-cards-vista-blog"]
+        },
+        {
+          "id": "info-card-blog-1",
+          "title": "info-card-blog-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "/arquivos/img-card-vista-blog.png",
+          "imageActionUrl": "/",
+          "callToActionText": "Ver más",
+          "callToActionUrl": "#",
+          "headline": "#### Nombre de la entrada **26 de marzo de 2023**",
+          "subhead": "*Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.\nCurabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus, porttitor eu mauris a, blandit ultrices nibh. Mauris sit amet magna non ligula vestibulum eleifend. Nulla varius volutpat turpis sed lacinia. Nam eget mi in purus lobortis eleifend. Sed nec ante dictum sem condimentum ullamcorper quis venenatis nisi. Proin vitae facilisis nisi, ac posuere leo.*",
+          "textMode": "rich-text",
+          "blockClass": ["info-card-cards-vista-blog"]
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-cards-vista-blog": {
+    "title": "lista cards-vista-blog",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "usePagination": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": "slider-infocards-cards-vista-blog"
+    }
+  },
+
+  //CONTENEDOR LISTA ARTICULOS
+  "flex-layout.col#contenedor-articulos-vista-blog": {
+    "children": ["rich-text#titulo-contenedor-articulos-vista-blog","vtex.menu@2.x:menu#articulos-vista-blog"],
+    "props": {
+      "blockClass": ["contenedor-articulos-vista-blog"]
+    }
+  },
+  "rich-text#titulo-contenedor-articulos-vista-blog": {
+    "props": {
+      "blockClass": ["titulo-contenedor-articulos-vista-blog"],
+      "text": "Listado de articulos"
+    }
+  },
+  "vtex.menu@2.x:menu#articulos-vista-blog": {
+    "props": {
+      "blockClass":"articulos-blog",
+      "items": [
+        {
+          "id": "articulo-blog-1",
+          "blockClass":"articulo-blog",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/template-blog",
+            "noFollow": false,
+            "tagTitle": "Articulo",
+            "text": "Articulo 1"
+          }
+        },
+        {
+          "id": "articulo-blog-2",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/template-blog",
+            "noFollow": false,
+            "tagTitle": "Articulo",
+            "text": "Articulo 2"
+          }
+        },
+        {
+          "id": "articulo-blog-3",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/template-blog",
+            "noFollow": false,
+            "tagTitle": "Articulo",
+            "text": "Articulo 3"
+          }
+        }
+      ]
+    }
+  },
+
+  // CONTENEDOR MOBILE VISTA BLOG
+  "flex-layout.col#contenedor-vista-blog-mobile": {
+    "children": [
+      "flex-layout.row#contenedor-miga-pan-vista-blog",
+      "list-context.image-list#banner-vista-blog",
+      "flex-layout.row#contenedor-cards-vista-blog",
+      "flex-layout.col#contenedor-articulos-vista-blog",
+      "flex-layout.row#contenedor-vitrina-no-encontrado"
+    ],
+    "props": {
+      "blockClass": ["col-contenedor-vista-blog"]
+    }
+  }
+}

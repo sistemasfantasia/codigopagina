@@ -1,0 +1,270 @@
+.listItem--item-descripcion-especificaciones-resenas-pdp {
+  width: 30%;
+}
+
+.listItem--item-descripcion-especificaciones-resenas-pdp :global(.vtex-button){
+  width: 100%;
+  border-radius: 100px;
+  background: #fff;
+  border: 1px solid #D7E3F3
+}
+
+.listItem--item-descripcion-especificaciones-resenas-pdp :global(.vtex-button__label){
+  color: #2E3192;
+  font-weight: 900;
+  text-transform: initial;
+}
+
+.listItemActive--item-descripcion-especificaciones-resenas-pdp :global(.vtex-button){
+  width: 100%;
+  border-radius: 100px;
+  background: #2E3192;
+  border: 1px solid #D7E3F3
+}
+
+.listItemActive--item-descripcion-especificaciones-resenas-pdp :global(.vtex-button__label){
+  color: #fff;
+  font-weight: 900;
+  text-transform: initial;
+}
+
+.contentContainer--content-tab-descripcion-especificaciones-resenas-pdp {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.container--tab-descripcion-especificaciones-resenas-pdp {
+  max-width: 1280px;
+  margin: auto;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(90deg,#fff,#2E3192,#fff) 1;
+  padding: 20px 0px;
+}
+
+.listContainer--list-tab-nuestras-tiendas-mobile {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  border-image: linear-gradient(90deg,#fff,#2E3192,#fff) 1;
+  padding: 20px 0px;
+  max-width: 90vw;
+  margin: auto;
+
+}
+
+.listItem--item-nuestras-tiendas-mobile :global(.vtex-button),
+.listItemActive--item-nuestras-tiendas-mobile :global(.vtex-button) {
+  width: 100% !important;
+}
+
+.listItem--item-nuestras-tiendas-mobile:hover  {
+  background: none;
+}
+
+.listItem--item-nuestras-tiendas-mobile :global(.vtex-button):hover {
+  background-color: #97B8DF;
+  border-radius: 100px;
+}
+
+.listItem--item-nuestras-tiendas-mobile :global(.vtex-button):hover :global(.vtex-button__label) {
+  color: #2E3192;
+  font-weight: 700;
+}
+
+.listItemActive--item-nuestras-tiendas-mobile :global(.vtex-button):hover :global(.vtex-button__label) {
+  color: #D7E3F3;
+  font-weight: 700;
+}
+
+.listItemActive--item-nuestras-tiendas-mobile :global(.vtex-button):hover {
+  background-color: #2E3192;
+  border-radius: 100px;
+}
+
+.listItemActive--item-nuestras-tiendas-mobile :global(.vtex-button) {
+  border-radius: 100px;
+}
+
+.listItem--item-nuestras-tiendas-mobile :global(.vtex-button__label),
+.listItemActive--item-nuestras-tiendas-mobile :global(.vtex-button__label) {
+  padding: 0;
+  font-size: 12px;
+}
+
+.listItemActive--item-nuestras-tiendas-mobile :global(.vtex-button__label) {
+  color: #D7E3F3;
+  font-weight: 700;
+}
+
+/* .listItemActive--item-nuestras-tiendas-mobile :global(.vtex-button__label)::after {
+  content: "";
+  background: url(assets/icons/icono-boton-tiendas.svg);
+  width: 20px;
+  height: 20px;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+} */
+
+.listItem--item-nuestras-tiendas-mobile{
+  padding: 0;
+  margin: 0;
+}
+
+.contentContainer--content-tab-nuestras-tiendas-mobile{
+  background: #F4F4F5;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contentContainer--content-tab-nuestras-tiendas-mobile :global(.vtex-rich-text-0-x-container--nombre-tienda){
+  max-width: 90vw;
+  margin: auto;
+}
+
+.contentContainer--content-tab-nuestras-tiendas-mobile :global(.vtex-rich-text-0-x-paragraph--nombre-tienda){
+  font-size: 22px;
+  color: #2E3192;
+  font-weight: 700;
+ }
+
+ .container--tab-seccion-preguntas-frecuentes,
+ .container--tab-seccion-terminos-legales {
+  display: flex;
+  gap: 20px;
+  max-width: 1280px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.listContainer--list-tab-preguntas-frecuentes,
+.listContainer--list-tab-terminos-legales{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.listItem--item-puntos-de-venta,
+.listItem--item-productos,
+.listItem--item-pagos,
+.listItem--item-entregas,
+.listItem--item-garantias,
+.listItem--item-devoluciones,
+.listItem--item-politica-compra,
+.listItem--item-politica-entrega,
+.listItem--item-politica-tratamiento-datos{
+  height: fit-content;
+  background: #2E3192;
+  width: -webkit-fill-available;
+  margin: 0;
+}
+
+.listItem--item-politica-compra {
+  border-radius: 100px 0px 100px 100px;
+}
+
+.listItem--item-politica-entrega {
+  border-radius: 100px 100px 0px 100px;
+}
+
+.listItem--item-politica-tratamiento-datos {
+  border-radius: 100px 0px 0px 100px;
+}
+
+/* .listItem--item-puntos-de-venta {
+  border-radius: 100px 0px 100px 100px;
+} */
+
+.listItem--item-puntos-de-venta,
+.listItem--item-devoluciones,
+.listItem--item-garantias,
+.listItem--item-entregas,
+.listItem--item-pagos,
+.listItem--item-productos {
+  border-radius: 100px 0px 0px 100px;
+}
+
+/* :global(.vtex-tab-layout-0-x-listItemActive--item-pagos) .listItem--item-productos {
+  border-radius: 100px 0px 100px 100px !important;
+} */
+
+.listItemActive--item-puntos-de-venta,
+.listItemActive--item-productos,
+.listItemActive--item-pagos,
+.listItemActive--item-entregas,
+.listItemActive--item-garantias,
+.listItemActive--item-devoluciones,
+.listItemActive--item-politica-compra,
+.listItemActive--item-politica-entrega,
+.listItemActive--item-politica-tratamiento-datos{
+  height: fit-content;
+  background: transparent !important;
+  width: -webkit-fill-available;
+  color: #2E3192;
+  font-weight: 700;
+}
+
+.listItem--item-puntos-de-venta :global(.vtex-button__label),
+.listItem--item-productos :global(.vtex-button__label),
+.listItem--item-pagos :global(.vtex-button__label),
+.listItem--item-entregas :global(.vtex-button__label),
+.listItem--item-garantias :global(.vtex-button__label),
+.listItem--item-devoluciones :global(.vtex-button__label),
+.listItem--item-politica-compra :global(.vtex-button__label),
+.listItem--item-politica-entrega :global(.vtex-button__label),
+.listItem--item-politica-tratamiento-datos :global(.vtex-button__label) {
+  font-size: 15px;
+  text-align: left;
+  color: #fff;
+  font-weight: 700;
+  text-transform: capitalize;
+  justify-content: flex-start;
+}
+
+.listItem--item-puntos-de-venta :global(.vtex-button),
+.listItem--item-productos :global(.vtex-button),
+.listItem--item-pagos :global(.vtex-button),
+.listItem--item-entregas :global(.vtex-button),
+.listItem--item-garantias :global(.vtex-button),
+.listItem--item-devoluciones :global(.vtex-button),
+.listItem--item-politica-compra :global(.vtex-button),
+.listItem--item-politica-entrega :global(.vtex-button),
+.listItem--item-politica-tratamiento-datos :global(.vtex-button) {
+  background: transparent;
+  border: none;
+  width: 100%;
+}
+
+.listItemActive--item-puntos-de-venta :global(.vtex-button__label),
+.listItemActive--item-productos :global(.vtex-button__label),
+.listItemActive--item-pagos :global(.vtex-button__label),
+.listItemActive--item-entregas :global(.vtex-button__label),
+.listItemActive--item-garantias :global(.vtex-button__label),
+.listItemActive--item-devoluciones :global(.vtex-button__label),
+.listItemActive--item-politica-compra :global(.vtex-button__label),
+.listItemActive--item-politica-entrega :global(.vtex-button__label),
+.listItemActive--item-politica-tratamiento-datos :global(.vtex-button__label) {
+  color: #2E3192;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.listItemActive--item-politica-entrega:active .listItem--item-politica-tratamiento-datos {
+  border-radius: 100px 100px 0px 100px !important;
+}
+
+@media only screen and (max-width: 640px){
+
+  .container--tab-seccion-preguntas-frecuentes,
+  .container--tab-seccion-terminos-legales {
+  padding: 0px;
+  }
+
+}

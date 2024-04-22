@@ -1,0 +1,302 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": ["sticky-layout#4-desktop"]
+  },
+
+  "flex-layout.row#1-desktop": {
+    "children": ["telemarketing"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "menu-link",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#websites",
+      "flex-layout.col#spacer",
+      "vtex.menu@2.x:menu#institutional"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "sticky-layout#4-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      // "flex-layout.row#boton-whatsapp-flotante",
+      "overlay-trigger#whatsapp",
+      "flex-layout.row#contenedor-preheader",
+      "flex-layout.row#contenedor-header",
+      "flex-layout.row#menu-categorias-desktop"
+    ]
+  },
+  "flex-layout.row#contenedor-header": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "search-bar",
+      "rich-text#link-tiendas",
+      "login",
+      // "rich-text#link-rastrea-tu-pedido",
+      "minicart.v2#header"
+    ]
+  },
+
+  // BOTON FLOTANTE DE WHATSAPP
+  "flex-layout.row#boton-whatsapp-flotante": {
+    "title": "WhatsApp Flotante",
+    "props": {
+      "blockClass": "boton-whatsapp-flotante",
+      "preventVerticalStretch": true
+    },
+    "children": ["image#boton-whatsapp-flotante"]
+  },
+  "image#boton-whatsapp-flotante": {
+    "title": "WhatsApp Flotante Imagen",
+    "props": {
+      "src": "assets/icons/boton-whatsapp-flotante.svg",
+      "alt": "WhatsApp",
+      "title": "WhatsApp",
+      "blockClass": "boton-whatsapp-flotante",
+      "link": {
+        "url": "https://api.whatsapp.com/send?phone=+573127760272&text=Hola!%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n.%20",
+        "openNewTab": true,
+        "title": "WhatsApp Colchones Fantasia"
+      }
+    }
+  },
+
+  //PRUEBA OVERLAY WHATSAPP
+  "overlay-trigger#whatsapp": {
+    "children": ["image#overlay-trigger-whatsapp", "overlay-layout#whatsapp"],
+    "props": {
+      "blockClass": "boton-whatsapp"
+    }
+  },
+  "image#overlay-trigger-whatsapp": {
+    "props": {
+      "src": "/arquivos/overlay-whatsapp.svg",
+      "alt": "Compartir este producto en redes sociales",
+      "height": "25px",
+      "blockClass": "overlay-trigger-whatsapp"
+    }
+  },
+  "overlay-layout#whatsapp": {
+    "props": {
+      // "placement": "right",
+      "scrollBehavior": "close-on-scroll"
+    },
+    "children": ["image#boton-whatsapp-flotante"]
+  },
+
+  //LOGO DESKTOP
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "width": "20%"
+    },
+    "children": ["logo#desktop"]
+  },
+
+  //BLOQUE SEARCH BAR
+  "search-bar": {
+    "props": {
+      "width": "32%",
+      "placeholder": "Encuentra el producto de tus sueños"
+    }
+  },
+
+  //LINK TIENDAS
+  "rich-text#link-tiendas": {
+    "props": {
+      "blockClass": ["link-tiendas"],
+      "text": "Tiendas",
+      "width": "8%"
+    }
+  },
+
+  //BLOQUE CUENTA - LOGIN
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "Entrar con email y contraseña",
+      "accessCodeTitle": "Recibir código de acceso por email",
+      "emailPraceholder": "Email",
+      "passwordPlaceholder": "Constraseña",
+      "width": "8%"
+    }
+  },
+
+  //BLOQUE RASTREA TU PEDIDO
+  "rich-text#link-rastrea-tu-pedido": {
+    "props": {
+      "blockClass": ["link-rastrea-tu-pedido"],
+      "text": "Rastrea tu pedido",
+      "width": "13%"
+    }
+  },
+
+  //BLOQUE MINICART
+  "minicart.v2#header": {
+    "props": {
+      "customPixelEventId": "add-to-cart-button",
+      "width": "5%"
+    },
+    "children": ["minicart-base-content"]
+  },
+
+  //FILA MENU CATEGORIAS DESKTOP
+  "flex-layout.row#menu-categorias-desktop": {
+    "children": [
+      "rich-text#link-ofertas",
+      // "rich-text#link-mis-favoritos",
+      // "flex-layout.row#contenedor-menu-header"
+      "vtex.menu@2.x:menu#menu-categorias-desktop"
+      // "vtex.menu@2.x:menu#menu-categorias-desktop"
+    ],
+    "props": {
+      "blockClass": ["menu-categorias-desktop"]
+    }
+  },
+
+  //BLOQUE MIS FAVORITOS
+  "rich-text#link-mis-favoritos": {
+    "props": {
+      "blockClass": ["link-mis-favoritos"],
+      "text": "[Mis Favoritos](/wishlist)",
+      "width": "40%"
+    }
+  },
+
+  //BLOQUE OFERTAS
+  "rich-text#link-ofertas": {
+    "props": {
+      "blockClass": ["link-mis-favoritos","link-ofertas"],
+      "text": "[Ofertas](/ofertas)",
+      "width": "40%"
+    }
+  },
+
+  //BLOQUE LINK CATEGORIA MASCOSTAS
+  "rich-text#link-categoria-mascotas": {
+    "props": {
+      "blockClass": ["link-categoria-mascotas"],
+      "text": "[Mascotas](/)"
+    }
+  },
+
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#menu-categorias-desktop"]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/image/logo-colchonesFantasia.svg",
+      "width": "180",
+      "height": "60"
+    }
+  },
+  "header-layout.mobile": {
+    "children": ["sticky-layout#1-mobile"]
+  },
+  "sticky-layout#1-mobile": {
+    "children": [
+      "flex-layout.row#contenedor-preheader",
+      "flex-layout.row#1-mobile",
+      "overlay-trigger#whatsapp"
+    ]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "drawer#categorias-mobile",
+      "flex-layout.col#spacer",
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "login",
+      "flex-layout.col#spacer",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer#categorias-mobile": {
+    "children": ["flex-layout.row#contenedor-menu-categorias-mobile"],
+    "blocks": ["drawer-header#categorias-mobile"],
+    "props": {
+      "blockClass": "menu-categorias-mobile"
+    }
+  },
+  //HEADER DRAWER MENU CATEGORIAS MOBILE
+  "drawer-header#categorias-mobile": {
+    "children": ["drawer-close-button"],
+    "props": {
+      "blockClass": "drawer-header-categorias-mobile"
+    }
+  },
+  //CONTENEDOR MENU CATEGORIAS MOBILE
+  "flex-layout.row#contenedor-menu-categorias-mobile": {
+    "children": ["flex-layout.col#contenedor-menu-categorias-mobile"],
+    "props": {
+      "blockClass": "contenedor-menu-categorias-mobile"
+    }
+  },
+  "flex-layout.col#contenedor-menu-categorias-mobile": {
+    "children": [
+      "flex-layout.row#contenedor-preheader",
+      "search-bar",
+      "rich-text#link-tiendas",
+      // "rich-text#link-rastrea-tu-pedido",
+      "flex-layout.col#contenedor-drawer-categorias-mobile"
+    ],
+    "props": {
+      "blockClass": "col-contenedor-menu-categorias-mobile"
+    }
+  },
+
+  "menu#drawer": {
+    "children": ["menu-item#colchones"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/image/logo-colchonesFantasia.svg",
+      "width": "150"
+    }
+  }
+}

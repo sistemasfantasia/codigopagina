@@ -1,0 +1,546 @@
+{
+  "store.custom#hotelero": {
+    "children": ["flex-layout.row#contenedor-vista-hotelero"]
+  },
+  //CONTENEDOR VISTA NUESTRA EMPRESA
+  "flex-layout.row#contenedor-vista-hotelero": {
+    "children": ["flex-layout.col#contenedor-responsive-vista-hotelero"],
+    "props": {
+      "blockClass": ["contenedor-vista-hotelero"]
+    }
+  },
+  "flex-layout.col#contenedor-responsive-vista-hotelero": {
+    "children": [
+      "responsive-layout.desktop#contenedor-vista-hotelero",
+      "responsive-layout.tablet#contenedor-vista-hotelero",
+      "responsive-layout.phone#contenedor-vista-hotelero"
+    ],
+    "props": {
+      "blockClass": ["contenedor-responsive-vista-hotelero"]
+    }
+  },
+  "responsive-layout.desktop#contenedor-vista-hotelero": {
+    "children": ["flex-layout.col#contenedor-vista-hotelero"]
+  },
+  "responsive-layout.tablet#contenedor-vista-hotelero": {
+    "children": ["flex-layout.col#contenedor-vista-hotelero-mobile"]
+  },
+  "responsive-layout.phone#contenedor-vista-hotelero": {
+    "children": ["flex-layout.col#contenedor-vista-hotelero-mobile"]
+  },
+  "flex-layout.col#contenedor-vista-hotelero": {
+    "children": [
+      "flex-layout.row#contenedor-miga-pan-vista-hotelero",
+      "list-context.image-list#banner-vista-hotelero",
+      "flex-layout.row#titulo-vista-hotelero",
+      "flex-layout.row#seccion-1-hotelero",
+      "flex-layout.row#seccion-2-hotelero",
+      "flex-layout.col#seccion-3-hotelero",
+      "list-context.image-list#banner-2-vista-hotelero",
+      "flex-layout.row#promesas",
+      "flex-layout.row#seccion-5-hotelero"
+    ],
+    "props": {
+      "blockClass": ["col-contenedor-vista-hotelero"]
+    }
+  },
+
+  // MIGA DE PAN VISTA TERMINOS LEGALES
+  "flex-layout.row#contenedor-miga-pan-vista-hotelero": {
+    "children": [
+      "rich-text#miga-pan-1-vista-hotelero",
+      "image#flecha-miga-pan",
+      "rich-text#miga-pan-2-vista-hotelero"
+    ],
+    "props": {
+      "blockClass": ["contenedor-miga-pan-formulario-contacto"]
+    }
+  },
+  "rich-text#miga-pan-1-vista-hotelero": {
+    "props": {
+      "blockClass": ["miga-pan-1"],
+      "text": "Miga de pan desktop"
+    }
+  },
+  "rich-text#miga-pan-2-vista-hotelero": {
+    "props": {
+      "blockClass": ["miga-pan-2"],
+      "text": "Miga de pan desktop"
+    }
+  },
+  // BANNER VISTA HOTELERA
+  "list-context.image-list#banner-vista-hotelero": {
+    "children": ["slider-layout#slider-banner-vista-hotelero"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "/arquivos/banner-hotelero.png",
+          "mobileImage": "/arquivos/banner-hotelero-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-banner-vista-hotelero": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "fullWidth": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "slider-banner-vista-hotelero"
+    }
+  },
+
+  // TITULO VISTA HOTELERO
+  "flex-layout.row#titulo-vista-hotelero": {
+    "children": [
+      "rich-text#titulo-vista-hotelero",
+      "rich-text#texto-vista-hotelero"
+    ],
+    "props": {
+      "blockClass": ["titulo-vista-hotelero"]
+    }
+  },
+  "rich-text#titulo-vista-hotelero": {
+    "props": {
+      "blockClass": ["titulo-vista-hotelero"],
+      "text": "Línea institucional y hotelera",
+      "width": "60%"
+    }
+  },
+  "rich-text#texto-vista-hotelero": {
+    "props": {
+      "blockClass": ["texto-vista-hotelero"],
+      "text": "Corem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia"
+    }
+  },
+
+  //SECCION 1 HOTELERO
+  "flex-layout.row#seccion-1-hotelero": {
+    "children": [
+      "flex-layout.col#textos-seccion-1-hotelero",
+      "image#sello-hotelero",
+      "image#imagen-seccion-1-hotelero"
+    ],
+    "props": {
+      "blockClass": ["seccion-1-hotelero"]
+    }
+  },
+  "flex-layout.col#textos-seccion-1-hotelero": {
+    "children": [
+      "rich-text#titulo-seccion-1-hotelero",
+      "rich-text#texto-seccion-1-hotelero"
+    ],
+    "props": {
+      "blockClass": ["textos-seccion-1-hotelero"]
+    }
+  },
+  "rich-text#titulo-seccion-1-hotelero": {
+    "props": {
+      "blockClass": ["titulo-seccion-1-hotelero"],
+      "text": "¡Su Hotel,\nEl Mejor Anfitrión!"
+    }
+  },
+  "rich-text#texto-seccion-1-hotelero": {
+    "props": {
+      "blockClass": ["texto-seccion-1-hotelero"],
+      "text": "Brinde la mejor experiencia deBienestar y Descanso a sus huéspedescon el portafolio de Colchones Fantasía."
+    }
+  },
+  "image#imagen-seccion-1-hotelero": {
+    "props": {
+      "blockClass": ["imagen-seccion-1-hotelero"],
+      "src": "/arquivos/imagen-seccion-1-hotelero.png"
+    }
+  },
+  "image#sello-hotelero": {
+    "props": {
+      "blockClass": ["sello-hotelero"],
+      "src": "/arquivos/sello-hotelero.png"
+    }
+  },
+
+  //SECCION 2 HOTELERO
+  "flex-layout.row#seccion-2-hotelero": {
+    "children": ["flex-layout.col#seccion-2-hotelero"],
+    "props": {
+      "blockClass": ["seccion-2-hotelero"]
+    }
+  },
+  "flex-layout.col#seccion-2-hotelero": {
+    "children": ["rich-text#titulo-seccion-2-hotelero","list-context.info-card-list#slider-soluciones-2"],
+    "props": {
+      "blockClass": ["seccion-2-hotelero"]
+    }
+  },
+  //TITULO SOLUCIONES
+  "rich-text#titulo-seccion-2-hotelero": {
+    "props": {
+      "blockClass": ["titulo-seccion-2-hotelero"],
+      "text": "Nuestras soluciones"
+    }
+  },
+  // SLIDER SOLUCIONES
+  "list-context.info-card-list#slider-soluciones-2": {
+    "children": ["slider-layout#slider-soluciones"],
+    "props": {
+      "infoCards": [
+        {
+          "id": "infocard-soluciones",
+          "title": "infocard-soluciones",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "/arquivos/img-solucion-1.png",
+          "imageActionUrl": "/",
+          "headline": "# Colchón Cygnus",
+          "subhead": "## Altura Final\n### Firmeza Blando\n#### Transferencia Movimiento",
+          "textMode": "rich-text",
+          "callToActionText": "Ver detalle",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-soluciones"]
+        },
+        {
+          "id": "infocard-soluciones",
+          "title": "infocard-soluciones",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "/arquivos/img-solucion-1.png",
+          "imageActionUrl": "/",
+          "headline": "# Colchón Royal Dream",
+          "subhead": "## Altura Final\n##### Firmeza Firme\n###### Lumbar Care System",
+          "textMode": "rich-text",
+          "callToActionText": "Ver detalle",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-soluciones"]
+        },
+        {
+          "id": "infocard-soluciones",
+          "title": "infocard-soluciones",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "/arquivos/img-solucion-1.png",
+          "imageActionUrl": "/",
+          "headline": "# Colchón Premium Lexus",
+          "subhead": "## Altura Final\n*Firmeza Semifirme*\n**Unidad resortada bonell**",
+          "textMode": "rich-text",
+          "callToActionText": "Ver detalle",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-soluciones"]
+        },
+        {
+          "id": "infocard-soluciones",
+          "title": "infocard-soluciones",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "/arquivos/img-solucion-1.png",
+          "imageActionUrl": "/",
+          "headline": "# Colchón Presidential Suite",
+          "subhead": "## Altura Final\n##### Firmeza Firme\n###### Lumbar Care System",
+          "textMode": "rich-text",
+          "callToActionText": "Ver detalle",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-soluciones"]
+        },
+        {
+          "id": "infocard-soluciones",
+          "title": "infocard-soluciones",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "/arquivos/img-solucion-1.png",
+          "imageActionUrl": "/",
+          "headline": "# Colchón Executive",
+          "subhead": "## Altura Final\n*Firmeza Semifirme*\n###### Lumbar Care System",
+          "textMode": "rich-text",
+          "callToActionText": "Ver detalle",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-soluciones"]
+        },
+        {
+          "id": "infocard-soluciones",
+          "title": "infocard-soluciones",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "/arquivos/img-solucion-1.png",
+          "imageActionUrl": "/",
+          "headline": "# Colchón Basic Dream",
+          "subhead": "## Altura Final\n*Firmeza Semifirme*\n###### Lumbar Care System",
+          "textMode": "rich-text",
+          "callToActionText": "Ver detalle",
+          "callToActionUrl": "#",
+          "blockClass": ["infocard-soluciones"]
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-soluciones": {
+    "title": "Lista soluciones",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "always",
+      "blockClass": "slider-soluciones"
+    }
+  },
+
+  // SECCION 3 HOTELERO
+  "flex-layout.col#seccion-3-hotelero": {
+    "children": [
+      "flex-layout.row#fila-1-infocards-seccion-3-hotelero",
+      "flex-layout.row#fila-2-infocards-seccion-3-hotelero"
+    ],
+    "props": {
+      "blockClass": "seccion-3-hotelero"
+    }
+  },
+
+  // FILA INFOCARD seccion-3-hotelero
+  "flex-layout.row#fila-1-infocards-seccion-3-hotelero": {
+    "children": [
+      "info-card#infocard-1-fila-1-seccion-3-hotelero",
+      "info-card#infocard-2-fila-1-seccion-3-hotelero"
+    ],
+    "props": {
+      "blockClass": ["fila-1-infocards-seccion-3-hotelero"]
+    }
+  },
+  "info-card#infocard-1-fila-1-seccion-3-hotelero": {
+    "props": {
+      "blockClass": "infocard-seccion-3-hotelero",
+      "isFullModeStyle": false,
+      "headline": "Base cama ultra",
+      "id": "infocard-1-fila-1-seccion-3-hotelero",
+      "imageUrl": "/arquivos/img-1-seccion-3-hotelero.png",
+      "mobileImageUrl": "/arquivos/img-1-seccion-3-hotelero-mobile.png",
+      "textAlignment": "right",
+      "textPosition": "center"
+    }
+  },
+  "info-card#infocard-2-fila-1-seccion-3-hotelero": {
+    "props": {
+      "blockClass": "infocard-seccion-3-hotelero",
+      "isFullModeStyle": false,
+      "headline": "Espaldares",
+      "id": "infocard-2-fila-1-seccion-3-hotelero",
+      "imageUrl": "/arquivos/img-2-seccion-3-hotelero.png",
+      "mobileImageUrl": "/arquivos/img-2-seccion-3-hotelero-mobile.png",
+      "textAlignment": "right",
+      "textPosition": "center"
+    }
+  },
+
+  // FILA INFOCARD 2 BLOQUE 6
+  "flex-layout.row#fila-2-infocards-seccion-3-hotelero": {
+    "children": [
+      "info-card#infocard-1-fila-2-seccion-3-hotelero",
+      "info-card#infocard-2-fila-2-seccion-3-hotelero",
+      "info-card#infocard-3-fila-2-seccion-3-hotelero"
+    ],
+    "props": {
+      "blockClass": ["fila-2-infocards-seccion-3-hotelero"]
+    }
+  },
+  "info-card#infocard-1-fila-2-seccion-3-hotelero": {
+    "props": {
+      "blockClass": "infocard-seccion-3-hotelero",
+      "isFullModeStyle": false,
+      "headline": "Almohadas",
+      "id": "infocard-1-fila-2-seccion-3-hotelero",
+      "imageUrl": "/arquivos/img-3-seccion-3-hotelero.png",
+      "mobileImageUrl": "/arquivos/img-3-seccion-3-hotelero-mobile.png",
+      "textAlignment": "right",
+      "textPosition": "center"
+    }
+  },
+  "info-card#infocard-2-fila-2-seccion-3-hotelero": {
+    "props": {
+      "blockClass": "infocard-seccion-3-hotelero",
+      "isFullModeStyle": false,
+      "headline": "Sábanas",
+      "id": "infocard-2-fila-2-seccion-3-hotelero",
+      "imageUrl": "/arquivos/img-4-seccion-3-hotelero.png",
+      "mobileImageUrl": "/arquivos/img-4-seccion-3-hotelero-mobile.png",
+      "textAlignment": "right",
+      "textPosition": "center"
+    }
+  },
+  "info-card#infocard-3-fila-2-seccion-3-hotelero": {
+    "props": {
+      "blockClass": "infocard-seccion-3-hotelero",
+      "isFullModeStyle": false,
+      "headline": "Cobijas",
+      "id": "infocard-3-fila-2-seccion-3-hotelero",
+      "imageUrl": "/arquivos/img-5-seccion-3-hotelero.png",
+      "mobileImageUrl": "/arquivos/img-5-seccion-3-hotelero-mobile.png",
+      "textAlignment": "right",
+      "textPosition": "center"
+    }
+  },
+
+  // BANNER 2 VISTA HOTELERA
+  "list-context.image-list#banner-2-vista-hotelero": {
+    "children": ["slider-layout#slider-2-banner-vista-hotelero"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "/arquivos/banner-2-hotelero.png",
+          "mobileImage": "/arquivos/banner-2-hotelero-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-2-banner-vista-hotelero": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "fullWidth": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "slider-2-banner-vista-hotelero"
+    }
+  },
+
+  //SECCION 5 FORMULARIO
+  "flex-layout.row#seccion-5-hotelero": {
+    "children": ["flex-layout.col#seccion-5-hotelero"],
+    "props": {
+      "blockClass": ["seccion-5-hotelero"]
+    }
+  },
+  "flex-layout.col#seccion-5-hotelero": {
+    "children": [
+      "rich-text#titulo-formulario-hotelero",
+      "rich-text#texto-formulario-hotelero",
+      "form#formulario-hotelero"
+    ],
+    "props": {
+      "blockClass": ["seccion-5-hotelero"]
+    }
+  },
+  "form#formulario-hotelero": {
+    "props": {
+      "entity": "fh",
+      "schema": "formulario-hotelero",
+      "blockClass": "formulario-hotelero"
+    },
+    "children": ["flex-layout.row#contenedor-campos-formulario-hotelero"],
+    "blocks": ["form-success#formulario-hotelero"]
+  },
+  "form-success#formulario-hotelero": {
+    "children": ["rich-text#succes-submit-formulario-hotelero"],
+    "props": {
+      "blockClass": "formulario-contacto-hotelero"
+    }
+  },
+  "rich-text#succes-submit-formulario-hotelero": {
+    "props": {
+      "text": "¡Gracias por escribirnos a **Colchones Fantasia** daremos respuesta a tu \n solicitud lo más pronto posible, queremos hacer inolvidable tu experiencia.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#titulo-formulario-hotelero": {
+    "props": {
+      "blockClass": ["titulo-formulario-hotelero"],
+      "text": "Solicita más información"
+    }
+  },
+  "rich-text#texto-formulario-hotelero": {
+    "props": {
+      "blockClass": ["texto-formulario-hotelero"],
+      "text": "Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+    }
+  },
+  "flex-layout.row#contenedor-campos-formulario-hotelero": {
+    "children": ["flex-layout.col#col-1-campos-formulario-hotelero","flex-layout.col#col-2-campos-formulario-hotelero"],
+    "props": {
+      "blockClass": ["contenedor-campos-formulario-hotelero"]
+    }
+  },
+  "flex-layout.col#col-1-campos-formulario-hotelero": {
+    "children": [
+      "form-input.text#names-formulario-hotelero",
+      "form-input.text#email-formulario-hotelero",
+      "form-input.text#phone-formulario-hotelero",
+      "form-input.text#company-formulario-hotelero"
+    ],
+    "props": {
+      "blockClass": ["col-campos-formulario-hotelero"]
+    }
+  },
+  "flex-layout.col#col-2-campos-formulario-hotelero": {
+    "children": [
+      "form-input.textarea#applicationDetails-formulario-hotelero",
+      "form-submit#boton-enviar-formulario-hotelero"
+    ],
+    "props": {
+      "blockClass": ["col-campos-formulario-hotelero","col-2-campos-formulario-hotelero"]
+    }
+  },
+  "form-input.text#names-formulario-hotelero": {
+    "props": {
+      "pointer": "#/properties/names",
+      "placeholder": "Nombre completo",
+      "label": "Nombre completo"
+    }
+  },
+  "form-input.text#email-formulario-hotelero": {
+    "props": {
+      "pointer": "#/properties/email",
+      "placeholder": "Correo electronico"
+    }
+  },
+  "form-input.text#phone-formulario-hotelero": {
+    "props": {
+      "pointer": "#/properties/phone",
+      "placeholder": "Teléfono de contacto"
+    }
+  },
+  "form-input.text#company-formulario-hotelero": {
+    "props": {
+      "pointer": "#/properties/company",
+      "placeholder": "Empresa"
+    }
+  },
+  "form-input.textarea#applicationDetails-formulario-hotelero": {
+    "props": {
+      "pointer": "#/properties/applicationDetails",
+      "placeholder": "Detalles de la solicitud"
+    }
+  },
+  "form-submit#boton-enviar-formulario-hotelero": {
+    "props": {
+      "label": "Enviar"
+    }
+  },
+
+  // CONTENEDOR MOBILE VISTA HOTELERA
+  "flex-layout.col#contenedor-vista-hotelero-mobile": {
+    "children": [
+      "flex-layout.row#contenedor-miga-pan-vista-hotelero",
+      "list-context.image-list#banner-vista-hotelero",
+      "flex-layout.row#titulo-vista-hotelero",
+      "flex-layout.row#seccion-1-hotelero",
+      "flex-layout.row#seccion-2-hotelero",
+      "flex-layout.col#seccion-3-hotelero",
+      "list-context.image-list#banner-2-vista-hotelero",
+      "flex-layout.row#promesas",
+      "flex-layout.row#seccion-5-hotelero"
+    ],
+    "props": {
+      "blockClass": ["col-contenedor-vista-hotelero"]
+    }
+  }
+}
